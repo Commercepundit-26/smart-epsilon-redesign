@@ -594,10 +594,16 @@ body {
 
 
 
-/* INTERNAL HERO 3-COLOR GRID MATRIX (#0b1220, #1e223b, #6862a7) */
+
+
+
+
+
+
+/* EXACT ROUNDED TILE HERO GRID MATRIX MATCHING USER SCREENSHOT IN DARK MODE */
 .stage--hero.internal-hero {
-  background-color: #0b1220 !important; /* Color 1: Background Color */
-  background-image: none !important;
+  background-color: #0b1220 !important;
+  color: #ffffff !important;
   position: relative !important;
   overflow: hidden !important;
   padding-top: 140px !important;
@@ -606,20 +612,24 @@ body {
 
 .stage--hero.internal-hero .problem-grid-bg {
   position: absolute !important;
-  inset: 0 !important;
+  inset: -20px !important;
   display: grid !important;
-  grid-template-columns: repeat(12, 1fr) !important;
-  grid-template-rows: repeat(6, 1fr) !important;
-  opacity: 1 !important;
+  grid-template-columns: repeat(18, 1fr) !important;
+  grid-template-rows: repeat(8, 1fr) !important;
+  gap: 6px !important;
+  padding: 12px !important;
+  opacity: 0.65 !important;
   pointer-events: auto !important;
   z-index: 1 !important;
 }
 
 .stage--hero.internal-hero .problem-grid-cell {
-  border-right: 1px solid #1e223b !important; /* Color 2: Box Grid Line Color */
-  border-bottom: 1px solid #1e223b !important; /* Color 2: Box Grid Line Color */
+  background-color: rgba(30, 34, 59, 0.75) !important; /* Visible Box Grid Color #1e223b */
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 8px !important; /* Rounded Corners like user screenshot */
   position: relative !important;
-  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+  cursor: pointer !important;
 }
 
 .stage--hero.internal-hero .problem-grid-cell .cell-dot {
@@ -628,6 +638,24 @@ body {
 
 .stage--hero.internal-hero .problem-grid-cell:hover,
 .stage--hero.internal-hero .problem-grid-cell.active {
-  background-color: rgba(104, 98, 167, 0.25) !important; /* Color 3: Highlight Glow Color #6862a7 */
-  border-color: #6862a7 !important; /* Color 3: Highlight Glow Color #6862a7 */
+  background-color: #6862a7 !important; /* Highlight Glow Color #6862a7 */
+  border-color: #6862a7 !important;
+  box-shadow: 0 0 16px rgba(104, 98, 167, 0.8) !important;
+  transform: scale(1.06) !important;
+  z-index: 5 !important;
+}
+
+.stage--hero.internal-hero h1,
+.stage--hero.internal-hero p,
+.stage--hero.internal-hero .eyebrow {
+  position: relative;
+  z-index: 2;
+}
+
+.stage--hero.internal-hero h1 {
+  color: #ffffff !important;
+}
+
+.stage--hero.internal-hero p.card-body {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
