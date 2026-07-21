@@ -7,7 +7,8 @@
   <meta name="description" content="How the world's largest agrochemical company eliminated counterfeit clones across 10+ countries with unit-level serialization at scale.">
   <link rel="icon" href="assets/logo-D0kBFmz2.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css" />
-  <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
+  <link rel="modulepreload" crossorigin href="assets/gsap-CzGW6FVa.js">
+  <link rel="stylesheet" crossorigin href="assets/index-C_I5fQ9O.css">
   <link rel="stylesheet" href="assets/css/smart-epsilon-theme.css">
 </head>
 <body>
@@ -244,15 +245,16 @@
   </div>
 </header>
 
-    <section class="section-padding bg-soft" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+      <div class="hero-map" id="hero-map" aria-hidden="true"></div>
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
 
-      <div class="container" style="position: relative; z-index: 2; text-align: center; max-width: 900px;">
-        <span class="badge badge--purple" style="margin-bottom: 20px; display: inline-block;">CASE STUDY / AGROCHEMICALS</span>
-        <h1 class="page-title" style="font-size: clamp(2.2rem, 4.5vw, 3.5rem);">How the World's Largest Agrochemical Company Cut Counterfeits Across 10+ Countries</h1>
-        <p class="page-subtitle" style="margin: 0 auto 40px auto;">Deploying unit-level serialization and 3-layer verification across multi-plant operations without interrupting existing production line speeds.</p>
+      <div class="stage__inner container" style="position: relative; z-index: 2; text-align: center; max-width: 900px;">
+        <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Case Study / Agrochemicals</p>
+        <h1 class="page-title" style="color: #ffffff;" style="font-size: clamp(2.2rem, 4.5vw, 3.5rem);">How the World's Largest Agrochemical Company Cut Counterfeits Across 10+ Countries</h1>
+        <p class="page-subtitle" style="color: rgba(243, 244, 246, 0.85);" style="margin: 0 auto 40px auto;">Deploying unit-level serialization and 3-layer verification across multi-plant operations without interrupting existing production line speeds.</p>
 
         <div class="grid-3col" style="margin-top: 40px;">
           <div class="light-card" style="text-align: center;">
@@ -276,11 +278,11 @@
       </div>
     </section>
 
-    <section class="section-padding">
-      <div class="container">
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
         <div class="grid-2col" style="gap: 40px;">
           <div class="light-card">
-            <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">CLIENT PROFILE</span>
+            <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Client Profile</p>
             <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Global Agrochemical Manufacturer</h3>
             <p class="card-body" style="margin-bottom: 16px;">
               A Fortune 500 chemical and crop protection manufacturer supplying high-value formulations to distributors, retailers, and commercial farms in over 10 countries.
@@ -293,7 +295,7 @@
           </div>
 
           <div class="light-card">
-            <span class="badge badge--teal" style="margin-bottom: 14px; display: inline-block;">THE CHALLENGE</span>
+            <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">The Challenge</p>
             <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Widespread Clones &amp; Supply Chain Blind Spots</h3>
             <p class="card-body" style="margin-bottom: 14px;">
               Sophisticated counterfeiters were copying single-layer QR labels on high-value chemical SKUs. Duplicate products entered regional distributor networks unnoticed, leading to crop failure complaints, brand liability, and millions in lost revenue.
@@ -306,8 +308,8 @@
       </div>
     </section>
 
-    <section class="section-padding bg-soft">
-      <div class="container" style="max-width: 900px;">
+    <section class="stage bg-soft" data-reveal>
+      <div class="stage__inner container" style="max-width: 900px;">
         <div class="light-card" style="padding: 48px; text-align: center; border-color: rgba(107, 98, 172, 0.3); background: #ffffff;">
           <i class="ti ti-quote" style="font-size: 48px; color: var(--se-purple); display: block; margin-bottom: 16px;"></i>
           <p style="font-size: 22px; font-weight: 600; line-height: 1.4; color: var(--se-ink); margin-bottom: 24px;">
@@ -492,8 +494,31 @@
     </div>
   </div>
 </footer>
+    
+<div class="nav-drawer" id="nav-drawer" hidden>
+  <div class="nav-drawer-head">
+    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon" height="32" />
+    <button class="drawer-close nav-toggle" type="button" aria-label="Close menu"><svg class="icon" width="20" height="20"><use href="#icon-close"/></svg></button>
+  </div>
+  <nav class="nav-drawer-list" aria-label="Mobile">
+    <details class="nav-drawer-mega">
+      <summary>Solutions</summary>
+      <div class="nav-drawer-sub">
+        <a href="solution-anti-counterfeiting.html">Track &amp; Trace</a>
+        <a href="solution-anti-counterfeiting.html">Anti-Counterfeiting Solution</a>
+      </div>
+    </details>
+    <a href="industry-template.html">Industries</a>
+    <a href="case-study-template.html">Case Studies</a>
+    <a href="index.html#why">Why Smart Epsilon</a>
+    <a href="#cta">Contact</a>
+  </nav>
+  <div class="nav-drawer-cta"><a class="btn btn-primary" href="#cta">Schedule a Demo</a></div>
+</div>
+
   </div>
 
+  <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
 </body>
 </html>

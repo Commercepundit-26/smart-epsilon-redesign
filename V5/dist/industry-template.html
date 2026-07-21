@@ -7,7 +7,8 @@
   <meta name="description" content="Unit-level supply chain traceability, anti-counterfeiting, and channel intelligence purpose-built for agrochemical manufacturers.">
   <link rel="icon" href="assets/logo-D0kBFmz2.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css" />
-  <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
+  <link rel="modulepreload" crossorigin href="assets/gsap-CzGW6FVa.js">
+  <link rel="stylesheet" crossorigin href="assets/index-C_I5fQ9O.css">
   <link rel="stylesheet" href="assets/css/smart-epsilon-theme.css">
 </head>
 <body>
@@ -244,26 +245,27 @@
   </div>
 </header>
 
-    <section class="section-padding bg-soft" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+      <div class="hero-map" id="hero-map" aria-hidden="true"></div>
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
 
-      <div class="container" style="position: relative; z-index: 2;">
+      <div class="stage__inner container" style="position: relative; z-index: 2;">
         <div class="grid-2col" style="align-items: center; grid-template-columns: 1.05fr 0.95fr; gap: 48px;">
           <div>
-            <span class="badge badge--teal" style="margin-bottom: 20px; display: inline-block;">AGROCHEMICALS &amp; CROP PROTECTION</span>
-            <h1 class="page-title">Defend high-value formulations from plant to farm.</h1>
-            <p class="page-subtitle">Unit-level serialization, 3-layer anti-counterfeiting, and automated channel visibility designed for high-consequence chemical products and complex distributor networks.</p>
+            <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">Agrochemicals &amp; Crop Protection</p>
+            <h1 class="page-title" style="color: #ffffff;">Defend high-value formulations from plant to farm.</h1>
+            <p class="page-subtitle" style="color: rgba(243, 244, 246, 0.85);">Unit-level serialization, 3-layer anti-counterfeiting, and automated channel visibility designed for high-consequence chemical products and complex distributor networks.</p>
 
             <div class="trust-chips-row">
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> GS1 EPCIS 2.0 Native</div>
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> High-Speed Line Activation</div>
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> Zero ERP Overhaul</div>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> GS1 EPCIS 2.0 Native</span>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> High-Speed Line Activation</span>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> Zero ERP Overhaul</span>
             </div>
 
             <div style="display: flex; gap: 16px; align-items: center;">
-              <a href="#cta" class="btn btn-primary" style="padding: 14px 28px;">Schedule Industry Demo <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"/></svg></a>
+              <span data-magnetic><a href="#cta" class="btn btn-primary" style="padding: 14px 28px;">Schedule Industry Demo <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"/></svg></a></span>
             </div>
           </div>
 
@@ -306,10 +308,10 @@
       </div>
     </section>
 
-    <section class="section-padding">
-      <div class="container">
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
-          <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">SECTOR CHALLENGES</span>
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Sector Challenges</p>
           <h2 class="section-title">Why Traditional Traceability Fails Chemical Brands</h2>
           <p class="card-body">Agrochemical packaging faces extreme environmental conditions, high counterfeit incentives, and multi-layered distribution tiers.</p>
         </div>
@@ -511,8 +513,31 @@
     </div>
   </div>
 </footer>
+    
+<div class="nav-drawer" id="nav-drawer" hidden>
+  <div class="nav-drawer-head">
+    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon" height="32" />
+    <button class="drawer-close nav-toggle" type="button" aria-label="Close menu"><svg class="icon" width="20" height="20"><use href="#icon-close"/></svg></button>
+  </div>
+  <nav class="nav-drawer-list" aria-label="Mobile">
+    <details class="nav-drawer-mega">
+      <summary>Solutions</summary>
+      <div class="nav-drawer-sub">
+        <a href="solution-anti-counterfeiting.html">Track &amp; Trace</a>
+        <a href="solution-anti-counterfeiting.html">Anti-Counterfeiting Solution</a>
+      </div>
+    </details>
+    <a href="industry-template.html">Industries</a>
+    <a href="case-study-template.html">Case Studies</a>
+    <a href="index.html#why">Why Smart Epsilon</a>
+    <a href="#cta">Contact</a>
+  </nav>
+  <div class="nav-drawer-cta"><a class="btn btn-primary" href="#cta">Schedule a Demo</a></div>
+</div>
+
   </div>
 
+  <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
 </body>
 </html>

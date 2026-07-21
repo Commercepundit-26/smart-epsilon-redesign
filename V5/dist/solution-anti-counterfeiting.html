@@ -7,7 +7,8 @@
   <meta name="description" content="Protect every unit with overt, covert, and forensic verification working together. Give counterfeiters three problems, not one.">
   <link rel="icon" href="assets/logo-D0kBFmz2.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css" />
-  <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
+  <link rel="modulepreload" crossorigin href="assets/gsap-CzGW6FVa.js">
+  <link rel="stylesheet" crossorigin href="assets/index-C_I5fQ9O.css">
   <link rel="stylesheet" href="assets/css/smart-epsilon-theme.css">
 </head>
 <body>
@@ -245,38 +246,39 @@
 </header>
 
     <!-- HERO SECTION -->
-    <section class="section-padding bg-soft" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+      <div class="hero-map" id="hero-map" aria-hidden="true"></div>
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
 
-      <div class="container" style="position: relative; z-index: 2;">
+      <div class="stage__inner container" style="position: relative; z-index: 2;">
         <div class="grid-2col" style="align-items: center; grid-template-columns: 1.05fr 0.95fr; gap: 48px;">
           <div>
-            <span class="badge badge--purple" style="margin-bottom: 20px; display: inline-flex; align-items: center; gap: 6px;"><svg class="icon" width="14" height="14"><use href="#icon-shield"/></svg> ANTI-COUNTERFEITING SOLUTION</span>
-            <h1 class="page-title">Give counterfeiters three problems, not one.</h1>
-            <p class="page-subtitle">Smart Epsilon protects every unit with overt, covert, and forensic verification working together — so a fake doesn't just need to look right, it needs to beat three independent layers at once.</p>
+            <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Anti-Counterfeiting Solution</p>
+            <h1 class="page-title" style="color: #ffffff;">Give counterfeiters three problems, not one.</h1>
+            <p class="page-subtitle" style="color: rgba(243, 244, 246, 0.85);">Smart Epsilon protects every unit with overt, covert, and forensic verification working together — so a fake doesn't just need to look right, it needs to beat three independent layers at once.</p>
 
             <div class="trust-chips-row">
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> Verified in seconds</div>
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> No device required for first check</div>
-              <div class="trust-chip"><svg class="icon" width="14" height="14" style="color:var(--se-teal);"><use href="#icon-check"/></svg> Live in ~6 weeks</div>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> Verified in seconds</span>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> No device required for first check</span>
+              <span class="features-pill-tag"><svg class="icon" width="14" height="14"><use href="#icon-check"/></svg> Live in ~6 weeks</span>
             </div>
 
             <div style="display: flex; gap: 16px; align-items: center;">
-              <a href="#cta" class="btn btn-primary" style="padding: 14px 28px;">See It Work On Your SKU <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"/></svg></a>
+              <span data-magnetic><a href="#cta" class="btn btn-primary" style="padding: 14px 28px;">See It Work On Your SKU <svg class="icon" width="16" height="16"><use href="#icon-arrow-right"/></svg></a></span>
               <a href="#three-layers" class="btn btn-secondary" style="padding: 14px 24px;">Explore Three Layers ↓</a>
             </div>
           </div>
 
-          <!-- Hero Visual: Live Scan Badge -->
+          <!-- Hero Visual Badge -->
           <div class="light-card" style="border-color: rgba(107, 98, 172, 0.25); background: #ffffff; box-shadow: var(--shadow-lg);">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; border-bottom: 1px solid var(--se-line); padding-bottom: 14px;">
               <div style="display: flex; align-items: center; gap: 10px;">
                 <span style="width: 10px; height: 10px; border-radius: 50%; background: var(--se-teal); display: inline-block;"></span>
                 <span style="font-weight: 700; font-size: 14px; color: var(--se-ink);">SMART EPSILON VERIFICATION PORTAL</span>
               </div>
-              <span class="badge badge--teal">LIVE SCAN RESULT</span>
+              <span class="features-pill-tag" style="background: rgba(13,148,136,0.1); color: var(--se-teal); font-weight: 700;">LIVE SCAN RESULT</span>
             </div>
 
             <div style="background: var(--se-surface-tint); border-radius: var(--radius-md); padding: 24px; text-align: center; border: 1px solid rgba(13, 148, 136, 0.2); margin-bottom: 20px;">
@@ -307,10 +309,10 @@
     </section>
 
     <!-- THE COST OF NOT KNOWING -->
-    <section class="section-padding">
-      <div class="container">
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
-          <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">REAL-WORLD RISKS</span>
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Real-world risks</p>
           <h2 class="section-title">The Cost of Not Knowing</h2>
           <p class="card-body">These aren't customer complaints. They're the moments a single fake becomes a legal, financial, or reputational event.</p>
         </div>
@@ -340,10 +342,10 @@
     </section>
 
     <!-- 3 LAYERS TAB MODULE WITH REAL VISUAL IMAGES -->
-    <section id="three-layers" class="section-padding bg-soft">
-      <div class="container">
+    <section id="three-layers" class="stage bg-soft" data-reveal>
+      <div class="stage__inner container">
         <div style="max-width: 720px; margin-bottom: 40px;">
-          <span class="badge badge--teal" style="margin-bottom: 14px; display: inline-block;">THREE LAYERS — ONE FRAMEWORK, NO GAPS</span>
+          <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">Three Layers — One Framework, No Gaps</p>
           <h2 class="section-title">Most anti-counterfeiting stops at one method. A single method is exactly what a counterfeiter needs to learn to copy.</h2>
         </div>
 
@@ -365,7 +367,7 @@
         <!-- Tab 1: Overt with Image -->
         <div class="tab-panel-item active" id="tab-overt">
           <div class="light-card">
-            <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">OVERT VERIFICATION</span>
+            <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Overt Verification</p>
             <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Holographic Security Label</h3>
             <p class="card-body" style="margin-bottom: 24px;">Overt protection can take many accepted forms — holograms, color-shifting inks, tamper-evident seals. Smart Epsilon uses a tamper-evident, nano-OVD holographic label anyone can verify with the naked eye, no device required, before a single scan happens.</p>
             <div style="display: flex; gap: 16px; font-size: 14px; color: var(--se-teal); font-weight: 700;">
@@ -382,7 +384,7 @@
         <!-- Tab 2: Covert with Image -->
         <div class="tab-panel-item" id="tab-covert">
           <div class="light-card">
-            <span class="badge badge--teal" style="margin-bottom: 14px; display: inline-block;">COVERT DETECTION</span>
+            <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">Covert Detection</p>
             <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Geo-Tagged Clone Detection</h3>
             <p class="card-body" style="margin-bottom: 24px;">Covert protection can take many accepted forms — UV inks, embedded watermarks, encrypted codes. Smart Epsilon uses geo-tagged clone detection — every genuine scan is logged by location, and the moment the same code is scanned somewhere it shouldn't be, it's flagged automatically.</p>
             <div style="display: flex; gap: 16px; font-size: 14px; color: var(--se-teal); font-weight: 700;">
@@ -399,7 +401,7 @@
         <!-- Tab 3: Forensic with Image -->
         <div class="tab-panel-item" id="tab-forensic">
           <div class="light-card">
-            <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">FORENSIC AUTHENTICATION</span>
+            <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Forensic Authentication</p>
             <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">AI Watermark Authentication</h3>
             <p class="card-body" style="margin-bottom: 24px;">An invisible marker embedded at the point of print, readable only by Smart Epsilon's verification system — the layer a counterfeiter doesn't even know to look for.</p>
             <div style="display: flex; gap: 16px; font-size: 14px; color: var(--se-teal); font-weight: 700;">
@@ -416,10 +418,10 @@
     </section>
 
     <!-- STEPPER PROCESS TIMELINE -->
-    <section class="section-padding">
-      <div class="container">
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 36px auto;">
-          <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">ROLLOUT SEQUENCE</span>
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Rollout sequence</p>
           <h2 class="section-title">One rollout process. Sized to what you're deploying.</h2>
           <p class="card-body">A single line on one SKU moves fast. A multi-site, multi-ERP rollout takes longer. The sequence below is what stays constant either way.</p>
         </div>
@@ -460,10 +462,10 @@
     </section>
 
     <!-- EXECUTIVE FAQ ACCORDION -->
-    <section class="section-padding bg-soft">
-      <div class="container" style="max-width: 900px;">
+    <section class="stage bg-soft" data-reveal>
+      <div class="stage__inner container" style="max-width: 900px;">
         <div style="text-align: center; margin-bottom: 40px;">
-          <span class="badge badge--purple" style="margin-bottom: 14px; display: inline-block;">BEFORE YOU ASK</span>
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Before you ask</p>
           <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
 
@@ -674,8 +676,31 @@
     </div>
   </div>
 </footer>
+    
+<div class="nav-drawer" id="nav-drawer" hidden>
+  <div class="nav-drawer-head">
+    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon" height="32" />
+    <button class="drawer-close nav-toggle" type="button" aria-label="Close menu"><svg class="icon" width="20" height="20"><use href="#icon-close"/></svg></button>
+  </div>
+  <nav class="nav-drawer-list" aria-label="Mobile">
+    <details class="nav-drawer-mega">
+      <summary>Solutions</summary>
+      <div class="nav-drawer-sub">
+        <a href="solution-anti-counterfeiting.html">Track &amp; Trace</a>
+        <a href="solution-anti-counterfeiting.html">Anti-Counterfeiting Solution</a>
+      </div>
+    </details>
+    <a href="industry-template.html">Industries</a>
+    <a href="case-study-template.html">Case Studies</a>
+    <a href="index.html#why">Why Smart Epsilon</a>
+    <a href="#cta">Contact</a>
+  </nav>
+  <div class="nav-drawer-cta"><a class="btn btn-primary" href="#cta">Schedule a Demo</a></div>
+</div>
+
   </div>
 
+  <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
 </body>
 </html>
