@@ -443,3 +443,41 @@ body {
     flex-direction: column;
   }
 }
+
+/* INTERNAL HERO OVERRIDE FOR DEEP NAVY #0b1220 AND CRISP TECH GRID LINES */
+.stage--hero.internal-hero {
+  background-color: #0b1220 !important;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.2) 1.2px, transparent 1.2px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px) !important;
+  background-size: 32px 32px !important;
+  color: #ffffff !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.stage--hero.internal-hero .hero-canvas-container {
+  display: none !important;
+}
+
+.stage--hero.internal-hero .eyebrow {
+  color: #38bdf8 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+}
+
+.stage--hero.internal-hero .page-title {
+  color: #ffffff !important;
+}
+
+.stage--hero.internal-hero .page-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.stage--hero.internal-hero .features-pill-tag {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
