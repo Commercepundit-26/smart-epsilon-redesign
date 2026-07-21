@@ -588,9 +588,12 @@ body {
 
 
 
-/* INTERNAL HERO CLEAN DARK PROBLEM GRID (ADDITIONAL GRID LINES REMOVED) */
+
+
+
+/* INTERNAL HERO 3-COLOR GRID MATRIX (NO DOTS) */
 .stage--hero.internal-hero {
-  background-color: #0b1220 !important;
+  background-color: #0b1220 !important; /* Color 1: Background Color */
   background-image: none !important;
   position: relative !important;
   overflow: hidden !important;
@@ -604,38 +607,24 @@ body {
   display: grid !important;
   grid-template-columns: repeat(12, 1fr) !important;
   grid-template-rows: repeat(6, 1fr) !important;
-  opacity: 0.18 !important;
+  opacity: 0.2 !important;
   pointer-events: auto !important;
   z-index: 1 !important;
 }
 
 .stage--hero.internal-hero .problem-grid-cell {
-  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important; /* Color 2: Box Grid Line Color */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   position: relative !important;
   transition: background-color 0.3s ease, border-color 0.3s ease !important;
 }
 
 .stage--hero.internal-hero .problem-grid-cell .cell-dot {
-  position: absolute !important;
-  top: -3px !important;
-  left: -3px !important;
-  width: 5px !important;
-  height: 5px !important;
-  border-radius: 50% !important;
-  background: rgba(255, 255, 255, 0.25) !important;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+  display: none !important; /* REMOVE ALL DOTS */
 }
 
 .stage--hero.internal-hero .problem-grid-cell:hover,
 .stage--hero.internal-hero .problem-grid-cell.active {
-  background-color: rgba(13, 148, 136, 0.12) !important;
-  border-color: rgba(13, 148, 136, 0.3) !important;
-}
-
-.stage--hero.internal-hero .problem-grid-cell:hover .cell-dot,
-.stage--hero.internal-hero .problem-grid-cell.active .cell-dot {
-  background: var(--se-teal) !important;
-  transform: scale(2) !important;
-  box-shadow: 0 0 10px var(--se-teal) !important;
+  background-color: rgba(13, 148, 136, 0.18) !important; /* Color 3: Brand Teal Highlight Color */
+  border-color: rgba(13, 148, 136, 0.5) !important;
 }
