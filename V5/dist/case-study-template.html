@@ -245,7 +245,8 @@
   </div>
 </header>
 
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; position: relative;">
+    <!-- HERO SECTION WITH TECH GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -255,21 +256,22 @@
         <h1 class="page-title" style="color: #ffffff; font-size: clamp(2.2rem, 4.5vw, 3.5rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem;">How the World's Largest Agrochemical Company Cut Counterfeits Across 10+ Countries</h1>
         <p class="page-subtitle" style="color: rgba(255, 255, 255, 0.85); font-size: 1.125rem; margin: 0 auto 40px auto;">Deploying unit-level serialization and 3-layer verification across multi-plant operations without interrupting existing production line speeds.</p>
 
+        <!-- ANIMATED COUNTER METRICS -->
         <div class="grid-3col" style="margin-top: 40px;">
           <div class="light-card" style="text-align: center; background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-            <div style="font-size: 48px; font-weight: 800; color: var(--se-teal); line-height: 1; margin-bottom: 8px;">99.2%</div>
+            <div style="font-size: 52px; font-weight: 800; color: var(--se-teal); line-height: 1; margin-bottom: 8px;" class="counter-num" data-target="99.2" data-suffix="%">0%</div>
             <div style="font-size: 15px; font-weight: 700; color: var(--se-ink);">Authenticity Verification</div>
             <div style="font-size: 13px; color: var(--se-muted); margin-top: 4px;">Field team spots clones before customers</div>
           </div>
 
           <div class="light-card" style="text-align: center; background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-            <div style="font-size: 48px; font-weight: 800; color: var(--se-purple-deep); line-height: 1; margin-bottom: 8px;">320M+</div>
+            <div style="font-size: 52px; font-weight: 800; color: var(--se-purple-deep); line-height: 1; margin-bottom: 8px;" class="counter-num" data-target="320" data-suffix="M+">0M+</div>
             <div style="font-size: 15px; font-weight: 700; color: var(--se-ink);">Units Serialized</div>
             <div style="font-size: 13px; color: var(--se-muted); margin-top: 4px;">Tracked across 10+ global markets</div>
           </div>
 
           <div class="light-card" style="text-align: center; background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-            <div style="font-size: 48px; font-weight: 800; color: var(--se-teal); line-height: 1; margin-bottom: 8px;">25%</div>
+            <div style="font-size: 52px; font-weight: 800; color: var(--se-teal); line-height: 1; margin-bottom: 8px;" class="counter-num" data-target="25" data-suffix="%">0%</div>
             <div style="font-size: 15px; font-weight: 700; color: var(--se-ink);">Reduction in Stockouts</div>
             <div style="font-size: 13px; color: var(--se-muted); margin-top: 4px;">Channel inventory visibility restored</div>
           </div>
@@ -277,39 +279,129 @@
       </div>
     </section>
 
+    <!-- CLIENT PROFILE & THE CHALLENGE (1ST ROW = IMAGE, 2ND ROW = CONTENT) -->
     <section class="stage" data-reveal>
       <div class="stage__inner container">
         <div class="grid-2col" style="gap: 40px;">
-          <div class="light-card">
-            <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Client Profile</p>
-            <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Global Agrochemical Manufacturer</h3>
-            <p class="card-body" style="margin-bottom: 16px;">
-              A Fortune 500 chemical and crop protection manufacturer supplying high-value formulations to distributors, retailers, and commercial farms in over 10 countries.
-            </p>
-            <div style="font-size: 14px; color: var(--se-muted); display: flex; flex-direction: column; gap: 8px;">
-              <span>• <strong>Scale:</strong> 320M+ annual product units</span>
-              <span>• <strong>ERP Stack:</strong> SAP S/4HANA Enterprise Suite</span>
-              <span>• <strong>Deployment:</strong> 14 manufacturing plants across 3 continents</span>
+          <!-- Card 1: Client Profile -->
+          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <!-- 1st Row: Image -->
+            <div style="height: 220px; overflow: hidden; position: relative;">
+              <img src="assets/warehouse-ar-BZTWCRGZ.webp" alt="Global Agrochemical Manufacturing Facility" style="width: 100%; height: 100%; object-fit: cover;" />
+              <span class="features-pill-tag" style="position: absolute; top: 16px; left: 16px; background: rgba(11,18,32,0.85); color: #60a5fa; border: 1px solid rgba(255,255,255,0.2);">GLOBAL SCALE</span>
+            </div>
+            <!-- 2nd Row: Content -->
+            <div style="padding: 32px;">
+              <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.5rem;">Client Profile</p>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Global Agrochemical Manufacturer</h3>
+              <p class="card-body" style="margin-bottom: 16px;">
+                A Fortune 500 chemical and crop protection manufacturer supplying high-value formulations to distributors, retailers, and commercial farms in over 10 countries.
+              </p>
+              <div style="font-size: 14px; color: var(--se-muted); display: flex; flex-direction: column; gap: 8px;">
+                <span>• <strong>Scale:</strong> 320M+ annual product units</span>
+                <span>• <strong>ERP Stack:</strong> SAP S/4HANA Enterprise Suite</span>
+                <span>• <strong>Deployment:</strong> 14 manufacturing plants across 3 continents</span>
+              </div>
             </div>
           </div>
 
-          <div class="light-card">
-            <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">The Challenge</p>
-            <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Widespread Clones &amp; Supply Chain Blind Spots</h3>
-            <p class="card-body" style="margin-bottom: 14px;">
-              Sophisticated counterfeiters were copying single-layer QR labels on high-value chemical SKUs. Duplicate products entered regional distributor networks unnoticed, leading to crop failure complaints, brand liability, and millions in lost revenue.
-            </p>
-            <p class="card-body">
-              Furthermore, existing ERP modules couldn't track individual bottle identity beyond the plant warehouse door.
-            </p>
+          <!-- Card 2: The Challenge -->
+          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+            <!-- 1st Row: Image -->
+            <div style="height: 220px; overflow: hidden; position: relative;">
+              <img src="assets/counterfeit-risk-DSbKmjl8.webp" alt="Agrochemical Counterfeiting Inspection" style="width: 100%; height: 100%; object-fit: cover;" />
+              <span class="features-pill-tag" style="position: absolute; top: 16px; left: 16px; background: rgba(11,18,32,0.85); color: #ef4444; border: 1px solid rgba(255,255,255,0.2);">HIGH RISK</span>
+            </div>
+            <!-- 2nd Row: Content -->
+            <div style="padding: 32px;">
+              <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.5rem;">The Challenge</p>
+              <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Widespread Clones &amp; Supply Chain Blind Spots</h3>
+              <p class="card-body" style="margin-bottom: 14px;">
+                Sophisticated counterfeiters were copying single-layer QR labels on high-value chemical SKUs. Duplicate products entered regional distributor networks unnoticed, leading to crop failure complaints, brand liability, and millions in lost revenue.
+              </p>
+              <p class="card-body">
+                Furthermore, existing ERP modules couldn't track individual bottle identity beyond the plant warehouse door.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- UNIQUE CASE STUDY SECTION 1: SYSTEM ARCHITECTURE & INTEGRATION -->
+    <section class="stage bg-soft" data-reveal>
+      <div class="stage__inner container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Technical Implementation</p>
+          <h2 class="section-title">Zero Line Slowdown Serialization</h2>
+          <p class="card-body">How Smart Epsilon integrated unit-level printing and 3-layer verification into 14 high-speed bottling lines without reducing OEE.</p>
+        </div>
+
+        <div class="grid-3col">
+          <div class="light-card">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
+              <i class="ti ti-cpu"></i>
+            </div>
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">Edge Controllers</h4>
+            <p class="card-body">On-line industrial PCs processing 600 bottles per minute with millisecond barcode validation and camera triggers.</p>
+          </div>
+
+          <div class="light-card">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(13,148,136,0.12); color: var(--se-teal); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
+              <i class="ti ti-database"></i>
+            </div>
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">SAP S/4HANA Sync</h4>
+            <p class="card-body">Bidirectional API connector syncing serial numbers with ERP production orders without database lockup.</p>
+          </div>
+
+          <div class="light-card">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
+              <i class="ti ti-devices-pc"></i>
+            </div>
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">Field Mobile Scanner</h4>
+            <p class="card-body">Handheld Android audit app used by regional sales and brand protection inspectors across 10+ countries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE CASE STUDY SECTION 2: MILESTONE IMPACT TIMELINE -->
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
+          <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">Rollout Milestones</p>
+          <h2 class="section-title">Timeline to Total Channel Visibility</h2>
+        </div>
+
+        <div class="process-stepper-grid" style="grid-template-columns: repeat(4, 1fr);">
+          <div class="stepper-card-item">
+            <div class="step-badge-num">30D</div>
+            <div class="step-card-title">Pilot Line Active</div>
+            <div class="step-card-desc">1st plant online in Gujarat with zero line downtime during installation.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">60D</div>
+            <div class="step-card-title">Multi-Plant Sync</div>
+            <div class="step-card-desc">5 additional lines integrated with SAP warehouse aggregation.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">90D</div>
+            <div class="step-card-title">100M Units Live</div>
+            <div class="step-card-desc">First 100M serialized bottles deployed across regional distributors.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">180D</div>
+            <div class="step-card-title">99.2% Clone Detection</div>
+            <div class="step-card-desc">Zero counterfeit claims reached farmers across 10+ international markets.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE TESTIMONIAL QUOTE -->
     <section class="stage bg-soft" data-reveal>
       <div class="stage__inner container" style="max-width: 900px;">
-        <div class="light-card" style="padding: 48px; text-align: center; border-color: rgba(107, 98, 172, 0.3); background: #ffffff;">
+        <div class="light-card" style="padding: 48px; text-align: center; border-color: rgba(107, 98, 172, 0.3); background: #ffffff; box-shadow: var(--shadow-lg);">
           <i class="ti ti-quote" style="font-size: 48px; color: var(--se-purple); display: block; margin-bottom: 16px;"></i>
           <p style="font-size: 22px; font-weight: 600; line-height: 1.4; color: var(--se-ink); margin-bottom: 24px;">
             "Within two quarters, Smart Epsilon’s anti-counterfeiting solution significantly reduced counterfeit-related complaints. Our field team can now identify cloned products before they reach customers."
@@ -519,5 +611,41 @@
 
   <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
+  <script>
+    // JS Animated Counter Script
+    document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter-num');
+      const speed = 200; // lower = faster
+
+      const runCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const suffix = counter.getAttribute('data-suffix') || '';
+        let count = 0;
+        const inc = target / 50;
+
+        const updateCount = () => {
+          count += inc;
+          if (count < target) {
+            counter.innerText = (target % 1 !== 0 ? count.toFixed(1) : Math.ceil(count)) + suffix;
+            setTimeout(updateCount, 25);
+          } else {
+            counter.innerText = target + suffix;
+          }
+        };
+        updateCount();
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            runCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(c => observer.observe(c));
+    });
+  </script>
 </body>
 </html>

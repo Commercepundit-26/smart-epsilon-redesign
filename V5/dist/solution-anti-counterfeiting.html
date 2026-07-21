@@ -245,8 +245,8 @@
   </div>
 </header>
 
-    <!-- DARK HERO SECTION (High contrast text, no #hero-map in hero) -->
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; position: relative;">
+    <!-- DARK HERO SECTION WITH GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -459,6 +459,100 @@
         </div>
       </div>
     </section>
+
+    <!-- CUSTOMER VOICES / TESTIMONIALS SECTION -->
+    <section class="stage stage--voices" id="voices" aria-labelledby="voices-title">
+    <div class="stage__inner">
+      <header class="voices-head" style="max-width: 800px; text-align: left; margin-bottom: 3rem;" data-reveal>
+        <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Customer voices</p>
+        <h2 id="voices-title" style="font-size: clamp(2.25rem, 5vw, 3.25rem); line-height: 1.1; margin: 0 0 1rem; color: var(--ink);">Real results from the teams using Smart Epsilon.</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--ink-soft); margin: 0; font-weight: 500;">See what supply chain and brand protection leaders<br />experienced after implementing the platform.</p>
+      </header>
+
+      <div
+        class="voices-slider"
+        data-voices-slider
+        data-voices-visible="2"
+        data-reveal
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Customer testimonials"
+      >
+        <div class="voices-slider__viewport">
+          <div class="voices-slider__track" aria-live="polite" aria-atomic="true">
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #8fb0ff"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within a quarter, we could see exactly what&rsquo;s moving through our channel in real time. Smart Epsilon resolved our stockout concerns almost completely.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">VP, Supply Chain</cite>
+                <span class="voice__role">National Lubricants Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #5be0c8"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within two quarters, Smart Epsilon’s anti-counterfeiting solution significantly reduced counterfeit-related complaints. Our field team can now identify cloned products before they reach customers.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Head of Brand Protection</cite>
+                <span class="voice__role">Agrochemicals Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice"
+              style="--voice-accent: #ffc978"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="3 of 3"
+              data-voice-slide
+              aria-hidden="true"
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Smart Epsilon integrated with our existing SAP setup without replacing any systems. We went live within weeks, and field adoption was faster than expected.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Director, Operations</cite>
+                <span class="voice__role">CPG and Packaged Foods</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="voices-slider__controls">
+          <button type="button" class="voices-slider__arrow" data-voice-prev aria-label="Previous testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M11.5 3.5L6 9l5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="voices-slider__dots" role="tablist" aria-label="Choose testimonial pair" data-voice-dots></div>
+
+          <button type="button" class="voices-slider__arrow" data-voice-next aria-label="Next testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M6.5 3.5L12 9l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="voices-slider__progress" aria-hidden="true">
+          <span class="voices-slider__progress-bar" data-voice-progress></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- EXECUTIVE FAQ ACCORDION -->
     <section class="stage bg-soft" data-reveal>

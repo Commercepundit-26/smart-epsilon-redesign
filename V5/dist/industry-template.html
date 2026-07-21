@@ -245,7 +245,8 @@
   </div>
 </header>
 
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; position: relative;">
+    <!-- DARK HERO SECTION WITH TECH GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -307,6 +308,7 @@
       </div>
     </section>
 
+    <!-- REDESIGNED SECTOR CHALLENGES (ICONS + BETTER DESIGN TREATMENT) -->
     <section class="stage" data-reveal>
       <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
@@ -315,29 +317,225 @@
           <p class="card-body">Agrochemical packaging faces extreme environmental conditions, high counterfeit incentives, and multi-layered distribution tiers.</p>
         </div>
 
-        <div class="grid-2col">
-          <div class="light-card">
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Easily Copied 1D/2D Barcodes</h4>
-            <p class="card-body">Standard QR codes can be photographed and printed onto fake formulations in bulk. Without covert geo-clone tracking, fakes go undetected until crop damage occurs.</p>
+        <div class="grid-2col" style="gap: 32px;">
+          <!-- Challenge 1 -->
+          <div class="light-card" style="padding: 32px; border-left: 4px solid #ef4444; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(239,68,68,0.1); color: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 24px; flex: none;">
+                <i class="ti ti-barcode"></i>
+              </div>
+              <div>
+                <span class="features-pill-tag" style="background: rgba(239,68,68,0.1); color: #ef4444; margin-bottom: 4px;">LABEL CLONING</span>
+                <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin: 0;">Easily Copied 1D/2D Barcodes</h4>
+              </div>
+            </div>
+            <p class="card-body" style="line-height: 1.6;">Standard QR codes can be photographed and printed onto fake formulations in bulk. Without covert geo-clone tracking, fakes go undetected until crop failure or chemical damage occurs in the field.</p>
           </div>
 
-          <div class="light-card">
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Distributor Channel Diversion</h4>
-            <p class="card-body">Subsidized products intended for one territory are diverted to secondary markets. Without automated receipt confirmation, sales teams lose visibility.</p>
+          <!-- Challenge 2 -->
+          <div class="light-card" style="padding: 32px; border-left: 4px solid #f59e0b; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(245,158,11,0.1); color: #f59e0b; display: flex; align-items: center; justify-content: center; font-size: 24px; flex: none;">
+                <i class="ti ti-truck-off"></i>
+              </div>
+              <div>
+                <span class="features-pill-tag" style="background: rgba(245,158,11,0.1); color: #f59e0b; margin-bottom: 4px;">CHANNEL LEAKAGE</span>
+                <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin: 0;">Distributor Channel Diversion</h4>
+              </div>
+            </div>
+            <p class="card-body" style="line-height: 1.6;">Subsidized chemical products intended for one state or territory are quietly diverted to secondary markets. Without automated receipt confirmation, sales teams lose channel discipline.</p>
           </div>
 
-          <div class="light-card">
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Slow Regulatory Audits</h4>
-            <p class="card-body">Reconstructing a lot's journey across 5 disparate software systems pulls IT, legal, and plant managers into multi-week war rooms when regulatory requests arrive.</p>
+          <!-- Challenge 3 -->
+          <div class="light-card" style="padding: 32px; border-left: 4px solid #3b82f6; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(59,130,246,0.1); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-size: 24px; flex: none;">
+                <i class="ti ti-gavel"></i>
+              </div>
+              <div>
+                <span class="features-pill-tag" style="background: rgba(59,130,246,0.1); color: #3b82f6; margin-bottom: 4px;">REGULATORY FRICTION</span>
+                <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin: 0;">Slow Regulatory Audits</h4>
+              </div>
+            </div>
+            <p class="card-body" style="line-height: 1.6;">Reconstructing a chemical lot's journey across 5 disparate software systems pulls IT, legal, and plant managers into multi-week war rooms when government inspection notices arrive.</p>
           </div>
 
-          <div class="light-card">
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Heavy Retraining Overhead</h4>
-            <p class="card-body">Complex WMS add-ons require months of staff retraining. Smart Epsilon equips plant and field operators with intuitive mobile workflows trained in under a week.</p>
+          <!-- Challenge 4 -->
+          <div class="light-card" style="padding: 32px; border-left: 4px solid #8b5cf6; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(139,92,246,0.1); color: #8b5cf6; display: flex; align-items: center; justify-content: center; font-size: 24px; flex: none;">
+                <i class="ti ti-subtask"></i>
+              </div>
+              <div>
+                <span class="features-pill-tag" style="background: rgba(139,92,246,0.1); color: #8b5cf6; margin-bottom: 4px;">OPERATIONAL COMPLEXITY</span>
+                <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin: 0;">Heavy Retraining Overhead</h4>
+              </div>
+            </div>
+            <p class="card-body" style="line-height: 1.6;">Complex WMS add-ons require months of staff retraining. Smart Epsilon equips plant floor operators and field sales reps with intuitive mobile workflows trained in under a week.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- UNIQUE INDUSTRY SECTION 1: TRACEABILITY PIPELINE ARCHITECTURE -->
+    <section class="stage bg-soft" data-reveal>
+      <div class="stage__inner container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
+          <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.75rem;">End-to-End Pipeline</p>
+          <h2 class="section-title">Plant-to-Farm Chain of Custody</h2>
+          <p class="card-body">A single continuous record of identity, ownership, and scan location from chemical synthesis to retail purchase.</p>
+        </div>
+
+        <div class="process-stepper-grid" style="grid-template-columns: repeat(5, 1fr);">
+          <div class="stepper-card-item">
+            <div class="step-badge-num">01</div>
+            <div class="step-card-title">Plant Printing</div>
+            <div class="step-card-desc">High-speed serialization &amp; nano-OVD label application at 600 BPM.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">02</div>
+            <div class="step-card-title">Aggregation</div>
+            <div class="step-card-desc">Parent-child bundle, case, and pallet pairing with GS1 EPCIS standards.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">03</div>
+            <div class="step-card-title">Depot Transfer</div>
+            <div class="step-card-desc">Mobile dispatch verification at central distribution hubs.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">04</div>
+            <div class="step-card-title">Retailer Receipt</div>
+            <div class="step-card-desc">Geo-tagged check-in confirming authorized regional inventory.</div>
+          </div>
+          <div class="stepper-card-item">
+            <div class="step-badge-num">05</div>
+            <div class="step-card-title">Farm Validation</div>
+            <div class="step-card-desc">Instant consumer naked-eye check and mobile scan confirmation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE INDUSTRY SECTION 2: REGULATORY & COMPLIANCE MATRIX -->
+    <section class="stage" data-reveal>
+      <div class="stage__inner container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
+          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Compliance Ready</p>
+          <h2 class="section-title">Built-In Global Agrochemical Standards</h2>
+        </div>
+
+        <div class="grid-3col">
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-certificate" style="color: var(--se-teal);"></i> GS1 EPCIS 2.0</h4>
+            <p class="card-body">Native event-data formatting compatible with international regulatory portals and supply chain partners.</p>
+          </div>
+
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-map-pins" style="color: var(--se-purple);"></i> Anti-Diversion Geofencing</h4>
+            <p class="card-body">Automated warning triggers when restricted agrochemical SKUs are scanned outside approved postal zones.</p>
+          </div>
+
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-shield-check" style="color: var(--se-teal);"></i> ISO 27001 &amp; SOC 2</h4>
+            <p class="card-body">Bank-grade data encryption ensuring your proprietary customer list and shipment volumes remain private.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER VOICES / TESTIMONIALS SECTION -->
+    <section class="stage stage--voices" id="voices" aria-labelledby="voices-title">
+    <div class="stage__inner">
+      <header class="voices-head" style="max-width: 800px; text-align: left; margin-bottom: 3rem;" data-reveal>
+        <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Customer voices</p>
+        <h2 id="voices-title" style="font-size: clamp(2.25rem, 5vw, 3.25rem); line-height: 1.1; margin: 0 0 1rem; color: var(--ink);">Real results from the teams using Smart Epsilon.</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--ink-soft); margin: 0; font-weight: 500;">See what supply chain and brand protection leaders<br />experienced after implementing the platform.</p>
+      </header>
+
+      <div
+        class="voices-slider"
+        data-voices-slider
+        data-voices-visible="2"
+        data-reveal
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Customer testimonials"
+      >
+        <div class="voices-slider__viewport">
+          <div class="voices-slider__track" aria-live="polite" aria-atomic="true">
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #8fb0ff"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within a quarter, we could see exactly what&rsquo;s moving through our channel in real time. Smart Epsilon resolved our stockout concerns almost completely.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">VP, Supply Chain</cite>
+                <span class="voice__role">National Lubricants Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #5be0c8"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within two quarters, Smart Epsilon’s anti-counterfeiting solution significantly reduced counterfeit-related complaints. Our field team can now identify cloned products before they reach customers.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Head of Brand Protection</cite>
+                <span class="voice__role">Agrochemicals Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice"
+              style="--voice-accent: #ffc978"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="3 of 3"
+              data-voice-slide
+              aria-hidden="true"
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Smart Epsilon integrated with our existing SAP setup without replacing any systems. We went live within weeks, and field adoption was faster than expected.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Director, Operations</cite>
+                <span class="voice__role">CPG and Packaged Foods</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="voices-slider__controls">
+          <button type="button" class="voices-slider__arrow" data-voice-prev aria-label="Previous testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M11.5 3.5L6 9l5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="voices-slider__dots" role="tablist" aria-label="Choose testimonial pair" data-voice-dots></div>
+
+          <button type="button" class="voices-slider__arrow" data-voice-next aria-label="Next testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M6.5 3.5L12 9l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="voices-slider__progress" aria-hidden="true">
+          <span class="voices-slider__progress-bar" data-voice-progress></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section class="stage stage--cta" id="cta">
     <div class="hero-map" id="hero-map" aria-hidden="true"></div>
