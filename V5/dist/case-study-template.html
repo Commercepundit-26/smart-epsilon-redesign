@@ -245,8 +245,8 @@
   </div>
 </header>
 
-    <!-- HERO SECTION WITH TECH GRID EFFECT -->
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: #0b1220; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
+    <!-- HERO SECTION WITH GRADIENT & GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0b1220 0%, #111c2e 50%, #16243d 100%); background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -279,25 +279,25 @@
       </div>
     </section>
 
-    <!-- CLIENT PROFILE & THE CHALLENGE (1ST ROW = IMAGE, 2ND ROW = CONTENT) -->
+    <!-- CLIENT PROFILE & THE CHALLENGE (1ST ROW = IMAGE 330px HEIGHT (+50%), 2ND ROW = CONTENT) -->
     <section class="stage" data-reveal>
       <div class="stage__inner container">
         <div class="grid-2col" style="gap: 40px;">
           <!-- Card 1: Client Profile -->
-          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-            <!-- 1st Row: Image -->
-            <div style="height: 220px; overflow: hidden; position: relative;">
-              <img src="assets/warehouse-ar-BZTWCRGZ.webp" alt="Global Agrochemical Manufacturing Facility" style="width: 100%; height: 100%; object-fit: cover;" />
-              <span class="features-pill-tag" style="position: absolute; top: 16px; left: 16px; background: rgba(11,18,32,0.85); color: #60a5fa; border: 1px solid rgba(255,255,255,0.2);">GLOBAL SCALE</span>
+          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-md);">
+            <!-- 1st Row: Ultra High-Res Image (330px Height, +50% increase) -->
+            <div style="height: 330px; overflow: hidden; position: relative;">
+              <img src="assets/images/client_factory.jpg" alt="Global Agrochemical Manufacturing Facility" style="width: 100%; height: 100%; object-fit: cover;" />
+              <span class="features-pill-tag" style="position: absolute; top: 20px; left: 20px; background: rgba(11,18,32,0.85); color: #60a5fa; border: 1px solid rgba(255,255,255,0.25); font-weight: 700;">GLOBAL SCALE</span>
             </div>
             <!-- 2nd Row: Content -->
-            <div style="padding: 32px;">
+            <div style="padding: 36px;">
               <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.5rem;">Client Profile</p>
-              <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Global Agrochemical Manufacturer</h3>
-              <p class="card-body" style="margin-bottom: 16px;">
+              <h3 style="font-size: 26px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Global Agrochemical Manufacturer</h3>
+              <p class="card-body" style="margin-bottom: 16px; font-size: 15px; line-height: 1.6;">
                 A Fortune 500 chemical and crop protection manufacturer supplying high-value formulations to distributors, retailers, and commercial farms in over 10 countries.
               </p>
-              <div style="font-size: 14px; color: var(--se-muted); display: flex; flex-direction: column; gap: 8px;">
+              <div style="font-size: 14px; color: var(--se-muted); display: flex; flex-direction: column; gap: 10px;">
                 <span>• <strong>Scale:</strong> 320M+ annual product units</span>
                 <span>• <strong>ERP Stack:</strong> SAP S/4HANA Enterprise Suite</span>
                 <span>• <strong>Deployment:</strong> 14 manufacturing plants across 3 continents</span>
@@ -306,20 +306,20 @@
           </div>
 
           <!-- Card 2: The Challenge -->
-          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-            <!-- 1st Row: Image -->
-            <div style="height: 220px; overflow: hidden; position: relative;">
-              <img src="assets/counterfeit-risk-DSbKmjl8.webp" alt="Agrochemical Counterfeiting Inspection" style="width: 100%; height: 100%; object-fit: cover;" />
-              <span class="features-pill-tag" style="position: absolute; top: 16px; left: 16px; background: rgba(11,18,32,0.85); color: #ef4444; border: 1px solid rgba(255,255,255,0.2);">HIGH RISK</span>
+          <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-md);">
+            <!-- 1st Row: Ultra High-Res Image (330px Height, +50% increase) -->
+            <div style="height: 330px; overflow: hidden; position: relative;">
+              <img src="assets/images/challenge_scan.jpg" alt="Agrochemical Counterfeiting Inspection" style="width: 100%; height: 100%; object-fit: cover;" />
+              <span class="features-pill-tag" style="position: absolute; top: 20px; left: 20px; background: rgba(11,18,32,0.85); color: #ef4444; border: 1px solid rgba(255,255,255,0.25); font-weight: 700;">HIGH RISK</span>
             </div>
             <!-- 2nd Row: Content -->
-            <div style="padding: 32px;">
+            <div style="padding: 36px;">
               <p class="eyebrow" style="color: var(--se-teal); margin-bottom: 0.5rem;">The Challenge</p>
-              <h3 style="font-size: 24px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Widespread Clones &amp; Supply Chain Blind Spots</h3>
-              <p class="card-body" style="margin-bottom: 14px;">
+              <h3 style="font-size: 26px; font-weight: 800; color: var(--se-ink); margin-bottom: 14px;">Widespread Clones &amp; Supply Chain Blind Spots</h3>
+              <p class="card-body" style="margin-bottom: 14px; font-size: 15px; line-height: 1.6;">
                 Sophisticated counterfeiters were copying single-layer QR labels on high-value chemical SKUs. Duplicate products entered regional distributor networks unnoticed, leading to crop failure complaints, brand liability, and millions in lost revenue.
               </p>
-              <p class="card-body">
+              <p class="card-body" style="font-size: 15px; line-height: 1.6;">
                 Furthermore, existing ERP modules couldn't track individual bottle identity beyond the plant warehouse door.
               </p>
             </div>
@@ -328,7 +328,7 @@
       </div>
     </section>
 
-    <!-- UNIQUE CASE STUDY SECTION 1: SYSTEM ARCHITECTURE & INTEGRATION -->
+    <!-- TECHNICAL IMPLEMENTATION WITH PROPER ICONS -->
     <section class="stage bg-soft" data-reveal>
       <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
@@ -338,34 +338,34 @@
         </div>
 
         <div class="grid-3col">
-          <div class="light-card">
-            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
+          <div class="light-card" style="padding: 32px; background: #ffffff;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.15); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
               <i class="ti ti-cpu"></i>
             </div>
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">Edge Controllers</h4>
-            <p class="card-body">On-line industrial PCs processing 600 bottles per minute with millisecond barcode validation and camera triggers.</p>
+            <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">Edge Controllers</h4>
+            <p class="card-body" style="line-height: 1.6;">On-line industrial PCs processing 600 bottles per minute with millisecond barcode validation and camera triggers.</p>
           </div>
 
-          <div class="light-card">
-            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(13,148,136,0.12); color: var(--se-teal); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
+          <div class="light-card" style="padding: 32px; background: #ffffff;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(13,148,136,0.15); color: var(--se-teal); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
               <i class="ti ti-database"></i>
             </div>
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">SAP S/4HANA Sync</h4>
-            <p class="card-body">Bidirectional API connector syncing serial numbers with ERP production orders without database lockup.</p>
+            <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">SAP S/4HANA Sync</h4>
+            <p class="card-body" style="line-height: 1.6;">Bidirectional API connector syncing serial numbers with ERP production orders without database lockup.</p>
           </div>
 
-          <div class="light-card">
-            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 24px;">
-              <i class="ti ti-devices-pc"></i>
+          <div class="light-card" style="padding: 32px; background: #ffffff;">
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.15); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
+              <i class="ti ti-device-mobile"></i>
             </div>
-            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 8px;">Field Mobile Scanner</h4>
-            <p class="card-body">Handheld Android audit app used by regional sales and brand protection inspectors across 10+ countries.</p>
+            <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">Field Mobile Scanner</h4>
+            <p class="card-body" style="line-height: 1.6;">Handheld Android audit app used by regional sales and brand protection inspectors across 10+ countries.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- UNIQUE CASE STUDY SECTION 2: MILESTONE IMPACT TIMELINE -->
+    <!-- MILESTONE IMPACT TIMELINE -->
     <section class="stage" data-reveal>
       <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
@@ -398,19 +398,99 @@
       </div>
     </section>
 
-    <!-- EXECUTIVE TESTIMONIAL QUOTE -->
-    <section class="stage bg-soft" data-reveal>
-      <div class="stage__inner container" style="max-width: 900px;">
-        <div class="light-card" style="padding: 48px; text-align: center; border-color: rgba(107, 98, 172, 0.3); background: #ffffff; box-shadow: var(--shadow-lg);">
-          <i class="ti ti-quote" style="font-size: 48px; color: var(--se-purple); display: block; margin-bottom: 16px;"></i>
-          <p style="font-size: 22px; font-weight: 600; line-height: 1.4; color: var(--se-ink); margin-bottom: 24px;">
-            "Within two quarters, Smart Epsilon’s anti-counterfeiting solution significantly reduced counterfeit-related complaints. Our field team can now identify cloned products before they reach customers."
-          </p>
-          <div style="font-size: 16px; font-weight: 800; color: var(--se-ink);">Head of Brand Protection</div>
-          <div style="font-size: 14px; color: var(--se-purple); margin-top: 4px; font-weight: 600;">Agrochemicals Major</div>
+    <!-- CUSTOMER VOICES / TESTIMONIALS SECTION -->
+    <section class="stage stage--voices" id="voices" aria-labelledby="voices-title">
+    <div class="stage__inner">
+      <header class="voices-head" style="max-width: 800px; text-align: left; margin-bottom: 3rem;" data-reveal>
+        <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Customer voices</p>
+        <h2 id="voices-title" style="font-size: clamp(2.25rem, 5vw, 3.25rem); line-height: 1.1; margin: 0 0 1rem; color: var(--ink);">Real results from the teams using Smart Epsilon.</h2>
+        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--ink-soft); margin: 0; font-weight: 500;">See what supply chain and brand protection leaders<br />experienced after implementing the platform.</p>
+      </header>
+
+      <div
+        class="voices-slider"
+        data-voices-slider
+        data-voices-visible="2"
+        data-reveal
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Customer testimonials"
+      >
+        <div class="voices-slider__viewport">
+          <div class="voices-slider__track" aria-live="polite" aria-atomic="true">
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #8fb0ff"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within a quarter, we could see exactly what&rsquo;s moving through our channel in real time. Smart Epsilon resolved our stockout concerns almost completely.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">VP, Supply Chain</cite>
+                <span class="voice__role">National Lubricants Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice is-active"
+              style="--voice-accent: #5be0c8"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 of 3"
+              data-voice-slide
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Within two quarters, Smart Epsilon’s anti-counterfeiting solution significantly reduced counterfeit-related complaints. Our field team can now identify cloned products before they reach customers.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Head of Brand Protection</cite>
+                <span class="voice__role">Agrochemicals Major</span>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="voice"
+              style="--voice-accent: #ffc978"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="3 of 3"
+              data-voice-slide
+              aria-hidden="true"
+            >
+              <span class="voice__mark" aria-hidden="true">&ldquo;</span>
+              <p class="voice__quote">Smart Epsilon integrated with our existing SAP setup without replacing any systems. We went live within weeks, and field adoption was faster than expected.</p>
+              <footer class="voice__meta">
+                <cite class="voice__name">Director, Operations</cite>
+                <span class="voice__role">CPG and Packaged Foods</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="voices-slider__controls">
+          <button type="button" class="voices-slider__arrow" data-voice-prev aria-label="Previous testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M11.5 3.5L6 9l5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="voices-slider__dots" role="tablist" aria-label="Choose testimonial pair" data-voice-dots></div>
+
+          <button type="button" class="voices-slider__arrow" data-voice-next aria-label="Next testimonials">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M6.5 3.5L12 9l-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="voices-slider__progress" aria-hidden="true">
+          <span class="voices-slider__progress-bar" data-voice-progress></span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="stage stage--cta" id="cta">
     <div class="hero-map" id="hero-map" aria-hidden="true"></div>
@@ -612,17 +692,13 @@
   <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
   <script>
-    // JS Animated Counter Script
     document.addEventListener('DOMContentLoaded', () => {
       const counters = document.querySelectorAll('.counter-num');
-      const speed = 200; // lower = faster
-
       const runCounter = (counter) => {
         const target = +counter.getAttribute('data-target');
         const suffix = counter.getAttribute('data-suffix') || '';
         let count = 0;
         const inc = target / 50;
-
         const updateCount = () => {
           count += inc;
           if (count < target) {
@@ -634,7 +710,6 @@
         };
         updateCount();
       };
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -643,7 +718,6 @@
           }
         });
       }, { threshold: 0.5 });
-
       counters.forEach(c => observer.observe(c));
     });
   </script>
