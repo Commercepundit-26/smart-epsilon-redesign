@@ -547,3 +547,49 @@ body {
 
 [data-reveal].is-in-view .stepper-card-item:nth-child(5) { transition-delay: 0.45s; }
 [data-reveal].is-in-view .stepper-card-item:nth-child(6) { transition-delay: 0.55s; }
+
+/* DARK MODE INTERACTIVE MOUSE-REACTIVE HERO GRID */
+.stage--hero.internal-hero {
+  background-color: #0b1220 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.hero-interactive-grid {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  opacity: 0.85 !important;
+}
+
+.hero-grid-cell {
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  position: relative !important;
+  transition: background-color 0.35s ease, border-color 0.35s ease !important;
+}
+
+.hero-grid-cell::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -2px !important;
+  left: -2px !important;
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  transition: background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.hero-grid-cell.active {
+  background-color: rgba(56, 189, 248, 0.08) !important;
+  border-color: rgba(56, 189, 248, 0.35) !important;
+}
+
+.hero-grid-cell.active::after {
+  background: #38bdf8 !important;
+  transform: scale(2) !important;
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8 !important;
+}
