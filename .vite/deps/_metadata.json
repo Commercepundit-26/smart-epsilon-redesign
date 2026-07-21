@@ -1,0 +1,27 @@
+{
+  "hash": "3c418027",
+  "configHash": "9eb22f4f",
+  "lockfileHash": "3a1ed213",
+  "browserHash": "a9e23f1c",
+  "optimized": {
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "90c20a5b",
+      "needsInterop": false
+    },
+    "gsap/ScrollTrigger": {
+      "src": "../../node_modules/gsap/ScrollTrigger.js",
+      "file": "gsap_ScrollTrigger.js",
+      "fileHash": "1d2671d7",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "70eaaa10",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

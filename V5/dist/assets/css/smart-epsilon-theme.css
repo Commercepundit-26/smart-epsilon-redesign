@@ -444,62 +444,12 @@ body {
   }
 }
 
-/* INTERNAL HERO OVERRIDE FOR DEEP NAVY #0b1220 AND CRISP TECH GRID LINES */
-.stage--hero.internal-hero {
-  background-color: #0b1220 !important;
-  background-image: 
-    radial-gradient(rgba(255, 255, 255, 0.2) 1.2px, transparent 1.2px),
-    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px) !important;
-  background-size: 32px 32px !important;
-  color: #ffffff !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.stage--hero.internal-hero .hero-canvas-container {
-  display: none !important;
-}
-
-.stage--hero.internal-hero .eyebrow {
-  color: #6862a7 !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-}
-
-.stage--hero.internal-hero .page-title {
-  color: #ffffff !important;
-}
-
-.stage--hero.internal-hero .page-subtitle {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.stage--hero.internal-hero .features-pill-tag {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
 /* FEATURES PILL TAG OVERRIDE */
 .features-pill-tag {
   padding: 3px 13px !important;
   border-radius: 99px !important;
   font-size: 0.85rem !important;
   border: none !important;
-}
-
-/* INTERNAL HERO GRID OVERRIDE - NO DOTS, CRISP LINES ONLY */
-.stage--hero.internal-hero {
-  background-color: #0b1220 !important;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px) !important;
-  background-size: 32px 32px !important;
-  color: #ffffff !important;
-  position: relative !important;
-  overflow: hidden !important;
 }
 
 /* SMOOTH WOW-LIKE ON-SCROLL REVEAL STAGGER ANIMATIONS */
@@ -550,58 +500,32 @@ body {
 
 
 
-/* INTERNAL HERO BACKGROUND WITH HOMEPAGE HERO VIDEO ANIMATION IN DARK MODE */
-.stage--hero.internal-hero {
-  background-color: #0b1220 !important;
-  position: relative !important;
-  overflow: hidden !important;
-  padding-top: 140px !important;
-  padding-bottom: 80px !important;
-}
+/* 100% OPAQUE SOLID DARK NAVY HERO GRID (ZERO TRANSPARENCY - STRICT OVERRIDE) */
+html body 
 
-.stage--hero.internal-hero .hero-video-wrapper {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
+html body 
+  html body .stage.stage--hero.internal-hero .problem-grid-bg {
+    position: absolute !important;
+    inset: -20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(18, 1fr) !important;
+    grid-template-rows: repeat(8, 1fr) !important;
+    gap: 4px !important;
+    padding: 8px !important;
+    background: #0b1220 !important; /* Color 1: 100% Solid Dark Navy Base Surface */
+    background-color: #0b1220 !important;
+    opacity: 1 !important; /* Color 2: 100% Solid Box Grid Tile #1e223b */
+    background-color: #1e223b !important;
+    border: none !important;
+    border-radius: 6px !important;
+    position: relative !important;
+    opacity: 1 !important; /* Color 3: 100% Solid Brand Purple Hover #6862a7 */
+    background-color: #6862a7 !important;
+    opacity: 1 !important; 
 
-.stage--hero.internal-hero .hero-video-iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.35;
-}
-
-.stage--hero.internal-hero .hero-video-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(11, 18, 32, 0.85) 0%, rgba(17, 28, 46, 0.85) 50%, rgba(22, 36, 61, 0.85) 100%),
-              linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
-  background-size: 100% 100%, 32px 32px, 32px 32px !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* EXACT ROUNDED TILE HERO GRID MATRIX MATCHING USER SCREENSHOT IN DARK MODE */
-.stage--hero.internal-hero {
+/* 100% PURE SOLID OPAQUE DARK NAVY HERO GRID (ZERO TRANSPARENCY - AUTHORITATIVE) */
+html body section.stage.stage--hero.internal-hero {
+  background: #0b1220 !important;
   background-color: #0b1220 !important;
   color: #ffffff !important;
   position: relative !important;
@@ -610,52 +534,56 @@ body {
   padding-bottom: 80px !important;
 }
 
-.stage--hero.internal-hero .problem-grid-bg {
+html body section.stage.stage--hero.internal-hero .problem-grid-bg {
   position: absolute !important;
   inset: -20px !important;
   display: grid !important;
   grid-template-columns: repeat(18, 1fr) !important;
   grid-template-rows: repeat(8, 1fr) !important;
-  gap: 6px !important;
-  padding: 12px !important;
-  opacity: 0.65 !important;
+  gap: 4px !important;
+  padding: 8px !important;
+  background: #0b1220 !important; /* Color 1: 100% Solid Dark Navy Base Surface */
+  background-color: #0b1220 !important;
+  opacity: 1 !important; /* ZERO TRANSPARENCY */
   pointer-events: auto !important;
   z-index: 1 !important;
 }
 
-.stage--hero.internal-hero .problem-grid-cell {
-  background-color: rgba(30, 34, 59, 0.75) !important; /* Visible Box Grid Color #1e223b */
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-radius: 8px !important; /* Rounded Corners like user screenshot */
+html body section.stage.stage--hero.internal-hero .problem-grid-cell {
+  background: #1e223b !important; /* Color 2: 100% Solid Box Grid Tile #1e223b */
+  background-color: #1e223b !important;
+  border: none !important;
+  border-radius: 6px !important;
   position: relative !important;
-  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+  opacity: 1 !important; /* ZERO TRANSPARENCY */
+  transition: background 0.2s ease, transform 0.2s ease !important;
   cursor: pointer !important;
 }
 
-.stage--hero.internal-hero .problem-grid-cell .cell-dot {
+html body section.stage.stage--hero.internal-hero .problem-grid-cell .cell-dot {
   display: none !important;
 }
 
-.stage--hero.internal-hero .problem-grid-cell:hover,
-.stage--hero.internal-hero .problem-grid-cell.active {
-  background-color: #6862a7 !important; /* Highlight Glow Color #6862a7 */
-  border-color: #6862a7 !important;
-  box-shadow: 0 0 16px rgba(104, 98, 167, 0.8) !important;
-  transform: scale(1.06) !important;
+html body section.stage.stage--hero.internal-hero .problem-grid-cell:hover,
+html body section.stage.stage--hero.internal-hero .problem-grid-cell.active {
+  background: #6862a7 !important; /* Color 3: 100% Solid Brand Purple Hover #6862a7 */
+  background-color: #6862a7 !important;
+  opacity: 1 !important; /* ZERO TRANSPARENCY */
+  transform: scale(1.08) !important;
   z-index: 5 !important;
 }
 
-.stage--hero.internal-hero h1,
-.stage--hero.internal-hero p,
-.stage--hero.internal-hero .eyebrow {
-  position: relative;
-  z-index: 2;
+html body section.stage.stage--hero.internal-hero h1,
+html body section.stage.stage--hero.internal-hero p,
+html body section.stage.stage--hero.internal-hero .eyebrow {
+  position: relative !important;
+  z-index: 2 !important;
 }
 
-.stage--hero.internal-hero h1 {
+html body section.stage.stage--hero.internal-hero h1 {
   color: #ffffff !important;
 }
 
-.stage--hero.internal-hero p.card-body {
-  color: rgba(255, 255, 255, 0.85) !important;
+html body section.stage.stage--hero.internal-hero p.card-body {
+  color: #ffffff !important;
 }
