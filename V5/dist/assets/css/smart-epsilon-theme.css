@@ -583,3 +583,112 @@ body {
               linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px) !important;
   background-size: 100% 100%, 32px 32px, 32px 32px !important;
 }
+
+
+/* INTERNAL HERO DARK PROBLEM GRID MATRIX */
+.stage--hero.internal-hero {
+  background-color: #0b1220 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding-top: 140px !important;
+  padding-bottom: 80px !important;
+}
+
+.stage--hero.internal-hero .problem-grid-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr) !important;
+  grid-template-rows: repeat(6, 1fr) !important;
+  opacity: 0.25 !important;
+  pointer-events: auto !important;
+  z-index: 1 !important;
+}
+
+.stage--hero.internal-hero .problem-grid-cell {
+  border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  position: relative !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.stage--hero.internal-hero .problem-grid-cell .cell-dot {
+  position: absolute !important;
+  top: -3px !important;
+  left: -3px !important;
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.stage--hero.internal-hero .problem-grid-cell:hover,
+.stage--hero.internal-hero .problem-grid-cell.active {
+  background-color: rgba(56, 189, 248, 0.15) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+.stage--hero.internal-hero .problem-grid-cell:hover .cell-dot,
+.stage--hero.internal-hero .problem-grid-cell.active .cell-dot {
+  background: #38bdf8 !important;
+  transform: scale(2.2) !important;
+  box-shadow: 0 0 12px #38bdf8 !important;
+}
+
+/* NON-CARD DIVERSE LAYOUT STYLES */
+.horizontal-flow-pipeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.flow-step-item {
+  background: #0b1220;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.flow-step-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--se-teal);
+}
+
+.flow-step-item::after {
+  content: '→';
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--se-teal);
+  font-size: 20px;
+  font-weight: 800;
+  z-index: 2;
+}
+
+.flow-step-item:last-child::after {
+  display: none;
+}
+
+.roi-metric-banner-bar {
+  background: linear-gradient(135deg, #0b1220 0%, #16243d 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bento-highlight-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 32px;
+}
