@@ -115,4 +115,19 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power2.out",
     });
   }
+
+  // 5. Scroll Reveal Observer for [data-reveal] sections
+  const revealElements = document.querySelectorAll("[data-reveal]");
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in-view");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach((el) => revealObserver.observe(el));
+  }
+
 });
