@@ -462,7 +462,7 @@ body {
 }
 
 .stage--hero.internal-hero .eyebrow {
-  color: #38bdf8 !important;
+  color: var(--se-teal) !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.08em !important;
@@ -629,13 +629,13 @@ body {
 
 .stage--hero.internal-hero .problem-grid-cell:hover,
 .stage--hero.internal-hero .problem-grid-cell.active {
-  background-color: rgba(56, 189, 248, 0.12) !important;
-  border-color: rgba(56, 189, 248, 0.3) !important;
+  background-color: rgba(13, 148, 136, 0.12) !important;
+  border-color: rgba(13, 148, 136, 0.3) !important;
 }
 
 .stage--hero.internal-hero .problem-grid-cell:hover .cell-dot,
 .stage--hero.internal-hero .problem-grid-cell.active .cell-dot {
-  background: #38bdf8 !important;
+  background: var(--se-teal) !important;
   transform: scale(2) !important;
-  box-shadow: 0 0 10px #38bdf8 !important;
+  box-shadow: 0 0 10px var(--se-teal) !important;
 }
