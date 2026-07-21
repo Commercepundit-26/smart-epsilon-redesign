@@ -245,8 +245,8 @@
   </div>
 </header>
 
-    <!-- HERO SECTION WITH GRADIENT & GRID EFFECT -->
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0b1220 0%, #111c2e 50%, #16243d 100%); background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
+    <!-- DARK HERO SECTION WITH GRADIENT & GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0b1220 0%, #111c2e 50%, #16243d 100%) !important; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px) !important; background-size: 32px 32px !important; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -256,7 +256,7 @@
         <h1 class="page-title" style="color: #ffffff; font-size: clamp(2.2rem, 4.5vw, 3.5rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem;">How the World's Largest Agrochemical Company Cut Counterfeits Across 10+ Countries</h1>
         <p class="page-subtitle" style="color: rgba(255, 255, 255, 0.85); font-size: 1.125rem; margin: 0 auto 40px auto;">Deploying unit-level serialization and 3-layer verification across multi-plant operations without interrupting existing production line speeds.</p>
 
-        <!-- ANIMATED COUNTER METRICS -->
+        <!-- ANIMATED ROTATING COUNTER METRICS -->
         <div class="grid-3col" style="margin-top: 40px;">
           <div class="light-card" style="text-align: center; background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
             <div style="font-size: 52px; font-weight: 800; color: var(--se-teal); line-height: 1; margin-bottom: 8px;" class="counter-num" data-target="99.2" data-suffix="%">0%</div>
@@ -285,9 +285,9 @@
         <div class="grid-2col" style="gap: 40px;">
           <!-- Card 1: Client Profile -->
           <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-md);">
-            <!-- 1st Row: Ultra High-Res Image (330px Height, +50% increase) -->
+            <!-- 1st Row: Image (330px Height, +50% increase) -->
             <div style="height: 330px; overflow: hidden; position: relative;">
-              <img src="assets/images/client_factory.jpg" alt="Global Agrochemical Manufacturing Facility" style="width: 100%; height: 100%; object-fit: cover;" />
+              <img src="assets/images/client_factory.jpg" alt="Global Agrochemical Manufacturing Bottling Facility" style="width: 100%; height: 100%; object-fit: cover;" />
               <span class="features-pill-tag" style="position: absolute; top: 20px; left: 20px; background: rgba(11,18,32,0.85); color: #60a5fa; border: 1px solid rgba(255,255,255,0.25); font-weight: 700;">GLOBAL SCALE</span>
             </div>
             <!-- 2nd Row: Content -->
@@ -305,11 +305,11 @@
             </div>
           </div>
 
-          <!-- Card 2: The Challenge -->
+          <!-- Card 2: The Challenge (UPDATED IMAGE & 330px HEIGHT) -->
           <div class="light-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-md);">
-            <!-- 1st Row: Ultra High-Res Image (330px Height, +50% increase) -->
+            <!-- 1st Row: Updated High-Res Challenge Image (330px Height, +50% increase) -->
             <div style="height: 330px; overflow: hidden; position: relative;">
-              <img src="assets/images/challenge_scan.jpg" alt="Agrochemical Counterfeiting Inspection" style="width: 100%; height: 100%; object-fit: cover;" />
+              <img src="assets/images/challenge_scan.jpg" alt="Inspector Tablet Scanning Chemical Bottle Counterfeit Alert" style="width: 100%; height: 100%; object-fit: cover;" />
               <span class="features-pill-tag" style="position: absolute; top: 20px; left: 20px; background: rgba(11,18,32,0.85); color: #ef4444; border: 1px solid rgba(255,255,255,0.25); font-weight: 700;">HIGH RISK</span>
             </div>
             <!-- 2nd Row: Content -->
@@ -328,7 +328,7 @@
       </div>
     </section>
 
-    <!-- TECHNICAL IMPLEMENTATION WITH PROPER ICONS -->
+    <!-- TECHNICAL IMPLEMENTATION WITH PROPER SVG ICONS -->
     <section class="stage bg-soft" data-reveal>
       <div class="stage__inner container">
         <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
@@ -339,24 +339,24 @@
 
         <div class="grid-3col">
           <div class="light-card" style="padding: 32px; background: #ffffff;">
-            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.15); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
-              <i class="ti ti-cpu"></i>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <svg class="icon" width="28" height="28" style="color: var(--se-purple);"><use href="#icon-bolt"/></svg>
             </div>
             <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">Edge Controllers</h4>
             <p class="card-body" style="line-height: 1.6;">On-line industrial PCs processing 600 bottles per minute with millisecond barcode validation and camera triggers.</p>
           </div>
 
           <div class="light-card" style="padding: 32px; background: #ffffff;">
-            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(13,148,136,0.15); color: var(--se-teal); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
-              <i class="ti ti-database"></i>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(13,148,136,0.12); color: var(--se-teal); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <svg class="icon" width="28" height="28" style="color: var(--se-teal);"><use href="#icon-database"/></svg>
             </div>
             <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">SAP S/4HANA Sync</h4>
             <p class="card-body" style="line-height: 1.6;">Bidirectional API connector syncing serial numbers with ERP production orders without database lockup.</p>
           </div>
 
           <div class="light-card" style="padding: 32px; background: #ffffff;">
-            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.15); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px;">
-              <i class="ti ti-device-mobile"></i>
+            <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+              <svg class="icon" width="28" height="28" style="color: var(--se-purple);"><use href="#icon-search"/></svg>
             </div>
             <h4 style="font-size: 20px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;">Field Mobile Scanner</h4>
             <p class="card-body" style="line-height: 1.6;">Handheld Android audit app used by regional sales and brand protection inspectors across 10+ countries.</p>
@@ -398,7 +398,7 @@
       </div>
     </section>
 
-    <!-- CUSTOMER VOICES / TESTIMONIALS SECTION -->
+    <!-- EXACT HOMEPAGE CUSTOMER VOICES SECTION -->
     <section class="stage stage--voices" id="voices" aria-labelledby="voices-title">
     <div class="stage__inner">
       <header class="voices-head" style="max-width: 800px; text-align: left; margin-bottom: 3rem;" data-reveal>
@@ -691,35 +691,39 @@
 
   <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const counters = document.querySelectorAll('.counter-num');
-      const runCounter = (counter) => {
-        const target = +counter.getAttribute('data-target');
-        const suffix = counter.getAttribute('data-suffix') || '';
-        let count = 0;
-        const inc = target / 50;
-        const updateCount = () => {
-          count += inc;
-          if (count < target) {
-            counter.innerText = (target % 1 !== 0 ? count.toFixed(1) : Math.ceil(count)) + suffix;
-            setTimeout(updateCount, 25);
-          } else {
-            counter.innerText = target + suffix;
-          }
-        };
-        updateCount();
+  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter-num');
+    const runCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const prefix = counter.getAttribute('data-prefix') || '';
+      const suffix = counter.getAttribute('data-suffix') || '';
+      let count = 0;
+      const inc = target / 40;
+      const updateCount = () => {
+        count += inc;
+        if (count < target) {
+          const val = (target % 1 !== 0 ? count.toFixed(1) : Math.ceil(count));
+          counter.innerText = prefix + val + suffix;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = prefix + target + suffix;
+        }
       };
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            runCounter(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
-      counters.forEach(c => observer.observe(c));
-    });
-  </script>
+      updateCount();
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(c => observer.observe(c));
+  });
+</script>
+
 </body>
 </html>

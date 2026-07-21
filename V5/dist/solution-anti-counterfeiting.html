@@ -245,8 +245,8 @@
   </div>
 </header>
 
-    <!-- HERO SECTION WITH GRADIENT & GRID EFFECT -->
-    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0b1220 0%, #111c2e 50%, #16243d 100%); background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 32px 32px; position: relative;">
+    <!-- DARK HERO SECTION WITH GRADIENT & GRID EFFECT -->
+    <section class="stage stage--hero" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0b1220 0%, #111c2e 50%, #16243d 100%) !important; background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px) !important; background-size: 32px 32px !important; position: relative;">
       <div class="hero-canvas-container">
         <canvas id="hero-canvas"></canvas>
       </div>
@@ -290,15 +290,15 @@
 
             <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13.5px;">
               <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--se-surface-soft); border-radius: var(--radius-sm); border: 1px solid var(--se-line);">
-                <span style="color: var(--se-ink); font-weight: 600;"><i class="ti ti-eye" style="color: var(--se-purple);"></i> Overt Layer (Nano-OVD Label)</span>
+                <span style="color: var(--se-ink); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><svg class="icon" width="16" height="16" style="color: var(--se-purple);"><use href="#icon-tag"/></svg> Overt Layer (Nano-OVD Label)</span>
                 <span style="color: var(--se-teal); font-weight: 700;">✓ Pass (Eye Verified)</span>
               </div>
               <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--se-surface-soft); border-radius: var(--radius-sm); border: 1px solid var(--se-line);">
-                <span style="color: var(--se-ink); font-weight: 600;"><i class="ti ti-map-pin" style="color: var(--se-purple);"></i> Covert Layer (Geo-Clone Flags)</span>
+                <span style="color: var(--se-ink); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><svg class="icon" width="16" height="16" style="color: var(--se-purple);"><use href="#icon-map"/></svg> Covert Layer (Geo-Clone Flags)</span>
                 <span style="color: var(--se-teal); font-weight: 700;">✓ Pass (Unique Scan Location)</span>
               </div>
               <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--se-surface-soft); border-radius: var(--radius-sm); border: 1px solid var(--se-line);">
-                <span style="color: var(--se-ink); font-weight: 600;"><i class="ti ti-fingerprint" style="color: var(--se-purple);"></i> Forensic Layer (AI Watermark)</span>
+                <span style="color: var(--se-ink); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><svg class="icon" width="16" height="16" style="color: var(--se-purple);"><use href="#icon-search"/></svg> Forensic Layer (AI Watermark)</span>
                 <span style="color: var(--se-teal); font-weight: 700;">✓ Pass (Signature Matched)</span>
               </div>
             </div>
@@ -350,15 +350,15 @@
 
         <div class="tabs-header-nav">
           <button class="tab-trigger-btn active" data-tab="tab-overt">
-            <i class="ti ti-shield" style="font-size: 20px;"></i>
+            <svg class="icon" width="20" height="20" style="color: var(--accent);"><use href="#icon-shield"/></svg>
             <span>Layer 1 — Overt: Holographic Label</span>
           </button>
           <button class="tab-trigger-btn" data-tab="tab-covert">
-            <i class="ti ti-radar" style="font-size: 20px;"></i>
+            <svg class="icon" width="20" height="20" style="color: var(--accent);"><use href="#icon-map"/></svg>
             <span>Layer 2 — Covert: Geo-Tagged Clone Detection</span>
           </button>
           <button class="tab-trigger-btn" data-tab="tab-forensic">
-            <i class="ti ti-fingerprint" style="font-size: 20px;"></i>
+            <svg class="icon" width="20" height="20" style="color: var(--accent);"><use href="#icon-search"/></svg>
             <span>Layer 3 — Forensic: AI Watermark</span>
           </button>
         </div>
@@ -460,7 +460,7 @@
       </div>
     </section>
 
-    <!-- CUSTOMER VOICES / TESTIMONIALS SECTION -->
+    <!-- EXACT HOMEPAGE CUSTOMER VOICES SECTION -->
     <section class="stage stage--voices" id="voices" aria-labelledby="voices-title">
     <div class="stage__inner">
       <header class="voices-head" style="max-width: 800px; text-align: left; margin-bottom: 3rem;" data-reveal>
@@ -554,47 +554,79 @@
     </div>
   </section>
 
-    <!-- EXECUTIVE FAQ ACCORDION -->
-    <section class="stage bg-soft" data-reveal>
-      <div class="stage__inner container" style="max-width: 900px;">
-        <div style="text-align: center; margin-bottom: 40px;">
-          <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Before you ask</p>
-          <h2 class="section-title">Frequently Asked Questions</h2>
+    <!-- EXPANDED EXECUTIVE FAQ ACCORDION -->
+    
+<section class="stage bg-soft" data-reveal>
+  <div class="stage__inner container" style="max-width: 900px;">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <p class="eyebrow" style="color: var(--accent); margin-bottom: 0.75rem;">Before you ask</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="accordion-wrapper-list">
+      <div class="accordion-card active">
+        <div class="accordion-card-header">
+          <span>Can holograms be copied?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
         </div>
-
-        <div class="accordion-wrapper-list">
-          <div class="accordion-card active">
-            <div class="accordion-card-header">
-              <span>Can holograms be copied?</span>
-              <i class="ti ti-chevron-down accordion-icon" style="transition: transform 0.3s;"></i>
-            </div>
-            <div class="accordion-card-body">
-              Basic holograms can be replicated with enough effort — that's exactly why ours is one of three layers, not the whole defense. Even if the overt layer were ever convincingly copied, covert geo-detection and forensic watermarking still catch it.
-            </div>
-          </div>
-
-          <div class="accordion-card">
-            <div class="accordion-card-header">
-              <span>Do we need new packaging or printing hardware?</span>
-              <i class="ti ti-chevron-down accordion-icon" style="transition: transform 0.3s;"></i>
-            </div>
-            <div class="accordion-card-body">
-              No — the label integrates into existing packaging workflows, and the watermark embeds at the point of print without new equipment.
-            </div>
-          </div>
-
-          <div class="accordion-card">
-            <div class="accordion-card-header">
-              <span>What happens when a clone is detected?</span>
-              <i class="ti ti-chevron-down accordion-icon" style="transition: transform 0.3s;"></i>
-            </div>
-            <div class="accordion-card-body">
-              An alert fires immediately to your brand protection team with the location and timestamp — not a monthly report.
-            </div>
-          </div>
+        <div class="accordion-card-body">
+          Basic holograms can be replicated with enough effort — that's exactly why ours is one of three layers, not the whole defense. Even if the overt layer were ever convincingly copied, covert geo-detection and forensic watermarking still catch it.
         </div>
       </div>
-    </section>
+
+      <div class="accordion-card">
+        <div class="accordion-card-header">
+          <span>Do we need new packaging or printing hardware?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
+        </div>
+        <div class="accordion-card-body">
+          No — the label integrates into existing packaging workflows, and the watermark embeds at the point of print without new equipment or line slowdowns.
+        </div>
+      </div>
+
+      <div class="accordion-card">
+        <div class="accordion-card-header">
+          <span>What happens when a clone is detected?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
+        </div>
+        <div class="accordion-card-body">
+          An alert fires immediately to your brand protection team with the exact GPS location and timestamp — not a monthly report.
+        </div>
+      </div>
+
+      <div class="accordion-card">
+        <div class="accordion-card-header">
+          <span>How fast can we integrate Smart Epsilon with our SAP or Oracle ERP?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
+        </div>
+        <div class="accordion-card-body">
+          Integration takes ~2 weeks using native REST APIs and GS1 EPCIS connectors. No changes are required to your existing production line database schema or SAP S/4HANA core.
+        </div>
+      </div>
+
+      <div class="accordion-card">
+        <div class="accordion-card-header">
+          <span>What is the cost structure per serialized unit?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
+        </div>
+        <div class="accordion-card-body">
+          Tiered volume pricing starting at fractions of a cent per unit with zero upfront capital equipment expenditure.
+        </div>
+      </div>
+
+      <div class="accordion-card">
+        <div class="accordion-card-header">
+          <span>Can regional field sales reps use their personal smartphones for inspection?</span>
+          <svg class="icon accordion-icon" width="20" height="20" style="transition: transform 0.3s;"><use href="#icon-chevron"/></svg>
+        </div>
+        <div class="accordion-card-body">
+          Yes, the Smart Epsilon inspection app runs natively on both iOS and Android smartphones, featuring offline scan caching for remote field and warehouse areas.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="stage stage--cta" id="cta">
     <div class="hero-map" id="hero-map" aria-hidden="true"></div>
@@ -795,5 +827,39 @@
 
   <script type="module" crossorigin src="assets/index-VubonpRs.js"></script>
   <script src="assets/js/smart-epsilon-interact.js"></script>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter-num');
+    const runCounter = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const prefix = counter.getAttribute('data-prefix') || '';
+      const suffix = counter.getAttribute('data-suffix') || '';
+      let count = 0;
+      const inc = target / 40;
+      const updateCount = () => {
+        count += inc;
+        if (count < target) {
+          const val = (target % 1 !== 0 ? count.toFixed(1) : Math.ceil(count));
+          counter.innerText = prefix + val + suffix;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = prefix + target + suffix;
+        }
+      };
+      updateCount();
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    counters.forEach(c => observer.observe(c));
+  });
+</script>
+
 </body>
 </html>
