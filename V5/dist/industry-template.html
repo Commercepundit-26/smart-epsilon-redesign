@@ -5,83 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agrochemicals & Crop Protection Industry | Smart Epsilon</title>
   <meta name="description" content="Unit-level supply chain traceability, anti-counterfeiting, and channel intelligence purpose-built for agrochemical manufacturers.">
+  <link rel="icon" href="assets/logo-D0kBFmz2.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
   <link rel="stylesheet" href="assets/css/smart-epsilon-theme.css">
 </head>
 <body>
-  <div class="page-wrapper">
-    <div class="dot-grid-mask"></div>
-    <div class="glow-orb-purple"></div>
-    <div class="glow-orb-teal"></div>
-
-    <!-- ============ STICKY NAV ============ -->
-    <nav class="smart-nav">
-      <div class="smart-nav-container">
-        <a href="index.html" class="brand-logo-link">
-          <div class="brand-logo-text">Smart <span>Epsilon</span></div>
-          <span class="brand-divider"></span>
-          <span class="brand-tagline">Supply Chain Intelligence Platform</span>
+  <div class="site-wrapper">
+    <!-- ============ EXACT SITE HEADER ============ -->
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="index.html" aria-label="Smart Epsilon home">
+          <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon" width="170" height="47" />
         </a>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link ">Home</a>
-          <a href="solution-anti-counterfeiting.html" class="nav-link ">Solutions</a>
-          <a href="industry-template.html" class="nav-link active">Industries</a>
-          <a href="case-study-template.html" class="nav-link ">Case Studies</a>
-        </div>
-        <a href="#demo" class="btn-demo-nav">Schedule a Demo <i class="ti ti-arrow-right"></i></a>
-      </div>
-    </nav>
+        <nav class="primary-nav" aria-label="Primary">
+          <div class="nav-item" data-mega>
+            <a class="nav-link nav-link--mega" href="solution-anti-counterfeiting.html">
+              Solutions <i class="ti ti-chevron-down" style="font-size: 14px; margin-left: 4px;"></i>
+            </a>
+            <div class="dropdown-panel" id="mega-solutions" style="display: flex; flex-direction: column; gap: 0.25rem; padding: 0.75rem; width: 320px;">
+              <a class="mega-link" href="solution-anti-counterfeiting.html" style="display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 8px;">
+                <span class="mega-link-icon" style="width: 30px; height: 30px; border-radius: 8px; background: rgba(107, 98, 172, 0.1); display: flex; align-items: center; justify-content: center;"><i class="ti ti-route" style="color: var(--se-purple);"></i></span>
+                <span class="mega-link-text" style="font-size: 0.875rem;"><strong>Track &amp; Trace</strong><span style="font-size: 11px; color: var(--se-muted); display: block;">Serialization &amp; real-time visibility</span></span>
+              </a>
+              <a class="mega-link" href="solution-anti-counterfeiting.html" style="display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: 8px;">
+                <span class="mega-link-icon" style="width: 30px; height: 30px; border-radius: 8px; background: rgba(13, 148, 136, 0.1); display: flex; align-items: center; justify-content: center;"><i class="ti ti-shield-check" style="color: var(--se-teal);"></i></span>
+                <span class="mega-link-text" style="font-size: 0.875rem;"><strong>Anti-Counterfeiting</strong><span style="font-size: 11px; color: var(--se-muted); display: block;">3-layer security markers</span></span>
+              </a>
+            </div>
+          </div>
+          <a class="nav-link active" href="industry-template.html">Industries</a>
+          <a class="nav-link" href="case-study-template.html">Case Studies</a>
+          <a class="nav-link" href="index.html#why">Why Smart Epsilon</a>
+          <a class="nav-link" href="#cta">Contact</a>
+        </nav>
 
-    <!-- ============ 1. INDUSTRY HERO ============ -->
-    <section class="section-padding" style="padding-top: 80px;">
-      <div class="container">
-        <div style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center;">
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="#cta">Schedule a Demo</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ INDUSTRY HERO ============ -->
+    <section class="section-padding bg-soft" style="padding-top: 140px; padding-bottom: 80px; position: relative;">
+      <div class="hero-canvas-container">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="grid-2col" style="align-items: center; grid-template-columns: 1.05fr 0.95fr; gap: 48px;">
           <div>
-            <div class="eyebrow-badge"><i class="ti ti-plant"></i> AGROCHEMICALS & CROP PROTECTION</div>
-            <h1 class="hero-title">Defend high-value formulations from plant to farm.</h1>
-            <p class="hero-subtitle">Unit-level serialization, 3-layer anti-counterfeiting, and automated channel visibility designed for high-consequence chemical products and complex distributor networks.</p>
-            
-            <div class="trust-chips">
-              <div class="trust-chip-item"><i class="ti ti-check"></i> GS1 EPCIS 2.0 Native</div>
-              <div class="trust-chip-item"><i class="ti ti-check"></i> High-Speed Line Activation</div>
-              <div class="trust-chip-item"><i class="ti ti-check"></i> Zero ERP Overhaul</div>
+            <div class="eyebrow-pill teal"><i class="ti ti-plant"></i> AGROCHEMICALS & CROP PROTECTION</div>
+            <h1 class="page-title">Defend high-value formulations from plant to farm.</h1>
+            <p class="page-subtitle">Unit-level serialization, 3-layer anti-counterfeiting, and automated channel visibility designed for high-consequence chemical products and complex distributor networks.</p>
+
+            <div class="trust-chips-row">
+              <div class="trust-chip"><i class="ti ti-check"></i> GS1 EPCIS 2.0 Native</div>
+              <div class="trust-chip"><i class="ti ti-check"></i> High-Speed Line Activation</div>
+              <div class="trust-chip"><i class="ti ti-check"></i> Zero ERP Overhaul</div>
             </div>
 
             <div style="display: flex; gap: 16px; align-items: center;">
-              <a href="#demo" class="btn-demo-nav" style="padding: 14px 28px; font-size: 16px;">Schedule Industry Demo <i class="ti ti-arrow-right"></i></a>
+              <a href="#cta" class="btn-primary-purple">Schedule Industry Demo <i class="ti ti-arrow-right"></i></a>
             </div>
           </div>
 
-          <div class="glass-card" style="padding: 36px; border-color: rgba(13, 148, 136, 0.3);">
-            <h3 style="font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 20px;">Built for Agrochemical Realities</h3>
-            
-            <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div class="light-card" style="padding: 36px; border-color: rgba(13, 148, 136, 0.3); background: #ffffff;">
+            <h3 style="font-size: 22px; font-weight: 800; color: var(--se-ink); margin-bottom: 20px;">Built for Agrochemical Realities</h3>
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
               <div style="display: flex; gap: 14px; align-items: flex-start;">
-                <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(13,148,136,0.15); color: var(--teal-accent); display: flex; align-items: center; justify-content: center; flex: none; font-size: 18px;">
+                <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(13,148,136,0.12); color: var(--se-teal); display: flex; align-items: center; justify-content: center; flex: none; font-size: 20px;">
                   <i class="ti ti-shield"></i>
                 </div>
                 <div>
-                  <div style="font-weight: 700; font-size: 15px; color: #fff;">3-Layer Protection</div>
-                  <div style="font-size: 13px; color: var(--text-secondary); margin-top: 2px;">Overt nano-hologram + Covert geo-clone flags + AI invisible watermark.</div>
+                  <div style="font-weight: 700; font-size: 15px; color: var(--se-ink);">3-Layer Protection</div>
+                  <div style="font-size: 13.5px; color: var(--se-muted); margin-top: 2px;">Overt nano-hologram + Covert geo-clone flags + AI invisible watermark.</div>
                 </div>
               </div>
 
               <div style="display: flex; gap: 14px; align-items: flex-start;">
-                <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(102,87,180,0.15); color: #a79cf1; display: flex; align-items: center; justify-content: center; flex: none; font-size: 18px;">
+                <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(107,98,172,0.12); color: var(--se-purple); display: flex; align-items: center; justify-content: center; flex: none; font-size: 20px;">
                   <i class="ti ti-truck-delivery"></i>
                 </div>
                 <div>
-                  <div style="font-weight: 700; font-size: 15px; color: #fff;">Distributor & Depot Chain of Custody</div>
-                  <div style="font-size: 13px; color: var(--text-secondary); margin-top: 2px;">Automated case & pallet aggregation across multi-tier channels.</div>
+                  <div style="font-weight: 700; font-size: 15px; color: var(--se-ink);">Distributor & Depot Chain of Custody</div>
+                  <div style="font-size: 13.5px; color: var(--se-muted); margin-top: 2px;">Automated case & pallet aggregation across multi-tier channels.</div>
                 </div>
               </div>
 
               <div style="display: flex; gap: 14px; align-items: flex-start;">
-                <div style="width: 36px; height: 36px; border-radius: 10px; background: rgba(13,148,136,0.15); color: var(--teal-accent); display: flex; align-items: center; justify-content: center; flex: none; font-size: 18px;">
+                <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(13,148,136,0.12); color: var(--se-teal); display: flex; align-items: center; justify-content: center; flex: none; font-size: 20px;">
                   <i class="ti ti-history"></i>
                 </div>
                 <div>
-                  <div style="font-weight: 700; font-size: 15px; color: #fff;">Audit-Ready Compliance</div>
-                  <div style="font-size: 13px; color: var(--text-secondary); margin-top: 2px;">Produce complete batch histories for regulators in minutes, not weeks.</div>
+                  <div style="font-weight: 700; font-size: 15px; color: var(--se-ink);">Audit-Ready Compliance</div>
+                  <div style="font-size: 13.5px; color: var(--se-muted); margin-top: 2px;">Produce complete batch histories for regulators in minutes, not weeks.</div>
                 </div>
               </div>
             </div>
@@ -90,150 +109,141 @@
       </div>
     </section>
 
-    <!-- ============ 2. INDUSTRY CHALLENGES ============ -->
-    <section class="section-padding" style="background: rgba(17, 16, 46, 0.4);">
-      <div class="container">
-        <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
-          <div class="eyebrow-badge purple"><i class="ti ti-alert-triangle"></i> SECTOR CHALLENGES</div>
-          <h2 style="font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 14px;">Why Traditional Traceability Fails Chemical Brands</h2>
-          <p style="font-size: 16px; color: var(--text-secondary);">Agrochemical packaging faces extreme environmental conditions, high counterfeit incentives, and multi-layered distribution tiers.</p>
-        </div>
-
-        <div class="pain-grid">
-          <div class="glass-card">
-            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;"><i class="ti ti-x" style="color: #ef4444;"></i> Easily Copied 1D/2D Barcodes</h4>
-            <p class="pain-card-body">Standard QR codes can be photographed and printed onto fake formulations in bulk. Without covert geo-clone tracking, fakes go undetected until crop damage occurs.</p>
-          </div>
-
-          <div class="glass-card">
-            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;"><i class="ti ti-x" style="color: #ef4444;"></i> Distributor Channel Diversion</h4>
-            <p class="pain-card-body">Subsidized products intended for one territory are diverted to secondary markets. Without automated receipt confirmation, sales teams lose visibility.</p>
-          </div>
-
-          <div class="glass-card">
-            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;"><i class="ti ti-x" style="color: #ef4444;"></i> Slow Regulatory Audits</h4>
-            <p class="pain-card-body">Reconstructing a lot's journey across 5 disparate software systems pulls IT, legal, and plant managers into multi-week war rooms when regulatory requests arrive.</p>
-          </div>
-
-          <div class="glass-card">
-            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;"><i class="ti ti-x" style="color: #ef4444;"></i> Heavy Retraining Overhead</h4>
-            <p class="pain-card-body">Complex WMS add-ons require months of staff retraining. Smart Epsilon equips plant and field operators with intuitive mobile workflows trained in under a week.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 3. FEATURED INDUSTRY CASE STUDY ============ -->
+    <!-- ============ SECTOR CHALLENGES ============ -->
     <section class="section-padding">
       <div class="container">
-        <div class="glass-card" style="background: linear-gradient(120deg, rgba(102,87,180,0.12), rgba(13,148,136,0.08)); border-color: rgba(102,87,180,0.3); padding: 48px;">
-          <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 48px auto;">
+          <div class="eyebrow-pill"><i class="ti ti-alert-triangle"></i> SECTOR CHALLENGES</div>
+          <h2 class="section-title">Why Traditional Traceability Fails Chemical Brands</h2>
+          <p class="card-body">Agrochemical packaging faces extreme environmental conditions, high counterfeit incentives, and multi-layered distribution tiers.</p>
+        </div>
+
+        <div class="grid-2col">
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Easily Copied 1D/2D Barcodes</h4>
+            <p class="card-body">Standard QR codes can be photographed and printed onto fake formulations in bulk. Without covert geo-clone tracking, fakes go undetected until crop damage occurs.</p>
+          </div>
+
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Distributor Channel Diversion</h4>
+            <p class="card-body">Subsidized products intended for one territory are diverted to secondary markets. Without automated receipt confirmation, sales teams lose visibility.</p>
+          </div>
+
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Slow Regulatory Audits</h4>
+            <p class="card-body">Reconstructing a lot's journey across 5 disparate software systems pulls IT, legal, and plant managers into multi-week war rooms when regulatory requests arrive.</p>
+          </div>
+
+          <div class="light-card">
+            <h4 style="font-size: 18px; font-weight: 800; color: var(--se-ink); margin-bottom: 10px;"><i class="ti ti-x" style="color: var(--se-danger);"></i> Heavy Retraining Overhead</h4>
+            <p class="card-body">Complex WMS add-ons require months of staff retraining. Smart Epsilon equips plant and field operators with intuitive mobile workflows trained in under a week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED CASE STUDY ============ -->
+    <section class="section-padding bg-soft">
+      <div class="container">
+        <div class="light-card" style="padding: 48px; background: #ffffff;">
+          <div class="grid-2col" style="grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
             <div>
-              <div class="eyebrow-badge"><i class="ti ti-star"></i> FEATURED CASE STUDY</div>
-              <h3 style="font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 16px;">World's Largest Agrochemical Company</h3>
-              <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+              <div class="eyebrow-pill"><i class="ti ti-star"></i> FEATURED CASE STUDY</div>
+              <h3 style="font-size: 28px; font-weight: 800; color: var(--se-ink); margin-bottom: 16px;">World's Largest Agrochemical Company</h3>
+              <p class="card-body" style="font-size: 16px; margin-bottom: 24px;">
                 "Smart Epsilon integrated with our existing SAP setup without replacing any systems. We went live within weeks, and field adoption was faster than expected."
               </p>
-              <a href="case-study-template.html" class="btn-demo-nav" style="padding: 12px 24px;">Read Full Case Study <i class="ti ti-arrow-right"></i></a>
+              <a href="case-study-template.html" class="btn-primary-purple">Read Full Case Study <i class="ti ti-arrow-right"></i></a>
             </div>
 
-            <div style="background: rgba(11,21,38,0.7); border-radius: 16px; padding: 28px; border: 1px solid var(--border-card); text-align: center;">
-              <div style="font-size: 44px; font-weight: 800; color: var(--teal-accent); margin-bottom: 4px;">95%</div>
-              <div style="font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 16px;">Scan Compliance Across Network</div>
-              <div style="font-size: 13px; color: var(--text-secondary);">320M+ units serialized across 10+ countries</div>
+            <div style="background: var(--se-surface-tint); border-radius: var(--radius-md); padding: 32px; text-align: center; border: 1px solid var(--se-line);">
+              <div style="font-size: 48px; font-weight: 800; color: var(--se-teal); margin-bottom: 4px;">95%</div>
+              <div style="font-size: 15px; font-weight: 700; color: var(--se-ink); margin-bottom: 8px;">Scan Compliance Across Network</div>
+              <div style="font-size: 13px; color: var(--se-muted);">320M+ units serialized across 10+ countries</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ GLOBAL BOTTOM DEMO SECTION ============ -->
-    <section id="demo" class="section-demo-bottom">
+    <!-- ============ CTA DEMO SECTION ============ -->
+    <section class="cta-section" id="cta" aria-labelledby="cta-heading" style="padding-block: var(--space-9);">
       <div class="container">
-        <div class="demo-grid">
-          <div>
-            <div class="eyebrow-badge purple"><i class="ti ti-calendar-event"></i> SCHEDULE A SESSION</div>
-            <h2 style="font-size: 40px; font-weight: 700; line-height: 1.15; margin-bottom: 20px;">Ready to see Smart Epsilon on your agrochemical SKUs?</h2>
-            <p style="font-size: 17px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 32px;">Explore the platform with your real business challenges in mind. We'll reply within one business day.</p>
-            <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14px; color: var(--text-secondary);">
-              <div style="display: flex; align-items: center; gap: 10px;"><i class="ti ti-check" style="color: var(--teal-accent); font-size: 18px;"></i> Customized agrochemical SKU demo</div>
-              <div style="display: flex; align-items: center; gap: 10px;"><i class="ti ti-check" style="color: var(--teal-accent); font-size: 18px;"></i> SAP / Oracle integration timeline & ROI quote</div>
-            </div>
+        <div class="cta-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+          <div class="cta-content">
+            <span class="badge badge--purple" style="margin-bottom: 16px; display: inline-block;">REQUEST A SESSION</span>
+            <h2 class="cta-title" id="cta-heading" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.15; margin-bottom: 16px;">Ready to see Smart Epsilon on your agrochemical SKUs?</h2>
+            <p class="cta-desc" style="font-size: 18px; color: var(--se-muted); margin-bottom: 24px;">Explore the platform with your real business challenges in mind. We'll reply within one business day.</p>
           </div>
 
-          <div class="demo-form-card">
-            <form class="demo-form">
+          <div class="cta-form-card light-card" style="padding: 36px; background: #ffffff;">
+            <form class="demo-form" action="#" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                <div class="form-group">
-                  <label class="form-label">First Name</label>
-                  <input type="text" class="form-input" required placeholder="John">
+                <div>
+                  <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">First Name</label>
+                  <input type="text" required placeholder="John" style="width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--se-line-strong); outline: none;">
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Last Name</label>
-                  <input type="text" class="form-input" required placeholder="Doe">
+                <div>
+                  <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Last Name</label>
+                  <input type="text" required placeholder="Doe" style="width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--se-line-strong); outline: none;">
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-label">Work Email</label>
-                <input type="email" class="form-input" required placeholder="john@company.com">
+              <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Work Email</label>
+                <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--se-line-strong); outline: none;">
               </div>
-              <div class="form-group">
-                <label class="form-label">Your Challenge</label>
-                <textarea class="form-textarea" rows="3" placeholder="Counterfeits, stockouts, channel loyalty..."></textarea>
-              </div>
-              <button type="submit" class="btn-submit-demo">Schedule a Demo <i class="ti ti-arrow-right"></i></button>
+              <button type="submit" class="btn-primary-purple" style="width: 100%; justify-content: center; padding: 16px;">Schedule a Demo <i class="ti ti-arrow-right"></i></button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ GLOBAL FOOTER ============ -->
-    <footer class="smart-footer">
-      <div class="footer-grid">
-        <div>
-          <div style="font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 14px;">Smart <span style="color: var(--purple-accent);">Epsilon</span></div>
-          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 18px; max-width: 320px;">Empowering supply chains. Defending brands.</p>
-          <div style="font-size: 13px; color: var(--text-muted); display: flex; flex-direction: column; gap: 6px;">
-            <span>connect@smartepsilon.com</span>
-            <span>+1 (312) 555-0148</span>
+    <!-- ============ EXACT SITE FOOTER ============ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px;">
+          <div class="footer-brand">
+            <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon" width="160" height="44" style="margin-bottom: 16px; filter: brightness(0) invert(1);" />
+            <p style="font-size: 14px; color: rgba(240, 244, 255, 0.7); max-width: 300px; margin-bottom: 16px;">Empowering supply chains. Defending brands.</p>
+            <div style="font-size: 13px; color: rgba(240, 244, 255, 0.5); display: flex; flex-direction: column; gap: 4px;">
+              <span>connect@smartepsilon.com</span>
+              <span>+1 (312) 555-0148</span>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 16px;">Solutions</div>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+              <li><a href="solution-anti-counterfeiting.html" style="color: rgba(240,244,255,0.7); text-decoration: none;">Track &amp; Trace</a></li>
+              <li><a href="solution-anti-counterfeiting.html" style="color: rgba(240,244,255,0.7); text-decoration: none;">Anti-Counterfeiting</a></li>
+              <li><a href="industry-template.html" style="color: rgba(240,244,255,0.7); text-decoration: none;">Industries</a></li>
+              <li><a href="case-study-template.html" style="color: rgba(240,244,255,0.7); text-decoration: none;">Case Studies</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 16px;">Platform</div>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+              <li><a href="index.html#products" style="color: rgba(240,244,255,0.7); text-decoration: none;">Plant Control Center</a></li>
+              <li><a href="index.html#products" style="color: rgba(240,244,255,0.7); text-decoration: none;">Verification Portal</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div style="font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 16px;">Trust &amp; Compliance</div>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+              <li><a href="#" style="color: rgba(240,244,255,0.7); text-decoration: none;">SOC 2 Type II</a></li>
+              <li><a href="#" style="color: rgba(240,244,255,0.7); text-decoration: none;">ISO 27001:2022</a></li>
+              <li><a href="#" style="color: rgba(240,244,255,0.7); text-decoration: none;">GS1 EPCIS 2.0 Native</a></li>
+            </ul>
           </div>
         </div>
 
-        <div>
-          <div class="footer-col-title">Solutions</div>
-          <ul class="footer-links">
-            <li><a href="#">Track & Trace</a></li>
-            <li><a href="#">Anti-Counterfeit</a></li>
-            <li><a href="#">Payment Linked Incentives</a></li>
-            <li><a href="#">AI Video Intelligence</a></li>
-          </ul>
+        <div style="border-top: 1px solid rgba(240, 244, 255, 0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(240, 244, 255, 0.4);">
+          <span>© 2026 Smart Epsilon (Value Chain Solutions Global Pvt Ltd). All rights reserved.</span>
+          <span>Built for Enterprise Supply Chains</span>
         </div>
-
-        <div>
-          <div class="footer-col-title">Company</div>
-          <ul class="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Platform Architecture</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Trust & Security</div>
-          <ul class="footer-links">
-            <li><a href="#">GS1 EPCIS 2.0 Standard</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Security Overview</a></li>
-            <li><a href="#">LinkedIn <i class="ti ti-brand-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© 2026 Smart Epsilon (Value Chain Solutions Global Pvt Ltd). All rights reserved.</span>
-        <span>Built for Enterprise Supply Chains</span>
       </div>
     </footer>
   </div>
