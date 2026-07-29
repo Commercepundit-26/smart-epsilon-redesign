@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Left Image right content services*/
+.services-lft-rgt-main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #f7f7f7;
+  margin: 0 0 0 0;
+}
+
+.services-lft-img {
+  width: 50%;
+}
+
+.services-rgt-cont {
+  width: 50%;
+  padding: 20px 50px 20px 50px;
+}
+
+.services-rgt-cont ul li {
+  padding-left: 29px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  line-height: 26px;
+  color: #000;
+}
+
+.services-rgt-cont ul li:before {
+  content: '';
+  background: url(../../images/btn-arrow-black.svg) no-repeat center;
+  width: 18px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background-size: cover;
+}
+
+.services-rgt-cont ul {
+  margin: 0 0 15px 0;
+  display: inline-block;
+  width: 100%;
+}
+.services-lft-rgt-main-reverse {
+  flex-direction: row-reverse;
+}
+.services-lft-rgt-main-reverse a.default-btn {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+@media(max-width:1199px) {
+  .services-rgt-cont {
+    padding:25px; 
+  }
+  .services-rgt-cont h3 {
+    font-size: 28px;
+  }
+  .services-rgt-cont p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .services-rgt-cont ul li {
+    margin-bottom: 9px;
+  }
+  .services-rgt-cont ul {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:1023px) {
+  .services-lft-img {
+    width: 100%;
+  }
+  .services-rgt-cont {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+/*Left Image right content services ends*/

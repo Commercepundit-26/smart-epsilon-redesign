@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our work */
+section.portfolio-main {
+  display: inline-block;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.portfolio-main .container {max-width: 1380px;}
+
+/* .portfolio-main h2 {
+  text-align: center;
+  font-size: 4.688vw;
+} */
+
+.portfolio-inner {
+  display: flex;
+
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.portfolio-inner  .slick-list{  margin: 0 -20px;}
+.portfolio-col {
+  /* width: calc(33% - 20px); */
+  padding: 0 20px;
+}
+
+.portfolio-col figure {
+  margin: 0 0 30px 0;
+  position: relative;
+  overflow: hidden; 
+  padding: 0;
+  overflow: hidden;
+    height:360px;
+}
+.portfolio-col figure img{ height: 100%; width: 100%;}
+/* 
+.portfolio-col figure:before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.portfolio-col:hover figure:before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+} */
+
+.portfolio-col h3 {
+  font-size: 20px;
+  
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.portfolio-col p {
+  margin-bottom: 0px;
+  font-size: 18px; 
+  
+  color: rgba(51, 51, 51, 1)
+}
+.portfolio-main .section_inner .btn-section{ padding-top: 0;}
+
+@media(max-width:1200px) {
+  .portfolio-inner  .slick-list{  margin: 0 -10px;}
+  .portfolio-col {
+   padding: 0 15px;
+  }
+  /* .portfolio-main h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  } */
+  section.portfolio-main {
+    padding: 60px 0;
+  }
+.portfolio-main .portfolio-inner{ padding-top: 30px;}
+  .portfolio-col p{ font-size: 18px;}
+  .portfolio-col figure { height: 260px;}
+}
+@media(max-width:767px) {
+  section.portfolio-main {
+    padding: 30px 0;
+  }
+  .our-team-main .content-wrap {
+    padding-top: 30px;
+  }
+  .portfolio-main .portfolio-inner{ padding-top: 0;}
+}
+
+ 
+.services-left-content .portfolio-main .container {
+  position: relative;
+  padding: 0;
+}
+.services-left-content .portfolio-main .btn-full-div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+.services-left-content section.portfolio-main {
+  padding-bottom: 10px;
+}
+ 
+@media(max-width:767px) {
+  /* .services-left-content .portfolio-main h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  } */
+  .portfolio-col p{ font-size: 16px;}
+  .services-left-content .portfolio-main .btn-full-div {
+    position: static;
+    text-align: center;
+  }
+  .services-left-content .portfolio-col figure {
+    margin-bottom: 20px;
+  }
+  .services-left-content .portfolio-main .container {
+    padding-bottom: 30px;
+  }
+  .services-left-content .portfolio-col h5 {margin-bottom: 5px;}
+}

@@ -1,0 +1,40 @@
+
+.section_ourprocess{ overflow: hidden; width: 100%; clear: both;}
+.section_ourprocess .list{ width: 100%; margin:  15px 0 0; position: relative;} 
+.section_ourprocess .list .item{  width: 100%; padding: 0 5px;}
+.section_ourprocess .list .item img{ display: block; margin-bottom: 15px;max-height: 63px}
+.section_ourprocess .list h4{font-size: 20px; color: #AAAAAA; font-weight: 400; line-height: 40px; margin: 0;}
+.section_ourprocess .list h3 { color: #fff; font-weight: 500; display: block; font-size: 24px;} 
+.section_ourprocess .testimonials_section{ padding-top: 50px;}
+.section_ourprocess .testimonials_section .item_content{ max-width: 100%;}
+.section_ourprocess .testimonials_section .items{ margin-bottom: 0;}
+
+.section_ourprocess .slick-list{ overflow:visible;  margin: 0px;}
+.section_ourprocess .list:before{ content: ''; height: 100%; position: absolute; top: 0; bottom: 0; right: 100%; width: 100%; 
+	 display: block; height: 100%; z-index: 99;   backdrop-filter: blur(3px);  background: linear-gradient(to right,  rgba(0,0,0,1) 7%,rgba(0,0,0,1) 96%,rgba(0,0,0,0.6) 100%); }
+.section_ourprocess .slick-track{ margin-left: 0;}
+
+@media(max-width:1600px) {
+	.section_ourprocess .list h3{ font-size: 22px;}
+	.section_ourprocess .testimonials_section{ padding-top: 40px;}
+} 
+
+@media(max-width:1200px) {
+	.section_ourprocess .list h4{ font-size: 20px;} 
+	.section_ourprocess .list h3{ font-size: 24px; padding-top: 10px;} 
+	.section_ourprocess .list{ padding: 40px 0;}
+	
+}
+
+@media(max-width:990px) {
+.section_ourprocess .list{}
+.section_ourprocess .list .item{ margin-bottom: 20px;}
+}
+
+@media(max-width:767px) {
+	.section_ourprocess .list{ padding: 20px 0 0;}
+	.section_ourprocess .list .item img{ max-width: 50px;}
+	.section_ourprocess .testimonials_section{ padding-top:0px;}
+	.section_ourprocess .list:before{ display: none	;} 
+	.section_ourprocess .list .item {margin-bottom: 0;}
+}

@@ -1,0 +1,242 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our core value*/
+.core-value-main {
+  width: 100%;
+  margin: 100px 0;
+  background: #000;
+  text-align: center;
+  padding: 50px 0px 45px 0px;
+}
+
+.core-value-main h2 {
+  color: #fff;
+  font-size: 4.688vw;
+  margin-bottom: 20px;
+}
+
+.core-value-main p {
+  color: #fff;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.core-value-list {
+  width: 100%;
+  margin: 77px 0 0 0;
+}
+
+.core-value-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.core-value-list ul li {
+  background: #fff;
+  width: 195px;
+  height: 210px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px 15px 15px;
+  transition: all 0.4s ease;
+}
+
+.core-value-list ul li:hover {
+  background: #2f2f2f;
+  transition: all 0.4s ease;
+}
+.core-value-list ul li:hover span svg {
+  fill: #fff;
+}
+
+.core-value-list ul li:hover span {
+  margin-top:-10px;
+  color: #fff;
+}
+
+.core-value-list ul li span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.4s ease 0s;
+}
+
+.core-value-list ul li span i {
+  width: 100%;
+}
+
+.core-value-list ul li span small {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Lato", Sans-serif;
+  margin-top: 15px;
+}
+
+@media(max-width: 1199px) {
+  .core-value-list ul {
+    margin: 0 -10px;
+  }
+  .core-value-list ul li {
+    width: calc(20% - 20px);
+    height: 190px;
+    margin: 0 10px 15px 10px;
+  }
+}
+
+@media(max-width: 1023px) {
+  .core-value-main {
+    margin: 60px 0;
+    padding-bottom: 35px;
+  }
+  .core-value-list ul li {
+    height: 140px;
+  }
+  .core-value-list ul li span svg {
+    width: 58px;
+    height: 54px;
+  }
+  .core-value-list ul li span small {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .core-value-list {
+    margin: 37px 0 0 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .core-value-main h2 {
+    font-size: 30px;
+  }
+  .core-value-list ul {
+    justify-content: start;
+  }
+  .core-value-list ul li {
+    width: calc(50% - 20px);
+  }
+}
+
+/*Our core value end*/
+
+/*Our Mission*/
+.mission-vision-main .container {
+  display: flex;
+  padding: 0 40px;
+}
+
+.mission-vision-main {
+  display: inline-block;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.mission-vision {
+  max-width: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.mission-vision-main .mission-vision:first-child figure {
+  margin: 110px 0 0 0;
+}
+
+.mission-vision-cont {
+  background: #95E2E2;
+  position: absolute;
+  top: -100px;
+  max-width: 81%;
+  right: 0;
+  padding: 50px;
+}
+
+.mission-vision-main .mission-vision:last-child .mission-vision-cont {
+  top: auto;
+  bottom: -104px;
+  left: 0;
+  right: auto;
+  background: #F7F7F7;
+  padding: 50px;
+}
+
+.mission-vision-main .mission-vision img {
+  vertical-align: top;
+}
+
+.mission-vision-cont h4 {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.mission-vision-cont p {
+  font-size: 1.57vw;
+  line-height: 2.1vw;
+}
+
+@media(max-width: 1199px) {
+  .mission-vision-cont {
+    padding: 40px;
+  }
+  .logos-slider-block {
+    padding: 20px 20px 30px;
+  }
+}
+@media(max-width: 1023px) {
+  .mission-vision-main .container {
+    padding: 0 20px;
+  }
+  .mission-vision-cont {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .mission-vision-cont h4 {
+    font-size: 20px;
+  }
+  .mission-vision-cont p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+@media(max-width: 767px) {
+  .mission-vision-cont {
+    position: static;
+    top: 0;
+    max-width: 100%;
+    padding: 30px;
+  }
+  .mission-vision-main {
+    margin: 0;
+  }
+  .mission-vision-main .mission-vision:first-child figure {
+    margin: 0;
+  }
+  .mission-vision-main .container {
+    flex-wrap: wrap;
+  }
+  .mission-vision {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .mission-vision-main .mission-vision:last-child .mission-vision-cont {
+    padding: 30px;
+  }
+  .mission-vision figure {
+    order: 1;
+  }
+}
+
+/*Our Mission ends*/

@@ -1,0 +1,447 @@
+/*eventamericas Hero section*/
+.eventamericas-hero {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.eventamericas-hero .mobile-banner{ display:none; }
+.eventamericas-hero:before {
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 100%;
+  background: #000;
+  top: -50px;
+}
+
+.eventamericas-content {
+  position: relative;
+  height: 100%;
+}
+
+.eventamericas-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eventamericas-hero .container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.eventamericas-hero .eventamericas-hero-right {
+  width: 35%;
+  padding: 0 30px;
+  margin-left: auto;
+  max-width: 500px;
+}
+
+.eventamericas-hero-right p {
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  line-height: 1.5; 
+  margin: 0; padding-bottom: 10px;
+}
+.eventamericas-hero-right .subtitle {
+  font-size: 22px;
+}
+.eventamericas-hero-right .eventamericas-head {
+  text-transform: uppercase;
+  font-size: 47px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+.eventamericas-hero .white {
+  color: #fff;
+}
+
+.eventamericas-caption {
+  max-width: 650px;
+  margin-left: auto;
+}
+
+.eventamericas-header {
+  font-size: 47px;
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 30px 0;
+}
+
+.eventamericas-caption p {
+  color: #fff;
+  font-family: "Lato", Sans-serif;
+  font-size: 22px;
+  margin: 0 0 40px 0;
+}
+
+.default-btn.white.border-btn {
+  background-image: none;
+  padding: 19px 50px;
+}
+
+@media (max-width: 1199px) {
+  .eventamericas-caption {
+    max-width: 44%;
+  }
+
+  .eventamericas-header {
+    font-size: 33px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  .eventamericas-caption p {
+    margin-bottom: 20px;
+  }
+  .eventamericas-head {
+    font-size: 33px;
+  }
+  .eventamericas-hero .eventamericas-hero-right p {
+    font-size: 22px; 
+  }
+  .eventamericas-hero .eventamericas-hero-right  .eventamericas-head {
+    font-size: 28px; 
+  }
+}
+
+@media (max-width: 1023px) {
+  .eventamericas-hero .eventamericas-hero-right {
+    padding: 0;
+    width: 34%;
+  }
+  .eventamericas-header {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .eventamericas-hero .eventamericas-hero-right p {
+    font-size:20px; 
+  }
+  .eventamericas-hero .eventamericas-hero-right  .eventamericas-head {
+    font-size: 24px; 
+  }
+
+}
+
+@media (max-width: 767px) {
+  .eventamericas-hero {
+    height:420px;
+  }
+  .eventamericas-hero img {
+   display: none;
+  }
+.eventamericas-hero img.mobile-banner{ display:block; } 
+  .eventamericas-caption {
+    max-width: 58%;
+    text-align: center;
+  }
+
+  .eventamericas-caption p {
+    display: none;
+  }
+
+  .eventamericas-header {
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  .eventamericas-hero .container {
+    flex-flow: column;
+    width:100%;
+    max-width: 460px;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .eventamericas-hero .default-btn.white.border-btn {
+    padding: 10px 15px;
+    background-position: calc(100% - 14px) center;
+  }
+  .eventamericas-hero .eventamericas-hero-left {
+   
+    padding: 15px 20px;
+    width: 100%; text-align: center;
+  }
+  .eventamericas-hero .eventamericas-hero-right {
+    width: 100%;
+    margin-top: auto;
+    margin: 0 auto;
+    padding: 24px 20px 0;
+    max-width: 100%;
+    text-align: center;
+    margin-top: auto;
+  
+  }
+  .eventamericas-head {
+    font-size: 24px;
+  }
+  .eventamericas-hero .eventamericas-hero-right p { padding-bottom: 5px;
+    margin-bottom: 0;
+    font-size:20px;
+  }
+  .eventamericas-hero .eventamericas-hero-right .eventamericas-head{  font-size:30px;}
+
+}
+
+/*eventamericas Hero section ends*/
+
+.americasevent-page h4{  font-size: 24px; font-family: "Lato", sans-serif; } 
+
+.eventamericas-tab-items {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.eventamericas-tab-items .item {
+  width: 33.33%;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  gap: 0;
+}
+.eventamericas-tab-items .item .icon {
+  margin-bottom: 20px;
+}
+.eventamericas-tab-items .item span {
+  display: block; font-weight: bold;
+}
+
+.eventamericas-tab-info {
+  width: 100%;
+  clear: both;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+.eventamericas-tab-info h3 {
+  font-weight: 600;
+  color: #005463;
+}
+.eventamericas-tab-info ul {
+  list-style-type: disc;
+  width: 100%;
+  padding: 0 20px 20px;
+}
+
+.eventamericas-tab-info ul li {
+  list-style-type: disc;
+  font-size: 100%;
+}
+.eventamericas-tab-list .eventamericas-tab-info {
+  padding: 10px 0 0 80px;
+  position: relative;
+}
+.eventamericas-tab-list .eventamericas-tab-info h3 .icon {
+  max-width: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.meet-theteam {
+  background: #f7f7f7;
+  padding: 60px 0px 20px;
+  margin-top: 40px;
+}
+.meet-theteam h2 {
+  color: #005463;
+}
+.team-list {
+  display: flex;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.team-list-col {
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  width: 20%;
+}
+.link-icons a:hover {
+  opacity: 0.7;
+}
+
+.team-list-col span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-name-title small {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-team-tab li:hover .team-name-title small {
+  color: #005463;
+}
+
+.team-list-col figure {
+  margin: 0 0 10px 0;
+}
+
+.team-list-col figure {
+  position: relative;
+  overflow: hidden;
+}
+.team-list-col figure img {
+  width: 100%;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  object-fit: cover;
+}
+.team-list-col:hover figure img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.team-list-col figure::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.team-list-col:hover figure:before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.team-name-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+
+.link-icons {
+  display: flex;
+}
+
+.link-icons img {
+  width: 24px;
+  height: 24px;
+}
+.americasevent-page h2{color: #005463;padding-bottom: 30px;}
+
+@media (min-width:1199px) {
+.americasevent-page h2{font-size: 52px; }
+}
+@media (max-width: 1199px) {
+  .team-list-col figure img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .team-list {
+    margin: 0;
+  }
+  .team-list-col {
+    padding: 0 10px;
+    width: 33.33%;
+    margin: 0 0 40px 0;
+  }
+  .team-name-title small {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .team-list-col figure img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .eventamericas-tab-items {
+    padding: 20px 0; 
+  }
+  .eventamericas-tab-items .item {
+    padding: 10px;
+    width: 50%;
+  }
+
+  .eventamericas-tab-list .eventamericas-tab-info {
+    padding:0 0 20px;
+  }
+  .eventamericas-tab-list .eventamericas-tab-info h3 .icon {
+    max-width: 150px; position: static; margin:0 auto 20px; display: block;
+   }
+  .team-list-col {
+    width: 50%;
+    line-height: normal;
+  }
+  .team-list-col figure img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/*Our Team Ends*/ 
+
+.platform-partners ul li img{ width: 100%;}
+.platform-partners ul li:nth-child(11) img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.our-work-atlanta{ background: #fff;}
+.our-process-services h2,.portfolio-main h2,.platform-partners h2{    color: #005463;}
+.portfolio-main .portfolio-col p{ color: #000;}

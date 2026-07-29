@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+.ga4-navigation {
+  margin-left: auto;
+    max-width: 436px;
+    width: 100%;
+    background: #F6F6F6;
+    padding: 20px 35px 20px 35px;
+    margin-bottom: auto;
+    position: sticky;
+    top: 80px;
+}
+
+.ga4-navigation ul li {
+  margin: 0 0 7px 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.ga4-navigation ul li a {
+  font-size: 12px;
+  position: relative;
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.ga4-navigation ul li a:hover {
+  color: #005463;
+}
+.ga4-navigation ul li.active a {
+  color: #005463;
+  text-decoration: underline;
+}
+
+.ga4-navigation ul li:before {
+  content: "-";
+    position: absolute;
+    display: inline-block;
+    margin: 0 11px 0 0;
+    left: 0;
+    width: 10px;
+    top: -9px;
+    height: 1px;
+    font-size: 25px;
+    font-weight: 400;
+}

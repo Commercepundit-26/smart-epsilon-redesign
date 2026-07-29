@@ -1,0 +1,385 @@
+.technology-stack {
+    padding: 120px 0 0;
+    margin: 0 auto;
+}
+.case-study-new.qhoobi-case-study p.case-step-subtitle{
+    display: block;
+    font-weight: 700;
+}
+.case-study-new.qhoobi-case-study .case-impact-steps .step-title{
+    margin-bottom: 10px;
+}
+.case-study-tech-title {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 58px;
+    text-align: left;
+}
+.vibe-page-main section.technology-stack .container {
+    max-width: 100%;
+    padding: 0;
+}
+.vibe-page-main section.technology-stack h2.case-study-tech-title {
+    max-width: 1680px;
+    margin:  0px auto 30px;
+    padding: 0 15px;
+}
+.vibe-page-main section.technology-stack .case-study-tech-grid {
+    grid-template-columns: repeat(8, 1fr);
+}
+.case-study-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Default: 6 columns for desktop */
+    gap: 0;
+}
+
+.case-study-technology-item {
+    /* padding: 70px 50px; */
+    padding: 70px 50px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(90px, 15vw, 120px);
+    transition: all 0.3s ease;
+    border: 1px solid #DBDBDB;
+}
+.tower-energy-case-study .case-study-technology-item{
+    padding: 70px 40px 15px;
+}
+.case-study-technology-item:hover img {
+    transform: scale(1.1);
+}
+/* Desktop 6-column checkerboard pattern */
+/* Row 1 (1-6): Grey, White, Grey, White, Grey, White */
+.case-study-technology-item:nth-child(12n+1),  
+.case-study-technology-item:nth-child(12n+3),  
+.case-study-technology-item:nth-child(12n+5), 
+.case-study-technology-item:nth-child(12n+8), 
+.case-study-technology-item:nth-child(12n+10), 
+.case-study-technology-item:nth-child(12n+12) {
+    background: #F5F5F5;
+}
+
+/* Row 2 (7-12): White, Grey, White, Grey, White, Grey */
+.case-study-technology-item:nth-child(12n+2),  
+.case-study-technology-item:nth-child(12n+4),  
+.case-study-technology-item:nth-child(12n+6), 
+.case-study-technology-item:nth-child(12n+7),  
+.case-study-technology-item:nth-child(12n+9), 
+.case-study-technology-item:nth-child(12n+11) {
+    background: #ffffff;
+}
+.case-study-tech-icon {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 80px;
+}
+
+.case-study-tech-icon img {
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+}
+
+.case-study-tech-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.qhoobi-case-study .case-study-tech-name{
+    font-size: 16px;
+}
+.tower-energy-case-study .case-study-tech-name{
+    font-size: 16px;
+}
+/* 1600px - Large Desktop: 5 columns */
+@media (max-width: 1600px) {
+    .technology-stack{
+        padding: 80px 0 0;
+    }
+    .case-study-tech-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .case-study-tech-title {
+        font-size: 44px;
+    }
+    
+    /* Reset 6-column pattern */
+    .case-study-technology-item:nth-child(12n+1),
+    .case-study-technology-item:nth-child(12n+2),
+    .case-study-technology-item:nth-child(12n+3),
+    .case-study-technology-item:nth-child(12n+4),
+    .case-study-technology-item:nth-child(12n+5),
+    .case-study-technology-item:nth-child(12n+6),
+    .case-study-technology-item:nth-child(12n+7),
+    .case-study-technology-item:nth-child(12n+8),
+    .case-study-technology-item:nth-child(12n+9),
+    .case-study-technology-item:nth-child(12n+10),
+    .case-study-technology-item:nth-child(12n+11),
+    .case-study-technology-item:nth-child(12n+12) {
+        background: initial;
+    }
+    
+    /* 5-column checkerboard: Row 1: G,W,G,W,G Row 2: W,G,W,G,W */
+    .case-study-technology-item:nth-child(10n+1),  
+    .case-study-technology-item:nth-child(10n+3),  
+    .case-study-technology-item:nth-child(10n+5),
+    .case-study-technology-item:nth-child(10n+7),
+    .case-study-technology-item:nth-child(10n+9) {
+        background: #F5F5F5;
+    }
+    
+    .case-study-technology-item:nth-child(10n+2),  
+    .case-study-technology-item:nth-child(10n+4),
+    .case-study-technology-item:nth-child(10n+6),
+    .case-study-technology-item:nth-child(10n+8),
+    .case-study-technology-item:nth-child(10n+10) {
+        background: #ffffff;
+    }
+    .case-study-technology-item {
+        /* padding: 65px 45px; */
+        padding: 65px 45px 15px; 
+    }    
+    .tower-energy-case-study .case-study-technology-item{
+    padding: 65px 35px 15px;
+}
+}
+
+@media (max-width: 1440px) {
+    .technology-stack{
+        padding: 50px 0 0;
+    }
+    .case-study-tech-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .case-study-tech-title {
+        font-size: 42px;
+    }
+
+    
+    /* Reset 5-column pattern */
+    .case-study-technology-item:nth-child(10n+1),
+    .case-study-technology-item:nth-child(10n+2),
+    .case-study-technology-item:nth-child(10n+3),
+    .case-study-technology-item:nth-child(10n+4),
+    .case-study-technology-item:nth-child(10n+5),
+    .case-study-technology-item:nth-child(10n+6),
+    .case-study-technology-item:nth-child(10n+7),
+    .case-study-technology-item:nth-child(10n+8),
+    .case-study-technology-item:nth-child(10n+9),
+    .case-study-technology-item:nth-child(10n+10) {
+        background: initial;
+    }
+    
+    /* 4-column checkerboard: Row 1: G,W,G,W Row 2: W,G,W,G */
+    .case-study-technology-item:nth-child(8n+1),  
+    .case-study-technology-item:nth-child(8n+3),  
+    .case-study-technology-item:nth-child(8n+6),  
+    .case-study-technology-item:nth-child(8n+8) {
+        background: #F5F5F5;
+    }
+    
+    .case-study-technology-item:nth-child(8n+2), 
+    .case-study-technology-item:nth-child(8n+4),  
+    .case-study-technology-item:nth-child(8n+5),  
+    .case-study-technology-item:nth-child(8n+7) {
+        background: #ffffff;
+    }
+    .case-study-technology-item{
+        padding: 60px 40px 10px;
+    }
+    /* ============= cb station ============= */
+    .case-study-tech-name{
+        font-size: 18px;
+    }
+    .qhoobi-case-study .case-study-tech-name{
+    font-size: 15px;
+}
+.tower-energy-case-study .case-study-tech-name{
+    font-size: 15px;
+}
+    .case-study-tech-icon img{
+        max-width: 80%;
+    }
+    .case-study-tech-icon {
+        height: 60px;
+    }
+    .vibe-page-main section.technology-stack .case-study-tech-grid {
+    grid-template-columns: repeat(6, 1fr);
+}
+.vibe-page-main section.technology-stack h2.case-study-tech-title{
+      margin: 0px auto 30px;
+}
+}
+
+/* 1024px - Tablet: 3 columns */
+@media (max-width: 1024px) {
+    .case-study-tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .case-study-tech-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    /* Reset 4-column pattern */
+    .case-study-technology-item:nth-child(8n+1),
+    .case-study-technology-item:nth-child(8n+2),
+    .case-study-technology-item:nth-child(8n+3),
+    .case-study-technology-item:nth-child(8n+4),
+    .case-study-technology-item:nth-child(8n+5),
+    .case-study-technology-item:nth-child(8n+6),
+    .case-study-technology-item:nth-child(8n+7),
+    .case-study-technology-item:nth-child(8n+8) {
+        background: initial;
+    }
+    
+    /* 3-column checkerboard: Row 1: G,W,G Row 2: W,G,W */
+    .case-study-technology-item:nth-child(6n+1),  
+    .case-study-technology-item:nth-child(6n+3), 
+    .case-study-technology-item:nth-child(6n+5) {
+        background: #F5F5F5;
+    }
+    
+    .case-study-technology-item:nth-child(6n+2),  
+    .case-study-technology-item:nth-child(6n+4),  
+    .case-study-technology-item:nth-child(6n+6) {
+        background: #ffffff;
+    }
+    .case-study-technology-item {
+        padding: 40px 20px 10px;
+    }  
+    .tower-energy-case-study .case-study-technology-item{
+    padding: 40px 18px 15px;
+}
+    .case-study-tech-icon {
+        height: auto;
+    } 
+    .qhoobi-case-study br{
+        display: block !important;
+    }
+}
+
+/* 767px - Mobile Landscape: 2 columns */
+@media (max-width: 767px) {
+    .technology-stack {
+        padding: 30px 0 0;
+    }
+    
+    .case-study-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .case-study-tech-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .case-study-technology-item {
+        padding: 20px 20px;
+    } 
+    .tower-energy-case-study .case-study-technology-item{
+    padding: 20px 20px;
+}
+    
+    /* Reset 3-column pattern */
+    .case-study-technology-item:nth-child(6n+1),
+    .case-study-technology-item:nth-child(6n+2),
+    .case-study-technology-item:nth-child(6n+3),
+    .case-study-technology-item:nth-child(6n+4),
+    .case-study-technology-item:nth-child(6n+5),
+    .case-study-technology-item:nth-child(6n+6) {
+        background: initial;
+    }
+    
+    /* 2-column checkerboard: Row 1: G,W Row 2: W,G */
+    .case-study-technology-item:nth-child(4n+1),  
+    .case-study-technology-item:nth-child(4n+4) {
+        background: #F5F5F5;
+    }
+    
+    .case-study-technology-item:nth-child(4n+2),  
+    .case-study-technology-item:nth-child(4n+3) {
+        background: #ffffff;
+    }
+    .case-study-tech-icon {
+        margin-bottom: 30px;
+    }
+    
+    .case-study-tech-name {
+        font-size: 16px;
+    }
+    .qhoobi-case-study .case-study-tech-name{
+    font-size: 15px;
+}
+.tower-energy-case-study .case-study-tech-name{
+    font-size: 15px;
+}
+    .vibe-page-main section.technology-stack .case-study-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.vibe-page-main section.technology-stack h2.case-study-tech-title{
+  margin: 0px auto 30px;
+}
+}
+
+/* 680px - Small Mobile: 2 columns */
+@media (max-width: 680px) {
+    .case-study-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .case-study-tech-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .case-study-technology-item {
+        padding: 30px 15px 10px;
+    }
+    .tower-energy-case-study .case-study-technology-item{
+    padding: 30px 15px 10px;
+}
+    
+    /* Keep the existing 2-column pattern from 767px breakpoint */
+    /* 2-column checkerboard: Row 1: G,W Row 2: W,G */
+    .case-study-technology-item:nth-child(4n+1),  
+    .case-study-technology-item:nth-child(4n+4) {
+        background: #F5F5F5;
+    }
+    
+    .case-study-technology-item:nth-child(4n+2),  
+    .case-study-technology-item:nth-child(4n+3) {
+        background: #ffffff;
+    }
+    .case-study-tech-icon img {
+        max-width: 70%;
+    }
+    .case-study-tech-icon {
+        margin-bottom: 20px;
+    }
+    
+    .case-study-tech-name {
+        font-size: 14px;
+    }
+    .qhoobi-case-study .case-study-tech-name{
+    font-size: 14px;
+}
+.tower-energy-case-study .case-study-tech-name{
+    font-size: 14px;
+}
+}

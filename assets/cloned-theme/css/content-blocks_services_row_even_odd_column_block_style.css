@@ -1,0 +1,349 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Services middle*/
+.services-middle {
+  display: inline-block;
+  width: 100%;
+  padding: 50px 0;
+}
+.services-middle > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.services-left-content {
+  max-width:70%;
+  width: 100%;
+  padding-right: 30px;
+}
+.services-row-2col-inner.padding-top-services {
+  align-items: center;
+}
+@media(max-width:1199px) {
+  .services-left-content{max-width: 65%;}
+  .services-middle {
+    padding:60px 0;
+  }
+}
+@media(max-width:1023px) {
+  .services-left-content {
+    max-width: 100%;
+    padding-right: 0px;
+  }
+  .services-middle {
+    padding:40px 0;
+  }
+}
+
+/*Services row 2col*/
+.services-row-2col {
+  width: 100%;
+  display: inline-block;
+}
+.services-row-2col-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.services-row-2col h2 {
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.services-row-2col-right {
+  padding-left: 50px;
+  max-width: calc(100% - 408px);
+}
+
+.services-row-2col-left {
+  max-width: 408px;
+  width: 100%;
+}
+@media(max-width:1199px) {
+  .services-row-2col h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .services-row-2col-inner {
+    flex-wrap: wrap;
+  }
+  .services-row-2col-left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .services-row-2col-right {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+@media(max-width:1023px) {
+  .services-row-2col-left {
+    max-width: 40%;
+  }
+  .services-row-2col-right {
+    max-width: 60%;
+    padding-left: 20px;
+  }
+}
+@media(max-width:767px) {
+  .services-row-2col h2 {
+    font-size: 25px;
+    margin-bottom: 15px; 
+  }
+  .services-row-2col-left {
+    max-width: 100%;
+  }
+  .services-row-2col-right {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+/*Services row 2col ends*/
+/*Two colmun box css*/
+.box-row-col {
+  margin: 0 0 50px 0;
+}
+
+.box-2col-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 50px 0;
+}
+
+.box-2col-left {
+  margin: 0 40px 0 0;
+}
+.box-2col-left h3 {
+  text-align: center;  
+}
+
+.box-2col-left.box-2col-rgt {
+  padding: 0 0 0 80px;
+  position: relative;
+  margin: 0;
+}
+
+ul.box-row-list {
+  display: flex;
+  margin: 0 -15px;
+}
+
+ul.box-row-list li {
+  background: #fff;
+  box-shadow: 8px 8px 24px #0000001f;
+  margin: 0 15px 30px 15px;
+  max-width: 180px;
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 180px;
+}
+
+ul.box-row-list li i{
+  min-height: 70px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+ul.box-row-list li span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.box-2col-left.box-2col-rgt:after {
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  margin: auto 0;
+  bottom: 0;
+  content: "";
+  width: 2px;
+  height: 180px;
+  background: #efefef;
+}
+
+@media(max-width:1400px) {
+  .box-2col-left {
+    padding: 0 40px 0 0;
+    width: 50%;
+    margin: 0;
+  }
+  .box-2col-left.box-2col-rgt {
+    padding: 0 0 0 40px;
+    position: relative;
+    margin: 0;
+  }
+  .box-2col-left.box-2col-rgt:after {
+    left: 0;
+  }
+}
+
+@media(max-width:1199px) {
+  .box-2col-left h3 {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 20px 0;
+  }
+}
+@media(max-width:767px) {
+  .box-2col-left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .box-2col-left.box-2col-rgt {
+    padding: 0;
+  }
+  .box-2col-left.box-2col-rgt:after {
+    display: none;
+  }
+  .box-2col-left h3 {
+    text-align: left;
+  }
+  .box-2col-row {
+    margin-bottom: 0px;
+  }
+}
+
+/*ends*/
+
+/*Services row even odd*/
+.services-even-odd {
+  display: inline-block;
+  width: 100%;
+} 
+.services-even-odd h2 {
+  color: #000;
+  font-size: 38px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.services-even-odd h3{ font-size: 35px;}
+.services-even-odd .services-even-odd-row:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.services-even-odd-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.services-even-odd-left {
+  max-width: calc(100% - 535px);
+  width: 100%;
+  padding: 0 0 0 0;
+}
+.services-even-odd-left p a {
+  color: #000;
+}
+.services-even-odd-left p a:hover {
+  color: #000;
+}
+.services-even-odd-left h2 {
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+.services-even-odd-right {
+  max-width: 495px;
+  width: 100%;
+}
+.services-even-odd-right img {
+  height: auto;
+}
+.services-fullcontent .default-btn {
+  margin-top: 20px;
+}
+
+.header-descp {
+    display: inline-block;
+    width: 100%;
+    margin: -27px 0 30px 0;
+}
+
+@media(max-width:1199px) {
+  .services-even-odd h2 {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+  .services-even-odd-row {
+    flex-wrap: wrap;
+  }
+  .services-even-odd-left {
+    max-width: 100%;
+  }
+  .services-even-odd-right {
+    max-width: 100%;
+  }
+  .services-even-odd-left h2 {
+    font-size: 30px;
+  }
+  .header-descp {
+  	margin: 10px 0 30px 0;
+  }
+}
+
+@media(max-width:1023px) {
+  .services-even-odd h2 {
+    font-size: 29px;
+    margin-bottom: 30px;
+  }
+  .services-even-odd-left {
+    max-width: 60%;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .services-even-odd-right {
+    max-width: 40%;
+  }
+  .services-even-odd .services-even-odd-row:nth-child(odd) .services-even-odd-left {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .header-descp {
+  	margin: -30px 0 30px 0;
+  }
+}
+@media(max-width:767px) {
+  .services-even-odd h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .services-even-odd-left {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .services-even-odd-right {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .services-even-odd .services-even-odd-row:nth-child(2n+1) .services-even-odd-left {
+    padding-left: 0;
+  }
+  .services-even-odd-row {
+    margin-bottom: 30px;
+  }
+  .header-descp {
+  	margin: 0 0 30px 0;
+  }
+  .services-even-odd h3 {
+    font-size: 24px;
+  }
+
+}
+
+/*Services row even odd ends*/
+
+/*Services middle ends*/

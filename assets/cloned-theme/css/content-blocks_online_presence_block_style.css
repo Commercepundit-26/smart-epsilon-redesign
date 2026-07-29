@@ -1,0 +1,49 @@
+
+
+/* 
+    Created on : 24 jan, 2024, 
+    Author : Nandkishor K
+*/ 
+
+
+.section_online{}
+.section_online .section_row{ display: flex; flex-wrap: wrap; gap:10%;  align-items: center;     justify-content: space-between;}
+.section_online .section_row .section_title{ width: 40%;}
+.section_online .items{ width:50%;   display: grid; grid-template-columns: repeat(3,1fr); gap:20px; text-align: center; }
+.section_online .items li{ display:block;  text-align: center; padding:10px 30px; border-left: 1px solid rgba(0, 0, 0, 0.4); }
+.section_online .items li:first-child{border: none;}
+.section_online .items li img{ max-width: 160px; display: block; margin: 0 auto 20px;  }
+.section_online .items li p{ margin: 0; padding: 0; font-weight: 500;  }
+
+@media(max-width:1600px) {   
+    .section_online .section_row{ gap: 5%;}
+    .section_online .items li{ padding: 15px;}
+    .section_online .items{ width: 55%;}
+}
+
+@media(max-width:990px) {
+ .section_online .section_row{  gap: 30px; display: flex; flex-wrap: wrap;}
+ .section_online .section_row .section_title{ width: 100%;}
+ .section_online .section_row .section_title h2 br{ display: none;}
+ .section_online .items{ width: 100%; gap: 0;}
+ .section_online .items li img{ max-width: 100px;} 
+}
+
+@media(max-width:767px) {  
+    .section_online .section_row{ gap: 20px;}
+    .section_online .items  {margin: 0 -10px; width: 100%; }
+    .section_online .items li{ padding:5px 10px;    flex-flow: column; display: flex;
+        align-items: center;
+        align-items: center;
+        justify-content: center;}
+    .section_online .items li img{ max-width: 60px;}
+    .section_online .items li p{ line-height: normal; font-size: 16px;}
+} 
+
+
+@media(max-width:540px) {  
+    .section_online .items{  width: auto;}
+    .section_online .items li{ justify-content: start;}
+    .section_online .items li:last-child img{ max-width: 40px;}
+   
+} 

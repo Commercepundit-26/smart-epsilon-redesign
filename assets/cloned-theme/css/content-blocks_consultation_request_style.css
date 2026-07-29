@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+/* banner section */
+
+/* Service Detail Template css for Consulatation and Request */
+.promotion-banner {
+    background-image: url('../../images/Stickey-consult.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 87px 0 93px;
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    
+}
+
+.headline {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: white;
+}
+
+.promotion-section .subtitle {
+    color: #fff;
+}
+
+.consult {
+    margin: 40px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.consult .btn.btn-outline {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.consult .btn.btn-outline::after {
+    background-color: #fff;
+}
+.consult .btn.btn-outline::before {
+    filter: invert(1);
+}
+
+@media (max-width: 1600px) {
+  .testimonial-consultant .headline {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .promotion-banner {
+    padding: 60px 0 65px;
+  }
+  .headline {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .testimonial-consultant .headline {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .consult {
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .headline {
+      font-size: 40px;
+      line-height: 38px;
+    }
+    .testimonial-consultant .headline {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    .headline br {
+      display: block; 
+    }
+    .promotion-banner {
+      padding: 50px 0 55px;
+  }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .headline {
+      font-size: 35px;
+      line-height: 32px;
+      display: block;
+    }
+    .headline br {
+      display: block; 
+    }
+    .consult {
+      margin: 0px 0 0px 0px;
+      gap: unset;
+    }
+    .consult .btn {
+      margin-top: 20px;
+  }
+  .consult .btn.btn-outline.service {
+    margin-left: 10px;
+  }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headline {
+      margin-bottom: 0px
+    }
+  .consult{
+    font-size: 14px;
+  }
+
+  }
+  @media screen and (max-width: 767px) {
+    .headline {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto;
+      max-width: 90%;
+    } 
+     /* .consult{
+      margin-top: 20px;
+    } */
+    .testimonial-consultant .headline {
+      font-size: 21px;
+      line-height: 28px;
+    }
+    .promotion-banner {
+      padding: 40px 0 45px;
+  }
+  
+  }
+  
+  @media screen and (max-width: 576px) {
+    /*.headline {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 auto;
+      max-width: 90%;
+    }*/
+
+    .promotion-banner {
+      padding: 40px 10px;
+    }
+    
+    /* .consult{
+      margin-top: 20px;
+      gap: 20px;
+    } */
+    .consult .btn{
+            font-size: 14px;
+            line-height: normal;
+    }
+    .consult .btn.btn-outline.service{
+      font-size: 14px;
+       line-height: normal;
+    }
+    .promotion-banner {
+      background-image: url('../../images/stickey.png');
+    }
+  }
+  
+ 
+
+@media screen and (max-width: 425px) {
+  
+  .consult{
+    font-size: 16px;
+    /* margin-top: 22px; */
+  }
+  /* .btn.btn-outline.consult {
+    margin: 5px 0 0 0;
+    
+  } */
+}
+@media screen and (max-width: 375px) {
+  .testimonial-consultant .consult .btn {
+  font-size: 12px;
+  line-height: 20px;
+}
+}

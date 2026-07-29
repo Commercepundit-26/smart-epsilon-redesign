@@ -1,0 +1,330 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+/* banner section */
+
+/* Service Detail Template css for Consulatation and Request */
+.promotion-banner {
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 87px 0 93px;
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    
+}
+.promotion-banner.ui-ux-design{
+  background-image: url(../../images/ui-ux-stickey-1.png)!important;
+  margin-top: 120px !important;
+  padding: 87px 0 50px;
+}
+.professional-print-design-services .promotion-banner.ui-ux-design{
+  margin-top: 0px !important;
+}
+.promotion-banner.ui-ux-design p {
+  color: white;
+}
+.headline {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: white;
+}
+.consult {
+    margin: 40px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7 input[type="email"] {
+  /* font-size: 50px; */
+  color: #858585;
+  text-align: center;
+  background-color: transparent;
+  border-bottom: 1px solid #FFF;
+  padding: 13px 0;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7 input[type="email"]::placeholder {
+  color: #858585;
+}
+
+.promotion-banner.ui-ux-design .consult .wpcf7 input[type="email"]:-webkit-autofill,
+.promotion-banner.ui-ux-design .consult .wpcf7 input[type="email"]:-webkit-autofill:hover,
+.promotion-banner.ui-ux-design .consult .wpcf7 input[type="email"]:-webkit-autofill:focus{
+  background-color: transparent !important;
+}
+/* .promotion-banner.ui-ux-design .consult .wpcf7 .subsc-group {
+  max-width: 370px;
+  margin: 40px auto 0;
+} */
+.promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn {
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn:hover {
+  background-position: 93% center;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7-form input.wpcf7-submit {
+  background-position: 91% center;
+}
+.brand-cta-label .promotion-banner.ui-ux-design .consult .wpcf7-form input.wpcf7-submit {
+  background-position: 88% center;
+}
+.brand-cta-label .promotion-banner.ui-ux-design .consult .wpcf7-form input.wpcf7-submit:hover {
+  background-position: 88% center;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7 .subsc-group .wpcf7-spinner {
+  position: absolute;
+  top: 122px;
+}
+.promotion-banner.ui-ux-design .consult .wpcf7 .wpcf7-response-output {
+  margin: -30px 0 0 0;
+  line-height: 1;
+}
+.promotion-banner.ui-ux-design .consult p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 43px;
+}
+.user-experience-form span.wpcf7-spinner {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+}
+.user-experience-form {
+    /* padding: 0 20px; */
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1440px) {
+  .promotion-banner {
+    padding: 60px 0 65px;
+  }
+  .promotion-banner.ui-ux-design{
+    padding: 60px 0 35px;
+  }
+  .headline {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .consult {
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .promotion-banner.ui-ux-design{
+    margin-top: 50px !important;
+  }
+  .professional-print-design-services .promotion-banner.ui-ux-design{
+    margin-top: 0px !important;
+  }
+  .user-experience-form {
+    max-width: 85%;
+    padding-bottom: 30px;
+  }
+  .promotion-banner.ui-ux-design .consult p {
+    column-gap: 30px;
+}
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .headline {
+      font-size: 40px;
+      line-height: 38px;
+    
+    }
+    .headline br {
+      display: block; 
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .headline {
+      font-size: 35px;
+      line-height: 32px;
+      display: block;
+    }
+    .headline br {
+      display: block; 
+    }
+    .user-experience-form span.wpcf7-spinner{
+      bottom: 5px;
+    }
+    .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn {
+      font-size: 14px;
+    }
+    .user-experience-form {
+      max-width: 500px;
+    }
+    .promotion-banner.ui-ux-design .consult p {
+      column-gap: 30px;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headline {
+      margin-bottom: 0px
+    }
+    .promotion-banner.ui-ux-design .headline{
+      font-size: 31px;
+      margin-bottom: 20px;
+    }
+    .promotion-banner.ui-ux-design .consult p{
+      display: block;
+    }
+    .user-experience-form {
+      max-width: 75%;
+  }
+  .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn {
+    margin-top: 20px; }
+    .consult{
+      font-size: 14px;
+      margin: 0px 0 0px 0px;
+      gap: unset;
+    }
+    .consult .btn {
+      margin-top: 20px;
+  }
+  .consult .btn.btn-outline.service {
+    margin-left: 10px;
+  }
+  }
+  @media screen and (max-width: 767px) {
+    .headline {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 auto;
+      max-width: 90%;
+    } 
+     /* .consult{
+      margin-top: 20px;
+    } */
+    .promotion-banner.ui-ux-design{
+      margin-top: 40px !important;
+    }
+    .professional-print-design-services .promotion-banner.ui-ux-design{
+      margin-top: 0px !important;
+    }
+    .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn{
+      padding: 6px 12px 6px 12px !important;
+    }
+    .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn:hover{
+      background-position: unset;
+      background-image: none;
+      padding: 10px 25px; 
+    }
+    .promotion-banner.ui-ux-design .consult .wpcf7-form input.wpcf7-submit{
+      background-image: none;
+      padding: 10px 25px;
+      }
+      .user-experience-form {
+        max-width: 340px;
+    }
+    .promotion-banner.ui-ux-design .headline {
+      margin-bottom: 18px;
+  }
+  .user-experience-form{
+    padding-bottom: 0;
+  }
+  .promotion-banner.ui-ux-design .consult .wpcf7 .wpcf7-response-output {
+    margin: 15px 0 0 0;
+    
+  }
+
+  }
+  
+  @media screen and (max-width: 576px) {
+    .headline {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    
+    .promotion-banner {
+      padding: 40px 10px;
+    }
+    .promotion-banner.ui-ux-design{
+      padding: 40px 10px;
+    }
+    .user-experience-form {
+      padding-bottom: 0;
+    }
+    .user-experience-form span.wpcf7-spinner {
+      bottom: 10px;
+      right: -100px;
+      left: 100px;
+      margin: 0 auto;
+  }
+  .promotion-banner.ui-ux-design .consult p{
+    margin: 0 0 0px;
+  }
+
+    /* .consult{
+      margin-top: 20px;
+      gap: 20px;
+    } */
+    .consult .btn{
+            font-size: 14px;
+            line-height: 25px;
+    }
+    .consult .btn.btn-outline.service{
+      font-size: 14px;
+       line-height: 25px;
+    }
+    .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn{
+      font-size: 13px;
+    }
+  }
+  
+ 
+
+@media screen and (max-width: 425px) {
+  
+  .consult{
+    font-size: 16px;
+    /* margin-top: 22px; */
+  }
+  /* .btn.btn-outline.consult {
+    margin: 5px 0 0 0;
+    
+  } */
+  .promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn{
+    font-size: 12px;
+  }
+  /* .user-experience-form {
+    max-width: 100%;
+} */
+.promotion-banner.ui-ux-design .consult .wpcf7 .user-experience-form .btn:hover{
+background: center #fff;; }
+
+
+}

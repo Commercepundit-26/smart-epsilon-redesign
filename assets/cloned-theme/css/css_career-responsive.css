@@ -1,0 +1,179 @@
+@media(min-width:1600px) {}
+
+@media(max-width:1600px) {
+
+    .why_section .items { gap: 2.6%;}
+    .why_section .items .item{ width: 23%; font-size: 18px;}
+    .why_section .items .item strong {font-size: 44px;    }
+    .why_section .items strong{ font-size: 46px;} 
+    .careere-form  .note{font-size: 22px;}
+    .whatteam-says { margin:80px 0;}
+    .section_ourprocess .list h3{ font-size: 22px;}
+	.section_ourprocess .testimonials_section{ padding-top: 60px;}
+  
+}
+
+@media(max-width:1400px) {
+    .weare_section .item .item-left, .weare_section .item .item-right{ width: 46%;} 
+    .positions-tabs .positions-tab{ font-size: 20px; right: 15px;}
+    .positions-tabs .positions-tab > div{ padding: 15px 20px;}
+    .positions-tabs .positions .item{gap: 1rem; /*padding: 15px 20px;*/}
+    .positions-bottom{padding: 40px 40px;}
+    .wearewhat_section .slick-list{ margin: 0 -10px;}
+    .wearewhat_section .item{ padding: 0 10px; font-size: 20px}
+    .wearewhat_section .info h4{ font-size: 26px;}
+
+    .job-descriptiondetail .description-wrap .item-right {max-width: 360px;}
+    .form-wrapper .container .wpcf7 .resume-upload .file-upload.btn:after {top: 25px}
+    .findyour_section .positions-bottom {padding: 15px 20px}
+    .employee_section .items .item h4 {font-size: 18px;}
+    .employee_section .items {gap: 1.5rem;}
+    .findyour_section .positions .no-postions {padding: 15px 20px}
+    .wearewhat_section .item ul li {font-size: 85%;}
+}
+
+@media(max-width:1200px) {
+    .why_section .items .item{ padding: 20px; min-height: 220px; }
+    .why_section .items .item strong{ font-size: 40px;}
+    .weare_section .items .item{ font-size: 100%;}
+    .weare_section .item .item-left, .weare_section .item .item-right{ width: 48%;} 
+    .careere-form  .note{ font-size: 20px;}
+    .whatteam-says .item-left{ font-size: 20px;}
+    .whatteam-says { margin:60px 0;}
+
+    .section_ourprocess .list h4{ font-size: 20px;} 
+	.section_ourprocess .list h3 {font-size: 20px; padding-top: 0;}
+	.section_ourprocess .list{ padding: 40px 0;}
+
+    .job-descriptiondetail .description-wrap .item-right .right-inner {padding: 25px}
+    .job-descriptiondetail .description-wrap .item-left {padding-right: 15px}
+    .job-descriptiondetail .description-wrap .item-right {max-width: 300px}
+
+    .form-col.resume-upload > label {font-size: 20px}
+
+    .careere-form .form-col.resume-upload input#fileuploadurl {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .careere-form .container .wpcf7 .resume-upload .file-upload.btn:after {
+        opacity: inherit !important;
+    }
+}
+
+@media(min-width:768px) and (max-width:1200px) {}
+
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50) {}
+
+@media(max-width:990px) {
+    .why_section .items{ gap: 20px;}
+    .why_section .items .item { width: 48%;}
+    .why_section .items .item strong{ font-size: 30px;}
+    .positions-tabs{ padding-top: 60px; position: relative;}
+    .positions-tabs .positions-tab{ transform: translateX(-50%); left: 50%; right: auto;}
+    .positions-tabs .positions-tab > div{ padding: 10px 20px;}
+    .positions-content{ padding-top: 20px;}
+    .positions-tabs .positions .items {grid-template-columns: 1fr 1fr;}
+    .whatteam-says .scrollcontainer{ grid-area: 1rem;}
+    .whatteam-says .item-right ul {--masonry-gap:1rem; --masonry-brick-width:50%; }
+    .whatteam-says .item-right li .text-field{ padding: 15px;}
+    .whatteam-says .item-left{ padding-right: 0;}
+    .section_ourprocess .list{margin-top: 0}
+    .section_ourprocess .list .item{ margin-bottom: 20px;width: calc(100%/3);}
+
+    .employee_section .positions-tabs{ position: static;}
+    .employee_section .positions-tab{ transform: none; left: auto; right: 15px;}
+
+    .findyour_section .positions-tabs .positions-tab > div {padding: 15px 5px; font-size: 16px;}
+    .findyour_section .positions-content .positions-title.current:before {display: none;}
+    .cp_life .grid-item {width: 250px;}
+    .positions-tabs .positions .item {gap: 5px; padding: 10px;}
+
+}
+
+@media(min-width:1200px) {} 
+
+@media(max-width:767px) {
+    .weare_section .items{ padding: 10px 0;}
+    .weare_section .item { padding-bottom: 80px; margin-bottom: 20px;}
+    .weare_section .item .item-left, .weare_section .item .item-right{ width: 100%;}
+    .weare_section .item .item-right{ position: absolute; height: 80px; top: auto; bottom: 0;}
+    .weare_section .item h3{ padding-bottom: 20px;}
+    .weare_section .item.open { padding-bottom: 10px;}
+    .weare_section .item.open .item-right{ position: static; height: auto;}
+    .weare_section .item .item-info{ padding-bottom: 0px;}
+
+    .positions-tabs,.positions-content{ padding-top: 0;}
+    .positions-tabs .positions-tab{  display: none;}
+    .positions-tabs .positions-title{ display: block; padding-right: 40px;border-bottom: 0;}
+    .careere-form  .form-wrapper .form-btn-row{ flex-wrap: wrap;}
+    .careere-form  .note{ font-size: 16px; padding: 10px 0; text-align: left;}
+
+    .whatteam-says { margin:40px 0;}
+    .wearewhat_section .item{ font-size: 100%;}
+    .wearewhat_section .item figure{ margin-bottom: 20px; border-radius: 20px;}
+    .wearewhat_section .info h4{ font-size: 18px;}
+    .wearewhat_section .info{ padding: 0 10px;}
+    .whatteam-says .item-left,.whatteam-says .item-right{  width: 100%;} 
+    .wearewhat_section .item_inner,
+    .whatteam-says .item-right{ height: 600px;} 
+    .section_ourprocess .list{ padding: 20px 0 0;}
+	.section_ourprocess .list .item img {max-width: 60px; margin-bottom: 15px; height: 55px; }
+	.section_ourprocess .testimonials_section{ padding-top:0px;}
+	.section_ourprocess .list:before{ display: none	;} 
+    
+    .employee_section .positions-tabs{ position: relative; padding-top: 60px;}
+    .employee_section .positions-tab{ display: flex; position: absolute; left: 50%; transform: translateX(-50%); right: auto;}
+    .employee_section .positions-title{ display: none;}
+
+    .job-descriptiondetail .description-wrap .item-left {width: 100%}
+    .job-descriptiondetail .description-wrap .item-right {max-width: 100%;width: 100%;margin-top: 50px}
+
+    .findyour_section .positions-tabs .positions-tab {display: flex; position: inherit; }
+    .employee_section .items .item h4 {font-size: 16px}
+    .form-wrapper .form-col [data-name="YearsofExperience"]:before, 
+    .form-wrapper .form-col [data-name="are-authorized"]:before {right: 10px;top: 10px}
+
+    .form-col.resume-upload > label {padding-bottom: 0px;font-size: 16px;}
+    .form-col.resume-upload input#fileuploadurl {padding-top: 15px;padding-bottom: 10px;}
+    .careere-form .form-col.resume-upload>label {font-size: 16px;line-height: normal;}
+    .careere-form .form-col.resume-upload input#fileuploadurl {padding-top: 20px;padding-bottom: 10px;}
+    .form-wrapper .container .wpcf7 .resume-upload .file-upload.btn:after {background-size: 16px !important;top: 24px;}
+    .careere-form .form-col.resume-upload .input-group.file-upload.file-upload.btn .wpcf7-not-valid-tip {top: 55px;}
+    .careere-form .form-col.resume-upload input#fileuploadurl {padding-left: 170px; font-size: 15px; line-height: 15px; padding-top: 0px; padding-bottom: 0px;}
+    
+    .cp_life .grid-item {width: 170px;}
+    .positions-tabs .positions .item{ display: flex; flex-flow: column; padding: 20px;gap: 15px}
+    .positions-tabs .positions .position-btn {margin-left: 0; }
+
+    .job-descriptiondetail .item-left h3 {font-size: 18px;}
+    .job-descriptiondetail .item-right .right-inner {border-radius: 12px;padding: 20px;}
+    .job-descriptiondetail .item-right h3 {font-size: 22px}
+    .job-descriptiondetail .item-right .text-wrap p {font-size: 16px}
+    .section_ourprocess .list h4 {font-size: 18px;}
+
+}
+ 
+@media(min-width:767px) {} 
+
+@media(max-width:540px) {
+    .why_section .items{ row-gap:15px ; column-gap: 4%;}
+    .why_section .items .item{ padding: 10px; min-height: 130px;}
+
+    .positions-tabs .positions{ padding-top: 20px;}
+    .positions-tabs .positions .position-btn{ margin-left: 0;}
+    .positions-bottom{padding: 30px; margin-top: 20px;}
+
+    .whatteam-says .item-right ul.marquee2{ display: none;}
+    .whatteam-says .item-right ul{ width: 100%;}
+
+    .employee_section .items .item {padding: 0px;margin-bottom: 15px;}
+    .section_ourprocess .list .item {width: calc(100%/2); }
+    .wearewhat_section .item_inner {height: auto;}
+    .wearewhat_section .item_inner {padding: 15px;}
+    .job-descriptiondetail .item-left li {font-size: 16px;line-height: 20px}
+    .job-descriptiondetail .item-right h3 {padding-bottom: 0;}
+    .why_section .items .item span {font-size: 14px;}
+    .employee_section .items .item span.icon img {width: 85%;}
+    .employee_section .items .item span.icon {height: 55px;}
+    .employee_section .items {gap: 1rem;}
+}

@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#0b0d17"/>
+      <stop offset="60%" stop-color="#0e1122"/>
+      <stop offset="100%" stop-color="#0a0c18"/>
+    </radialGradient>
+
+    <pattern id="dotGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="0.5" cy="0.5" r="0.8" fill="#1e2338"/>
+      <path d="M32 0H0V32" stroke="#11162a" stroke-width="0.6"/>
+    </pattern>
+
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9900"/>
+      <stop offset="100%" stop-color="#FFC266"/>
+    </linearGradient>
+    <linearGradient id="orangeDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cc7a00"/>
+      <stop offset="100%" stop-color="#a86200"/>
+    </linearGradient>
+
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00a3ff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <linearGradient id="blueDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d6fb8"/>
+      <stop offset="100%" stop-color="#0a5a95"/>
+    </linearGradient>
+
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b5dd6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d8ff" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00d8ff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#00a3ff" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#00d8ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00d8ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="dataGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB357" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FF9900" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFB357" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="20%" stop-opacity="0"/>
+      <stop offset="80%" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 0.65  0 0 0 0 0  0 0 0 1 0" result="col"/>
+      <feGaussianBlur in="col" stdDeviation="8" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#FFB357"/>
+    </marker>
+
+    <!-- Reusable isometric cubes -->
+    <symbol id="cube-orange" viewBox="-90 -60 180 200">
+      <g>
+        <polygon points="0,-40 69,0 0,40 -69,0" fill="url(#orangeGrad)"/>
+        <polygon points="69,0 69,80 0,120 0,40" fill="url(#orangeDark)"/>
+        <polygon points="-69,0 -69,80 0,120 0,40" fill="#b86d00"/>
+        <polygon points="0,120 69,80 69,90 0,130 -69,90 -69,80" fill="#3a2a00" opacity="0.2"/>
+      </g>
+    </symbol>
+
+    <symbol id="cube-blue" viewBox="-90 -60 180 200">
+      <g>
+        <polygon points="0,-40 69,0 0,40 -69,0" fill="url(#blueGrad)"/>
+        <polygon points="69,0 69,80 0,120 0,40" fill="url(#blueDark)"/>
+        <polygon points="-69,0 -69,80 0,120 0,40" fill="#0a4c7c"/>
+        <polygon points="0,120 69,80 69,90 0,130 -69,90 -69,80" fill="#003049" opacity="0.2"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#bgGrad)"/>
+  <rect width="1600" height="1000" fill="url(#dotGrid)" opacity="0.35"/>
+
+  <!-- Subtle star field -->
+  <g fill="#18203b">
+    <circle cx="120" cy="140" r="2" opacity="0.7"/>
+    <circle cx="210" cy="280" r="1.5" opacity="0.5"/>
+    <circle cx="380" cy="120" r="1.2" opacity="0.6"/>
+    <circle cx="560" cy="200" r="1.4" opacity="0.5"/>
+    <circle cx="740" cy="100" r="1.2" opacity="0.5"/>
+    <circle cx="900" cy="180" r="1.3" opacity="0.6"/>
+    <circle cx="1100" cy="140" r="1.5" opacity="0.6"/>
+    <circle cx="1300" cy="200" r="1.3" opacity="0.5"/>
+    <circle cx="1460" cy="120" r="1.2" opacity="0.5"/>
+    <circle cx="1400" cy="320" r="1.4" opacity="0.6"/>
+    <circle cx="160" cy="440" r="1.1" opacity="0.5"/>
+    <circle cx="1440" cy="680" r="1.2" opacity="0.5"/>
+    <circle cx="240" cy="760" r="1.4" opacity="0.6"/>
+    <circle cx="980" cy="780" r="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- VPC-like ring -->
+  <g opacity="0.95">
+    <ellipse cx="800" cy="560" rx="460" ry="150" fill="none" stroke="#00e1ff" stroke-opacity="0.12" stroke-width="26" filter="url(#glow)"/>
+    <ellipse cx="800" cy="560" rx="460" ry="150" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-dasharray="14 18" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" from="0" to="600" dur="18s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Compute/service nodes as 3D cubes -->
+  <g id="cubes" filter="url(#shadow)">
+    <use href="#cube-orange" transform="translate(420,360) scale(1.1)"/>
+    <use href="#cube-blue"   transform="translate(580,650) scale(0.9)"/>
+    <use href="#cube-orange" transform="translate(1020,640) scale(1.2)"/>
+    <use href="#cube-blue"   transform="translate(1160,380) scale(0.85)"/>
+    <use href="#cube-orange" transform="translate(760,760) scale(0.8)"/>
+    <use href="#cube-blue"   transform="translate(320,560) scale(0.85)"/>
+    <use href="#cube-orange" transform="translate(1300,560) scale(0.9)"/>
+  </g>
+
+  <!-- Data flow arcs -->
+  <g id="flows" stroke="url(#dataGrad)" stroke-width="4" fill="none" marker-end="url(#arrow)" stroke-linecap="round" opacity="0.9" filter="url(#softGlow)">
+    <path d="M420 320 C 520 260, 640 320, 760 460 S 940 560, 800 520"/>
+    <path d="M580 600 C 640 560, 700 560, 760 540 S 840 520, 800 520"/>
+    <path d="M1020 600 C 980 540, 900 520, 860 520 S 820 520, 800 520"/>
+    <path d="M1160 340 C 1080 320, 980 360, 900 460 S 840 540, 800 520"/>
+    <path d="M320 520 C 460 480, 560 460, 700 500 S 840 560, 800 520"/>
+    <path d="M1300 520 C 1180 500, 1060 500, 920 510 S 820 520, 800 520"/>
+  </g>
+
+  <!-- Pulsing data packets -->
+  <g id="nodes" filter="url(#glow)">
+    <circle cx="700" cy="500" r="3.5" fill="#FFB357">
+      <animate attributeName="r" values="3.5;6;3.5" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="460" r="3.5" fill="#FFB357">
+      <animate attributeName="r" values="3.5;6;3.5" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="510" r="3.5" fill="#FFB357">
+      <animate attributeName="r" values="3.5;6;3.5" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="540" r="3.5" fill="#FFB357">
+      <animate attributeName="r" values="3.5;6;3.5" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="860" cy="520" r="3.5" fill="#FFB357">
+      <animate attributeName="r" values="3.5;6;3.5" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Abstract cloud at the core -->
+  <g id="cloud">
+    <path d="M 620 520
+             C 600 470, 650 430, 700 440
+             C 720 400, 800 390, 840 430
+             C 880 410, 940 430, 940 470
+             C 980 480, 980 520, 950 540
+             C 930 570, 870 580, 820 560
+             C 780 590, 700 590, 660 550
+             C 610 550, 580 520, 620 520 Z"
+          fill="url(#cloudGrad)" filter="url(#shadow)"/>
+    <circle cx="770" cy="460" r="70" fill="#ffffff" opacity="0.06"/>
+    <circle cx="700" cy="520" r="60" fill="#ffffff" opacity="0.05"/>
+    <circle cx="860" cy="520" r="55" fill="#ffffff" opacity="0.04"/>
+  </g>
+
+  <!-- Soft highlights -->
+  <g opacity="0.18">
+    <ellipse cx="800" cy="560" rx="360" ry="120" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <ellipse cx="800" cy="560" rx="300" ry="100" fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Top/bottom vignette -->
+  <rect width="1600" height="1000" fill="url(#vignette)" pointer-events="none"/>
+</svg>

@@ -1,0 +1,251 @@
+/*   Key facts About Us Section css    */
+
+.about_fact_section {
+    padding: 120px 0px 0px; 
+    background-color: #fff;
+  }
+
+
+  .about_fact_section .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+  }
+  .about-facts-cp-slider-desktop .facts-grid {
+    display: block !important;}
+  
+  .about-facts-cp-slider-desktop .facts-grid .fact-item{
+    margin-right: 15px;
+  }
+  .container.about-facts-cp-slider-desktop {
+    max-width: 100%;
+    padding: 0 0 0 153px;
+  }
+
+.about_fact_section .fact-item {
+    background: #fff;
+    padding: 70px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    border-right: 1px solid #DDDDDD;
+    transition: all 0.5s ease-in-out;
+}
+.about_fact_section .fact-item:last-child {
+    border-right: 0;
+}
+.about_fact_section .fact-item .fact-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.about_fact_section .fact-item:hover,
+.about_fact_section .fact-item.active {
+    background-color: #000000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    border-right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_fact_section .fact-number {
+    font-size: 95px;
+    color: #DDDDDD;
+    margin-bottom: 95px;
+    line-height: 70px;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+}
+
+.about_fact_section .fact-content h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #000000;
+    line-height: 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_fact_section .fact-item:hover .fact-number,
+.about_fact_section .fact-item.active .fact-number,
+.about_fact_section .fact-item:hover h4,
+.about_fact_section .fact-item.active h4,
+.about_fact_section .fact-item:hover p,
+.about_fact_section .fact-item.active p {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.about_fact_section .fact-content p {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    line-height: 32px;
+}
+@media (max-width: 1600px) {
+.container.about-facts-cp-slider-desktop {
+    max-width: 100%;
+    padding: 0px 0 0 115px;
+}
+}
+  /* Responsive */
+  @media (max-width: 1440px) {
+    .about_fact_section .fact-item {
+        padding: 50px 25px;
+    }
+    .about_fact_section .fact-number {
+        font-size: 80px;
+        margin-bottom: 50px;
+    }
+    .about_fact_section .fact-content h4 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .about_fact_section .fact-content p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .about_fact_section {
+        padding: 50px 0px;
+    }
+    .about_fact_section .facts-grid {
+        margin-top: 40px;
+    }
+    .about_fact_section {
+        padding: 40px 0;
+    }
+
+  }
+  @media screen and (max-width: 1440px) {
+    .container.about-facts-cp-slider-desktop {
+
+        padding: 0 0 0 45px;
+      }
+  }
+  @media (max-width: 1024px) {
+    .about_fact_section .facts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .about_fact_section .fact-item:last-child, 
+    .about_fact_section .fact-item:nth-child(2) {
+        border-right: 1px solid #DDDDDD;
+    }
+    .about_fact_section .fact-item {
+        padding: 50px 25px;
+    }
+    .container.about-facts-cp-slider-desktop {
+
+        padding: 0 0 0 15px;
+      }
+      .about_fact_section .slick-track .fact-item {
+        height: auto;
+        justify-content: flex-start;
+    }
+    .about_fact_section .slick-track {
+        display: flex;
+    }
+    .about_fact_section .fact-content br {
+        display: inherit;
+    }
+    
+  }
+
+
+  @media (max-width: 767px) {
+    .about_fact_section .fact-item {
+        max-width: inherit;
+        min-width: inherit;
+        margin-right: 20px;
+    }
+    .about_fact_section .fact-item:last-child {
+        margin-right: 0;
+    }
+    .about_fact_section .facts-grid {
+        grid-template-columns: inherit;
+        margin-top: 25px;
+    }
+    .about_fact_section .fact-item:hover .fact-number,
+    .about_fact_section .fact-item.slick-current .fact-number,
+    .about_fact_section .fact-item:hover h4,
+    .about_fact_section .fact-item.slick-current h4,
+    .about_fact_section .fact-item:hover p,
+    .about_fact_section .fact-item.slick-current p {
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    .about_fact_section .fact-item:hover,
+    .about_fact_section .fact-item.slick-current {
+        background-color: #000000;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        border-right: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .about_fact_section .fact-item {
+        padding: 60px 28px 40px;
+    }
+    .about_fact_section .fact-number {
+        margin-bottom: 50px;
+        font-size: 75px;
+    }
+    .about_fact_section .fact-content h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 25px;
+        /* min-height: 65px; */
+    }
+    .about_fact_section .fact-content p {
+        font-size: 18px;
+        line-height: 32px;
+        /* min-height: 80px; */
+    }
+    .about_fact_section .fact-item:last-child, 
+    .about_fact_section .fact-item:nth-child(2) {
+        border-right: 1px solid #DDDDDD;
+    }
+    .about_fact_section {
+        padding: 60px 0;
+    }
+  }
+
+
+  @media (max-width: 640px) {
+    .about_fact_section .fact-item {
+        max-width: inherit;
+        min-width: 250px;
+        margin-right: 20px;
+    }
+    .about_fact_section .fact-item {
+        border-right: 0;
+    }
+    .about_fact_section .fact-item:last-child, 
+    .about_fact_section .fact-item:nth-child(2) {
+        border-right: 0;
+    }
+  }
+
+  /*@media (max-width: 640px) {
+    .about_fact_section .facts-grid {
+      grid-template-columns: 1fr;
+    }
+    .about_fact_section .facts-heading {
+      font-size: 28px;
+    }
+    .about_fact_section .fact-item {
+        border: 0;
+        border-top: 1px solid #DDD;
+    }
+    .about_fact_section .fact-item:last-child {
+        border-bottom: 1px solid #DDD;
+    }
+    .about_fact_section .fact-content h4 {
+        margin-bottom: 15px;
+    }
+    .about_fact_section .fact-item:hover {
+        border-color: transparent;
+    }
+  }*/

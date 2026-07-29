@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our work */
+.portfolio-main {   overflow: hidden;
+  width: 100%; 
+}  
+
+.portfolio-main .items {  display: flex;  justify-content: center; }
+.portfolio-main .slick-list{ margin: 0 -20px;} 
+.portfolio-main .item { padding:0 20px; font-size:30px;  color: #fff; font-size: 20px;}   
+.portfolio-main .item a figure {display: block; width: 100%; position: relative; padding-bottom:105%; height: 0; overflow: hidden; }
+.portfolio-main .item figure img{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;     object-fit: cover; } 
+.portfolio-main .item_info{ display: block; padding: 30px 0 0; font-size: 18px;  color: #aaa;} 
+.portfolio-main .item h5 {font-size: 28px; color: #fff;} 
+.portfolio-main .item h5 a{ font-size: 100%; color: #fff;}
+.portfolio-main .item p {  font-size: 100%;  }
+ 
+@media(max-width:1600px) {
+
+  .portfolio-main .item h5{ font-size: 26px;}
+  .portfolio-main .item p{ font-size: 16px; line-height: normal;} 
+}
+
+@media(max-width:1199px) {
+  .portfolio-main .slick-list{ margin: 0 -15px;} 
+  .portfolio-main .item { padding:0 15px; font-size: 20px;}
+  .portfolio-main .item h5{ font-size: 20px;}
+  .portfolio-main .item p{ font-size: 16px;} 
+} 
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+
+  .portfolio-main .item { padding:0 15px; font-size: 20px;}
+  .portfolio-main .item a figure{ padding-bottom: 100%;}
+  .portfolio-main .item h5{ font-size: 20px;}
+  .portfolio-main .item p{ font-size: 16px;line-height: normal;} 
+}
+
+@media(max-width:990px) {
+  .portfolio-main .item .item_info{ padding: 30px 0 0;} 
+ 
+} 
+@media(max-width:767px) {
+.portfolio-main .item .item_info {opacity: 1;visibility: visible;position: static;padding:30px 0 0px;}
+
+  .portfolio-main .slick-list{ margin: 0 -10px;} 
+  .portfolio-main .item {font-size: 16px;  padding:0 10px; } 
+
+   
+} 

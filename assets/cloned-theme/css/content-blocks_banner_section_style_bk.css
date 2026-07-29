@@ -1,0 +1,292 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+/* banner section */
+
+/* Service Detail Template css for banner section */
+.partner-logo-wrap {
+  display: flex;
+  column-gap: 30px;
+  margin: 68px auto 0px;
+  width: 760px;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-inner-caption .h1-style.service-title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.banner-inner-caption.services .leftbanner.service-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+}
+.page-middle .blog-hero .banner-inner-caption.services{
+
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 0;
+}
+.banner-inner-caption.services .caption.service-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0 0 32px;
+  margin-top: 0;
+}
+
+/*.btn.btn-outline.service {
+  background-color: transparent !important;
+  margin-top: 50px !important;
+  display: inline-block !important;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 16px
+}*/
+.btn.btn-outline.service {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 29px;
+}
+.btn.btn-outline.service:after {
+  background: #fff; 
+}
+
+.btn.btn-outline.service:before {
+  background: url(../../images/btn-arrow-white.svg) no-repeat center;
+}
+
+/* .btn.btn-outline.service:hover {
+  padding: 18px 30px 18px 68px;
+} */
+
+/*.btn.btn-outline.service:hover:after {
+  opacity: 0;
+}
+
+.btn.btn-outline.service:hover:before {
+  opacity: 1;
+}*/
+
+.custom-partner-logo {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.services-main .banner-inner-caption.services .leftbanner.service-left {
+  max-width: inherit;
+}
+.services-main .hero-banner.blog-hero {
+  height: 61.6vh;
+}
+.services-main .blog-hero .hero-video-wrapper {
+  min-height: 61.6vh;
+}
+
+/* 1024 wrong */
+.blog-hero .partner-logo-wrap .partner-image {
+  padding-top: 0;
+}
+
+/* Partner logo sizing */
+.custom-partner-logo {
+  padding: 0;
+}
+
+/*.btn.btn-outline.service {
+  margin-top: 20px !important;
+  margin-left: 8px;
+}*/
+
+.banner-inner-caption.services .leftbanner.service-left .button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.banner-inner-caption.services .leftbanner.service-left .button-wrap a {
+  margin-top: 0 !important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.32px; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 1600px) {
+  .banner-inner-caption .h1-style.service-title {
+    font-size: 60px;  
+    margin-bottom: 12px;
+  }
+
+  .banner-inner-caption.services .caption.service-subtitle {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+  .partner-logo-wrap {
+    margin: 50px auto 20px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .banner-inner-caption .h1-style.service-title {
+    font-size: 55px;  
+    margin-bottom: 10px;
+  }
+
+  .banner-inner-caption.services .caption.service-subtitle {
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+  
+  .partner-logo-wrap {
+    gap: 8px;
+    margin: 40px auto 10px;
+    max-width: 670px;
+    
+  }
+  
+/*  .btn.btn-outline.service {
+    margin-top: 25px !important;
+    margin-left: 10px;
+  }*/
+  
+  .banner-inner-caption.services .leftbanner.service-left > div:nth-child(3) {
+    gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-inner-caption .h1-style.service-title {
+    font-size: 45px !important;
+    margin-bottom: 10px;
+    
+  }
+  
+  .banner-inner-caption.services .caption.service-subtitle{
+    font-size: 16px !important;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+  
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+    .services-main .blog-hero .hero-video-wrapper {
+      min-height: 60vh;
+  }
+  .services-main .hero-banner.blog-hero {
+    height: 60vh;
+  }
+  .banner-inner-caption .h1-style.service-title {
+    font-size: 45px !important;
+    margin-bottom: 10px;
+    
+  }
+  
+  .banner-inner-caption.services .caption.service-subtitle{
+    font-size: 16px !important;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .partner-logo-wrap {
+    gap: 15px;
+    margin: 50px auto 30px;
+    max-width: 550px;
+  }
+  
+  
+  /*.btn.btn-outline.service {
+    padding: 15px 50px 15px 25px;
+    font-size: 14px;
+  }
+  
+  .btn.btn-outline.service:hover {
+    padding: 15px 25px 15px 50px;
+  }*/
+}
+
+/* Mobile Screens (up to 679px) */
+@media (max-width: 767px) {
+  .services-main .hero-banner.blog-hero {
+    height: auto;
+  }
+  .services-main .blog-hero .hero-video-wrapper {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .banner-inner-caption .h1-style.service-title {
+    font-size: 28px !important;
+    margin-bottom: 12px;
+    line-height: 30px !important;
+    font-weight: normal;
+}
+.banner-inner-caption.services .caption.service-subtitle {
+    font-size: 14px !important;
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+.partner-logo-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 760px;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 40px;
+    max-width: 210px;
+}
+  
+  /*.btn.btn-outline.service {
+    padding: 12px 40px 12px 20px;
+    font-size: 13px;
+  }
+  
+  .btn.btn-outline.service:hover {
+    padding: 12px 20px 12px 45px;
+  }*/
+  .banner-inner-caption.services .leftbanner.service-left .button-wrap a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+     
+  }
+  
+}
+
+@media (max-width: 320px) {
+.banner-inner-caption .h1-style.service-title {
+    font-size: 25px !important;
+    margin-bottom: 15px;
+}
+.banner-inner-caption .caption.service-subtitle {
+    font-size: 14px !important;}
+
+    .partner-logo-wrap {
+        margin: 20px auto 0px;
+        max-width: 200px;
+    }
+}

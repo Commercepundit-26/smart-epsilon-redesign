@@ -1,0 +1,37 @@
+
+
+/* 
+    Created on : 24 jan, 2024, 
+    Author : Nandkishor K
+*/ 
+
+
+.section_choosePlatfrom{}
+.section_choosePlatfrom .section_row{ display: flex; flex-wrap: wrap; gap:5%;  align-items: start;     justify-content: space-between;}
+.section_choosePlatfrom .platfrom_left{ width: 59%;}
+.section_choosePlatfrom .platfrom_right{ width:36%;    }
+.section_choosePlatfrom .platfrom_right .items{    display: grid; grid-template-columns: repeat(2,1fr); gap:20px; text-align: center; }
+.section_choosePlatfrom .items li{ display:block;  text-align: center; background: #F6F6F6; padding: 15px; margin-bottom:0px;  }
+
+.section_choosePlatfrom .items li img{ max-width: 100%; display: block;  }
+.section_choosePlatfrom .items li p{ margin: 0; padding: 0; font-weight: 500;  }
+.section_choosePlatfrom .head_info { max-width: 90%;}
+.section_choosePlatfrom .head_info strong{ font-weight: 600;} 
+
+@media(max-width:1600px) {    
+}
+
+@media(max-width:990px) {
+    .section_choosePlatfrom .section_row{  gap: 20px;}
+    .section_choosePlatfrom .platfrom_left,.section_choosePlatfrom .platfrom_right{ width: 100%;}
+    .section_choosePlatfrom .platfrom_right .items{ grid-template-columns: repeat(3,1fr); gap: 20px;  }
+
+.section_choosePlatfrom .items li{ margin-bottom: 20px;}
+    
+}
+
+@media(max-width:767px) { 
+    .section_choosePlatfrom .section_row{  gap: 0;} 
+    .section_choosePlatfrom .platfrom_right .items{ grid-template-columns: repeat(2,1fr); }
+    .section_choosePlatfrom .items li{  margin: 0;}
+} 

@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+.services-even-odd {
+  max-width: 68%;
+  flex-wrap: wrap;
+}
+.services-even-odd h3{ font-size: 35px;}
+
+.ga4-services-container section.portfolio-main {
+  padding: 0;
+}
+
+.container.ga4-services-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.ga4-services-container .services-even-odd {
+  display: inline-block;
+  width: 100%;
+  padding-right:30px;
+}
+.ga4-services-container .portfolio-main .container {
+ padding: 0; 
+}
+.ga4-services-container .services-even-odd > h2 {color: #005463;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 40px;}
+
+.ga4-services-container.services-even-odd-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.ga4-services-container .services-even-odd-left {
+  max-width: calc(100% - 535px);
+  width: 100%;
+  padding: 0 0 0 0;
+}
+.ga4-services-container .services-even-odd-right {
+  max-width: 495px;
+  width: 100%;
+}
+.ga4-services-container .services-even-odd-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.ga4-services-container .services-even-odd .services-even-odd-row:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.ga4-services-container .services-even-odd .services-even-odd-row:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+@media(max-width:1400px) {
+  .ga4-services-container .services-even-odd-left {
+    max-width: 50%;
+  }
+  .ga4-services-container .services-even-odd-right {
+    max-width: 45%;
+  }
+}
+@media(max-width:1199px) {
+  .ga4-services-container .services-even-odd {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .ga4-navigation {
+    display: none;
+  }
+  .ga4-services-container .services-even-odd > h2 {
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+  .ga4-services-container .services-even-odd-row {
+    flex-wrap: wrap;
+  }
+  .ga4-services-container .services-even-odd-left h2 {
+    font-size: 30px;
+  }
+  .ga4-services-container .header-descp {
+  	margin: 10px 0 30px 0;
+  }
+}
+
+@media(max-width:1023px) {
+  .ga4-services-container .services-even-odd > h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+  .ga4-services-container .services-even-odd-left {
+    max-width: 60%;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .ga4-services-container .services-even-odd-right {
+    max-width: 40%;
+  }
+  .ga4-services-container .services-even-odd .services-even-odd-row:nth-child(odd) .services-even-odd-left {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+}
+@media(max-width:767px) {
+  .ga4-services-container .services-even-odd > h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .ga4-services-container .services-even-odd-left {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .ga4-services-container .services-even-odd-right {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .ga4-services-container .services-even-odd .services-even-odd-row:nth-child(2n+1) .services-even-odd-left {
+    padding-left: 0;
+  }
+  .ga4-services-container .services-even-odd-row {
+    margin-bottom: 30px;
+  }
+  .services-even-odd h3 {
+    font-size: 24px;
+  }
+
+}

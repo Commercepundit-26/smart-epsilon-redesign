@@ -1,0 +1,2717 @@
+.main_menu {padding: 0px 30px; color: #fff; font-size: 56px; width: auto; z-index: 0; transform: unset; transition: 0.5s ease-in-out;}
+/*.openMenu .main_menu{transform: translate(0, 0); transition:  0.5s ease-in-out; z-index: 99;display: block; width: auto;overflow: inherit;}*/
+
+/* .openMenu .main_menu{  visibility: visible; opacity: 1; z-index: 999; } */
+.main_inner{ display: flex; align-items: center; width: 100%; min-height: 100%;}
+.main_inner > ul{ /*position: relative;*/ display: flex; gap: 53px}
+.main_menu li{ font-size: 16px; /*position: relative;*/ display: flex; justify-content: start; align-items: center; padding: 0px 0;}
+.main_menu li a{ display: inline-block; transition: all 0.4s ease;line-height: 32px; padding: 19px 0;font-weight: 500;font-family: Poppins,sans-serif;}
+.main_menu .sub-arrow{ width: 14px; height: 7px; background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center; transition: all 0.4s ease 0s; cursor: pointer; margin: 2px 0 0 9px;}
+.main_menu li:hover .sub-arrow {transform: rotate(180deg); }
+.main_menu a{ color: #fff; padding:0px 0; display: block; position: relative; font-weight: 400;}
+/*.main_menu ul:hover > li > a{ color:#777;}*/
+.main_menu .mega_menu a { color:#777;}
+/*.main_menu ul:hover > li:hover > a{ color:#fff;}*/
+.main_menu.menu-desktop li.contact {display: none;}
+ 
+.main_menu .mega_menu{ position: absolute; left: 0px; right: 0px; top: 88px;   opacity: 0; padding-left: 0px; display: flex;flex-wrap: wrap; visibility: hidden;transition: all 0.3s ease-in-out; font-size: 32px; width: 100%; margin: 0px auto 0px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);border-radius: 40px;}
+ .main_menu li:hover .mega_menu{ opacity: 1; visibility: visible;padding-top: 10px}  
+
+
+
+/*.openMenu .main_menu:after{ background: rgba(0,0,0,0.3); opacity: 1; visibility: visible; position: absolute; right: 100%;  top: 0; content: ''; display: block; width: 100%; top: 0; bottom: 0; }*/
+body.openMenu .page-header-wrapper{ background: #000;}  
+body.openMenu .page-header-wrapper.sticky_header:before{ display: none;}
+body.openMenu header[data-color-update="light"] .brand-logo a img{filter: brightness(100%);} 
+
+.toggle-menu{ width: 64px; height: 64px; position: relative; margin-right: 30px; cursor: pointer; transition: all 0.3s ease-in; z-index: 999;display: none;}
+.toggle-menu svg{ width: 100%; height: 100%; position: relative; z-index: -1; transition: transform 0.3s; }
+
+/*.toggle-menu:hover,.toggle-menu.active{transform: rotate(90deg);}
+.toggle-menu:hover svg rect,.toggle-menu.active  svg rect{ fill: #fff;}
+.toggle-menu:hover circle,.toggle-menu.active circle{ fill: #000;}*/
+
+
+
+.sticky_header .main_menu{ top: 0;}
+.main_menu .sub-back{ display: none;}
+
+.nav-contacts {width: 100%; display: flex; justify-content: space-between; background-color: #000; padding: 36px 49px; align-items: center; border-radius: 0 0 40px 40px;}
+.nav-contacts h3 {padding: 0; margin: 0; font-size: 30px; color: #fff; font-weight: 500; line-height: 38px; text-transform: capitalize;}
+.nav-contacts a.btn {color: #000000 !important; padding: 15px 70px 15px 34px; font-size: 18px; font-weight: 500; background-color: #ffffff !important;}
+.nav-contacts a.btn:hover {padding-bottom: 15px;padding-top: 15px;}
+.nav-contacts p {margin: 8px 0 0 0; line-height: 23px; font-size: 16px; color: #ffff; }
+.nav-contacts a.btn::after {background: #000 !important; }
+.nav-contacts a.btn::before {background: url(../images/btn-arrow-black.svg) no-repeat center !important;}
+header[data-color-update="light"] span.sub-arrow {filter: brightness(0.1);}
+
+
+
+/*.sticky_header .btn{  padding-top: 12px; padding-bottom: 12px;}  
+.sticky_header .btn:hover{padding-top: 12px; padding-bottom: 12px;}*/
+.sticky_header .toggle-menu{ height: 50px; width: 50px;}
+ 
+
+/* body:not(.home) .page-header-wrapper {background:rgba(0,0,0,0.9); } */
+
+.page-header-wrapper.sticky_header:before{
+  /*background: linear-gradient(to right, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 100%);*/
+  /*background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0) 100%);*/
+  /*backdrop-filter: blur(10px);  -webkit-backdrop-filter: blur(10px);*/
+   position: absolute; width: 100%; height: 100%; display: block; left: 0; top: 0; content: ''; z-index: -1;
+} 
+.page-header-wrapper.sticky_header:before {
+  background: #000;
+  border-bottom: 1px solid #343434;
+}
+header[data-color-update="light"].sticky_header .brand-logo a img {
+  filter: unset;
+}
+header[data-color-update="light"].sticky_header ul li a {
+  color: #fff;
+}
+header[data-color-update="light"].sticky_header ul li span.sub-arrow {
+  filter: unset;
+}
+header[data-color-update="light"].sticky_header .header-right > .btn {
+  background: #ffff;
+  color: #000;
+}
+/*header.sticky_header .header-right > .btn,
+header.sticky_header .header-right .main_inner ul li > a {
+  transition: unset;
+}*/
+header[data-color-update="light"].sticky_header .header-right > .btn::after {
+  background: #000;
+}
+header[data-color-update="light"].sticky_header .header-right > .btn::before {
+  background: url(../images/btn-arrow-black.svg) no-repeat center;
+}
+header[data-color-update="light"].sticky_header .menu-mobile ul li a {
+  color: #000;
+}
+
+.header-right .btn{ position: relative; z-index: 999;}
+header .brand-logo a img{ transition: transform 0.5s; }
+header[data-color-update="light"] .brand-logo a img{filter: brightness(0%);} 
+header[data-color-update="light"] .btn{ background: #000; color: #fff;} 
+header[data-color-update="light"] .btn:after{  background: #fff;}
+header[data-color-update="light"] .btn:before{ background-image: url(../images/btn-arrow-white.svg);}
+
+/*header.sticky_header[data-color-update="dark"] .toggle-menu svg rect,
+header.sticky_header[data-color-update="dark"] .toggle-menu.active  svg rect{ fill: #fff;}
+header.sticky_header[data-color-update="dark"] .toggle-menu circle,
+header.sticky_header[data-color-update="dark"] .toggle-menu.active circle{ fill: #000;} */
+
+
+
+.page-header-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding:0;
+  z-index:999; 
+}
+
+.page-header-wrapper.sticky_header {
+  position: fixed; 
+  animation: stickyDown 0.35s ease-out;
+}
+
+@keyframes stickyDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/*New Menu Design Css*/
+
+/*.page-header-wrapper.sticky_header .page-header-inner {
+  background-color: #000;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] .brand-logo a img {
+  filter: unset;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] a {
+  color: #ffffff;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] span.sub-arrow {
+  filter: unset;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] .btn::after {
+    background-color: #000;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] .btn {
+    background: #FFF;
+    color: #000;
+}
+.page-header-wrapper.sticky_header[data-color-update=light] .btn:before {
+  background: url(../images/btn-arrow-white.svg);
+}*/
+
+
+
+
+
+
+body .page-middle:before,
+body .main-content:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    left: 0;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease 0s;
+}
+body.menuoverlay .page-middle:before,
+body.menuoverlay .main-content:before {
+  opacity: 1;
+  visibility: visible;
+}
+/*.main_menu li:last-child span.sub-arrow {
+    opacity: 0;
+}*/
+.mega_menu_wrap {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 40px;
+}
+.main_menu .mega_menu .mega_menu_item {
+    width: 100%;
+    display: flex;
+    column-gap: 19px;
+}
+/*.main_menu .mega_menu .mega_menu_item ul:hover {
+    background-color: #222222;
+}*/
+.main_menu .mega_menu .mega_menu_item ul {
+    padding: 41px 20px 40px 30px;
+    display: inline-block;
+    width: calc(100%/3);
+    border-right: 1px solid #DDDDDD;
+}
+.main_menu .mega_menu .mega_menu_item ul:last-child {
+  border-right: 0;
+}
+.main_menu .mega_menu .mega_menu_item ul li a {
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px 0;
+    font-weight: 500;
+}
+.main_menu .mega_menu .mega_menu_item ul li{
+  padding: 0;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child {
+  margin: 0 0px 15px 0px;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 0px;
+    border-radius: 10px;
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 600;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child:hover a {
+    padding-left: 0px;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child a:before {
+    content: "";
+    width: 58px;
+    height: 58px;
+    margin-right: 16px;
+    background-image: url(../images/menu-design-icon_new.svg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child:hover a:before {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.main_menu .mega_menu .mega_menu_item ul li a:after {
+    background-image: url(../images/arrow-link-hover.svg);
+    width: 10px;
+    height: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    content: "";
+    filter: brightness(0.1);
+    display: inline-block;
+    background-size: 10px;
+    margin-left: 5px;
+}
+.main_menu .mega_menu .mega_menu_item ul li:first-child a:after {
+    display: none;
+}
+.main_menu .mega_menu .mega_menu_item ul li:hover a::after {
+  opacity: 9;
+}
+.main_menu .mega_menu .mega_menu_item ul li:hover a {
+    padding-left: 10px;
+}
+.main_menu .mega_menu .mega_menu_item ul li.develop a::before {
+  background-image: url(../images/menu-develop-icon_new.svg);
+}
+.main_menu .mega_menu .mega_menu_item ul li.transform a::before {
+  background-image: url(../images/menu-grow-icon_new.svg);
+}
+.main_menu .mega_menu .mega_menu_item ul li.industries a:before {
+  background-image: url(../images/menu-Industries-icon.svg);
+}
+.main_menu .mega_menu .mega_menu_item ul li.technology a:before {
+  background-image: url(../images/menu-Technology-icon.svg);
+}
+/*.main_menu .mega_menu .mega_menu_item ul li.platform a:before {
+  background-image: url(../images/menu-Platform-icon.svg);
+}*/
+.main_menu .mega_menu .mega_menu_item ul li.solutions a:before {
+  background-image: url(../images/menu-Platform-icon.svg);
+}
+.main_menu ul li.case-studies .mega_menu {
+  left: calc(100% - 1260px);
+  right: calc(100% - 1260px);
+}
+
+
+header[data-color-update="light"] a {
+    color: #000;
+}
+
+.main_menu li.agency .nav-contacts,
+.main_menu li.ai-\&-automation .nav-contacts {
+    display: none;
+}
+.main_menu li.agency,
+.main_menu li.ai-\&-automation {
+    position: relative;
+}
+.main_menu li.agency .mega_menu,
+.main_menu li.ai-\&-automation .mega_menu {
+    width: 250px;
+    left: calc(100% - 170px);
+    right: calc(100% - 170px);
+    border-radius: 20px;
+    font-size: inherit;
+    overflow: inherit;
+    top: 72px;
+}
+.main_menu li.agency  .mega_menu_item ul,
+.main_menu li.ai-\&-automation .mega_menu_item ul {
+    width: 100%;
+    padding: 10px 0;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li a,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1;
+    padding: 13px 25px;
+    width: 100%;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li:hover a,
+.main_menu li.ai-\&-automation .mega_menu_item ul li:hover a {
+    padding-left: 37px;
+}
+.main_menu li.agency .mega_menu .mega_menu_wrap,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_wrap {
+    border-radius: 20px;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li a:before,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a:before {
+    display: none;
+}
+.main_menu li.agency .mega_menu_item ul,
+.main_menu li.ai-\&-automation .mega_menu_item ul {
+    width: 100%;
+    padding: 10px 0;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li {
+    margin: 0;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+    width: 100%;
+    display: inline-block;
+    line-height: 1;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li:last-child,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:last-child {
+    border-bottom: 0;
+}
+.main_menu li.agency .mega_menu:before,
+.main_menu li.ai-\&-automation .mega_menu:before {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid white;
+    content: "";
+    margin: 0px auto;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    right: 0;
+}
+/*.main_menu li.agency .mega_menu .mega_menu_item ul li:first-child a,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child a {
+    padding-left: 27px;
+}*/
+
+.main_menu span.toggle-btn {
+    display: none;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li:first-child a:after,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child a:after {
+  background-image: url(../images/arrow-link-hover.svg);
+  width: 10px;
+  height: 10px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  content: "";
+  filter: brightness(0.1);
+  display: inline-block;
+  background-size: 10px;
+  margin-left: 5px;
+}
+.main_menu li.agency .mega_menu .mega_menu_item ul li:first-child:hover a:after,
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child:hover a:after {
+  opacity: 1;
+}
+
+.page-id-33 .breadcrumbs-block {
+    margin-top: 110px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.main_menu .mega_menu .mega_menu_item ul li.industries a, 
+.main_menu .mega_menu .mega_menu_item ul li.solutions a, 
+.main_menu .mega_menu .mega_menu_item ul li.technologies a {
+    cursor: text;
+}
+
+
+
+@media(min-width:2022px) {
+  .main_menu ul li.services .mega_menu {
+    left: inherit;
+    right: 60px;
+  }
+  .contact-us-new .contact-new-one .lead-banner .banner-bg {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+}
+
+@media(min-width:1600px) {
+  .main_menu .mega_menu{ overflow:hidden; width: 480px}
+}
+
+
+@media(min-width:1400px) {
+  .main_menu .mega_menu{ width:1200px; }
+}
+ 
+@media(min-width:990px) {
+/*  .openMenu .page-header-wrapper .brand-logo{ opacity: 0;} */
+  .openMenu .page-header-wrapper{ background: none !important;}
+  .openMenu .main_menu{ top: 0;}
+  .header-right .btn,.header-right .toggle-menu{ position: relative; z-index: 999;}
+  .openMenu .page-header-wrapper.sticky_header:before{ display: none;}
+}
+@media(max-width:1600px) {
+  .main_menu{ font-size: 42px; } 
+  .main_menu .mega_menu{ font-size: 24px;}
+  .page-header-wrapper .page-header-inner {  padding-left: 40px; padding-right: 40px;}
+  .sticky_header .main_menu{ top: 0;}
+  .toggle-menu{ width: 50px; height: 50px;}
+
+
+  .header-right .btn{  padding-top: 12px; padding-bottom: 12px; font-size: 18px;    line-height: 26px;}  
+  .header-right .btn:hover{padding-top: 12px; padding-bottom: 12px;}
+
+  .main_menu .mega_menu .mega_menu_item ul {
+    padding: 26px 20px 20px 40px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 0;
+  }
+  .nav-contacts {
+    padding: 30px 30px;
+  }
+  .nav-contacts h3 {
+    font-size: 28px;
+  }
+  .nav-contacts p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a:before {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    font-size: 28px;
+  }
+  .main_menu ul li.case-studies .mega_menu {
+    left: calc(100% - 1240px);
+    right: calc(100% - 1240px);
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    font-size: 17px;
+  }
+}  
+
+@media(max-width:1400px) {
+  .main_menu{ font-size: 32px; right: 15%;}
+  .main_inner > ul {
+    gap: 40px;
+  }
+  .main_menu li {
+    font-size: 16px;
+  }
+  .main_menu .mega_menu {
+    width: 1050px;
+  }
+  .main_menu .mega_menu .mega_menu_item {
+    column-gap: 15px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul {
+    padding: 20px 20px 15px 20px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child {
+    margin: 0 0px 10px 0px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 0px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a:before {
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 5px 0;
+  }
+  .nav-contacts {
+    padding: 25px 20px;
+  }
+  .nav-contacts h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .nav-contacts p {
+    line-height: 15px;
+    font-size: 13px;
+  }
+  .nav-contacts a.btn {
+    padding: 14px 60px 14px 25px;
+    font-size: 16px;
+  }
+  .nav-contacts a.btn:hover {
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+  .main_menu ul li.case-studies .mega_menu {
+    left: calc(100% - 1090px);
+    right: calc(100% - 1090px);
+  }
+  .mega_menu_wrap {
+    border-radius: 20px;
+  }
+  .nav-contacts {
+    border-radius: 0 0 20px 20px;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    font-size: 15px;
+    padding: 10px 23px;
+  }
+}
+
+
+
+
+@media(max-width: 1200px){
+  .main_inner > ul {
+    gap: 25px;
+  }
+  .main_menu {
+    right: 16%;
+  }
+  .main_menu .mega_menu {
+    width: 970px;
+  }
+  .main_menu .mega_menu .mega_menu_item {
+    column-gap: 10px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 5px 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 10px 10px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .nav-contacts a.btn {
+    font-size: 15px;
+  }
+  .main_menu li {
+    font-size: 18px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul {
+    padding: 20px 10px 10px 15px;
+  }
+  .nav-contacts h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .nav-contacts p {
+    font-size: 13px;
+  }
+  .main_menu ul li.case-studies .mega_menu {
+    left: calc(100% - 1010px);
+    right: calc(100% - 1010px);
+  }
+}
+
+
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+  .toggle-menu svg circle{ r: 3px;}  
+  .main_menu{ font-size:30px; line-height: normal; padding: 40px 60px; } 
+  .main_menu a{ padding: 7px 0;} 
+  .nav-contacts{ padding: 20px 30px;} 
+  .main_menu .mega_menu{ overflow:hidden; width: 480px}
+  .main_menu .mega_menu .mega_menu_item{ width:100% } 
+}
+@media(max-width:1199px) {
+.page-header-wrapper .page-header-inner {  padding-left: 30px; padding-right: 30px;}
+.toggle-menu{ width: 50px; height: 50px;}
+
+
+.header-right .btn{  padding-top: 12px; padding-bottom: 12px; font-size: 18px;    line-height: 26px;}  
+.header-right .btn:hover{padding-top: 12px; padding-bottom: 12px;}  
+  .main_menu{ font-size: 30px; padding: 0 15px;}
+  .main_menu .mega_menu{ font-size:18px;top: 80px;}
+
+  .main_menu .mega_menu{ transform: translateY(0);}
+  .main_menu li li a{ padding: 5px 0;}
+  .main_menu ul:hover > li > a .sub-arrow{ opacity: 0.6;}
+
+  .main_menu li.agency .mega_menu,
+  .main_menu li.ai-\&-automation .mega_menu {top: 70px;  }
+  .page-header-wrapper .page-header-inner,
+  .page-header-wrapper.sticky_header .page-header-inner{ height: auto; padding-top: 10px; padding-bottom: 10px;} 
+ 
+}
+
+
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .page-header-wrapper .brand-logo {
+    max-width: 230px;
+  }
+  .main_menu li {
+    font-size: 15px;
+  }
+  .toggle-menu {
+    margin-right: 10px;
+  }
+  /*.main_menu {
+    right: 25%;
+  }*/
+  .page-header-wrapper .page-header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main_menu .mega_menu {
+    width: 960px;
+  }
+  .main_menu ul li.case-studies .mega_menu {
+    left: calc(100% - 980px);
+    right: calc(100% - 980px);
+  }
+
+}
+
+
+@media(max-width:1024px) {
+  /*.toggle-menu.active, .toggle-menu:hover {
+    transform: rotate(90deg);
+  }*/
+  .main_menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    padding: 90px 60px;
+    color: #fff;
+    font-size: 56px;
+    width: 66%;
+    z-index: 0;
+    transform: translate(110%,0);
+    transition: transform .8s;
+  }
+  .openMenu .main_menu {
+    right: 0;
+    transform: translate(0,0);
+    transition: transform .8s;
+    z-index: 99;
+    background-color: #FFFFFF;
+    top: 70px;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+  .main_inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 90%;
+  }
+  .main_inner > ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .openMenu .footer, .openMenu .page-middle {
+    filter: blur(30px);
+  }
+  .openMenu .page-header-wrapper .brand-logo {
+    opacity: 9;
+  }
+  .main_menu li {
+    font-size: 22px;
+    padding: 0px;
+    position: relative;
+    flex-direction: column;
+  }
+  .main_menu li a {
+    color: #000000;
+    width: 100%;
+    padding: 19px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .main_menu .mega_menu {
+    left: 160px;
+    width: calc(100% - 130px);
+    padding: 0px;
+  }
+  .mega_menu_wrap {
+    background-color: transparent;
+  }
+  .main_menu .mega_menu .mega_menu_item {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main_menu .mega_menu .mega_menu_item ul {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0px;
+    border-right: 0px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child {
+    margin: 0 0px 15px 0px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 0px 0 10px 0;
+    font-size: 18px;
+    line-height: normal;
+    border-bottom: 1px solid rgb(217 217 217);
+    border-radius: 0;
+    font-weight: 600;
+  }
+  .main_menu .mega_menu {
+    top: 10px;
+    height: auto;
+    overflow-y: scroll;
+    position: unset;
+    width: 100%;
+    height: 0;
+    border-radius: 0;
+    box-shadow: unset;
+  }
+  .nav-contacts {
+    flex-direction: column;
+    gap: 15px;
+  }
+  header[data-color-update="light"] a {
+    color: #fff;
+  }
+  .main_menu {
+    padding: 60px 45px;
+  }
+  .main_inner {
+    align-items: flex-start;
+    height: 100%;
+    overflow: auto;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a:after {
+    opacity: 9;
+  }
+  body.openMenu {
+    overflow: hidden;
+  }
+  .mega_menu_wrap {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #F2F2F2;
+    border-radius: 0;
+  }
+  .nav-contacts {
+    display: none;
+  }
+  .header-right .toggle-menu {
+    display: block;
+    margin: 0 0 0 20px !important;
+    width: 34px;
+    height: 34px;
+  }
+  .page-header-wrapper  .header-right {
+    flex-direction: row-reverse;
+  }
+  .main_menu .sub-arrow {
+    background: none;
+    position: absolute;
+    margin: 0;
+    right: 12px;
+    top: 25px;
+  }
+  .main_menu .sub-arrow:before {
+    content: "";
+    background-color: #000;
+    width: 2px;
+    height: 10px;
+    position: absolute;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+  }
+  .main_menu .sub-arrow:after {
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    content: "";
+    left: -4px;
+    top: 4px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+  }
+  .main_menu li.active .sub-arrow {
+    transform: inherit;
+  }
+  .main_menu li.active .sub-arrow::before {
+    height: 0;
+    width: 0;
+  }
+  .main_menu li.active .mega_menu {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  .main_menu li:hover .sub-arrow {
+    transform: unset;
+  }
+  .main_menu {
+    background-color: #FFFFFF;
+  }
+  body.openMenu .page-header-wrapper {
+    background: #FFFFFF !important;
+  }
+  body.openMenu header .brand-logo a img {
+    filter: brightness(0%);
+  }
+  header[data-color-update="light"] a {
+    color: #000;
+  }
+  .openMenu .header-right .btn {
+    display: none;
+  }
+  .header-right .btn {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 14px;
+  }
+  .header-right .btn:hover {
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
+  .header-right .toggle-menu svg:last-child {
+    display: none;
+  }
+  .openMenu .header-right .toggle-menu svg:last-child {
+    display: block;
+  }
+  .openMenu .header-right .toggle-menu svg:first-child {
+    display: none;
+  }
+  .page-header-wrapper .page-header-inner, .page-header-wrapper.sticky_header .page-header-inner {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  body.openMenu header[data-color-update="light"] .brand-logo a img {
+    filter: brightness(0%);
+  }
+  .main_menu li.agency .mega_menu ,
+  .main_menu li.ai-\&-automation .mega_menu {
+    width: 100%;
+    border-radius: 0;
+  }
+  .main_menu li.agency  .mega_menu_item ul
+  .main_menu li.ai-\&-automation .mega_menu_item ul {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_wrap,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_wrap {
+    border-radius: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main_menu li.agency.active .mega_menu .mega_menu_wrap,
+  .main_menu li.ai-\&-automation.active .mega_menu .mega_menu_wrap {
+    visibility: visible;
+    opacity: 9;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+    border-bottom: 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a:after {
+    opacity: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child a {
+    padding-left: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    position: relative;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a:after,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a:after {
+    content: "";
+    background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    filter: brightness(0.5);
+    opacity: 9;
+    transform: rotate(-90deg);
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a:after,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a:after {
+    display: block;
+  }
+  body.menuoverlay .page-middle:before {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+
+  .mega_menu_item ul {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .mega_menu_item ul.active {
+    height: auto; /* Will be dynamically set by JS */
+  }
+  /*  Inner Toggle Css  */ 
+  /*.main_menu .mega_menu .mega_menu_item ul li:not(:first-child) {
+    display: none;
+  }
+  .main_menu .mega_menu .mega_menu_item ul.active li {
+    display: block;
+  }*/
+
+
+  .mega_menu_item ul {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .mega_menu_item ul.active {
+    height: auto;
+  }
+  .main_menu li:hover .mega_menu{
+    padding-top: 0;
+  }
+  .main_menu .mega_menu {
+    transition: all 0.3s ease-in;
+    padding-top: 0;
+  }
+  .main_menu li.active .mega_menu {
+    display: block;
+  }
+
+
+
+
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    border-bottom: 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child .toggle-btn {
+    position: absolute;
+    right: 0;
+    font-size: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: flex-end;
+    transition: all 0.4s ease 0s;
+  }
+  .main_menu .mega_menu .mega_menu_item ul.active li:first-child .toggle-btn {
+    transform: rotate(-180deg);
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child .toggle-btn:before {
+    background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center;
+    content: "";
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    filter: brightness(0.6);
+  }
+  .main_menu .mega_menu .mega_menu_item ul:last-child li:first-child a {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .mega_menu_wrap {
+    border-bottom: 1px solid rgb(217 217 217);
+    padding: 15px 20px 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul.active {
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(217 217 217);
+    margin-bottom: 15px;
+  }
+  .main_menu li a {
+    line-height: 22px;
+  }
+  .main_menu .mega_menu .mega_menu_item ul.active:last-child {
+    border-bottom: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:first-child .toggle-btn.
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child .toggle-btn {
+    content: "";
+    background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    opacity: 9;
+    transform: rotate(-90deg);
+    filter: brightness(0.9);
+    pointer-events: none;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:first-child a.
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child a {
+    padding-bottom: 15px;
+  }
+  .main_menu li.agency .mega_menu:before,
+  .main_menu li.ai-\&-automation .mega_menu:before {
+    display: none;
+  }
+  .main_menu .mega_menu .mega_menu_item ul.active li:first-child {
+    margin-bottom: 10px;
+  }
+  .main_menu li.agency .mega_menu_item ul.active li:first-child,
+  .main_menu li.ai-\&-automation .mega_menu_item ul.active li:first-child {
+    margin-bottom: 0;
+  }
+  /*.page-header-wrapper.sticky_header[data-color-update=light] a {
+    color: #000;
+  }*/
+  .header-right .toggle-menu svg {
+    filter: invert(1);
+  }
+  .openMenu .header-right .toggle-menu svg {
+    filter: unset;
+  }
+  .openMenu .page-header-wrapper.sticky_header .page-header-inner {
+    background-color: #fff;
+  }
+  .openMenu .page-header-wrapper.sticky_header[data-color-update=light] a img {
+    filter: brightness(0%);
+  }
+  .page-id-33 .breadcrumbs-block {
+    margin-top: 80px;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:hover a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:hover a {
+    padding-left: 10px;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:first-child:hover a:after,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child:hover a:after {
+    opacity: 0;
+  }
+
+  /*=== Mobile Menu New Css Start Here From Ajay ===*/
+  nav.menu-mobile {
+    position: fixed;
+    right: 0;
+    top: 63px;
+    bottom: 0;
+    background: #FFF;
+    padding: 0;
+    color: #fff;
+    font-size: 56px;
+    width: 100%;
+    z-index: 0;
+    transform: translate(110%,0);
+    transition: transform .8s;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+  .openMenu nav.menu-mobile {
+    right: 0;
+    transform: translate(0,0);
+    transition: transform .8s;
+    z-index: 99;
+  }
+  .mega_menu,
+  .sub_menu {
+      display: none;
+  }
+  .menu-mobile ul li {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    font-size: 20px;
+    flex-direction: column;
+    position: relative;
+  }
+  .menu-mobile ul li a {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 19px 20px;
+    width: 100%;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .menu-mobile ul li span.sub-arrow {
+    width: 49px;
+    height: 59px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+  }
+  .menu-mobile ul li span.sub-arrow:before {
+    content: "";
+    background-color: #000;
+    width: 2px;
+    height: 10px;
+    position: absolute;
+    border-radius: 2px;
+    transition: all .3s ease-in;
+    top: 25px;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+  }
+  .menu-mobile ul li span.sub-arrow:after {
+    width: 10px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 29px;
+    border-radius: 2px;
+    transition: all .3s ease-in;
+    right: 0;
+    margin: 0px auto;
+  }
+  .menu-mobile ul li.active span.sub-arrow:before {
+    transform: rotate(86deg);
+    opacity: 0;
+  }
+  .menu-mobile ul li.contact span.sub-arrow {
+    display: none;
+    opacity: 0;
+  }
+  .menu-mobile ul li .mega_menu {
+    width: 100%;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_wrap {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px 20px 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0;
+  }
+
+  /* AI Solution, Services & Case Studies — full-width 3rd-level white sub-menu */
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li.services .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li.case-studies .mega_menu .mega_menu_wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li.services .mega_menu .mega_menu_item > ul > li:first-child > a,
+  .menu-mobile ul li.case-studies .mega_menu .mega_menu_item > ul > li:first-child > a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li.services .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow,
+  .menu-mobile ul li.case-studies .mega_menu .mega_menu_item > ul > li:first-child > span.sub-arrow {
+    right: 0;
+  }
+
+  .menu-mobile ul li .mega_menu .mega_menu_item {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+    border-right: 0px;
+  }
+  .menu-mobile ul li .mega_menu  .mega_menu_item ul li {
+    margin: 0 0 15px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li a {
+    padding: 0 0 15px;
+    font-size: 18px;
+    line-height: normal;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    font-weight: 500;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul:last-child li a {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li span.sub-arrow {
+    background-color: transparent;
+    z-index: 1;
+    right: -17px;
+    top: -15px;
+    width: 49px;
+    height: 50px;
+    transition: all .4s ease 0s;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li span.sub-arrow.rotated:before {
+    transform: rotate(180deg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li span.sub-arrow:before {
+    background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center;
+    content: "";
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    filter: brightness(0.6);
+    opacity: 9;
+    transform: unset;
+    transition: all .6s ease 0s;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li.active span.sub-arrow:before {
+    transform: rotate(-180deg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul li span.sub-arrow:after {
+    display: none;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li {
+    margin: 0;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu {
+    margin-top: -10px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul:last-child .sub_menu {
+    border-top: 1px solid #d9d9d9;
+    margin: 0;
+    padding-top: 5px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul:last-child .sub_menu li {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li a {
+    font-size: 15px;
+    padding: 5px 0;
+    font-weight: 400;
+    border-bottom: 0;
+    line-height: 23px;
+    position: relative;
+    transition: all .4s ease;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li:hover a {
+    padding-left: 10px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li a:after {
+    background-image: url(../images/arrow-link-hover.svg);
+    width: 10px;
+    height: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    content: "";
+    filter: brightness(0.1);
+    display: inline-block;
+    background-size: 10px;
+    margin-left: 5px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li:hover a:after{
+    opacity: 1;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul .sub_menu li:last-child {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 5px;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item ul:last-child .sub_menu li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /*
+   * AI Solution, Services & Case Studies — white bg on 3rd-level sub-menu only (mobile).
+   * Level 1: nav item | Level 2: section header | Level 3: .sub_menu link list
+   */
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li.services .mega_menu .mega_menu_item ul .sub_menu,
+  .menu-mobile ul li.case-studies .mega_menu .mega_menu_item ul .sub_menu {
+    background-color: #fff;
+    margin-top: -15px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 20px 5px;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li.services .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li.case-studies .mega_menu .mega_menu_item ul:last-child .sub_menu {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 20px 5px;
+    border-bottom: 0;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul .sub_menu li:last-child,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul .sub_menu li:last-child,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul .sub_menu li:last-child,
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item ul .sub_menu li:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li a:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 8px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.design a:before {
+    background-image: url(../images/menu-design-icon_new.svg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.develop a:before {
+    background-image: url(../images/menu-develop-icon_new.svg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.transform a:before {
+    background-image: url(../images/menu-grow-icon_new.svg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.industries a:before {
+    background-image: url(../images/menu-Industries-icon.svg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.technologies a:before {
+    background-image: url(../images/menu-Technology-icon.svg);
+  }
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li.solutions a:before {
+    background-image: url(../images/menu-Platform-icon.svg);
+  }
+
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul > li a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    display: inline-block;
+    line-height: 1;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li a,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li:hover a,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li:hover a {
+    padding-left: 10px;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item > ul > li a:before {
+    display: none;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li a:after,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li a:after {
+    display: none;
+    opacity: 0;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_wrap,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_wrap {
+    padding-top: 0;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_wrap .sub_menu,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_wrap .sub_menu {
+    margin-top: 0;
+    display: block;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul .sub_menu li:last-child,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul .sub_menu li:last-child {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li:after,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li:after {
+    content: "";
+    background: url(../images/menu_arrow_new_white.svg) no-repeat 100% center;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    filter: brightness(0.5);
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul li span.sub-arrow,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul li span.sub-arrow {
+    opacity: 0;
+    display: none;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul:last-child .sub_menu,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul:last-child .sub_menu {
+    border: 0;
+    padding: 0;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul:last-child .sub_menu li,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul:last-child .sub_menu li {
+    border-bottom: 1px solid #ddd;
+  }
+  .menu-mobile ul li.agency .mega_menu .mega_menu_item ul:last-child .sub_menu li:last-child,
+  .menu-mobile ul li.ai-\&-automation .mega_menu .mega_menu_item ul:last-child .sub_menu li:last-child {
+    border-bottom: 0;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .menu-desktop {
+    display: none;
+  }
+
+  /* 4th Menu Css Ajay */
+  .menu-mobile ul li .mega_menu .mega_menu_item > ul:nth-child(2) > li:first-child a:before {
+    background-image: url(../images/menu-ai_new.svg);
+  }
+
+  /* Case Studies mobile — section icons (Industries, Solutions, Technologies) */
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item > ul > li > a[title="Industries"]:before {
+    background-image: url(../images/menu-Industries-icon.svg);
+  }
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item > ul > li > a[title="Solutions"]:before {
+    background-image: url(../images/menu-Platform-icon.svg);
+  }
+  .menu-mobile ul li:has(> a[title="Case Studies"]) .mega_menu .mega_menu_item > ul > li > a[title="Technologies"]:before {
+    background-image: url(../images/menu-Technology-icon.svg);
+  }
+
+  .menu-mobile ul li.ai-solution .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li.ai-services .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li.services .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul > li a:before,
+  .menu-mobile ul li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul > li a:before {
+    display: none;
+    content: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    background-image: none;
+  }
+
+}
+
+
+
+@media(max-width:990px) {
+  .page-header-wrapper .page-header-inner {  padding-left: 20px; padding-right: 20px;}
+  .openMenu .main_menu:after{  display: none;}
+  .main_menu{ width: 100%; padding: 60px;}
+  .main_inner{ align-items: start;} 
+  .openMenu .page-header-wrapper .brand-logo {
+    opacity: 1;
+  }
+  /*body.openMenu .page-header-wrapper {
+    background: #FFF !important;
+  }*/
+  .openMenu .main_menu {
+    top: 65px;
+    padding: 0;
+  }
+  .main_menu li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 19px 20px;
+  }
+  .main_menu li a {
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .main_menu .sub-arrow {
+    top: 25px;
+  }
+  .main_menu .mega_menu {
+    border-radius: 0;
+    box-shadow: unset;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 0;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li:first-child a {
+    padding: 0px 0 10px 0;
+    font-size: 18px;
+    line-height: normal;
+    border-bottom: 1px solid rgb(217 217 217);
+    border-radius: 0;
+    font-weight: 600;
+  }
+  .mega_menu_wrap {
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 400;
+    border-bottom: 0;
+  }
+  .main_menu .mega_menu .mega_menu_item ul li a:after {
+    opacity: 0;
+  }
+  .main_menu li.agency .mega_menu,
+  .main_menu li.ai-\&-automation .mega_menu {
+    width: 100%;
+    border-radius: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_wrap,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_wrap {
+    border-radius: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .main_menu li.agency.active .mega_menu .mega_menu_wrap,
+  .main_menu li.ai-\&-automation.active .mega_menu .mega_menu_wrap {
+    visibility: visible;
+    opacity: 9;
+  }
+  .main_menu li.agency  .mega_menu_item ul,
+  .main_menu li.ai-\&-automation  .mega_menu_item ul {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    height: auto !important;
+    overflow: unset !important;
+  }
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .main_menu li.agency  .mega_menu_item ul,
+    .main_menu li.ai-\&-automation  .mega_menu_item ul {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 0;
+      height: auto !important;
+      overflow: unset !important;
+    }
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li a {
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+    border-bottom: 0;
+  }
+  .main_menu li.agency .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child a {
+    padding-left: 0;
+  }
+  .page-header-wrapper .page-header-inner {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .openMenu .main_menu{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+} 
+@media(max-width:767px) { 
+
+  .toggle-menu{ width: 34px; height: 34px; margin-left: 10px !important;}  
+  .sticky_header .toggle-menu{ height: 34px; width: 34px;}
+  .page-header-wrapper .header-right {gap: 0 !important;}
+
+  .header-right .btn{ padding: 8px 40px 8px 20px; font-size: 14px;line-height: 16px;}
+  .header-right .btn:hover{ padding: 8px 20px 8px 40px; } 
+
+  .main_menu{ font-size: 20px;top: 64px;}
+/*  .openMenu .main_menu{ padding:20px; top:50px; overflow: auto;}*/
+  .openMenu .main_menu{top:64px;}
+  .main_menu .main_inner{ min-height: 80%;}
+  .main_inner > ul{ width: 100%;}
+  .main_menu li{ display: flex; justify-content: start; align-items: flex-start;}
+  .main_menu li:nth-child(2) , .main_menu li:nth-child(3) , .main_menu li:nth-child(4) {flex-flow: column;}
+  .main_menu li a{ display: inline-block;}
+  .sticky_header .main_menu{ top: 60px; bottom: 0;}
+  .main_menu li.hover .mega_menu {transform: none;max-height: inherit; opacity: 1; visibility: visible;}
+/*  .main_menu .mega_menu a {font-size: 20px;color: #fff;}*/
+  .main_inner{ align-items: start;}
+  .main_menu .sub-back {visibility: hidden; z-index: 0; transform: translate(-110%, 0); transition: transform 0.8s; position: absolute;top: 0;left: 0;     background-image: url(../images/btn-arrow-white-reverse.svg);
+    background-repeat: no-repeat;display: inline-block ;padding: 0 0 0 30px;background-position: 0 7px; font-size: 19px;background-size: 17px; width: 100%; display: block; color: #fff;}
+
+/*  .main_menu .mega_menu {position: static;padding:0px 0 0 ; left: 0; align-content: flex-start; z-index: 1; background: #000; padding-left: 0px; transform: translate(-110%, 0); transition: transform 0.8s; overflow: auto; max-height: 0; }*/
+
+/*  .show-menu .main_menu .mega_menu {left:0; transform: translate(0, 0); transition: transform 0.8s;}*/
+/*  .show-menu .main_menu .sub-back {z-index: 2; visibility: visible; transform: translate(0, 0); transition: transform 0.8s;} 
+  .nav-contacts{ padding: 20px 20px 10px; text-align: left; width: 100%; font-size: 20px; line-height: normal;position: absolute;  left: 0; bottom: 20px;}*/
+
+  .page-header-wrapper .page-header-inner {padding-left: 15px;padding-right: 15px;}
+  .header-right .toggle-menu {margin: 0 0 0 10px !important;}
+  .openMenu .header-right .toggle-menu {
+    width: 34px;
+    height: 34px;
+    margin: 0 !important;
+  }
+
+}
+ 
+
+@media all and (max-height: 460px) and (orientation: landscape) {
+  .main_menu li a { font-size: 20px;}
+  .nav-contacts{ position: static; padding: 15px 0 0;}
+
+}
+
+
+/* body blur */
+
+/*body.openMenu { overflow: hidden;}*/
+.page-middle,footer{transition: all 0.1s ease-in-out; }
+/*.openMenu .page-middle,.openMenu .footer{ filter: blur(30px);}*/
+
+
+
+@media (min-width: 1025px) {
+  .main_menu .mega_menu .mega_menu_item ul li a {
+      line-height: 22px;
+  }
+   
+  .main_menu .mega_menu .mega_menu_item ul {
+      padding: 20px 15px 10px 20px;
+  }
+   
+  .mega_menu_wrap {
+      border-radius: 20px;
+  }
+
+  .main_menu .mega_menu .mega_menu_item ul li a {
+    font-size: 14px;
+  }
+
+  .nav-contacts {
+    padding: 26px 29px;
+    border-radius: 0 0 20px 20px;
+  }
+  .main_menu .mega_menu .mega_menu_item {
+      column-gap: 0;
+  }
+}
+
+
+/*  Mega Menu Changes For the May 15 2026  */
+.main_menu li.ai-\&-automation .mega_menu {
+    width: 370px;
+    left: calc(100% - 250px);
+    right: calc(100% - 250px);
+}
+.main_menu li.ai-\&-automation .mega_menu .mega_menu_item ul li:first-child:hover a {
+  padding-left: 37px;
+}
+
+
+/*
+ * AI Solution mega menu — desktop only (min-width: 1025px)
+ * 3-column auto layout (same as Services) — sections flow when added/removed.
+ * Mobile unchanged.
+ */
+@media (min-width: 1025px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]),
+  .main_menu li.ai-solution,
+  .main_menu li.ai-services {
+    margin-top: 0px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    display: block;
+    left: calc(100% - 1310px);
+    right: calc(100% - 1310px);
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu_wrap,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu_wrap,
+  .main_menu li.ai-solution .mega_menu_wrap,
+  .main_menu li.ai-services .mega_menu_wrap {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  /* 3-column auto layout — sections flow into columns when added/removed */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item,
+  .main_menu li.ai-services .mega_menu .mega_menu_item {
+    display: block;
+    column-count: 3;
+    column-gap: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Flatten legacy JS column wrappers — all sections participate in column-count */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border: 0;
+    float: none;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    box-sizing: border-box;
+  }
+
+  /* Full-height vertical dividers */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item::before,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item::before,
+  .main_menu li.ai-services .mega_menu .mega_menu_item::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item::after,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item::after,
+  .main_menu li.ai-services .mega_menu .mega_menu_item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ddd;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item::before,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item::before,
+  .main_menu li.ai-services .mega_menu .mega_menu_item::before {
+    left: 33.333%;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item::after,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item::after,
+  .main_menu li.ai-services .mega_menu .mega_menu_item::after {
+    left: 66.666%;
+  }
+
+  /* Section heading — no icons */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000;
+    padding: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child a:before {
+    display: none;
+    content: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child:hover a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child:hover a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child:hover a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child:hover a {
+    padding-left: 0;
+  }
+
+  /* Sub links */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child),
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:not(:first-child),
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:not(:first-child) {
+    padding: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 3px 0 5px;
+    color: #000;
+    display: inline-block;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child):hover a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child):hover a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:not(:first-child):hover a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:not(:first-child):hover a {
+    padding-left: 10px;
+  }
+
+  /* Black CTA footer */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts,
+  .main_menu li.ai-solution .nav-contacts,
+  .main_menu li.ai-services .nav-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 36px;
+    background-color: #000;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts h3,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts h3,
+  .main_menu li.ai-solution .nav-contacts h3,
+  .main_menu li.ai-services .nav-contacts h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+    text-transform: none;
+    margin: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts p,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts p,
+  .main_menu li.ai-solution .nav-contacts p,
+  .main_menu li.ai-services .nav-contacts p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 6px 0 0;
+    opacity: 0.9;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts a.btn,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts a.btn,
+  .main_menu li.ai-solution .nav-contacts a.btn,
+  .main_menu li.ai-services .nav-contacts a.btn {
+    flex-shrink: 0;
+    color: #000 !important;
+    background-color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 56px 14px 28px;
+    white-space: nowrap;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts a.btn:hover,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts a.btn:hover,
+  .main_menu li.ai-solution .nav-contacts a.btn:hover,
+  .main_menu li.ai-services .nav-contacts a.btn:hover {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .sub-back,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .sub-back,
+  .main_menu li.ai-solution .sub-back,
+  .main_menu li.ai-services .sub-back {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    left: calc(100% - 1290px);
+    right: calc(100% - 1290px);
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    left: calc(100% - 1220px);
+    right: calc(100% - 1220px);
+    width: 1180px;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    padding: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child a {
+    font-size: 18px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 15px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts,
+  .main_menu li.ai-solution .nav-contacts,
+  .main_menu li.ai-services .nav-contacts {
+    padding: 24px 28px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts h3,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts h3,
+  .main_menu li.ai-solution .nav-contacts h3,
+  .main_menu li.ai-services .nav-contacts h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    left: calc(100% - 1050px);
+    right: calc(100% - 1050px);
+    width: 970px;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item > ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.ai-services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    padding: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:first-child a {
+    font-size: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-solution .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.ai-services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    width: 1250px;
+  }
+}
+
+@media (min-width: 2022px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu li.ai-solution .mega_menu,
+  .main_menu li.ai-services .mega_menu {
+    left: inherit;
+    right: 60px;
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+}
+
+/*
+ * Services mega menu — desktop only (min-width: 1025px)
+ * 3-column layout (matches AI Solution design) — mobile unchanged.
+ */
+@media (min-width: 1025px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]),
+  .main_menu li.services {
+    margin-top: 0px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    display: block;
+    left: calc(100% - 1310px);
+    right: calc(100% - 1310px);
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu_wrap,
+  .main_menu li.services .mega_menu_wrap {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  /* 3-column auto layout — sections flow into columns when added/removed */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item,
+  .main_menu li.services .mega_menu .mega_menu_item {
+    display: block;
+    column-count: 3;
+    column-gap: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Flatten legacy JS column wrappers — all sections participate in column-count */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border: 0;
+    float: none;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    box-sizing: border-box;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::after,
+  .main_menu li.services .mega_menu .mega_menu_item::before,
+  .main_menu li.services .mega_menu .mega_menu_item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ddd;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::before,
+  .main_menu li.services .mega_menu .mega_menu_item::before {
+    left: 33.333%;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::after,
+  .main_menu li.services .mega_menu .mega_menu_item::after {
+    left: 66.666%;
+  }
+
+  /* Section heading — no icons */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child a {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000;
+    padding: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child a:before {
+    display: none;
+    content: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child:hover a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child:hover a {
+    padding-left: 0;
+  }
+
+  /* Sub links */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child),
+  .main_menu li.services .mega_menu .mega_menu_item ul li:not(:first-child) {
+    padding: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 3px 0 5px;
+    color: #000;
+    display: inline-block;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child):hover a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:not(:first-child):hover a {
+    padding-left: 10px;
+  }
+
+  /* Black CTA footer */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts,
+  .main_menu li.services .nav-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 36px;
+    background-color: #000;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts h3,
+  .main_menu li.services .nav-contacts h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #fff;
+    text-transform: none;
+    margin: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts p,
+  .main_menu li.services .nav-contacts p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 6px 0 0;
+    opacity: 0.9;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts a.btn,
+  .main_menu li.services .nav-contacts a.btn {
+    flex-shrink: 0;
+    color: #000 !important;
+    background-color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 56px 14px 28px;
+    white-space: nowrap;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts a.btn:hover,
+  .main_menu li.services .nav-contacts a.btn:hover {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .sub-back,
+  .main_menu li.services .sub-back {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    left: calc(100% - 1290px);
+    right: calc(100% - 1290px);
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    left: calc(100% - 1220px);
+    right: calc(100% - 1220px);
+    width: 1180px;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    padding: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child a {
+    font-size: 18px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 15px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts,
+  .main_menu li.services .nav-contacts {
+    padding: 24px 28px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts h3,
+  .main_menu li.services .nav-contacts h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    left: calc(100% - 1050px);
+    right: calc(100% - 1050px);
+    width: 970px;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu li.services .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    padding: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:first-child a {
+    font-size: 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu li.services .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    width: 1250px;
+  }
+}
+
+@media (min-width: 2022px) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu li.services .mega_menu {
+    left: inherit;
+    right: 60px;
+    width: auto;
+    min-width: 0;
+    max-width: calc(100vw - 120px);
+  }
+}
+
+/*
+ * Mega menu upward caret — desktop only (AI Solution, Services, Case Studies)
+ * Triangle on nav link, centered under label (same pattern as Case Studies).
+ */
+@media (min-width: 1025px) {
+  .main_menu.menu-desktop .main_inner > ul > li.ai-solution > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-services > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.services > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.case-studies > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Case Studies"]) > a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #fff;
+    position: absolute;
+    top: 100%;
+    margin-top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1002;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li.ai-solution:hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-services:hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li.services:hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]):hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]):hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]):hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li.case-studies:hover > a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Case Studies"]):hover > a {
+    z-index: 1003;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li.ai-solution:hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-services:hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.services:hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]):hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]):hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]):hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.case-studies:hover > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Case Studies"]):hover > a::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Touch tablets (iPad landscape): tap-to-open — no hover */
+@media (min-width: 1025px) and (hover: none) and (pointer: coarse) {
+  .main_menu.menu-desktop .main_inner > ul > li.mega-touch-open .mega_menu {
+    opacity: 1;
+    visibility: visible;
+    padding-top: 10px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li.mega-touch-open > a {
+    z-index: 1003;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li.ai-solution.mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-services.mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.services.mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]).mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]).mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]).mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li.case-studies.mega-touch-open > a::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Case Studies"]).mega-touch-open > a::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*
+ * iPad / tablet landscape (e.g. iPad 10.2 @ 1080×810) — touch desktop only.
+ * Fixes AI Solution & Services mega menu column layout only.
+ * Case Studies uses its own legacy layout — not modified here.
+ * Does not affect mobile (≤1024) or mouse desktop.
+ */
+@media (min-width: 1025px) and (max-width: 1100px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-solution .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li.ai-services .mega_menu,
+  .main_menu.menu-desktop .main_inner > ul > li.services .mega_menu {
+    left: 20px !important;
+    right: 20px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    transform: none !important;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu_wrap,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu_wrap,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu_wrap {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  /* JS column layout — AI Solution only */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    column-gap: 0 !important;
+  }
+
+  /* Services — auto column-count layout (iPad landscape) */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item,
+  .main_menu.menu-desktop .main_inner > ul > li.services .mega_menu .mega_menu_item {
+    display: block !important;
+    column-count: 3;
+    column-gap: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu.menu-desktop .main_inner > ul > li.services .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    display: contents;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item > ul,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready .mega_menu_col ul {
+    display: block !important;
+    width: 100% !important;
+    padding: 16px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    float: none !important;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    box-sizing: border-box;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+    row-gap: 16px;
+    position: relative;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(1),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(2),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(2) { grid-column: 2; grid-row: 1; }
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(3),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(3) { grid-column: 2; grid-row: 2; }
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(4),
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready) > ul:nth-child(4) { grid-column: 3; grid-row: 1; }
+
+  /* Vertical dividers — cols-ready and grid fallback */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready)::before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33.333%;
+    width: 1px;
+    background-color: #ddd;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item.mega-menu-cols-ready::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item.mega-menu-cols-ready::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready)::after,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item:not(.mega-menu-cols-ready)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 66.666%;
+    width: 1px;
+    background-color: #ddd;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Section headings */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:first-child a:before,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:first-child a:before {
+    display: none;
+    content: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .mega_menu .mega_menu_item ul li:not(:first-child) a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 0 4px;
+  }
+
+  /* Black CTA footer */
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    padding: 20px 24px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts h3,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts h3,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Solution"]) .nav-contacts a.btn,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="AI Services"]) .nav-contacts a.btn,
+  .main_menu.menu-desktop .main_inner > ul > li:has(> a[title="Services"]) .nav-contacts a.btn {
+    padding: 12px 50px 12px 24px;
+    font-size: 15px;
+  }
+}

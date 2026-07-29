@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our certification block 2*/
+.our-certification-block2 {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+
+.our-certification-block2 h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.our-certification-block2 ul {
+  display: flex;
+  margin: 0 -25px;
+  flex-wrap: wrap;
+  align-items: center; 
+} 
+.our-certification-block2 ul li {
+  padding:0 25px 20px;
+  width: 24%;   color: rgba(51, 51, 51, 1)
+}
+.our-certification-block2 ul li svg{ max-width: 100%;}
+
+@media(max-width:1200px) {
+  .our-certification-block2 ul{ margin: 0 -15px;}
+  .our-certification-block2 ul li { width: 33%;}
+}
+@media(max-width:767px) {
+  .our-certification-block2 h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .our-certification-block2 ul {
+    margin: 0 -10px;
+  }
+  .our-certification-block2 ul li {
+    padding: 0 20px 20px;
+    width: 31%;
+  }
+  .our-certification-block2 ul li svg {
+    width: 100%;
+  }
+  .our-certification-block2 {
+    margin-bottom: 20px;
+  }
+  .testimonial-text .testimonial-tab-menu{ margin-bottom: 20px;}
+}
+
+@media(max-width:540px) { 
+
+  .our-certification-block2 ul li {
+    padding: 0 20px 20px;
+    width: 49%;
+  }
+  
+}
+/*Our certification block 2 ends*/

@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our core value*/
+.core-value-main {
+  width: 100%;
+  margin: 100px 0;
+  background: #000;
+  text-align: center;
+  padding: 50px 0px 45px 0px;
+}
+
+.core-value-main h2 {
+  color: #fff;
+  font-size: 4.688vw;
+  margin-bottom: 20px;
+}
+
+.core-value-main p {
+  color: #fff;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.core-value-list {
+  width: 100%;
+  margin: 77px 0 0 0;
+}
+
+.core-value-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+
+.core-value-list ul li {
+  background: #fff;
+  width: 195px;
+  height: 210px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 15px 15px 15px;
+  transition: all 0.4s ease;
+}
+
+.core-value-list ul li:hover {
+  background: #2f2f2f;
+  transition: all 0.4s ease;
+}
+.core-value-list ul li:hover span svg {
+  fill: #fff;
+}
+
+.core-value-list ul li:hover span {
+  margin-top:-10px;
+  color: #fff;
+}
+
+.core-value-list ul li span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.4s ease 0s;
+}
+
+.core-value-list ul li span i {
+  width: 100%;
+}
+
+.core-value-list ul li i img.hover-icon {
+  display: none;
+}
+.core-value-list ul li:hover i img.hover-icon{
+  display: inline-block;
+}
+.core-value-list ul li:hover i img.normal-icon{
+  display: none;
+}
+
+.core-value-list ul li span small {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Lato", Sans-serif;
+  margin-top: 15px;
+}
+
+@media(max-width: 1199px) {
+  .core-value-list ul {
+    margin: 0 -10px;
+  }
+  .core-value-list ul li {
+    width: calc(20% - 20px);
+    height: 190px;
+    margin: 0 10px 15px 10px;
+  }
+}
+
+@media(max-width: 1023px) {
+  .core-value-main {
+    margin: 60px 0;
+    padding-bottom: 35px;
+  }
+  .core-value-list ul li {
+    height: 140px;
+  }
+  .core-value-list ul li span svg {
+    width: 58px;
+    height: 54px;
+  }
+  .core-value-list ul li span small {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .core-value-list {
+    margin: 37px 0 0 0;
+  }
+}
+
+@media(max-width: 767px) {
+  .core-value-main h2 {
+    font-size: 30px;
+  }
+  .core-value-list ul {
+    justify-content: start;
+  }
+  .core-value-list ul li {
+    width: calc(50% - 20px);
+  }
+}
+
+/*Our core value end*/

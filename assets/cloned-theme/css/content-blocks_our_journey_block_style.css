@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our journey*/
+.our-journey-main {text-align: center; display: inline-block; width: 100%; margin: 100px 0;}
+.our-journey-main h2 {margin-bottom: 20px;}
+.our-journey-main figure {display: inline-block; width: 100%;}
+@media(max-width: 1023px) {
+  .our-journey-main {
+    margin: 60px 0;
+  }
+}
+@media(max-width: 767px) {
+ .our-journey-main {
+    margin: 30px 0;
+ }
+}
+/*Our journey ends*/

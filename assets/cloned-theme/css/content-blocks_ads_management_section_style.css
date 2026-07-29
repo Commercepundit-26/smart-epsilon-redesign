@@ -1,0 +1,227 @@
+
+  .management_section {
+    padding: 120px 0px;
+    background-color: #000;
+  }
+
+    .management_section .cta-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+  .management_section .cta-card {
+    background-color: #111;
+    color: #fff;
+    border-radius: 16px;
+    padding: 140px 79px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .management_section .graphic-card {
+    background-image: url('../../images/ads_management_bg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+/*  .management_section .graphic-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 1;
+  }*/
+
+  .management_section .graphic-card h3,
+  .management_section .graphic-card p,
+  .management_section .graphic-card a {
+    position: relative;
+    z-index: 2;
+  }
+
+.management_section .cta-card h3 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #ffffff;
+    line-height: 64px;
+}
+
+.management_section .cta-card p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    line-height: 32px;
+}
+
+.management_section .cta-card .btn {
+    width: auto;
+    margin: 30px auto 0;
+}
+
+.management_section .cta-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+}
+.management_section .cta-card .wpcf7 input[type="email"] {
+    color: #858585;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 25px 0;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+}
+.management_section .cta-card .wpcf7 input[type="email"]::placeholder {
+    color: #858585;
+}
+
+.management_section .cta-card .wpcf7 input[type="email"]:-webkit-autofill,
+.management_section .cta-card .wpcf7 input[type="email"]:-webkit-autofill:hover,
+.management_section .cta-card .wpcf7 input[type="email"]:-webkit-autofill:focus{
+    background-color: transparent !important;
+}
+.management_section .cta-card .wpcf7 .subsc-group {
+    max-width: 370px;
+    margin: 40px auto 0;
+}
+.management_section .cta-card .wpcf7 .subsc-group .btn {
+    margin-top: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.management_section .cta-card .wpcf7 .subsc-group .btn {
+    background-position: 86% 25px;
+}
+.management_section .cta-card .wpcf7 .subsc-group .btn:hover {
+    background-position: 86% 21px;
+}
+.management_section .cta-card .wpcf7 .subsc-group .wpcf7-spinner {
+    position: absolute;
+    top: 122px;
+}
+.management_section .cta-card .wpcf7 .wpcf7-response-output {
+    margin: 15px 0 0 0;
+}
+
+
+@media (max-width: 1600px) {
+    .management_section .cta-card {
+        padding: 100px 20px;
+    }
+    .management_section .cta-card h3 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group {
+        margin-top: 25px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .management_section .cta-card p {
+        line-height: 30px;
+    }
+    .management_section .cta-card h3 {
+        line-height: 48px;
+        font-size: 38px;
+    }
+    .management_section {
+        padding: 50px 0;
+    }
+    .management_section .cta-card p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+    .management_section .cta-card {
+        padding: 80px 20px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        margin-top: 30px;
+    }
+    .management_section .cta-card .wpcf7 input[type=email] {
+        font-size: 16px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 990px) {
+    .management_section .cta-card {
+      padding: 30px 20px;
+    }
+    .management_section .cta-container {
+      grid-template-columns: 1fr;
+    }
+    .management_section .graphic-card {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 767px) {
+    .management_section .cta-card {
+        padding: 40px 20px;
+    }
+    .management_section .cta-card h3 {
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .management_section .cta-card p {
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        margin-top: 30px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 35px;
+        line-height: normal;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn:hover {
+        padding-right: 15px;
+        padding-left: 35px;
+    }
+    .management_section .cta-card .wpcf7 input.wpcf7-submit:hover {
+        background-position: 8% center;
+        padding-right: 30px;
+        padding-left: 60px;
+        background-size: 12px;
+    }
+    .management_section {
+        padding: 60px 0;
+    }
+    .management_section .cta-card .btn {
+        margin-top: 20px;
+    }
+    .management_section .cta-card .wpcf7 .subsc-group .btn {
+        background-position: 90% 17px;
+    }
+}

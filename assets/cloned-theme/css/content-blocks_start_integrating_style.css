@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+/* banner section */
+
+/* Service Detail Template css for Consulatation and Request */
+.promotion-banner {
+    background-image: url(../../images/consult-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 87px 0 93px;
+    text-align: center;
+    width: 100%;
+    border-radius: 16px;
+    
+}
+.promotion-banner.integrating-service{
+  margin-top: 120px;
+
+}
+.careers-cp .promotion-banner.integrating-service{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.headline-integrating {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  color: white;
+  margin: 10px;
+}
+.integrating-subtitle{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.consult-integrating {
+    margin: 40px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 1600px) {
+.headline-integrating {
+  font-size: 40px;
+  line-height: 55px;
+} 
+.careers-cp .promotion-banner.integrating-service{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+}
+@media (max-width: 1440px) {
+  .promotion-banner {
+    padding: 60px 0 65px;
+  }
+  .headline-integrating {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .consult-integrating {
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .promotion-banner.integrating-service{
+    margin-top: 50px;
+  }
+  .careers-cp .promotion-banner.integrating-service{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .headline-integrating {
+      font-size: 40px;
+      line-height: 38px;
+    
+    }
+    .headline-integrating br {
+      display: block; 
+    }
+    .integrating-subtitle{
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .headline-integrating {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  } 
+  
+  @media screen and (max-width: 990px) {
+    .headline-integrating {
+      font-size: 35px;
+      line-height: 32px;
+      display: block;
+    }
+    .headline-integrating br {
+      display: block; 
+    }
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headline-integrating {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 10px
+    }
+    .headline-integrating br {
+      display: none; 
+    }
+    
+/*.consult {
+  margin-bottom: 10px;
+}*/
+.consult-integrating{
+
+  font-size: 14px;
+  
+}
+
+  }
+  @media screen and (max-width: 767px) {
+    .headline-integrating {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 auto 8px;
+      max-width: 90%;
+    } 
+     .consult-integrating{
+      margin-top: 20px;
+    }
+    .integrating-subtitle{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .promotion-banner.integrating-service{
+      margin-top: 40px;
+    }
+    .careers-cp .promotion-banner.integrating-service{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .headline-integrating {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 auto 8px;
+      max-width: 90%;
+    }
+    
+    .promotion-banner {
+      padding: 40px 10px;
+    }
+    
+    .consult-integrating{
+      margin-top: 20px;
+      gap: 20px;
+    }
+    .consult-integrating .btn{
+            font-size: 14px;
+            line-height: 25px;
+    }
+    .consult-integrating .btn.btn-outline.service{
+      font-size: 14px;
+       line-height: 25px;
+    }
+    .promotion-banner {
+      background-image: url(../../images/consult-mobile.png);
+    }
+  }
+  
+ 
+
+@media screen and (max-width: 425px) {
+  
+  .consult-integrating{
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+  .btn.btn-outline.consult-integrating {
+    margin: 5px 0 0 0;
+    
+  }
+  .consult-integrating .btn{
+    font-size: 13px;
+    line-height: 25px;
+}
+}
+@media screen and (max-width: 375px) {
+.consult-integrating .btn {
+  font-size: 11px;
+  line-height: 20px;
+}
+}

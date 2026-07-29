@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Adobe Certification*/
+
+.certification_section .head_info{ display: none;} 
+.certification_section .items{align-items: center; text-align: center; font-size: 24px; } 
+.certification_section .items .slick-list{margin: 0 -30px;}
+.certification_section .items .item{ padding:20px 30px; text-align: center; }
+.certification_section .items .item_inner{ width: 100%; text-align: center;}   
+.certification_section .items img{ width: auto; transform: scale(1); transition: .5s ease-in-out; max-width:180px; height: auto; margin: 0 auto;}
+.certification_section .items .item:hover img{ transform: scale(1.1); }
+
+@media(max-width:767px) {
+  .certification_section .items .slick-list{margin: 0 -10px;}
+  .certification_section .items{ margin-bottom: 20px; }
+  .certification_section .items img{ max-width: 100%;}
+  .certification_section .items .item{ padding: 15px 15px;}
+
+}
+
+/*Certifications End*/

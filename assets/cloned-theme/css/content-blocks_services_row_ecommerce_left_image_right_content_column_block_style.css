@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Ecommerce left image right content*/
+.ecommerce-lft-rgt {
+    display: inline-block;
+    width: 100%;
+  }
+  .ecommerce-lft {
+    max-width: 48%;
+    width: 100%;
+  }
+  .ecommerce-lft-rgt-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .ecommerce-rgt {
+    max-width: 48%;
+    width: 100%;
+    padding-left: 54px;
+  }
+  .ecommerce-lft-rgt h3 {
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+  .ecommerce-lft-rgt .btn{ display: inline-block; margin-top: 10px;}
+  @media(max-width:1519px) {
+    .ecommerce-lft-rgt-row {
+      align-items: flex-start;
+    }
+    .ecommerce-lft {
+      max-width: 48%;
+    }
+    .ecommerce-rgt {
+      max-width: 50%;
+    }
+  }
+  @media(max-width:767px) {
+    .ecommerce-lft {
+      max-width: 100%;
+    }
+    .ecommerce-rgt {
+      max-width: 100%;
+      padding: 30px 0 0 0;
+    }
+    .ecommerce-lft-rgt h3 {
+      margin: 0 0 40px;
+    }
+  }
+  
+  /*Ecommerce left image right content ends*/

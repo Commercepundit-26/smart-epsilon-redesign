@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*List of services*/
+
+.service_list{}
+.service_list .items{  width: 100%; clear: both; display: block;   counter-reset: section; border-top: 1px solid rgba(0, 0, 0, 0.4); }
+.service_list .items .item{ display: block; width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.4); padding: 30px 0 30px; position: relative;}
+
+.service_list .item_inner{ padding:0  6% 0 300px; display: flex; position: relative; gap: 5%; flex-wrap: wrap; 
+    /* padding:0  6% 0 400px;  */
+} 
+.service_list .item_inner:before{  counter-increment: section;    content: "0" counter(section); position: absolute; left: 0; top: 10px; z-index: 1; } 
+.service_list .items .item h3{ width: 40%; } 
+.service_list .items .item .content{ width: 50%; font-size: 18px;}
+.service_list .items .item .content a{ text-decoration: underline; font-weight: 500;}
+.service_list .items .item .content a:hover{ text-decoration: none;}
+.service_list .items .item .content p{ font-size: 100%; line-height: 30px;}
+.service_list .items .item .readmore{ position: absolute; right: 0; top:20px;}     
+
+.service_list .items .item figure a{ display: block;} 
+.service_list .items .item figure img{ max-width: 100%; height: auto;}
+.service_list .items .item figure{ opacity: 0; visibility: hidden; position: absolute; left: 0; right: 0; z-index: 1;
+    padding:0; transition: all 0.5s ease-in-out; top:100%;  max-width: 400px; z-index: 10;  }     
+.service_list .items .item.active figure{ opacity: 1; visibility: visible; top: 50%;  transform: translateY(-50%);}  
+
+@media(max-width: 1600px) {
+/*    .service_list .items .item{padding: 120px 0 100px;}*/
+    .service_list .items .item figure{ max-width: 360px;}
+    .service_list .item_inner{ padding-left:200px;
+        /* padding-left:360px; */
+     }
+     .service_list .items .item h3 {font-size: 30px;}
+     .service_list .items .item .content {font-size: 16px}
+     .service_list .items .item .content p {line-height: 26px}
+}
+@media(max-width: 1200px) {
+/*    .service_list .items .item{padding: 100px 0 90px;}*/
+    .service_list .items .item h2{ width: 40%; font-size:30px;}
+}
+
+@media(max-width: 990px) {
+/*    .service_list .items .item{ padding:80px 0 70px;}*/
+    .service_list .item_inner{ gap: 3%;}
+    .service_list .item_inner{ padding:0  5% 0 10%; }
+    .service_list .items .item h3{ width: 40%;}
+    .service_list .items .item .content{ font-size: 18px;}
+    .service_list .items .item .content p{  line-height: 1.5;}
+
+    /* .service_list .item_inner{padding-left: 260px;}  */
+    .service_list .items .item h3{ width: 100%; padding-right: 50px;}
+    .service_list .items .item .content{ width: 100%;} 
+    .service_list .items .item figure{ max-width: 250px;}
+    .service_list .items .item .readmore{ background: #000; padding: 10px; }
+    .service_list .items .item .readmore svg{ width: 15px; height: 15px;}
+    .service_list .items .item .readmore svg path{ fill: #fff;}
+    .service_list .items .item h3 {font-size: 30px; }
+
+}
+
+@media(max-width: 767px) {
+    .service_list .items .item{padding: 40px 0 30px;} 
+    .service_list .items .item h3{ width: 100%;}
+    .service_list .items .item .content{ width: 100%;} 
+    .service_list .items .item h3 {font-size: 26px; }
+}
+
+@media(max-width: 575px) {
+    .service_list .items .item{padding: 30px 0 20px;} 
+    .service_list .item_inner:before{ top: 5px; }
+.service_list .item_inner{ padding: 0 20px 0 30px; gap: 0;}
+.service_list .items .item .content{ font-size: 16px;}
+.service_list .items .item figure{ position: static; top: 0; width: 100%; max-width: 100%; text-align: center; opacity: 1; visibility: visible; margin-bottom:30px;}
+.service_list .items .item.active figure{transform: translateY(0); top: 0; }
+.service_list .items .item .readmore{ top: 0;}
+}
+
+/*List of services ends*/

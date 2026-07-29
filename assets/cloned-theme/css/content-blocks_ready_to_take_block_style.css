@@ -1,0 +1,13 @@
+.ready-take-full {background: #F2F2F2; margin-top: 40px; margin-bottom: 40px;}
+
+@media(max-width:1199px) {
+	.ready-to-take-business .container h2 br {
+	    display: none;
+	}
+}
+
+@media(max-width:767px) {
+	.ready-take-full {
+		margin-top: 0px;
+	}
+}

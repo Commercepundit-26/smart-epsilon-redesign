@@ -1,0 +1,179 @@
+/*  Flexible Section Css  */
+.flexible_plans_section {
+    padding: 120px 0px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+.flexible_plans_section .plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 45px;
+}
+
+.flexible_plans_section .section_title,
+.what-sets-us-apart .section_title,
+.our_google_ads_services_section .section_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 57px;
+    padding-bottom: 0;
+}
+
+.flexible_plans_section .plan-card {
+    background-color: #202020;
+    border-radius: 16px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.flexible_plans_section .plan-card:hover {
+  background-color: #2a2a2a;
+}
+
+.flexible_plans_section .plan-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.flexible_plans_section .plan-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.flexible_plans_section .plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flexible_plans_section .plan-features li {
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    padding-left: 30px;
+    position: relative;
+}
+
+.flexible_plans_section .plan-features li::before {
+    content: "";
+    background-image: url('../../images/flexible_plan_arrow.svg');
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.flexible_plans_section .plan-features li:last-child {
+    margin: 0;
+}
+
+
+@media (max-width: 1440px) {
+    .flexible_plans_section .plan-card {
+        padding: 35px;
+    }
+    .flexible_plans_section .plan-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .flexible_plans_section .plan-subtitle {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .flexible_plans_section .plan-features li {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .flexible_plans_section .plans-grid {
+        gap: 35px;
+    }
+    .flexible_plans_section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .flexible_plans_section .section_title,
+    .what-sets-us-apart .section_title,
+    .our_google_ads_services_section .section_title {
+        margin-bottom: 57px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }  
+    .mobile-slider .plan-card {
+        visibility: visible !important;
+        animation-name: fadeInUp !important;
+    } 
+}
+@media (max-width: 767px) {
+    .flexible_plans_section .section_title,
+    .what-sets-us-apart .section_title,
+    .our_google_ads_services_section .section_title {
+        margin-bottom: 35px;
+        row-gap: 20px;
+    }
+    .flexible_plans_section .plan-card {
+        margin-right: 20px;
+    }
+    .flexible_plans_section .plan-card:last-child {
+        margin-right: 0;
+    }
+    .flexible_plans_section .plan-subtitle {
+        min-height: 45px;
+        max-height: 45px;
+        overflow: hidden;
+    }
+    .flexible_plans_section {
+        padding: 60px 0;
+    }
+    .flexible_plans_section .plan-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+    .flexible_plans_section .plan-subtitle {
+        line-height: 22px;
+        font-size: 18px;
+    }
+    .flexible_plans_section .slick-track {
+        display: flex;
+        height: auto;
+    }
+    .flexible_plans_section .slick-track .slick-slide {
+        display: flex;
+        height: auto;
+    }
+}
+
+@media (max-width: 499px) {
+    .flexible_plans_section .plan-card {
+        padding: 35px;
+    }
+    .flexible_plans_section .plan-features li {
+        margin-bottom: 13px;
+        line-height: 20px;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .flexible_plans_section .plan-features li::before {
+        background-position: -6px 0px;
+        background-repeat: no-repeat;
+    }
+    /*.flexible_plans_section .plan-card {
+        min-height: 355px;
+        max-height: 355px;
+    }*/
+}

@@ -1,0 +1,274 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+.ga-timer-section {
+  display: inline-block;
+  width: 100%;
+  background: #F2F2F2;
+  padding: 50px 0 0 0;
+  height: 222px;
+  margin: -6px 0 60px 0;
+}
+
+.ga-timer-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer-section-lft {
+  max-width: 53%;
+  width: 100%;
+}
+
+.timer-section-rgt {margin-left: auto;display: flex;align-items: center;margin-bottom: auto;padding-top: 10px;/* padding-left: 90px; */}
+
+.timer-section-inner {
+  padding: 0 40px 0 0;
+}
+
+.timer-section-inner p {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Roboto Condensed';
+}
+
+.timer-section-lft p {
+  font-size: 34px;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 25px;
+}
+
+.timer-section-lft p strong {
+  font-weight: bold;
+}
+
+.timer-row span {
+  background: #005463 !important;
+  border-radius: 5px 5px 0px 0px !important;
+  margin: 0 29px !important;
+  box-shadow: none;
+}
+#display span {
+  background: #fff !important;
+  margin: 0 29px !important;
+  border-radius: 0px 0px 5px 5px !important;
+  text-shadow: none;
+  font-size: 15px;
+  color: #005463;
+  font-family: 'Lato';
+  font-weight: bold;
+  letter-spacing: 0px;
+  padding: 12px 0;
+  box-shadow: 0 0 28px 1px rgb(0 0 0 / 10%);
+}
+
+.timer-row #clock, #display {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -29px;
+}
+
+.timer-row #clock span, #display span {
+  width: calc(22.5% - 58px);
+  align-items: center;
+  justify-content: center;
+}
+.timer-row #clock span {
+  font-size:50px;
+  font-family:Lato;
+  letter-spacing:0;
+  font-weight:bold;
+  padding:0;
+  min-height:119px;
+  display:flex;
+  align-items: center;
+  position:relative;
+  
+}
+
+.timer-section-inner ul li {
+  font-size: 17px;
+  margin: 0 0 10px 0;
+  font-family: 'Roboto Condensed';
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.timer-section-inner ul li:after {
+  position: absolute;
+  content: "";
+  background: url(../../images/ga-checkicon.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 4px;
+  background-size: contain;
+}
+
+.timer-row #clock span:after {
+  position: absolute;
+  content: ":";
+  left: 112%;
+  right: 0;
+  margin: auto;
+  color: #005463;
+  font-family: 'Lato';
+  font-weight: bold;
+}
+.timer-row #clock span:last-child:after {
+  display:none;
+}
+
+@media(max-width:1700px) {
+  .timer-section-lft {
+    max-width: 48%;
+  }
+  .timer-section-rgt {
+    padding-left: 50px;
+  }
+  .timer-section-inner ul li {
+    font-size: 15px;;
+  }
+  #display span {
+    margin: 0 15px !important;
+    padding: 7px 0;  
+  }
+  .timer-row span {
+    margin: 0 15px !important;
+  }
+  .timer-row #clock, #display {
+    margin: 0 -15px;
+  }
+  .timer-row #clock span:after {
+    left: 106%;
+  }
+  .timer-row #clock span, #display span {
+    width: calc(25% - 30px);   
+  }
+  .timer-section-rgt .default-btn {
+    white-space: nowrap;
+  }
+}
+@media(max-width:1400px) {
+  .timer-section-inner p {
+    font-size: 18px;
+  }
+  .timer-section-inner ul li {
+    font-size: 14px;
+  }
+  .timer-row #clock span {
+    font-size: 40px;
+  }
+}
+@media(max-width:1280px) {
+  .timer-section-inner p {
+    font-size: 16px;
+  }
+}
+@media(max-width:1199px) {
+  .timer-section-inner p {
+    font-size: 15px;
+  }
+}
+@media(max-width:1024px) {
+  .timer-row #clock span:after {
+    left: 108%;
+  } 
+  .timer-section-rgt {
+    padding-left: 30px;
+    padding-top: 0;
+  }
+  .timer-section-inner p {
+    font-size: 14px;
+  }
+  .timer-row #clock span {
+    min-height:100px;
+  }
+  .timer-section-lft {
+    margin-top: 18px;
+  }
+}
+
+@media(max-width:1023px) {
+  .timer-row #clock span:after {
+    left: 106%;
+  }
+  .ga-timer-section .container {
+    flex-wrap: wrap;
+  }
+  .ga-timer-section {
+    padding: 20px 0 15px 0;
+    height: auto;
+  }
+  .timer-section-lft {
+    max-width: 100%;
+    margin-bottom:20px;
+  }
+  .timer-section-rgt {
+    margin-left: 0px;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+  .ga-timer-section {
+    margin-bottom: 30px;
+  }
+  .timer-section-inner p {
+    font-size: 21px;
+  }
+  .timer-section-inner ul li:after {
+    top: 1px;
+  }
+}
+@media(max-width:767px) {
+  .timer-row #clock span:after {
+    left: 104%;
+  }
+  .timer-row #clock span {
+    min-height:60px;
+    font-size: 25px;
+  }
+  #display span {
+    font-size: 13px;
+  }
+  #display span {
+    margin: 0 10px !important;
+    padding: 7px 0;  
+  }
+  .timer-row span {
+    margin: 0 10px !important;
+  }
+  .timer-row #clock, #display {
+    margin: 0 -10px;
+  }
+  .timer-row #clock span, #display span {
+    width: calc(25% - 20px);   
+  }
+  .timer-section-rgt {
+    flex-wrap: wrap;
+  }
+  .timer-section-lft p {
+    font-size: 30px;
+  }
+  .timer-section-inner p {
+    font-size: 18px;
+  }
+  .timer-section-inner {
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+
+}
+@media (max-width:499px) {
+  .timer-row #clock span:after {
+    left: 107%;
+  }
+  .timer-section-inner {
+    padding-right: 0;
+  }
+}

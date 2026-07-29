@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+.google-analytics-top {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.google-analytics-main h2 {
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+.google-analytics-full-content h2 {
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 10px;
+}
+
+.google-analytics-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.google-analytics-left {
+  max-width: 49%;
+}
+
+.google-analytics-rgt {
+  max-width: 40%;
+}
+.google-analytics-full-content {
+  max-width: 69%;
+}
+
+@media(max-width:1024px) {
+  .google-analytics-full-content {
+    max-width: 100%;
+  }
+  .google-analytics-full-content p {
+    margin-bottom: 40px !important;
+  }
+  .google-analytics-top {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width:1023px) {
+  .google-analytics-main {
+    flex-wrap: wrap;
+  }
+  .google-analytics-left {
+    max-width: 100%;
+  }
+  .google-analytics-rgt {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+@media(max-width:767px) {
+  .google-analytics-main h2 {
+    font-size: 31px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .google-analytics-full-content h2 {
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,301 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Let's Get in Touch Start*/
+.form-wrapper { }
+
+
+
+.form-wrapper .container .wpcf7{ max-width: 70%; }
+.form-wrapper .form-col { margin-bottom: 32px; }
+.form-wrapper .form-col label { color: #fff; font-weight: 500; padding: 0 0 2px; display: none; }
+.form-wrapper .form-col.full-width{ width: 100%;line-height: 1;}
+.form-wrapper input { height:auto ; padding: 20px 0;}
+.form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select { transition: all 0.5s ease; background: transparent; border: none; border-bottom: 1px #F6F6F6 solid; color: #fff; padding: 0; font-size: 14px; border-radius: 0px; height: auto;
+  padding: 10px 0; border: none; border-bottom: 1px #F6F6F6 solid; font-size: 20px;color: #F6F6F6; display: block; font-weight: 400;line-height: 25px;}
+.form-wrapper input:focus, .form-wrapper textarea:focus {border-color: #fff; transition: all 0.5s ease;}
+.form-wrapper textarea {   height: auto; }
+
+.form-wrapper .form-btn-row { text-align: left; padding-top: 60px; }
+.block-titie { text-align: center; padding: 0 0 40px; }
+.section_contact h1,
+.section_contact h2, .form-block h2 {color: #fff; text-align: left; margin-bottom: 0; font-size: 60px;}
+.form-wrapper .wpcf7-select option{ color: #000;font-weight: 400; }
+.section_contact .form-wrapper ::-ms-input-placeholder {font-size: 100; font-weight: 400; color: inherit !important; opacity: 1;} 
+.section_contact .form-wrapper ::placeholder {font-size: 100%; font-weight: 400; color:  inherit !important;opacity: 1;} 
+
+.form-wrapper textarea { height: 90px;}
+.form-wrapper .form-row{ margin: 0 -30px;}
+.form-wrapper .form-col{ width: calc(50% - 60px); margin-right:30px ; margin-left: 30px;} 
+.form-wrapper .wpcf7 form .wpcf7-response-output{ text-align: left;}
+.form-wrapper .form-block .wpcf7-spinner{ position: relative; margin-top: 10px; top: 0;}
+
+.wpcf7-form-control-wrap:after {
+  content: '';
+  position: absolute;
+  top:70px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+.wpcf7-form-control-wrap:focus:after  {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.section_contact.form-block .wpcf7-form-control-wrap .wpcf7-not-valid-tip{ display: inherit;}
+
+.section_contact .form-btn-row{     display: flex;  justify-content: start;  align-items: center;padding-top: 0;}
+.section_contact .form-wrapper .form-btn-row .wpcf7-spinner {  position: relative; top: 0;}
+
+.form-wrapper input, .form-wrapper textarea, .form-wrapper .wpcf7-select {-webkit-appearance: none;}
+.form-wrapper .form-col .select-dd {position: relative;}
+.form-wrapper .form-col .select-dd:after {right: 10px; 
+    top: 20px;
+    content: "";
+    position: absolute;
+    left: auto;
+    z-index: -1;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transform: rotate(225deg);
+    background: transparent;}
+
+.form-wrapper .form-row.checkmark-row label {display: inherit; line-height: 1}
+
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input::placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]::placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text]::placeholder {
+  color: transparent !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.form-wrapper .form-row.checkmark-row label {display: inherit; }
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input::-webkit-input-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]::-webkit-input-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text]::-webkit-input-placeholder {
+  color: transparent !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.form-wrapper .form-row.checkmark-row label {display: inherit; }
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input::-moz-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]::-moz-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text]::-moz-placeholder {
+  color: transparent !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.form-wrapper .form-row.checkmark-row label {display: inherit; }
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input:-ms-input-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]:-ms-input-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text]:-ms-input-placeholder {
+  color: transparent !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.form-wrapper .form-row.checkmark-row label {display: inherit; }
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input:-moz-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel]:-moz-placeholder, 
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text]:-moz-placeholder {
+  color: transparent !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+.form-wrapper .wpcf7 form.sent .wpcf7-response-output {
+    background-color: green;
+    color: #fff;
+    margin: 20px 0;
+    padding: 5px 15px;
+    border-color: green;
+    font-size: 15px;
+}
+
+.section_contact .form-btn-row input.wpcf7-submit {
+    font-weight: 600 !important;
+}
+
+
+@media(max-width:1600px) {
+  .form-wrapper{ padding: 0;}
+  .section_contact h1,
+  .section_contact h2, .form-block h2 { font-size: 60px;} 
+  .block-titie { padding: 0 0 30px; }
+  .form-wrapper .container .wpcf7{ max-width: 80%;}
+  .form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select { font-size: 18px;}
+  .section_contact .form-btn-row{ padding-top: 20px;}
+  .form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select {  padding: 12px 0;}
+  .form-wrapper .form-col .select-dd:after{ top: 20px;}
+}
+@media(max-width: 1200px) {
+.form-wrapper .form-row{ margin: 0 -20px;}
+.form-wrapper .form-col{ width: calc(50% - 40px); margin-right:20px ; margin-left: 20px;}  
+  .block-titie { padding: 0 0 20px; }
+  .section_contact h1{ font-size: 50px;}
+  .section_contact h2, .form-block h2 { font-size: 40px;} 
+  .form-wrapper .container .wpcf7{ max-width: 90%;} 
+  .form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select { font-size: 20px;}
+  .form-wrapper .form-btn-row{ padding-top: 40px;}
+  .form-wrapper .container .wpcf7{ max-width: 100%;}
+  .form-col.resume-upload > label {font-size: 20px}
+} 
+ 
+@media(max-width:767px) {
+  .form-wrapper .form-row{ margin:0;}
+  .form-wrapper .form-col{ width: 100%; margin-right:0 ; margin-left: 0; margin-bottom: 15px;} 
+  .section_contact h1{ font-size: 40px;}
+  .section_contact h2, .form-block h2 { font-size: 30px;} 
+  .form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select { font-size: 16px; padding:8px 0;}
+  .form-wrapper .form-btn-row{ margin-top: 20px; text-align: center; position: relative; padding-top: 0;}
+
+
+.section_contact .form-wrapper ::-ms-input-placeholder { color: #F6F6F6;} 
+.section_contact .form-wrapper ::placeholder {color: #F6F6F6;}
+.form-wrapper .wpcf7-select{color: #F6F6F6;}
+.form-wrapper .wpcf7-select:focus{ color: #fff;}
+.form-wrapper .form-col .select-dd:after{ top: 10px;} 
+.form-col.resume-upload > label {padding-bottom: 0px;font-size: 16px;}
+.form-col.resume-upload input#fileuploadurl {padding-top: 15px;padding-bottom: 10px;}
+} 
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+   -webkit-text-fill-color: #fff !important;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset
+}
+
+
+/*input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+   -webkit-text-fill-color: #000 !important;
+  background-color: #000 !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset
+}*/
+
+  @media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){  
+    .form-wrapper .container .wpcf7{ max-width:70%;}
+    .form-wrapper .form-row{ margin: 0 -20px;}
+    .form-wrapper .form-col{ width: calc(50% - 40px); margin-right:20px ; margin-left: 20px;}  
+      .block-titie { padding: 0 0 15px; }
+      .section_contact h1,
+      .section_contact h2, .form-block h2 { font-size: 40px;} 
+      .form-wrapper .container .wpcf7{ max-width: 90%;} 
+      .form-wrapper input, .form-wrapper textarea,.form-wrapper .wpcf7-select { font-size: 20px; padding: 6px 0;}
+      .form-wrapper .form-btn-row{ padding-top:30px;}
+      .section_contact .form-btn-row{ padding-top: 10px;}
+      .form-wrapper .form-col .select-dd:after{ top: 15px;}
+      
+
+  }
+
+/* // for animation */
+
+.bouncer-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.bouncer-holder {
+-webkit-animation: travel 3s ease-in infinite alternate;
+    -o-animation:  travel 3s ease-in infinite alternate;
+    animation:  travel 3s ease-in infinite alternate;
+}
+
+.bouncer {
+  position: absolute;
+  bottom: 0; 
+  height: 600px;
+  width: 600px;   
+-webkit-animation: bounce 3.5s infinite;
+  -o-animation:  bounce 3.5s infinite;
+  animation:  bounce 3.5s infinite;
+  opacity: 0.6;
+
+}
+.bouncer svg{ max-width: 100%;}
+
+
+
+@media(max-width:767px) {
+  .bouncer {max-width: 300px;}
+  .checkmark-row .form-col.full-width {
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 30px;
+  }
+  .form-wrapper .form-row.checkmark-row label {
+    line-height: 1.3;
+  }
+  .checkmark-row a{
+    line-height: 1.3;
+  }
+  .form-wrapper .form-row.checkmark-row label span.wpcf7-list-item-label {
+    padding-left: 25px;
+  }
+}
+
+ @-webkit-keyframes travel {
+   from { left: 0; }
+     to   { left: calc(100% - 30px)}
+  }
+  
+  @keyframes travel {
+     from { left: 0; }
+     to   { left: calc(100% - 30px)}
+  }
+  
+  @-webkit-keyframes bounce {
+    from, to  {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+  }
+  @keyframes bounce {
+    from, to  {
+      bottom: 0;
+      animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: calc(100% - 30px);
+      animation-timing-function: ease-in;
+    }
+  }
+
+
+
+/*  Small Form Comman Css   */
+
+.section_contact.small_form form.invalid .wpcf7-response-output {
+  text-align: left;
+}

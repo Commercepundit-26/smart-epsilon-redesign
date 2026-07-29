@@ -1,0 +1,205 @@
+/*  Ads Solution Section Css  */
+.google_ads_section {
+    padding: 120px 0;
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.case-study-new .google_ads_section .google-ads-content{
+    margin-top: 0;
+}
+.google_ads_section .google-ads-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+}
+.google_ads_section .ads-item .icon {
+    width: 70px;
+}
+.google_ads_section .ads-item .icon+div {
+    width: calc(100% - 70px);
+}
+.google_ads_section .ads-text {
+    flex: 1 1 47%;
+    min-width: 320px;
+}
+.google_ads_section .ads-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 65px;
+}
+section.container.usp + .google_ads_section .ads-item{
+  margin-bottom: 25px;
+}
+.google_ads_section .ads-item:last-child {
+    margin-bottom: 0;
+}
+/*  .google_ads_section .ads-item .icon {
+    min-width: 40px;
+    margin-top: 6px;
+  }*/
+.google_ads_section .ads-item h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 5px;
+    line-height: 24px;
+}
+.google_ads_section .ads-item p {
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    line-height: 32px;
+}
+.google_ads_section .ads-image {
+    flex: 1 1 50%;
+    text-align: right;
+}
+.google_ads_section.qhoobi-grow-your-service .ads-image{
+text-align: left;
+}
+.google_ads_section .ads-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+/* case study css */
+.case-study-new .google_ads_section .ads-text h3{
+    font-size: 48px;
+    line-height: 1.46;
+    font-weight: 500;
+ }
+@media (max-width: 1440px) {
+    .google_ads_section .ads-text {
+        flex: 1 1 40%;
+        min-width: 320px;
+    }
+    .google_ads_section .ads-image {
+        flex: 1 1 46%;
+        text-align: right;
+    }
+    .google_ads_section .ads-item {
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+    .google_ads_section .google-ads-content {
+        margin-top: 25px;
+    }
+    .google_ads_section {
+        padding: 50px 0;
+    }
+    .google_ads_section .ads-item .icon {
+        max-width: 60px;
+    }
+    .google_ads_section .ads-item .icon svg {
+        width: 60px;
+    }
+    .google_ads_section .ads-item h4 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .google_ads_section .ads-item p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .google_ads_section .ads-item .icon+div {
+        width: calc(100% - 60px);
+    }
+    /* case study detail */
+    .case-study-new .google_ads_section .ads-text h3{
+        font-size: 45px;
+    }
+    .case-study-new .google_ads_section{
+        padding: 50px 0 50px;
+    }
+}
+/* case study detail */
+@media (max-width: 1200px) {
+    .case-study-new .google_ads_section {
+        padding: 90px 0 50px;
+    }
+}
+@media (max-width: 1024px) {
+    .case-study-new .google_ads_section .ads-text h3{
+        font-size: 40px;
+    }
+    .case-study-new .google_ads_section{
+        padding: 50px 0;
+    }
+    .cb-station-page .usp{
+        margin-bottom: 0;
+    }
+}
+/* case study detail */
+@media (max-width: 990px) {
+    .google_ads_section .ads-text {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+    .google_ads_section .ads-image {
+        flex: 0 0 100%;
+        text-align: right;
+    }
+    .google_ads_section .ads-image img {
+        width: 100%;
+    }
+    .google_ads_section .ads-item {
+        gap: unset;
+    }
+    .google_ads_section .ads-item .icon {
+        margin-right: 30px;
+    }
+    /* case study detail */
+    .case-study-new .google_ads_section .ads-text h3{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .google_ads_section {
+        padding: 60px 0;
+    }
+    .google_ads_section .google-ads-content {
+        margin-top: 40px;
+    }
+    .google_ads_section .ads-item .icon {
+        max-width: 80px;
+        margin-bottom: 19px;
+    }
+     /* case study detail */
+    .case-study-new .google_ads_section .ads-text h3{
+        font-size: 30px;
+    }
+    .case-study-new .google_ads_section {
+        padding: 30px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .google_ads_section .google-ads-content{
+        gap: 40px;
+    }
+    .google_ads_section .ads-item h4 {
+        font-size: 20px;
+    }
+    .google_ads_section .ads-item p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .google_ads_section .ads-item {
+        margin-bottom: 30px;
+        /* gap: 19px; */
+        flex-wrap: wrap;
+    }
+    .google_ads_section .ads-item .icon+div {
+        width: 100%;
+    }
+}
+
+ 

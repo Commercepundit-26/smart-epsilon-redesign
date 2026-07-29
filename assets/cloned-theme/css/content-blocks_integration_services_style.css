@@ -1,0 +1,316 @@
+.our_google_ads_services_section {
+    padding: 120px 0;
+}
+.our_google_ads_services_section .section_title {
+    margin-bottom: 60px;
+}
+.our_google_ads_services_section .feature-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  border-radius: 16px 0px 0px 16px;
+}
+.our_google_ads_services_section .feature-block:last-child {
+    margin-bottom: 0;
+}
+.our_google_ads_services_section .feature-block:nth-child(odd) {
+    flex-direction: row-reverse;
+    border-radius: 0 16px 16px 0;
+}
+.our_google_ads_services_section .feature-block:nth-child(odd) img {
+    border-radius: 0 16px 16px 0;
+}
+ 
+.our_google_ads_services_section .feature-text {
+    flex: 1 1 500px;
+    padding: 0 120px;
+}
+ 
+.our_google_ads_services_section .feature-text h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 500;
+    line-height: 48px;
+}
+ 
+.our_google_ads_services_section .feature-text p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+ 
+.our_google_ads_services_section .feature-text p:last-child {
+    margin-bottom: 0;
+}
+ 
+.our_google_ads_services_section .feature-image {
+    flex: 1 1 240px;
+}
+ 
+.our_google_ads_services_section .feature-image img {
+  width: 100%;
+  border-radius: 16px 0px 0px 16px;
+}
+/* Sticy Button Vertically start */
+.sticky-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: none; 
+  }
+  
+  .sticky-button .integration-sticky-btn{
+    background: #000;
+    color: #fff;
+    padding: 30px 15px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 16px;
+    writing-mode: sideways-rl;
+  }
+ /* Sticy Button Vertically End */
+
+@media(max-width: 1600px) {
+    .our_google_ads_services_section .feature-text {
+        flex: 1 1 450px;
+        padding: 0 60px;
+    }
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: 40px;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+ 
+ 
+@media (max-width: 1440px) {
+    .our_google_ads_services_section .feature-block {
+        margin-bottom: 35px;
+    }
+    .our_google_ads_services_section .feature-image {
+        flex: 1 1 280px;
+    }
+    .our_google_ads_services_section .feature-text {
+        padding: 0 40px;
+    }
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        line-height: 36px;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+    .our_google_ads_services_section .section_title {
+        margin-bottom: 30px;
+    }
+    .our_google_ads_services_section {
+        padding: 50px 0;
+    }
+    /* Sticy Button Vertically start */
+    .sticky-button {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 1000;
+        display: none; 
+    }
+    
+    .sticky-button .integration-sticky-btn{
+        background: #000;
+        color: #fff;
+        padding: 30px 15px;
+        border-radius: 0px;
+        text-decoration: none;
+        font-size: 16px;
+        writing-mode: sideways-rl;
+    }
+    /* Sticy Button Vertically End */
+}
+
+
+@media (max-width: 1299px) {
+    .our_google_ads_services_section .feature-block {
+        gap: 20px;
+    }
+    .our_google_ads_services_section .feature-text {
+        padding: 0 20px;
+    }
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 14px;
+    }
+}
+ 
+@media (max-width: 1024px) {
+    .our_google_ads_services_section .feature-image {
+        flex: 1 1 320px;
+    }
+    .our_google_ads_services_section .feature-text {
+        padding: 0 50px;
+    }
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 1.6rem;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .our_google_ads_services_section .feature-text {
+        padding: 0 40px;
+    }
+    .our_google_ads_services_section .feature-block {
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+    /* Sticy Button Vertically start */
+    .sticky-button .integration-sticky-btn{
+        padding: 25px 8px;
+        font-size: 13px;
+    }
+    /* Sticy Button Vertically End */
+}
+ 
+@media (max-width: 990px) {
+    .our_google_ads_services_section .feature-block {
+        margin-bottom: 50px;
+        gap: 0;
+    }
+    .our_google_ads_services_section .feature-image {
+        flex: 1 1 210px;
+    }
+    .our_google_ads_services_section .feature-text {
+        flex: 1 1 270px;
+        padding: 0 20px;
+    }
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        line-height: 34px;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .our_google_ads_services_section .section_title {
+        margin-bottom: 20px;
+    }
+}
+ 
+@media (max-width: 767px) {
+  .our_google_ads_services_section .feature-block {
+        flex-direction: column !important;
+        text-align: center;
+        border-radius: 0;
+        border-top: 0;
+        margin-bottom: 40px;
+        border-bottom: 0;
+        padding: 0;
+    }
+ 
+    .our_google_ads_services_section .feature-text h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .our_google_ads_services_section .feature-text p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 26px;
+    }
+ 
+  .our_google_ads_services_section .feature-text, 
+  .our_google_ads_services_section .feature-image {
+        flex: 1 1 100%;
+        padding: 0;
+        width: 100%;
+    }
+    .our_google_ads_services_section .feature-image img {
+        border-radius: 16px 16px 0 0;
+    }
+    .our_google_ads_services_section .feature-block .feature-text {
+        padding: 25px 0 0;
+        text-align: left;
+    }
+    .our_google_ads_services_section .feature-block:nth-child(odd) img {
+        border-radius: 16px 16px 0px 0;
+    }
+    .our_google_ads_services_section .feature-block:nth-child(odd) {
+        border-radius: 16px 16px 0 0;
+    }
+
+
+
+    .our_google_ads_services_section .feature-block .feature-text .mobile_text {
+        max-height: 4.8em; /* approx 3 lines */
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.8s ease;
+    }
+
+    /*.our_google_ads_services_section .feature-block .feature-text .mobile_text::after {
+        content: '...';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 20px;
+        background: linear-gradient(to right, transparent, white 90%);
+        display: block;
+        height: 1em;
+        line-height: 1;
+    }*/
+
+    .our_google_ads_services_section .feature-block .feature-text .mobile_text.expanded {
+      max-height: 1000px; /* show full text when expanded */
+    }
+
+    /*.our_google_ads_services_section .feature-block .feature-text .mobile_text.expanded::after {
+        content: '';
+        display: none;
+    }*/
+
+    .our_google_ads_services_section .feature-block .feature-text .read-more-toggle {
+        color: #000000;
+        font-weight: 400;
+        cursor: pointer;
+        display: inline-block;
+        margin: 10px 0 0 0;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: 'Inter',sans-serif;
+    }
+    .our_google_ads_services_section{
+            padding: 60px 0;
+    }
+    .our_google_ads_services_section .section_title {
+        margin-bottom: 15px;
+    }
+    /* Sticy Button Vertically start */
+    .sticky-button .integration-sticky-btn{
+        padding: 22px 8px;
+        font-size: 12px;
+    }
+    /* Sticy Button Vertically End */
+
+}
+ 

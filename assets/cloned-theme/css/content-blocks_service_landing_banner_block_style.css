@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/* Hero Section Start */
+.services-design-hero { position: relative; height: 90vh; background-size: cover; background-position: center;}
+
+.services-design-hero:before { content: ''; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; background: rgba(0, 0, 0, 0.7); }
+ 
+.banner-inner-caption { max-width: 1300px; padding: 0 15px; position: absolute; left: 0; right: 0; margin: auto; top: 50%; transform: translateY(-50%); width: 100%; text-align: center; z-index: 2;  }
+.banner-inner-caption .h1-style { color: #fff; font-size: 50px; line-height: 1.2; }
+.banner-inner-caption .h3-style { color: #fff; margin: 30px 0px;}
+.banner-inner-caption p { color: #fff; font-size: 22px; max-width: 840px; line-height: 1.5; margin: 20px auto 30px; font-style: italic;}
+.banner-inner-caption ul{ display: flex; justify-content: space-between; padding-bottom: 40px; margin: 0;}
+.about-page .banner-inner-caption ul {gap:inherit; justify-content: space-between;}
+.banner-inner-caption ul li{ color: #fff; font-size: 25px; line-height: 1.5; font-weight: bold; position: relative; padding-left: 30px; max-width: 500px;}
+.banner-inner-caption ul li:before{ content: ''; background:url(check-solid.svg) no-repeat center;     width: 25px;
+  height: 25px; display: block; position: absolute; left: 0; top: 7px;}
+.banner-land-content h3 {color: #fff;}
+.banner-info-content p { color: #fff; font-size: 1.2rem; line-height: 1.5; margin: 0 auto; font-style: italic;}
+
+section.services-design-hero:after {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    content: "";
+    background: #000;
+    z-index: 0;
+}
+
+@media(max-width: 1600px) {
+  .services-design-hero {min-height: 650px; height: auto;}
+}
+ 
+@media(max-width: 1400px) {
+  .banner-inner-caption .h1-style {font-size: 45px; margin: 0;}
+  .banner-inner-caption ul{  margin: 0;}
+}
+
+@media(max-width: 1199px) { 
+  .banner-inner-caption .h1-style {
+    font-size: 45px;
+    padding: 0 2%;
+  }
+  .services-design-hero {
+    min-height: 570px;
+  }
+  .banner-inner-caption {
+    padding: 0 35px;
+  }
+  .banner-inner-caption ul li {
+    font-size: 22px;
+  }
+
+  .service-develop-page .banner-inner-caption ul li {
+    width: auto;
+    max-width: 100%;
+    font-size: 21px;
+  }
+  .service-develop-page .banner-inner-caption ul li:before {width: 15px;height: 16px;}
+}
+
+@media(max-width: 1023px) {
+  .banner-inner-caption .h1-style { font-size: 38px; }
+  .banner-inner-caption {padding: 0 20px;}
+  .banner-inner-caption p {font-size: 20px;margin: 0px auto 20px;}
+  .banner-inner-caption ul{ flex-wrap: wrap; text-align: left; }
+  .banner-inner-caption ul li{  width:100%; max-width: 100%; font-size: 20px; margin-bottom: 5px; padding-bottom: 0px; padding-left: 0px; text-align: center;}
+  .banner-inner-caption ul li:before{  width: 20px; height: 20px;}
+  .banner-inner-caption .h1-style {font-size: 44px;}
+  .services-design-hero {min-height: 460px;}
+  .banner-inner-caption .h1-style br, .banner-inner-caption p br {display: none;}
+  .banner-inner-caption ul li:before {display: inline-block;margin: 0 6px 0 0px;position: relative;top: 2px;}
+  .service-develop-page .banner-inner-caption ul li {width: 33.33%; font-size: 18px;}
+  .service-grow-page .banner-inner-caption ul li {width: 33.33%; font-size: 18px;}
+}
+
+@media(max-width:767px) {
+  .service-develop-page .banner-inner-caption ul li {width: 100%;}
+  .services-design-hero {min-height: 540px;height: 100%;}
+  .banner-inner-caption .h1-style {font-size: 32px;margin-top: 0; }
+  .banner-inner-caption p { font-size: 16px; margin: 10px auto 20px; line-height: 24px;}
+  .banner-inner-caption ul li, .service-grow-page .banner-inner-caption ul li { font-size: 16px; line-height: normal;padding: 0; margin: 0 0 11px 0; text-align: center; width: 100%;}
+  .service-grow-page .banner-inner-caption .h1-style {font-size: 26px;}
+  .banner-inner-caption ul {max-width: 100%; margin: 0 auto;}
+  .banner-land-content h3 {font-size: 20px;}
+  .banner-inner-caption ul li:before, .service-grow-page .banner-inner-caption ul li:before {width: 13px;height: 12px;display: inline-block;margin: 0 6px 0 0px;position: relative;top: 2px;}
+}
+/* Hero Section End */

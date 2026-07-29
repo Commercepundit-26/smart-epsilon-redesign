@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*===============Testimonial Page=================*/
+/*Testimonials List */
+.testimonials-main .container {
+  max-width: 1410px;
+}
+.testimonials-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.testimonial-left {
+  max-width: 54%;
+  width: 100%;
+}
+
+.testimonial-rgt {
+  max-width: 46%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.testimonial-rgt p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.testimonial-rgt span {
+  display: inline-block;
+  width: 100%;
+  color: #005463;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.testimonial-rgt small {
+  display: block;
+  font-size: 18px;
+  line-height: 27px;
+}
+.testimonials-main .testimonials-inner:nth-child(even) {
+  flex-direction: row-reverse;
+}
+@media(max-width:1199px) {
+  .testimonial-left {
+    max-width: 50%;
+  }
+  .testimonial-rgt {
+    max-width: 50%;
+  }
+}
+@media(max-width:1023px) {
+  .testimonial-rgt p {
+    font-size: 18px;
+  }
+  .testimonial-rgt small {
+    font-size: 16px;
+  }
+}
+@media(max-width:767px) {
+  .testimonial-left {
+    max-width: 100%;
+  }
+  .testimonial-rgt {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .testimonial-rgt p {
+    margin-bottom: 20px;
+  }
+}
+/*===============Testimonial Page Ends=================*/

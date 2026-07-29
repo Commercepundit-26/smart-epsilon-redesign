@@ -1,0 +1,52 @@
+/* industry-award-section */
+.section_industry{ clear: both; width: 100%;}
+
+
+.section_industry .items{  padding:0; width: 100%;  display: grid; 	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;}
+.section_industry .item{  background: #F6F6F6; } 
+.section_industry .item .icon{ max-width:196px; display: block; height: auto; margin-bottom: 0px;}
+.section_industry .icon a{ display: block;cursor: auto;}
+.section_industry + .section_industry {padding-top: 0; }
+
+.section_industry .item_inner{ position: relative; display: block;}
+.section_industry h3{ font-size: 36px;}
+.section_industry .info{ display: block; padding: 20px 0 0;}
+.section_industry .info p{ line-height: 26px;margin-bottom: 0;}
+.section_industry .industry-notes{ width: 100%;   font-weight: bold; padding: 20px 0 0; font-style: italic;}
+.section_industry .industry-notes p {font-weight: bold; font-style: italic; margin-bottom: 0;}
+
+.section_industry .readmore{ position: absolute; right: -15px; top:  -15px; }
+
+  @media(max-width: 1600px) {
+	.section_industry .items .item .icon{ height: auto;} 
+	.section_industry  h3{ font-size: 32px;}
+	.section_industry .info p{ line-height: 1.5;font-size: 16px;}
+	.section_industry .info{ padding-top: 30px;}
+	.section_industry .industry-notes{  padding-top: 40px;}
+  }
+
+  @media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+	.section_industry .items .item .icon{ height: auto;}
+	.section_industry  h3{ font-size: 32px;}
+	.section_industry .info p{ line-height: 1.5;} 
+	.section_industry .info{ padding-top: 30px;}
+
+  }
+  @media(max-width: 1200px) {
+  .section_industry .items{  	gap: 20px;}
+  .section_industry .info{ padding-top: 20px;}
+  .section_industry .readmore{ top: 0px;}
+  }
+
+  @media(max-width: 767px) {
+	.section_industry .items{ padding: 0;}
+	.section_industry .items{display: block;  width: 100%;}
+	.section_industry .item{ margin-bottom: 20px; width: 100%;}
+	.section_industry .industry-notes{ padding-top: 0;}
+	.section_industry .info p{ font-size: 16px;}
+	.section_industry .item .icon{ max-width: 160px; margin-bottom: 0;}
+	.section_industry .info {padding-top: 10px; }
+	.section_industry  h3 {font-size: 22px; }
+
+  } 

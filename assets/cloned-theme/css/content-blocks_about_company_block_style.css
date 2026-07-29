@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+
+/*About Us Start*/
+.full-bg-img-block { padding: 50px 0; background-attachment: fixed;}
+.full-bg-img-block .container { max-width: 1440px; display: flex; align-items: center; }
+.full-bg-img-block .statics-cta { display: flex; flex-flow: wrap; width: 45%; }
+.full-bg-img-block .statics-cta .static-col { padding: 60px 0px 60px 0px; background-color: #fff; width: calc(100% / 2 - 60px); margin: 30px; text-align: center; }
+.full-bg-img-block .statics-cta .static-col .count { font-size: 60px; font-weight: 700; display: block; font-family: 'Roboto Condensed', sans-serif; color: #000; }
+.full-bg-img-block .statics-cta .static-col .count:after { content: "+"; display: inline-block; }
+.full-bg-img-block .statics-cta .static-col p { font-size: 20px; font-weight: 400; margin: 0; }
+.full-bg-img-block .content-block { width: 45%; margin-left: auto; padding: 20px; }
+.full-bg-img-block .content-block .title { color: #fff; }
+.full-bg-img-block .content-block p { font-size: 50px; line-height: normal; margin-bottom: 40px; color: #fff; }
+.full-bg-img-block .content-block p a {color: #b2dce3;}
+.full-bg-img-block .content-block p a:hover {color: #fff;}
+@media(max-width: 1600px) {
+  .full-bg-img-block .content-block p { font-size: 29px; line-height: 42px; }
+  .full-bg-img-block .content-block { width: 48%; }
+}
+@media(max-width: 1365px) {
+  .full-bg-img-block { padding: 50px 0; }
+  .full-bg-img-block .statics-cta {width: 51%;}
+  .full-bg-img-block .statics-cta .static-col { margin: 20px; width: calc(100% / 2 - 40px); }
+}
+@media(max-width: 1199px) {
+  .full-bg-img-block .statics-cta .static-col { padding: 30px 0px 30px 0px; margin: 10px; width: calc(100% / 2 - 20px); }
+  .full-bg-img-block .statics-cta .static-col .count { font-size: 50px; }
+  .full-bg-img-block .content-block p { font-size: 28px; }
+  .full-bg-img-block {background-attachment: inherit;}
+  .full-bg-img-block .content-block p { font-size: 19px; line-height: 28px;}
+}
+@media(max-width: 1023px) {
+  .full-bg-img-block .statics-cta .static-col p { font-size: 16px; }
+}
+@media(max-width: 767px) {
+  .full-bg-img-block .container {flex-direction: column;}
+  .full-bg-img-block .statics-cta { width: 100%; }
+  .full-bg-img-block .content-block { width: 100%; padding: 30px 10px 0; }
+  .full-bg-img-block .content-block p { font-size: 20px; margin: 0 0 20px; }
+}
+/*About Us End*/

@@ -1,0 +1,6 @@
+.case_study_midsection .google-ads-content {
+    flex-direction: row-reverse;
+}
+.case_study_midsection .google-ads-content .ads-image {
+    text-align: left;
+}

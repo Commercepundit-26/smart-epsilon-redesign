@@ -1,0 +1,209 @@
+
+.weare_section {padding-top: 10px;}
+.weare_section .items{ padding:20px 0 0; }
+.weare_section .item{ display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; font-size: 20px; transition: all 0.3s ease-in-out;   margin-bottom: 10px; overflow: hidden; cursor: pointer; position: relative;}
+.weare_section .item h3{ font-weight: 400; padding-bottom:50px; margin-bottom: 0;}
+.weare_section .item .item-left, .weare_section .item .item-right{ width: 44%;}
+.weare_section .item .item-right{ position: absolute;  top: 0;  right: 0;}
+.weare_section .item .item-info{ padding-bottom: 40px;}
+.weare_section .item.open h3{ padding-bottom: 20px;}  
+.weare_section .item .item-info ul li {font-size: 15px; line-height: 20px; margin-bottom: 15px; padding-left: 15px; position: relative; }
+.weare_section .item .item-info ul li:before {content: ""; width: 6px; height: 6px; position: absolute; display: inline-block; z-index: 3; left: 0; background-color: rgba(51, 51, 51, 1); border-radius: 50%; top: 6px}
+.weare_section .item .item-info ul li:last-child {margin-bottom: 0; }
+
+.findyour_section {padding-top: 10px}
+.findyour_section h4{ font-weight: 600; padding-bottom:5px; margin-bottom: 0;}
+.findyour_section h4 a{ font-weight: 600;}
+.findyour_section  p{ margin: 0; padding: 0;} 
+.findyour_section .container{ position: relative;}
+.findyour_section .positions-tab{  position: absolute; top: 0; right:40px;}
+.positions-tabs{ width: 100%;}
+.positions-tabs .positions-tab{  display: flex; gap: 10px; justify-content: center; font-size: 24px; font-weight: 400; text-transform: capitalize;  color: #000; border-bottom:3px solid  #F6F6F6; }
+.positions-tabs .positions-tab > div{ padding: 10px 25px; cursor: pointer; position: relative;}
+.positions-tabs .positions-tab > div:before{ content: ''; display: block; width:0; height: 3px; border-radius: 10px; background: #000; position: absolute; left: 0; bottom: -3px;  transition: width .3s;}
+.positions-tabs .positions-tab > div.current:before,.positions-tabs .positions-tab > div:hover:before{  width: 100%;}
+.positions-content{ padding-top: 20px;}
+.positions-row {   text-align: center;  color: #888;  font-weight: 300;  }
+.positions-tabs .positions{ display: none; width: 100%; clear: both;} 
+.positions-tabs .positions.current {  display: block;} 
+
+
+.positions-tabs .positions-title{ padding:15px 0; cursor: pointer; position: relative; color: #000; border-bottom:3px solid  #F6F6F6; font-weight: 400; text-transform: capitalize;  width: 100%; text-align: left; font-size: 20px; display: none;} 
+.positions-tabs .positions-title:before{ content: ''; display: block; width:0; height: 3px; border-radius: 10px; background: #000; position: absolute; left: 0; bottom: -3px;  transition: width .3s;}
+.positions-tabs .positions-title.current:before{ width: 40%;}
+.plusminus{ position: absolute; right: 0; top: 18px; display: block;  width: 26px;  height: 26px;} 
+.plusminus i:nth-child(1) {  display: block;  position: absolute;   width: 100%;  height: 3px;  border-radius: 3px;  background: #000;   top: calc(50% - 1.5px);  -moz-transition: all .25s ease;  -webkit-transition: all .25s ease;  -o-transition: all .25s ease;  transition: all .25s ease;}
+.plusminus i:nth-child(2) {  display: block;  position: absolute;   width: 3px;  height: 100%;  border-radius: 3px;  background: #000;   left: calc(50% 
+- 1.5px);  -moz-transition: all .25s ease;  -webkit-transition: all .25s ease;  -o-transition: all .25s ease;  transition: all .25s ease;}
+.current .plusminus i:nth-child(1) {  background: #fff;}
+.current .plusminus i:nth-child(2) {  background: #000;  -moz-transform: rotate(-90deg);  -webkit-transform: rotate(-90deg);  -o-transform: rotate   (-90deg);  transform: rotate(-90deg);}
+
+.findyour_section .positions .item{ margin-bottom: 20px; background: #F6F6F6; border-radius: 10px; padding:30px 80px;  display: grid; text-align: left;
+gap: 3rem;  grid-template-columns: 25% 35% 20% 1fr; justify-content: space-between; } 
+.findyour_section .positions .item:hover{ background: #eaf8fb;}
+.findyour_section .positions .item strong{ display: block;  font-weight: bold; color: #000;}
+.findyour_section .positions .position-btn{ margin-left: auto; padding-top: 10px;}
+.findyour_section .positions .item .btn{ margin-left: auto; display: inline-block; color: #fff;}
+.findyour_section .positions .no-postions{ display: flex; gap: 0; text-align: center; justify-content: center;}
+.findyour_section .positions .no-postions h3{ padding: 0; margin: 0; }
+.findyour_section .positions-bottom{  background: #F6F6F6; border-radius: 10px; padding:38px 80px; width: 100%; display: block;  } 
+
+/*  Career Gallary Css  */
+.cp_life {padding-top: 10px}
+.cp_life .grid .wrapper{ display: block; width: 100%;}
+.cp_life .grid {margin: 0 auto; width: 100%; clear: both;}
+.cp_life .grid:after {content: '';display: block;clear: both;}
+.cp_life .grid-item {float: left;width: 390px;margin-bottom: 10px;overflow: hidden;border-radius: 10px}
+.cp_life .grid-item a{ display: block; width: 100%;}
+.cp_life .grid-item a img {display: block; width: 100%;}
+    /*  Career Gallery New Css  */
+    .cp_life .wrappers .grid {max-width: 100%; margin: auto; columns: 4 280px; column-gap: 1rem; font-size: 1.2rem; }
+    .cp_life .wrappers .grid .grid-item {display: inline-block; width: 100%; break-inside: avoid; float: none;}
+
+.why_section .items{ display: flex; flex-wrap: wrap; gap:4%; margin: 0;}
+.why_section .items .item{ width: 22%; font-size: 18px;  display: flex; flex-flow: column; align-items: center; justify-content: center; background: #F6F6F6; padding: 30px;
+     text-align: center; min-height: 300px;  } 
+.why_section .items .item strong{ font-size: 46px; display: flex; justify-content: center; text-transform: uppercase; 
+    color: #000; align-items: center; font-weight: 500;} 
+.why_section .items .item strong i{ font-style: normal;}  
+
+.careere-form .section_contact .form-wrapper .form-btn-row .wpcf7-spinner{ margin-right: 0;}
+.careere-form  .note{ font-size: 20px;}
+
+.wearewhat_section .blog_slider {margin-top: 30px; }
+.wearewhat_section .slick-track{ display: flex;}
+.wearewhat_section .slick-list{ margin: 0 -20px;}
+.wearewhat_section .slick-list{ overflow: visible;}
+.wearewhat_section .items:before{ content: ''; height: 100%; position: absolute; top: 0; bottom: 0; right: 100%; width: 100%;  display: block; height: 100%; z-index: 99;  backdrop-filter: blur(3px);  background: linear-gradient(to right,  rgba(255,255,255,1) 7%,rgba(255,255,255,1) 96%,rgba(255,255,255,0.6) 100%);}
+
+.wearewhat_section .item{ padding: 0 20px; height: auto;font-size: 24px;}
+.wearewhat_section .item_inner{ border: 1px solid rgba(0,0,0,0.2); min-height: 100%; display: flex; flex-flow: column; width: 100%;
+padding:20px}
+.wearewhat_section .item figure{ border-radius: 30px; overflow: hidden; display: block; margin-bottom: 20px;}
+.wearewhat_section .item figure a{   padding-bottom: 73%;    position: relative;    display: block;    width: 100%;    overflow: hidden;}
+.wearewhat_section .item figure img{position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}
+.wearewhat_section  .item:hover figure, .wearewhat_section  .item.slick-current figure{ box-shadow: none;}
+.wearewhat_section .info{ display: block; padding: 0px 15px 15px;}
+.wearewhat_section .info h4{ font-size: 28px ;}
+.wearewhat_section .item ul{  list-style: disc; padding:0 20px; }
+.wearewhat_section .item ul li{ list-style-type: disc; font-size: 90%; } 
+.wearewhat_section p{ margin: 0; padding: 0;}
+
+
+
+  /*  What Our Team Say Section  */
+.whatteam-says { padding: 0; background-color:#000; color:#AAAAAA; margin:100px 0;}
+.whatteam-says .whatteam-warp {display:flex; flex-wrap: wrap; align-items:center; justify-content: space-between;}
+.whatteam-says .item-left { width: 40%; font-size: 24px; padding:50px 70px 50px 0;} 
+.whatteam-says .item-left p{ color: inherit; font-size: 100%; line-height: 1.6;}
+.whatteam-says .section_title h2 {color:#fff;}
+
+.whatteam-says .item-right { width: 57%;  padding:0px; overflow:hidden; height: 100vh;}
+.whatteam-says .item-right ul {--masonry-gap:2rem; --masonry-brick-width:300px; column-gap:var(--masonry-gap); column-fill:initial; column-width:var(--masonry-brick-width);}
+.whatteam-says .item-right ul li {border:1px solid #AAAAAA; border-radius:10px;  color:#D2D2D2; font-size:16px;overflow: hidden;}
+.whatteam-says .item-right ul li .files{ width: 100%; }
+.whatteam-says .item-right li .text-field{padding:25px;}
+.whatteam-says .item-right ul > * {break-inside:avoid; margin-bottom:var(--masonry-gap);}
+.whatteam-says .item-right .teams-photo {width:50px; height:50px; border-radius:50%; overflow: hidden;}
+.whatteam-says .item-right .teams-detail {display:flex; align-items:center; padding-bottom:20px;}
+.whatteam-says .item-right .teams-data {margin-left:15px;}
+.whatteam-says .item-right .teams-data strong {font-size:20px; color:#FFFFFF; display: block; font-weight: bold; }
+.whatteam-says .item-right .teams-data p {color:#AAAAAA; font-size:14px; margin-bottom: 10px; font-weight: normal;}
+.whatteam-says .item-right p {color:#D2D2D2; font-size:16px; margin:0;}
+.whatteam-says .item-right li img, .whatteam-says .item-right li video {display:block; width:100%;}
+.whatteam-says .item-right li .files{ display: block; position: relative; padding-bottom:80%;}
+.whatteam-says .item-right li video{ display: block; object-fit: cover; left: 0; top: 0;    z-index: 1; width: 100%;
+    height: 100%;    position: absolute;}
+.whatteam-says .scrollcontainer {display:flex; justify-content:space-between; gap: 2rem;}
+.whatteam-says .scrollcontainer ul {width:49.2%;}
+.whatteam-says .scrollcontainer ul.marquee1 {top:0em; position:relative; box-sizing:border-box; animation:marquee 5s linear infinite;}
+.whatteam-says .scrollcontainer .marquee1:hover {animation-play-state:paused;}
+.whatteam-says .scrollcontainer ul.marquee2 {top:0em; position:relative; box-sizing:border-box; animation:marqueeDown 5s linear infinite;}
+.whatteam-says .scrollcontainer .marquee2:hover {animation-play-state:paused;} 
+
+@keyframes marquee { 
+    0% {top:0em}  
+    100% {top:-11em} 
+}
+ 
+@keyframes marqueeDown {
+    0% {top:-11em;} 
+    100% {top:0em;} 
+}
+
+
+.section_ourprocess{ overflow: hidden; width: 100%; clear: both;}
+/*.section_ourprocess .list{ width: 100%; margin:  60px 0 0; position: relative;display: flex; flex-wrap: wrap;}*/
+.section_ourprocess .list{ width: 100%; margin:  40px 0 0; position: relative;} 
+.section_ourprocess .list .item{  width: calc(100%/5); padding: 0 5px;}
+.section_ourprocess .list .item img{ display: block; margin-bottom: 30px;}
+.section_ourprocess .list h4{font-size: 18px; color: #AAAAAA; font-weight: 400; line-height: 44px; margin: 0;}
+.section_ourprocess .list h3 {color: #fff; font-weight: 500; display: block; font-size: 24px; line-height: 1.2; margin-bottom: 0; }
+.section_ourprocess .testimonials_section{ padding-top: 160px;}
+.section_ourprocess .testimonials_section .item_content{ max-width: 100%;}
+.section_ourprocess .testimonials_section .items{ margin-bottom: 0;}
+
+.section_ourprocess .slick-list{ overflow:visible;  margin: 0px;}
+.section_ourprocess .list:before{ content: ''; height: 100%; position: absolute; top: 0; bottom: 0; right: 100%; width: 100%; 
+	 display: block; height: 100%; z-index: 99;   backdrop-filter: blur(3px);  background: linear-gradient(to right,  rgba(0,0,0,1) 7%,rgba(0,0,0,1) 96%,rgba(0,0,0,0.6) 100%); }
+.section_ourprocess .slick-track{ margin-left: 0;}
+
+.employee_section {padding-top: 10px}
+.employee_section .container{ position: relative;}
+.employee_section .positions-tab{position: absolute;    top: 0;    right: 40px; }
+
+.employee_section .items{  display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; }
+.employee_section .items .item{ display: flex; flex-flow: column; gap: 26px;     align-items: center; margin-bottom: 30px;}
+.employee_section .items .item h4{ font-weight: 400; font-size: 22px; margin: 0; padding: 0; }
+.employee_section .items .item span.icon {height: 65px}
+
+
+/*  Career Detail Page Css  */
+.job-descriptiondetail .item-left ol {list-style-type: circle; padding-left: 20px;}
+.job-descriptiondetail .item-left {float: left;width: 60%;}
+.job-descriptiondetail .item-left h3 {color: #000000; font-size: 24px; font-weight: 600; }
+.job-descriptiondetail .item-left ul {list-style-type: disc; padding-left: 20px;margin-bottom: 30px;}
+.job-descriptiondetail .item-left li {color: #4F5665; font-size: 18px; list-style-type: inherit;line-height: 23px;margin-bottom: 15px;}
+
+.job-descriptiondetail .item-right {max-width: 405px; float: right; }
+.job-descriptiondetail .item-right .right-inner {background-color: #F6F6F6; padding: 40px 40px; border-radius: 40px; }
+.job-descriptiondetail .item-right h3 {font-size: 24px; font-weight: 600; padding-bottom: 10px;}
+.job-descriptiondetail .item-right li {display: flex; margin-bottom: 53px; align-items: start; }
+.job-descriptiondetail .item-right li:last-child {    margin-bottom: 0;}
+.job-descriptiondetail .item-right .image-wrap {margin-right: 15px; width: 49px}
+.job-descriptiondetail .item-right .text-wrap span {font-size: 16px;color: #000000;font-weight: 500;}
+.job-descriptiondetail .item-right .text-wrap p {margin: 0; font-size: 20px; color: #333333; font-weight: 400; }
+
+/*  Career Detail Page Social Share Css  */
+.job-descriptiondetail #share_block {margin-top: 30px; }
+.job-descriptiondetail #share_block .share_block {border: 0; border-radius: 0; padding: 0px;}
+.job-descriptiondetail #share_block .share_block h5 {width: 100%; background-color: transparent; padding: 0 0 20px 0; }
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode {width: 100%;border-radius: 40px;border: 1px solid rgba(246, 246, 246, 1)}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a {padding: 15px 0; background-color: transparent}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.a2a_button_x {border-radius: 40px 0px 0px 40px}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.a2a_button_facebook {border-radius: 0px 40px 40px 0px}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.a2a_button_x:before {border-radius: 40px 0px 0px 40px}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.a2a_button_facebook:before {border-radius: 0px 40px 40px 0px}
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.addtoany_share_save,
+.job-descriptiondetail #share_block .share_block .addtoany_shortcode a.a2a_button_threads {display: none}
+ 
+.job-descriptiondetail .addtoany_share_save_container{ display: none;}
+.job-descriptiondetail .btn{color: #fff;}
+
+.careere-form .form-col.resume-upload {position: relative;}
+.careere-form .wpcf7-form-control-wrap {width: 100%;display: inherit;}
+.careere-form .form-col.resume-upload>label {display: block;position: absolute;top: 10px;font-size: 20px;font-weight: 400;width: 100%;cursor: pointer;z-index: 1;line-height: 1; }
+.careere-form .form-col.resume-upload input#fileuploadurl {padding-left: 240px; font-size: 18px; line-height: 20px; padding-top: 15px; padding-bottom: 11px; }
+.careere-form .container .wpcf7 .resume-upload .file-upload.btn:after {width: 29px; height: 30px; position: absolute; top: 20px; right: 0; padding: 0px;opacity: inherit;}
+.careere-form .form-col.resume-upload .input-group.file-upload.file-upload.btn {background: transparent; padding: 0; }
+.careere-form .form-col.resume-upload input#FileAttachment {display: none; }
+.careere-form .form-col.resume-upload .input-group.file-upload.file-upload.btn .wpcf7-not-valid-tip {position: absolute; max-width: 530px; top: 70px; width: 530px; }
+.careere-form .form-wrapper .form-col [data-name="YearsofExperience"]:before, 
+.careere-form .form-wrapper .form-col [data-name="are-authorized"]:before {content: ""; position: absolute; right: 15px; top: 50%; z-index: 9; border: solid white; border-top-width: medium; border-right-width: medium; border-bottom-width: medium; border-left-width: medium;
+     border-width: 0 2px 2px 0; display: inline-block; padding: 4px; transform: translateY(-50%) rotate(45deg); -webkit-transform:  translateY(-50%) rotate(45deg); left: inherit;}
+
+
+
+.single-careers span.span-reading-time.rt-reading-time {display: none !important;}
+
+.badges-slider .slick-arrow {opacity: 0;}

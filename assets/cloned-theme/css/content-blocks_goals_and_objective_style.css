@@ -1,0 +1,376 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+.goals-objective-banner{
+  background-color: black;
+  color: white;
+  padding: 120px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.goals-objective-header {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a.btn.custom-btn-center.work{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.goal-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  line-height: 48px;
+  margin-bottom: 31px;;
+}
+.goals-obj-process .goals-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Process Section */
+a.btn.custom-btn-center.process{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+.goals-obj-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+/* slider dynamic */
+.container.goals-obj-process-slider-desktop {
+  max-width: 100%;
+  padding: 0 0 0 153px;
+}
+.goals-obj-process-slider-desktop .goals-obj-steps {
+  display: block !important;
+
+}
+.goals-obj-process-slider-desktop .goal-step {
+  margin-right: 15px;
+}
+.digital-process-column-four .goals-obj-steps{
+  grid-template-columns: repeat(4, 1fr);
+}
+/* slider dynamic */
+.goals-obj-steps .goal-step {
+  padding: 46px 40px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  border-radius: 16px;
+  font-weight: 400;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.goals-obj-steps .goal-step:hover {
+  background-color: #2a2a2a;
+}
+
+.goals-obj-steps .step-number {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 1.625;
+}
+
+.goals-obj-steps .step-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.67;
+  margin: 0 0 15px;
+}
+
+.content-card{
+      text-align: left;
+}
+
+.container.process-more-card {
+  max-width: 100%;
+  padding: 0 0 0 153px;
+}
+
+/* Responsive of Our Process Start */
+@media (max-width: 1600px) {
+  .goals-objective-banner{
+    padding: 80px 0;
+  }
+   .goals-obj-steps {
+    gap: 20px;
+  }
+  .goals-obj-steps .goal-step {
+    padding: 42px 38px;
+  } 
+  .goals-obj-steps .step-title {
+    font-size: 22px;
+    margin: 0 0 13px;
+  }
+  .container.goals-obj-process-slider-desktop {
+    padding: 0 0 0 116px;
+  }
+  .goals-obj-steps .step-number {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .goals-objective-banner{
+    padding: 50px 0;
+  }
+  .goals-obj-process .goals-subtitle{
+    margin-bottom: 0;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .goals-obj-steps {
+    gap: 18px;
+  }
+  .goals-obj-steps .goal-step {
+    padding: 40px 35px;
+  } 
+  /* .goals-obj-steps .step-title {
+    font-size: 22px;
+    margin: 0 0 13px;
+  } */
+  /* .goals-obj-steps .step-number {
+    font-size: 15px;
+  } */
+  /* .case-impact-process {
+    margin-top: 50px;
+  } */
+  .goal-title {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  
+  .case-category {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .case-title {
+    font-size: 17px;
+    line-height: 26px;
+    min-height: 56px;
+  }
+  .goals-obj-steps .slick-track {
+    display: flex;
+  }
+  .goals-obj-steps .slick-track .slick-slide {
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container.goals-obj-process-slider-desktop {
+    padding: 0 0 0 45px;
+  }
+}
+
+/* Small desktop / large tablet (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+  .goals-obj-steps {
+    gap: 15px;
+  }
+  .container.goals-obj-process-slider-desktop {
+    padding: 0 0 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .goals-obj-steps {
+    gap: 8px;
+  }
+  .goals-obj-steps .goal-step {
+    padding: 35px 30px;
+  } 
+  .goals-obj-steps .step-title {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+  .goals-obj-steps .step-number {
+    font-size: 14px;
+  }
+  .goal-title {
+    font-size: 40px;
+  }
+  .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    margin-right: 87px;
+    margin-top: 15px;
+  }
+  .goals-obj-process .goals-subtitle{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container.case-three-cards {
+    padding: 0 0 0 20px;
+  }
+  .goals-obj-steps {
+    grid-template-columns: unset;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .digital-process-column-four .goals-obj-steps{
+    grid-template-columns: unset;
+   }
+  .goals-obj-steps .goal-step {
+    padding: 32px 28px;
+    margin: 0 25px 0 0;
+  }
+  .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  .goals-objective-header div {
+    display: flex;
+    flex-direction: column;
+  }
+  .goal-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .goals-obj-process .goals-subtitle{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+}
+@media (min-width: 990px) {
+  .goals-obj-steps {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container.case-three-cards {
+    padding: 0 0 0 15px;
+  }
+  .goals-objective-banner{
+    padding: 30px 0;
+  }
+  .goals-obj-steps {
+    grid-template-columns: unset;
+    gap: 0;
+    margin-top: 0px;
+  }
+  .digital-process-column-four .goals-obj-steps{
+    grid-template-columns: unset;
+   }
+  .goals-obj-steps .goal-step {
+    padding: 30px 25px;
+    margin: 0 25px 0 0;
+  }
+  .goals-obj-steps .step-number {
+    font-size: 14px;
+  }
+  .goals-obj-steps .step-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  /* .case-impact-process {
+    margin-top: 60px;
+  } */
+  .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  .goals-objective-header div {
+    display: flex;
+    flex-direction: column;
+  }
+  .goal-title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .goals-obj-process .goals-subtitle {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 989px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+  .goals-objective-header div {
+    align-items: flex-start;
+  } 
+   .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+}
+
+@media (max-width: 679px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+  .step-number {
+    margin-bottom: 15px;
+  }
+  .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+
+  .goals-objective-header .btn-section.custom-btn-center.btn.process {
+    margin-top: 8px; position: static;
+    margin-right: 169px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 425px) { 
+  .goals-objective-header .btn-section.custom-btn-center.btn.process{
+    margin-right: 172px;
+  }
+  a.btn.custom-btn-center.process{
+    display: none;
+  }
+}
+
+@media (max-width: 375px) { 
+  a.btn.custom-btn-center.process{
+    display: none;
+  }   
+  .step-title {
+    font-size: 22px;
+  }
+}
+
+

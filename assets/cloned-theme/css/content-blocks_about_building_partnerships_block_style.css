@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Building Partner*/
+.section_buildingPartner{}
+.section_buildingPartner .head_info{ padding-bottom: 0;}
+.section_buildingPartner .video_wrapper { position: relative; overflow: hidden; min-height: 40vh; background-color: #161618; width: 100%; display: block;} 
+.section_buildingPartner .video_wrapper video { position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.section_buildingPartner strong{ font-weight: 600;}
+.section_buildingPartner ul{ padding-left:30px;}
+.section_buildingPartner ul li{ list-style-type: disc; font-size: 100%;} 
+
+
+@media(max-width:767px) {
+.section_buildingPartner .video_wrapper{ height: 250px; min-height:250px}
+
+} 

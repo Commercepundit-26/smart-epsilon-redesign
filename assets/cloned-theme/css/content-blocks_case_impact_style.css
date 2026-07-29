@@ -1,0 +1,419 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+.case-impact-promotion-banner{
+  background-color: black;
+  color: white;
+  padding: 120px 0;
+  text-align: left;
+  width: 100%;
+}
+p.case-step-subtitle {
+  color: #fff;
+}
+.case-study-new p.case-step-subtitle {
+  color: #fff;
+  display: none;
+}
+.case-impact-header {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a.btn.custom-btn-center.work{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.case-impact-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  text-align: left;
+  line-height: 48px;
+  margin-bottom: 31px;;
+}
+
+/* Process Section */
+a.btn.custom-btn-center.process{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+.case-impact-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.qhoobi-case-study .case-impact-steps{
+  grid-template-columns: repeat(4, 1fr);
+}
+/* slider dynamic */
+.container.case-impact-process-slider-desktop {
+  max-width: 100%;
+  padding: 0 0 0 153px;
+}
+.case-impact-process-slider-desktop .case-impact-steps {
+  display: block !important;
+
+}
+.case-impact-process-slider-desktop .case-impact-step {
+  margin-right: 15px;
+}
+.digital-process-column-four .case-impact-steps{
+  grid-template-columns: repeat(4, 1fr);
+}
+/* slider dynamic */
+.case-impact-steps .case-impact-step {
+  padding: 66px 40px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #202020;
+  border-radius: 16px;
+  font-weight: 400;
+  transition: 0.3s ease;
+  width: 100%;
+  max-width: 308px;
+}
+.tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 66px 30px;
+}
+.qhoobi-case-study .case-impact-steps .case-impact-step{
+  max-width: 100%;
+}
+.case-impact-steps .case-impact-step:hover {
+  background-color: #2a2a2a;
+}
+
+.case-impact-steps .step:hover {
+  background-color: #2a2a2a;
+}
+
+.case-impact-steps .step-number {
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 1.67;
+  margin: 0;
+}
+
+.case-impact-steps .step-title {
+  font-weight: 400;
+  font-size: 44px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.content-card{
+      text-align: left;
+}
+
+.container.process-more-card {
+  max-width: 100%;
+  padding: 0 0 0 153px;
+}
+.simpl-case-study .case-impact-steps .case-impact-step{
+  width: 310px;
+}
+  
+.simpl-case-study .case-impact-steps .step-title{
+  font-size: 40px;
+}
+
+/* Responsive of Our Process Start */
+@media (max-width: 1600px) {
+  .case-impact-promotion-banner{
+    padding: 80px 0;
+  }
+   .case-impact-steps {
+    gap: 20px;
+  }
+  .case-impact-steps .case-impact-step {
+    padding: 60px 35px;
+  } 
+  .tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 60px 25px;
+}
+  .case-impact-steps .step-title {
+    font-size: 40px;
+    margin: 0 0 18px;
+  }
+  .container.case-impact-process-slider-desktop {
+    padding: 0 0 0 116px;
+  }
+  .case-impact-steps .step-number {
+    font-size: 16px;
+  }
+  .simpl-case-study .case-impact-steps .case-impact-step{
+    width: 265px;
+  }
+  .simpl-case-study .case-impact-steps .step-title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .case-impact-promotion-banner{
+    padding: 50px 0;
+  }
+  .case-impact-steps {
+    gap: 18px;
+  }
+  .case-impact-steps .case-impact-step {
+    padding: 50px 30px;
+  }
+  .tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 50px 20px;
+}
+  .case-impact-steps .step-title {
+    font-size: 30px;
+    margin: 0 0 15px;
+  }
+  .case-impact-steps .step-number {
+    font-size: 15px;
+  }
+  /* .case-impact-process {
+    margin-top: 50px;
+  } */
+  .case-impact-title {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  
+  .case-category {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .case-title {
+    font-size: 17px;
+    line-height: 26px;
+    min-height: 56px;
+  }
+  .case-impact-steps .slick-track {
+    display: flex;
+  }
+  .case-impact-steps .slick-track .slick-slide {
+    height: auto;
+    margin-bottom: 0;
+  }
+  .simpl-case-study .case-impact-steps .case-impact-step{
+    width: 245px; 
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container.case-impact-process-slider-desktop {
+    padding: 0 0 0 45px;
+  }
+}
+
+/* Small desktop / large tablet (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+  .case-impact-steps {
+    gap: 15px;
+  }
+  .container.case-impact-process-slider-desktop {
+    padding: 0 0 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .case-impact-steps {
+    gap: 8px;
+  }
+  .case-impact-steps .case-impact-step {
+    padding: 40px 25px;
+  }
+  .tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 40px 20px;
+}
+  .case-impact-steps .step-title {
+    font-size: 28px;
+  }
+  .case-impact-steps .step-number {
+    font-size: 14px;
+  }
+  .case-impact-title {
+    font-size: 40px;
+  }
+  .case-impact-header .btn-section.custom-btn-center.btn.process {
+    margin-right: 87px;
+    margin-top: 15px;
+  }
+  .simpl-case-study .case-impact-steps .case-impact-step{
+    width: 207px;
+  }
+  .simpl-case-study .case-impact-steps .step-title{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container.magento-three-cards {
+    padding: 0 0 0 20px;
+  }
+  .case-impact-steps {
+    grid-template-columns: unset;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .digital-process-column-four .case-impact-steps{
+    grid-template-columns: unset;
+   }
+  .case-impact-steps .case-impact-step {
+    padding: 35px 22px;
+    margin: 0 25px 0 0;
+  }
+  .tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 35px 20px;
+}
+  .case-impact-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  .case-impact-header div {
+    display: flex;
+    flex-direction: column;
+  }
+  .case-impact-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .qhoobi-case-study .case-impact-steps{
+    grid-template-columns: unset;
+    gap: 0;
+  }
+.qhoobi-case-study .case-impact-steps .case-impact-step{
+    max-width: 308px;
+}
+}
+@media (min-width: 990px) {
+  .case-impact-steps {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container.magento-three-cards {
+    padding: 0 0 0 15px;
+  }
+  .case-impact-promotion-banner{
+    padding: 30px 0;
+  }
+  .case-impact-steps {
+    grid-template-columns: unset;
+    gap: 0;
+    margin-top: 0px;
+  }
+  .digital-process-column-four .case-impact-steps{
+    grid-template-columns: unset;
+   }
+  .case-impact-steps .case-impact-step {
+    padding: 30px 18px;
+    margin: 0 25px 0 0;
+  }
+  .tower-energy-case-study .case-impact-steps .case-impact-step{
+  padding: 30px 18px;
+}
+  .case-impact-steps .step-number {
+    font-size: 14px;
+  }
+  .case-impact-steps .step-title {
+    font-size: 30px;
+    margin: 0 0 10px;
+  }
+  /* .case-impact-process {
+    margin-top: 60px;
+  } */
+  .case-impact-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  .case-impact-header div {
+    display: flex;
+    flex-direction: column;
+  }
+  .case-impact-title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  .simpl-case-study .case-impact-steps .step-title{
+    font-size: 20px;
+  }
+   .qhoobi-case-study .case-impact-steps{
+    grid-template-columns: unset;
+    gap: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 989px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+  .case-impact-header div {
+    align-items: flex-start;
+  } 
+   .case-impact-header .btn-section.custom-btn-center.btn.process {
+    position: static;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  
+}
+
+@media (max-width: 679px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+  .step-number {
+    margin-bottom: 15px;
+  }
+  .case-impact-header .btn-section.custom-btn-center.btn.process {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  a.btn.custom-btn-center.process{
+    display: none;}
+
+  .case-impact-header .btn-section.custom-btn-center.btn.process {
+    margin-top: 8px; position: static;
+    margin-right: 169px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 425px) { 
+  .case-impact-header .btn-section.custom-btn-center.btn.process{
+    margin-right: 172px;
+  }
+  a.btn.custom-btn-center.process{
+    display: none;
+  }
+}
+
+@media (max-width: 375px) { 
+  a.btn.custom-btn-center.process{
+    display: none;
+  }   
+  .step-title {
+    font-size: 22px;
+  }
+}
+
+

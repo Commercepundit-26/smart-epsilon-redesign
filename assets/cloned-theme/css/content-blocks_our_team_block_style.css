@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our Team*/
+
+.our-team-main {
+  display:block;
+  width: 100%;
+} 
+
+.inner-team-tab {  display: inline-block;  width: 100%;  text-align: center;}
+
+.inner-team-tab ul {  display: flex;  justify-content: left;}
+
+.inner-team-tab li {margin: 0;position: relative; padding-right:60px; } 
+.inner-team-tab li .datatab {  transition: all 0.3s ease-in-out;  padding: 0;  padding:0 0 10px;cursor: pointer;font-size: 30px;font-weight: 400;
+  position: relative;}
+
+.inner-team-tab li .datatab:after {content: '';background-color:#000;  position: absolute;  left: 0;  bottom: 0;  width: 0;  height: 3px;  z-index: -1;  transition: all .3s ease-in-out;
+}
+.inner-team-tab li.tab-current { color: #000;}
+.inner-team-tab li.tab-current .datatab{ font-weight: 500;}
+.inner-team-tab li.tab-current .datatab:after{ width: 100%;}
+.our-team-main .content-wrap {   margin: 0 auto;  padding: 50px 0 0;}
+.our-team-main .content-wrap section {  display: none;}
+.our-team-main .content-wrap section.content-current {  display: block;}
+.team-list { padding:0; width: 100%;  display: grid; 	grid-template-columns: repeat(4, 1fr);	gap:40px 60px;}
+.team-list  figure{ overflow: hidden; padding: 0; margin-bottom: 20px;}
+.team-list  figure img{ width: 100%; height: auto;}
+.team-list .team-list-col{ font-size: 18px; padding:10px 0;}
+.team-name-title strong{font-size: 21px; font-weight: 500; display: block; padding-bottom: 0px;}
+.team-list .team-list-col span {font-family: 'Inter',sans-serif;}
+
+
+@media(max-width: 1600px) { 
+  .inner-team-tab li{ padding-right: 40px;}
+  .team-list {  gap: 40px;}
+  .team-list .team-list-col{ font-size: 14px; }
+  .team-name-title strong{font-size: 20px; }
+  .inner-team-tab li .datatab{ font-size: 24px;}
+  .our-team-main .content-wrap{ padding-top: 30px;}
+}
+
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+  .inner-team-tab li{ padding-right: 30px;}
+  .team-list {  gap: 40px;}
+  .team-list .team-list-col{ font-size: 14px; }
+  .team-name-title strong{font-size: 20px; }
+  .inner-team-tab li .datatab{ font-size: 20px;}
+  .our-team-main .content-wrap{ padding-top: 30px;}
+}
+
+@media(max-width: 990px) { 
+  .our-team-main .content-wrap{ padding-top:20px;}
+  .inner-team-tab li{ padding-right: 30px;}
+  .inner-team-tab li .datatab{ font-size: 18px;}
+  .team-list { grid-template-columns: repeat(3, 1fr);gap: 20px;}
+}
+
+@media(max-width: 767px) {
+  .team-list figure{ margin-bottom: 10px;} 
+  .inner-team-tab li{ padding-right: 20px;}
+  .team-list { grid-template-columns: repeat(2, 1fr);gap: 20px;} 
+  .team-name-title strong{font-size:18px; }
+  .inner-team-tab li .datatab{ font-size:16px;}
+  .team-name-title strong{ padding-bottom: 0;}
+.team-list .team-list-col{font-size: 13px; line-height: normal;padding: 0;}
+  } 

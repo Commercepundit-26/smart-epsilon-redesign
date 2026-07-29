@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*===============Partners Page=================*/
+.partner-page {display: inline-block;width: 100%;}
+
+.partner-page .container {
+    padding: 0 50px 60px 50px;
+}
+
+.partner-list {
+    display: flex;
+    margin: 0 -20px;
+    flex-wrap: wrap;
+}
+
+.partner-col {
+    width: calc(33.33% - 40px);
+    margin: 0 20px 30px 20px;
+    border: 1px solid #fff;
+    padding: 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partner-col:hover {
+    border: 1px solid #000;
+    transition: all 0.4s ease;
+}
+
+.partner-col:hover a.partner-website span {
+    text-indent:0px;
+}
+
+a.partner-website {
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.4s ease 0s;
+    display: flex;
+    align-items: center;
+}
+
+
+a.partner-website span {
+    text-indent: -95px;
+    display: inline-block;
+    transition: all 0.4s ease;
+    opacity: 0;
+    padding-right: 8px;
+    color: #005463;
+}
+
+.partner-col:hover a.partner-website span {
+    text-indent: 0;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+}
+
+a.partner-website:hover span {
+  color: #000;
+}
+
+a.partner-website i {
+    margin: 6px 0 0 0;
+}
+
+.partner-col .partner-logo {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.partner-col p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.partner-logo img {
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+transition: 0.5s;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+-o-transition: 0.5s;
+max-width: 140px;
+}
+.partner-col:hover .partner-logo img {
+  filter: none;
+  -webkit-filter: none;
+}
+
+@media(max-width:1199px) {
+  .partner-list {
+    margin: 0 -10px;
+  }
+  .partner-col {
+    margin: 0 10px 30px 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+  }
+  .partner-page .container {
+    padding: 0 30px 60px 30px;
+  }
+}
+
+@media(max-width:1023px) {
+  .partner-col {
+    width:calc(50% - 20px);
+  }
+}
+@media(max-width:767px) {
+  .partner-col {
+    width:100%;
+    margin: 0 0 20px 0;
+    border:1px solid #000;
+  }
+  .partner-list {
+    margin: 0;
+  }
+  .partner-page .container {
+    padding: 0 15px 60px 15px;
+  }
+}
+/*===============Partners Page End=================*/

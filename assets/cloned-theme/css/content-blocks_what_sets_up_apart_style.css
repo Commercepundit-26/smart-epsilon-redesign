@@ -1,0 +1,204 @@
+/* 
+    Created on : 22-April-2025  3:12:44 PM
+    Author     : Vedika
+*/
+  /*  What Sets Us Part Section  */
+ 
+  .what-sets-us-apart {
+    color: #fff;
+    padding: 120px 0px;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    margin-top: 120px;
+  }
+   
+  .what-sets-us-apart::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('../../images/what_sets_us_parts_BG_img.png');
+      opacity: 0.4;
+  }
+   
+  .what-sets-us-apart .header {
+    text-align: left;
+    margin-bottom: 40px;
+    position: relative;
+  }
+   
+  .what-sets-us-apart h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+   
+  .what-sets-us-apart p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+   
+  .what-sets-us-apart .cta-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+   
+  .what-sets-us-apart .cta-btn:hover {
+    background: #f0f0f0;
+  }
+   
+  .what-sets-us-apart .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+   
+  .what-sets-us-apart .card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+   
+  .what-sets-us-apart .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+   
+  .what-sets-us-apart .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 70px 40px 35px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  }
+   
+  .what-sets-us-apart .overlay h3 {
+      margin: 0 0 15px;
+      font-size: 24px;
+      color: #fff;
+      line-height: 18px;
+  }
+   
+  .what-sets-us-apart .overlay p {
+      margin: 0;
+      font-size: 16px;
+      color: #FFFFFF;
+      line-height: 24px;
+  }
+   
+  .what-sets-us-apart .card-grid .cards-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+  }
+  .what-sets-us-apart .card-grid .left-cards {
+      padding-bottom: 100px;
+  }
+  .what-sets-us-apart .card-grid .right-cards {
+      padding-top: 100px;
+  }
+   
+  @media (max-width: 1440px) {
+      .what-sets-us-apart .overlay h3 {
+        font-size: 20px;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+      .what-sets-us-apart .overlay p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .what-sets-us-apart .overlay {
+          padding: 60px 30px 30px;
+      }
+      .what-sets-us-apart .card-grid .left-cards {
+          padding-bottom: 70px;
+      }
+      .what-sets-us-apart .card-grid .right-cards {
+          padding-top: 70px;
+      }
+      .what-sets-us-apart {
+        padding: 50px 0;
+        margin-top: 50px;
+      }
+  }
+
+  @media (max-width: 1024px) {
+    .what-sets-us-apart .card-grid {
+      gap: 20px;
+    }
+    .what-sets-us-apart .card-grid .cards-wrap {
+      row-gap: 20px;
+    }
+    .what-sets-us-apart .card-grid .left-cards {
+      padding-bottom: 50px;
+    }
+    .what-sets-us-apart .card-grid .right-cards {
+      padding-top: 50px;
+    }
+  }
+   
+  @media (max-width: 990px) {
+    .what-sets-us-apart .overlay h3 {
+      font-size: 18px;
+    }
+    .what-sets-us-apart .overlay {
+      padding: 50px 15px 20px;
+    }
+  }
+   
+  @media (max-width: 767px) {
+      .what-sets-us-apart .card-grid {
+          grid-template-columns: 1fr;
+          gap: 15px;
+      }
+      .what-sets-us-apart .cta-btn {
+          position: static;
+          display: inline-block;
+          margin-top: 20px;
+      }
+      .what-sets-us-apart .card-grid .right-cards {
+          padding-top: 0;
+      }
+      .what-sets-us-apart .card-grid .left-cards {
+          padding-bottom: 0;
+      }
+      .what-sets-us-apart .overlay h3 {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 10px;
+      }
+      .what-sets-us-apart .overlay p {
+          font-size: 14px;
+          line-height: 19px;
+      }
+      .what-sets-us-apart .overlay {
+          padding: 40px 17px 10px;
+      }
+      .what-sets-us-apart .card-grid .cards-wrap {
+          gap: 15px;
+      }
+      .what-sets-us-apart::before {
+        opacity: 0.8;
+        background-size: contain;
+        /*background-image: url('../../images/what_sets_us_parts_BG_mobile_img.png');*/
+      }
+      .what-sets-us-apart {
+        padding: 60px 0;
+        margin-top: 60px;
+      }
+  }
+   

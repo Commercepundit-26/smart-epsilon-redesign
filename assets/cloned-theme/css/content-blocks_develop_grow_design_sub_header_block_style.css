@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*sub header descpriction*/
+.sub-header-desc {
+  display: inline-block;
+  width: 100%;
+  padding: 40px 0 20px 0;
+}
+
+.sub-header-desc p.first-header-descp {
+  font-family: "Lato", Sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0 0 60px 0;
+}
+
+.sub-header-desc .container {
+  max-width: 1440px;
+}
+
+.sub-header-desc p {
+  text-align: center;
+  font-family: "Lato", Sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 64px;
+}
+
+@media(max-width:1199px) {
+  .sub-header-desc p {
+    font-size: 35px;
+    line-height: normal;
+  }
+}
+@media(max-width:1023px) {
+  .sub-header-desc p {
+    font-size: 30px;
+  }
+  .sub-header-desc p.first-header-descp {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .services-list-header p {
+    font-size: 16px;
+    line-height: 26px; 
+  }
+}
+
+@media(max-width:767px) {
+  .sub-header-desc p.first-header-descp {
+    margin: 0 0 40px 0;
+  }
+  .sub-header-desc {
+    padding-top: 20px;
+  }
+  .sub-header-desc p {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+/*sub header descpriction end*/

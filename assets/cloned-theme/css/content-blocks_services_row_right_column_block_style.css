@@ -1,0 +1,144 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*services right contact*/
+.services-right-contact {
+  max-width:396px;
+  width: 100%;
+  background: #F6F6F6;
+  padding: 20px 35px 20px 35px;
+  margin-bottom: auto;
+  position: sticky;
+  top: 110px;
+}
+.services-right-contact h2 {
+  font-size: 36px;;
+  margin-bottom: 20px;
+}
+
+.services-right-contact input[type="text"], .services-right-contact input[type="email"], .services-right-contact input[type="number"], .services-right-contact input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  background: transparent;
+  text-align: left;
+  padding: 4px 0;
+  width: 100%;
+  background: none;
+  color: #000 !important;
+  font-size: 14px;
+  font-family: "Lato", Sans-serif;
+  height: 35px;
+}
+
+.services-right-contact .wpcf7-spinner {
+  position: absolute;
+  top: 20px;
+}
+
+.services-right-contact .form-btn-row {
+  position: relative; 
+}
+
+.services-right-contact input::-webkit-input-placeholder, .services-right-contact textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9f9f9f;
+}
+.services-right-contact input::-moz-placeholder, .services-right-contact textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #9f9f9f;
+}
+.services-right-contact input:-ms-input-placeholder, .services-right-contact textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #9f9f9f;
+}
+.services-right-contact input:-moz-placeholder, .services-right-contact textarea:-moz-placeholder { /* Firefox 18- */
+  color: #9f9f9f;
+}
+
+.services-right-contact input:focus, .services-right-contact textarea:focus {
+  border-color: #000;
+  transition: all 0.5s ease;
+}
+
+.services-right-contact .form-row {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.services-right-contact .form-row a {
+    color: #000;
+}
+.services-right-contact .checkmark-row .form-col.full-width {
+    display: block;
+}
+
+.services-right-contact input:-webkit-autofill, 
+.services-right-contact input:-webkit-autofill:hover, 
+.services-right-contact input:-webkit-autofill:focus, 
+.services-right-contact input:-webkit-autofill:active {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+  text-fill-color: #000 !important;
+}
+
+.services-right-contact textarea {
+  border: 1px solid #cccccc;
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+  font-family: "Lato", Sans-serif;
+  height: 90px;
+}
+.services-right-contact .wpcf7-response-output {margin-top: 15px !important;}
+.services-right-contact .wpcf7-not-valid-tip {
+  font-size: 14px;
+  font-family: "Lato", Sans-serif;
+}
+.services-right-contact .wpcf7-response-output {
+  text-align: left !important;
+  font-size: 14px;
+  font-family: "Lato", Sans-serif;
+  font-weight: normal;
+  padding-left: 0px !important;
+}
+ 
+.services-right-contact form.sent .wpcf7-response-output {
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px !important;
+    margin: 20px 0 !important;
+    border-color: green;
+}
+
+.header-descp ol li {
+  list-style-type: decimal;
+  list-style-position: outside;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0 0 3px 0;
+}
+
+.header-descp ol {
+  margin: 0 0 0 17px;
+}
+
+.header-descp h5 {
+  margin: 0 0 8px 0px;
+  font-size: 20px;
+}
+
+@media(max-width:1023px) {
+  .services-right-contact {
+    display: none;
+  }
+}
+
+@media(max-width:767px) {
+  .services-right-contact .wpcf7-spinner {
+    top: 10px;
+  }
+}
+/*services right contact ends*/

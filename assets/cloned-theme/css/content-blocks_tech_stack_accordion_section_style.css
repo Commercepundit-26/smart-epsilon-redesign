@@ -1,0 +1,243 @@
+/* Technology Stack — px units only; no custom properties; no clamp() */
+
+
+.tech-stack__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 149px;
+}
+
+.tech-stack__intro {
+  flex: 0 0 40%;
+  max-width: 540px;
+  padding-top: 8px;
+}
+
+.tech-stack__title {
+  margin: 0 0 15px 0;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #000000;
+}
+
+.tech-stack__desc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.accordion {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+
+.acc-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  outline: none;
+}
+
+.acc-item:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.acc-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 30px;
+}
+
+.acc-toggle {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+}
+
+.acc-toggle::before {
+  content: "+";
+}
+
+.acc-item.active .acc-toggle::before {
+  content: "\2212";
+}
+
+/* JS sets height from measured .acc-content-inner */
+.acc-content {
+  overflow: hidden;
+  padding: 0;
+  height: 0;
+  transition: height 1s ease;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.acc-content-inner {
+  padding: 0 0 24px 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acc-content {
+    transition: none;
+  }
+}
+
+/* Icons keep intrinsic size; row wraps when the row runs out of space (no full-width stretch). */
+.logo-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.logo-grid__img {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
+@media screen and (min-width: 1025px) {
+  .tech-stack__intro {
+    position: sticky;
+    top: 30px;
+  }
+
+  body:has(.header-sticky) .tech-stack__inner .tech-stack__intro {
+    top: 110px;
+  }
+}
+@media screen and (max-width: 1440px){
+  .tech-stack__title{
+    font-size: 36px;
+    font-weight: 500;    line-height: 46px;
+  }
+  .tech-stack__desc{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .tech-stack__inner{
+    gap: 60px;
+  }
+  .acc-title {
+    font-size: 22px;
+  }
+}
+
+/* Small desktop / tablet: stack intro above accordion */
+@media screen and (max-width: 1024px) {
+  .tech-stack__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tech-stack__intro {
+    flex: 1 1 auto;
+    max-width: none;
+    padding-top: 0;
+  }
+
+  .tech-stack__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .tech-stack__desc {
+    line-height: 28px;
+  }
+
+  .acc-title {
+    line-height: 28px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+  .vibe-page-main.cb-station-page .tech-stack{
+    padding: 30px 0 60px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .tech-stack__inner {
+    gap: 32px;
+  }
+
+  .tech-stack__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .tech-stack__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .acc-item {
+    padding: 20px 0;
+  }
+
+  .acc-title {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .logo-grid {
+    gap: 12px;
+  }
+  .logo-grid .logo-grid__img{
+    max-width: 150px;
+  }
+}
+
+/* Small mobile: narrow screens */
+@media screen and (max-width: 400px) {
+  .tech-stack__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .tech-stack__desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .acc-item {
+    padding: 16px 0;
+  }
+
+  .acc-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .logo-grid {
+    gap: 10px;
+  }
+}

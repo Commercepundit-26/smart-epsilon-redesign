@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Our work */
+
+ 
+.portfolio_main{ overflow: hidden;}
+.portfolio_main .btn-section,.portfolio_main .section_title{ display: none;}
+.portfolio_main .slick-list{ margin: 0 -20px;} 
+.portfolio_main .item { padding:0 20px; font-size:30px; font-size: 20px} 
+.portfolio_main .item h4,
+.portfolio_main .item h3{ font-size:32px; color: #fff;}
+
+.portfolio_main .item_content{ position: relative; display: block; overflow: hidden;}
+.portfolio_main .item a figure {display: block; width: 100%; position: relative; padding-bottom:120%; height: 0; overflow: hidden;}
+.portfolio_main .item figure img{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;     object-fit: cover; }
+
+.portfolio_main .item .item_info{ opacity: 0; visibility: hidden; position: absolute; left: 0; right: 0; z-index: 1;
+padding:80px 40px 40px; transition: all 0.5s ease-in-out; bottom:-100%;  
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+} 
+
+.portfolio_main .item:hover .item_info{ opacity: 1; visibility: visible; bottom: 0;}    
+
+.portfolio_main .item .item_info p { margin: 0;}  
+.portfolio_main .item.slick-current figure:before{  -webkit-animation: shineeffect .75s; animation: shineeffect .75s;} 
+
+@media(max-width:1600px) {
+    .portfolio_main .item h4,
+    .portfolio_main .item h3{ font-size: 28px;}
+}
+
+@media(max-width:1199px) {
+    .portfolio_main .slick-list{ margin: 0 -15px;} 
+    .portfolio_main .item { padding:0 15px; font-size: 20px;}
+    .portfolio_main .item h4,
+    .portfolio_main .item h3{ font-size: 20px;}
+    .portfolio_main .item p{ font-size: 16px;} 
+}
+
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+    .portfolio_main .item a figure{ padding-bottom: 100%;}
+    .portfolio_main .item { padding:0 15px; font-size: 20px;}
+    .portfolio_main .item h4,
+    .portfolio_main .item h3{ font-size: 19px;}
+}
+
+@media(max-width:990px) {
+    .portfolio_main .item .item_info{ padding: 30px;}
+    
+   
+} 
+@media(max-width:767px) {
+.portfolio_main .item .item_info {opacity: 1;visibility: visible;position: static;padding: 20px 0px 0;}
+    .portfolio_main .slick-list{ margin: 0;} 
+    .portfolio_main .item {font-size: 16px;  padding:0 15px; }
+
+    .portfolio_main .item h4,
+    .portfolio_main .item h3{ font-size: 18px;}
+    .portfolio_main .item p{ font-size: 14px; line-height: normal;}
+     
+}
+@media(max-width:480px) {
+    .portfolio_main {
+        height: auto;
+        overflow: hidden;
+    }
+    .portfolio_main .item a figure {
+        height: auto;
+        overflow: hidden;
+        width: auto;
+    }
+    .portfolio_main .item {
+        height: 100%;
+        width: calc(100% / 1 - 80px);
+        display: inline-block;
+    }
+    /*.portfolio_main .items {
+        white-space: nowrap;
+    }*/
+}
+

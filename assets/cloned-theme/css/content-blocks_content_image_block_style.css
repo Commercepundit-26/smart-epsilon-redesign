@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Content Img Block Start*/
+.content-img-block { padding: 65px 0; background-color: #F7F7F7; }
+.content-img-block .container { display: flex; align-items: center; }
+.content-img-block .content-block { width: 50%; padding-right: 7.75%; }
+.content-img-block .content-block p { font-size: 46px; line-height: normal; margin-bottom: 40px; }
+.content-img-block .img-block { width: 50%; }
+.content-img-block .img-block img { width: 100%; }
+.content-img-block .img-block img {height: 100%;}
+@media(max-width: 1700px) {
+  .content-img-block .content-block { padding-right: 5%; }
+}
+@media(max-width: 1600px) {
+  .content-img-block .content-block p { font-size: 36px; margin-bottom: 30px; }
+}
+@media(max-width: 1365px) {
+  .content-img-block { padding: 80px 0; }
+  .content-img-block .content-block p {font-size: 30px;}
+}
+@media(max-width: 1199px) {
+  .content-img-block { padding: 60px 0; }
+  .content-img-block .content-block p { font-size: 30px; }
+  .content-img-block .content-block p { font-size: 26px; }
+}
+@media(max-width: 1023px) {
+  .content-img-block .content-block p { font-size: 19px; }
+}
+@media(max-width:767px) {
+  .content-img-block { padding: 20px 0;}
+  .content-img-block .container { align-items: flex-start; flex-direction: column; }
+  .content-img-block .content-block { padding: 0 0 30px; width: 100%; }
+  .content-img-block .img-block { width: 100%; }
+}
+/*Content Img Block End*/
+
+/*Content Img Block Reverse Start*/
+.content-img-block.reverse { background-color: #fff; }
+.content-img-block.reverse .container { flex-direction: row-reverse; }
+.content-img-block.reverse .content-block { padding-right: 0; padding-left: 7.75%; }
+@media(max-width: 1700px) {
+  .content-img-block.reverse .content-block { padding-left: 5%; }
+}
+@media(max-width:767px) {
+  .content-img-block.reverse .container { flex-direction: column; }
+  .content-img-block.reverse .content-block { padding: 0 0 30px; width: 100%; }
+}
+/*Content Img Block Reverse End*/

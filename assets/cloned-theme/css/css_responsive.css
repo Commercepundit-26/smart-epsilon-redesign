@@ -1,0 +1,5650 @@
+
+
+/*  Services Page New Css  */
+@media screen and (max-width: 1679px) {
+    .magento-services-section .section_title.services h2{
+        font-size: 41px;
+    }
+    .magento-services-section .services-grid {
+        column-gap: 60px !important;
+        row-gap: 60px;
+    }
+    .magento-services-section .service-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 33px; 
+    }   
+}
+
+@media(min-width:1600px) {   
+/*    .section_about { margin-top: 100px;}*/
+    .section_about .section_title {letter-spacing: -2.64px; }
+    .testimonials_section  .slick-arrow{  right: -126px;}
+}
+@media(max-width:1600px) {
+    .container{ max-width: 1440px;} 
+  
+    h3{ font-size: 32px;}
+
+    /*.btn{ padding: 14px 60px 14px 30px; font-size: 16px;}
+    .btn:hover{ padding: 14px 30px 14px 60px;}*/
+    .btn{ padding: 14px 50px 14px 20px; font-size: 16px;}
+    .btn:before{ right: 15px; }
+    .btn:after{ right: 20px; width: 5px; height: 5px;} 
+    .section_block{padding: 50px 0; }
+    .section_title{ padding-bottom:10px;}
+    .section_title h2{ font-size:41px; margin-bottom: 0;}
+    .section_title h1{ font-size:45px;}
+    .head_info{ font-size: 16px; padding-bottom:10px; }
+    .border_radius{padding: 40px;}  
+    .head_top{ max-width: 90%;}
+    .section_specialize h3{ font-size: 40px;}
+    .section_specialize .item-right .item strong{ font-size: 45px;}
+    .section_specialize .item-right{ gap: 4%;column-gap: 0;}
+    .section_specialize .item-left p{ font-size: 18px;}
+    .section_specialize .item-left ul{ font-size: 20px;}
+    .ready_section .head_info{font-size: 36px;}
+    .ready_section .item{ gap: 60px; font-size: 22px;}
+    .ready_section .item:hover { padding-top: 60px; padding-bottom: 60px; gap: 50px;  }
+    .ready_section .item_content p {font-size: 18px; line-height: 26px;}
+    .ready_section .item h3 {line-height: 26px;font-size: 18px}
+   
+    
+    .section_specialize .item-right .item{ font-size: 18px;}{ font-size: 26px;}
+    .section_specialize .item-right .item:nth-child(even) {padding-left: 20px; }
+
+    .growing_section .items ul{ gap: 20px;}
+    .growing_section .items li{ padding-bottom: 20px; font-size: 18px;}
+    .growing_section .items .growing-left .head_info{ font-size: 16px;}
+    .reach_section .item{ height: 400px;}
+/*    .reach_section .item_content p{ font-size: 22px; line-height: normal;}*/
+    .reach_section h3{ font-size: 26px;}
+    .testimonials_section .item_content{ font-size: 16px;}
+    .testimonials_section .increase .increase_item h3{ font-size: 50px;}
+    .testimonials_section .increase .increase_item{ font-size: 22px;}
+    .industry_section .items{ font-size: 22px;}
+    .blog_list .item{ font-size: 18px;}
+    .footer-tellus{ font-size: 52px; padding: 50px 0;}
+    .testimonials_section .items_outer{ margin-top: 0;}
+    .blog_list .item .border_radius{margin-bottom: 20px; }
+    .blog_list .item .item-content {line-height: normal;}
+    .blog_list .section_title h2{ margin-bottom: 0;}
+
+    .ft-address li a, .footeraddess-items li, .footer-subscription .wpcf7-text{ font-size: 100%;}
+    .footeraddess-items,.footeraddess-items li .item-info a{ font-size: 20px;}
+    .copyright-block{ margin-top: 20px;}
+    .footer-links .quick-links:last-child{ padding-left:40px;}
+/*    .ready_section .items{ padding-top: 20px;}*/
+    .footer-subscription p{ line-height: normal;}
+
+    .section_commitment .items{ gap: 20px;}
+    .section_commitment .items .item h3{ font-size: 20px;}
+    .commitment_note p{ font-size: 22px; line-height: normal;}
+
+    .transformative_section .head_info{ font-size: 30px; padding-bottom: 100px;}
+/*    .transformative_section .item h4{ padding-top: 100px;}*/
+
+    .sticky_share_btn{ max-width: 60px; bottom: 0;}
+    .sticky_share_btn .share-toggle{ height: 60px;}
+    .sticky_share_btn .addtoany_list a img,
+    .sticky_share_btn .share-toggle  img{  max-width: 20px;}
+    .sticky_share_btn .addtoany_list a{ padding: 10px;}
+    /*  Added by Ajay  */
+    .milestone_section .milestone_items li .milestone_item .right-item:before {right: 30px}
+    .industry_section .items span {font-size: 18px;}
+    .head_info p {font-size: 16px;}
+
+    /*  Services Page New Css  */
+    .ecommerce-migration-services .magento-services-section {
+        padding: 80px 0;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        column-gap: 60px !important;
+        row-gap: 60px;
+    }
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 33px;
+    }
+    .services-faq .faq-section > .container h3 {
+        font-size: 41px;
+    }
+    .small_form .wpcf7-form .form-row .form-col input,
+    .small_form .wpcf7-form .form-row .form-col select {
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .form-wrapper .container .wpcf7 p {
+        margin-bottom: 0;
+    }
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .contact-new-one .left-detail-point li{
+        font-size: 16px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .left-detail p{
+        font-size: 20px;
+        margin-bottom: 40px;
+   }
+    .contact-us-new .section_block{
+        padding: 0;
+   }
+   .contact-us-new .contact-new-one section.section_block.certification_section{
+        padding: 80px 0 70px;
+   }
+   .contact-us-new .section_title h2 {
+        font-size: 41px;
+   }
+   .contact-us-new .contact-address-direction {
+        padding: 80px 0;
+   }
+   .contact-us-new .location-content {
+        padding: 32px 38px 52px;
+   }
+   .contact-us-new .location-title {
+        font-size: 30px;
+        margin-bottom: 12px;
+   }
+   .contact-us-new .location-address {
+        margin-bottom: 30px;
+        min-height: 60px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 55px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 65px;
+   }
+   .contact-us-new .contact-phone {
+        margin-right: 17px;
+   }
+   .contact-us-new .contact-message {
+        margin-right: 17px;
+   }
+   .contact-us-new .contact-new-one section.lead-banner {
+        padding: 0;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 130px 0 50px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 25px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form .form-btn-row p {
+        margin: 0;
+   }
+   .contact-us-new .contact-new-one p.contact-hurry {
+        font-size: 22px;
+   }
+   .contact-us-new .contact-new-one a.contact-hurry.call{
+        font-size: 22px;
+   }
+   /*  Contact new css*/
+  .contact-us-new .contact-new-one .lead-banner .left-detail h1 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+  .contact-us-new .lead-banner .left-detail .stats{
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .contact-us-new .lead-banner .stat:nth-child(1) {
+    width: 180px;
+  }
+  .contact-us-new .lead-banner .stat:nth-child(2) {
+    width: 180px;
+  }
+  .contact-us-new .lead-banner .stat:nth-child(3) {
+  width: 180px;
+  }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+
+    /* ==========  Save The Planet Css Start  ==========  */
+    .save-plant-tree .banner-inner-caption .h1-style {
+       font-size: 54px;
+  }
+   .save-plant-tree .heroBanner .banner-inner-caption .caption {
+       font-size: 18px;
+  }
+  /* sec 2 */
+   .save-plant-tree .google_ads_section{
+       padding: 80px 0;
+  }
+   .save-plant-tree h3.plant-cp-title {
+       font-size: 30px;
+  }
+   .save-plant-tree .google_ads_section .ads-item p{
+       max-width: 85%;
+  }
+   .save-plant-tree .transformative_section .head_info{
+       font-size: 18px;
+       padding-bottom: 40px;
+  }
+   .save-plant-tree .transformative_section .item_inner {
+       padding: 55px 35px;
+  }
+   .save-plant-tree .transformative_section .item h4 {
+       font-size: 18px;
+  }
+   .save-plant-tree .transformative_section .item h4{
+       margin: 25px 0 18px 0;
+  }
+   .save-plant-tree .measure-box-card .measure-heading{
+       font-size: 75px;
+       margin-bottom: 30px;
+  }
+   .save-plant-tree .measure-box-card p{
+       font-size: 22px;
+  }
+  .save-plant-tree .section_block.transformative_section {
+       padding: 0 0 80px;
+  }
+   .save-plant-tree h3.plant-support-title {
+       font-size: 45px;
+  }
+   .save-plant-tree .section-better-planet h2{
+       font-size: 45px;
+       max-width: 77%;
+  }
+   .save-plant-tree .section-better-planet{
+       margin-bottom: 30px;
+  }
+   .save-plant-tree .planet-scroll-container{
+       margin-top: 30px;
+  }
+   .save-plant-tree .planet-scroll-row{
+       gap: 22px;
+  }
+   .save-plant-tree section.better-planet {
+       padding-bottom: 80px;
+  }
+   .save-plant-tree .transformative_section figure {
+       min-height: 60px;
+  }
+   .google_ads_section .google-ads-content{
+       gap: 35px;
+  }
+   .save-plant-tree img.save-plant-logo{
+       margin-bottom: 35px;
+  }
+   .save-plant-tree .google_ads_section.support .ads-item {
+       margin-bottom: 25px;
+  }
+   .save-plant-tree .measure-box-card {
+       padding: 120px 0;
+  }
+   .save-plant-tree .measure-card-one {
+       height: 750px;
+  }
+   .save-plant-tree .info-card{
+       padding: 81px 46px;
+       max-width: 630px;
+  }
+   .save-plant-tree .scroll-section{
+       padding: 120px 0;
+  }
+   .save-plant-tree .info-card .label{
+       font-size: 30px;
+       margin-bottom: 12px;
+  }
+   .save-plant-tree .info-card h2{
+       font-size: 47px;
+       margin: 0 0 35px;
+  }
+   .save-plant-tree .info-card .number{
+       font-size: 47px;
+  }
+   .save-plant-tree .info-card p{
+       font-size: 18px;
+  }
+  /* ==========  Save The Planet Css End  ==========  */
+
+  /*   New Case Study List Css Start Added By AJ Start   */
+
+  /* change vedika start */
+  .clear-btn{
+    padding: 5px 20px 3px;
+  }
+  .case_study_wrap .selectbox-group ul, .case_study_wrap .selectbox-group-second ul, .case_study_wrap .selectbox-group-third ul{
+    min-height: 200px;
+  overflow-y: scroll !important;
+  max-height: 200px;
+  }
+    
+    .case_study_wrap .selectbox-group ul, .case_study_wrap .selectbox-group-second ul, .case_study_wrap .selectbox-group-third ul {
+      padding: 0 22px 0 0;
+
+  }
+  .selectbox li, .selectbox-second li, .selectbox-third li{
+    font-size: 16px;
+  line-height: 22px;
+  padding: 10px 18px;
+  }
+ 
+  .bar-work-one, .bar-work-two, .bar-work-three{
+    padding: 20px 10px 20px 25px;
+  }
+  .selectbox li.active, .selectbox-second li.active, .selectbox-third li.active{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .case_study_wrap .selectbox-group .selectlabel.has-value, .case_study_wrap .selectbox-group-second .selectlabel-second.has-value, .case_study_wrap .selectbox-group-third .selectlabel-third.has-value{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .case_study_wrap .work-header .filter-option, 
+  .case_study_wrap .work-header #custom_filters {column-gap: 30px;}
+  /* change vedika End */
+ 
+
+  .case_study_wrap .work-list-col .hideonhover h3 {font-size: 22px;}
+  .case_study_wrap .work-list-col .hideonhover .p_3 .count-case-detail {font-size: 26px;}
+  .contact-us-new .contact-new-one .left-detail-point li{font-size: 16px; }
+  .case_study_wrap .work-list-col .work-list-cont .project_data {padding: 0 30px}
+  /*   New Case Study List Css Start Added By AJ End   */
+  /* Case Study Detail Page Css Start */
+  .cb-station-page .hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 12px;
+  }
+  .cb-station-page .hero-content p{
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .container.usp{
+    max-width: 1440px;
+  }  
+  .cb-station-page .stat-box h3 {
+    font-size: 28px;
+  }
+  .cb-station-page .stats {
+    padding: 30px 0;
+  }
+  /* .cb-station-page .stat-box{
+    padding: 18px;
+  } */
+  .cb-station-page .about{
+    margin-top: 170px;
+  }
+  .cb-station-page .about p{
+    font-size: 22px;
+  }
+  .cb-station-page .goals-title {
+    font-size: 50px;
+  }
+  .cb-station-page .usp{
+    margin-bottom: 80px;
+  }
+  /* Case Study Detail Page Css End */
+
+  /*  Testimonial Redesign Css Start  */
+  .testimonial-section-consultation .headline{
+      line-height: 48px;
+      font-size: 40px; 
+  }  
+  .testimonial-section-banner .banner-inner-caption.services .caption.service-subtitle {
+      line-height: 30px;
+  } 
+  .testimonial-section-banner .banner-inner-caption .h1-style.service-title{
+      margin-bottom: 22px;
+  } 
+  .testimonial-trust-section .section_title h2 {
+      font-size: 41px;
+      margin: 0;
+  }
+  .testimonial-style-new .promotion-banner{
+      margin: 80px 0;
+    }
+    .testimonials-design-section{
+      padding: 80px 0 0;
+  }
+  .testimonials-design-section.video-card{
+      padding: 80px 0;
+    }
+  .testimonial-trust-section.trusted_section .items {
+      padding: 50px 0 0;
+  }
+  .testimonial-style-new .section_block.certification_section{
+      padding: 80px 0;
+    }
+    .testimonial-style-new .trusted_section .items{
+      gap: 30px;
+    }
+    /* Discovery testimonial */
+    .testimonial-style-new .testimonial-section-discover{
+      padding: 165px 0;
+    }
+    .testimonial-style-new .content-col h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .testimonial-style-new .content-col p{
+      margin-bottom: 45px;
+    }
+    .testimonial-style-new .testimonial-stat-number{
+      font-size: 50px;
+      margin-bottom: 17px;
+    }
+    .testimonial-style-new .count-stat-item p{
+      margin-bottom: 30px;
+    }
+    /* client logo */
+    .testimonial-style-new .logo-box{
+      min-height: 145px;
+    }
+    .testimonial-style-new .bottom-logo-box{
+      height: 145px;
+    }
+    .testimonial-style-new .clientlogo-text{
+      font-size: 30px;
+    }
+    .testimonial-style-new .testimonial-overlay{
+      padding: 0 25px 41px 30px;
+    }
+    .testimonial-style-new .certification_section .items img{
+      max-width: 180px;
+    }
+    .certification_section .items .item{
+      padding: 15px 25px;
+    }
+    .testimonial-style-new .testimonials-design-section {
+      padding: 80px 0 0;
+    }
+    .testimonial-style-new .testimonials-design-section.video-card {
+        padding: 80px 0;
+    }
+    /*  Testimonial Redesign Css End  */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-page .ai-features-section .btn:before {right:15px;}
+    .ai-voice-page .ai-features-section .btn:after {right:20px; width:5px; height:5px;}
+    .ai-voice-page .feature-card h3 {font-size:18px; line-height:28px; margin:20px 0 10px;}
+    .ai-voice-page .feature-card p {font-size:14px; line-height:24px;}
+    .ai-voice-page .ai-features-section .feature-card {padding:40px 20px;}
+    .ai-voice-page .feature-card .badge {font-size:12px; padding:10px 20px;}
+    .ai-voice-page .feature-card .feature-top img {width:25px;}
+    .ai-voice-page .ai-features-section .section-description {font-size:16px; line-height:28px;}
+    .ai-voice-page .ai-features-section .section-title {font-size:40px; line-height:58px;}
+    .ai-voice-page .ai-features-section .tab {padding:10px 25px; font-size:14px;}
+    .ai-voice-page .ai-industry-section .feature-card .feature-top img {width:45px;}
+    .ai-voice-page .amazing-work-place {padding:80px 0;}
+    .ai-voice-page .amazing-work-place .item-content {padding:35px 38px;}
+    .ai-voice-page .amazing-work-place .item-title {font-size:22px;}
+    .ai-voice-page .amazing-work-place .item-features li {font-size:18px;}
+    .ai-voice-page .amazing-work-place .cp-carousel-track {gap:30px;}
+    .ai-voice-page .amazing-work-place .item-image img {width:450px; height:330px;}
+    .existing-tools-logo { width: 240px; height: 110px; }
+    .compliance-item { min-width: 320px; height: 160px; }
+    .careers-cp h2.amz-cp {font-size: 45px; margin-bottom: 45px; }
+    .ai-voice-cms .amazing-work-place .item-content {padding: 35px 38px; }
+    .ai-voice-cms .amazing-work-place .item-title {font-size: 22px; }
+    .ai-voice-cms .amazing-work-place .item-features li {font-size: 18px; }
+    .ai-voice-cms .amazing-work-place .cp-carousel-track {gap: 30px; }
+    .ai-voice-cms .amazing-work-place .item-image img {width: 450px; height: 330px; }
+    .ai-voice-cms .ai-voice-cms .live-ai-demo-audio-player {width: 100%;}
+
+    .ai-chatgpt .ai-agent-section.section_block {margin-top: 50px;}
+
+    /*  Home Page Changes New Css  */
+    .badges-item {padding: 20px;margin-right: 30px;min-height: 310px;}
+    .badges-infor span {font-size: 15px}
+    .badges-infor small {font-size: 13px;}
+    .ready_section .section_title h2 {font-size: 45px;}
+    .ready_section .section_title h2 i {font-size: 36px;}
+    .reach_section .item_content p {line-height: 26px; font-size: 18px;}
+    .growing_section .items .growing-right {padding: 40px 50px;}
+
+    /* odoo service page css for space before 'Our Process' section start */
+    .services-design-one .enterprise-performance-workflow + .promotion-section {
+      margin-bottom: 80px;
+    }
+    .oddo-custom .services-faq.faq-section {
+      margin-bottom: 80px;
+    }
+    /* odoo service page css for space before 'Our Process' section End */
+    /* =============== Culture page css start ============ */
+    .careers-cp .services-banner-section .banner-inner-caption .h1-style.service-title {
+      margin-bottom: 22px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption.services .caption.service-subtitle {
+      line-height: 30px;
+      margin: 0 0 40px;
+    }
+  
+    .careers-cp .cp-culture-video-wrapper {
+      max-width: 1200px;
+      height: 600px;
+    }
+  
+    .save-plant-tree .careers-cp .planet-scroll-container {
+      margin-top: 50px;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet h2 {
+      font-size: 42px;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet {
+      margin-bottom: 25px;
+    }
+  
+    .save-plant-tree .careers-cp .better-planet-subtext {
+      max-width: 950px;
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 25%;
+    }
+  
+    .save-plant-tree .careers-cp .planet-scroll-row {
+      gap: 22px;
+    }
+  
+    .save-plant-tree .careers-cp section.better-planet {
+      padding-bottom: 80px;
+    }
+  
+    .careers-cp h2.our-team-values-heading {
+      font-size: 45px;
+      line-height: 54px;
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .our-team-values-tagline {
+      line-height: 30px;
+    }
+  
+    .careers-cp .our-team-values-features-grid {
+      gap: 35px;
+      margin-top: 45px;
+    }
+  
+    .careers-cp .our-team-values-feature-card {
+      padding: 47px 30px;
+    }
+  
+    .careers-cp .our-team-values-title {
+      margin-bottom: 10px;
+    }
+  
+    .careers-cp .our-team-values-icon {
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .our-team-values-section {
+      padding-bottom: 80px;
+    }
+  
+    .careers-cp .cp-office-infra h2.office-infra {
+      font-size: 45px;
+      line-height: 54px;
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .cp-office-infra .description {
+      margin-bottom: 50px;
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      gap: 25px;
+    }
+  
+    .careers-cp .cp-office-infra {
+      padding: 0 0 80px;
+    }
+  
+    .careers-cp .cp-amazing-no {
+      padding: 80px 0;
+    }
+  
+    .careers-cp .cp-amazing-no h2 {
+      font-size: 45px;
+      margin-bottom: 55px;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item .number {
+      font-size: 75px;
+      margin-bottom: 30px;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item {
+      padding: 0 0;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item .label {
+      font-size: 18px;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item {
+      padding: 0;
+    }
+  
+    .careers-cp .cp-amazing-no .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-bottom: 0px;
+    }
+  
+    .amazing-work-place {
+      padding: 80px 0;
+    }
+  
+    .careers-cp h2.amz-cp {
+      font-size: 45px;
+      margin-bottom: 45px;
+    }
+  
+    .amazing-work-place .item-content {
+      padding: 35px 38px;
+    }
+  
+    .amazing-work-place .item-title {
+      font-size: 22px;
+    }
+  
+    .amazing-work-place .item-features li {
+      font-size: 18px;
+    }
+  
+    .amazing-work-place .cp-carousel-track {
+      gap: 30px;
+    }
+  
+    .amazing-work-place .item-image img {
+      width: 450px;
+      height: 330px;
+    }
+  
+    .careers-cp .cp-gallery {
+      padding: 80px 0 50px;
+    }
+  
+    .careers-cp .cp-gallery-header h1 {
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+  
+    .careers-cp .cp-gallery-tab {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  
+    .careers-cp .cp-gallery-tabs {
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+  
+    .careers-cp .cp-gallery-gallery {
+      gap: 30px;
+    }
+  
+    .careers-cp .cp-gallery-gallery-item-title {
+      font-size: 18px;
+    }
+  
+    h2.employee-testimonial {
+      font-size: 45px;
+      margin-bottom: 25px;
+    }
+  
+    p.employee-testimonial-desc {
+      margin-bottom: 45px;
+    }
+  
+    .careers-cp .tab {
+      font-size: 20px;
+      line-height: 18px;
+    }
+  
+    .careers-cp .video-container {
+      min-height: 350px;
+    }
+  
+    .careers-cp .testimonials-grid {
+      gap: 25px;
+    }
+  
+    .careers-cp .video-title {
+      font-size: 18px;
+    }
+  
+    .careers-cp .testimonial-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .careers-cp .testimonial-meta {
+      font-size: 16px;
+      margin-bottom: 25px;
+      min-height: 200px
+    }
+  
+    .careers-cp .author-name {
+      font-size: 14px;
+    }
+  
+    .careers-cp .testimonial-content {
+      padding: 25px;
+      min-height: 0;
+    }
+  
+    .careers-cp .quote-icon {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+  
+    .cp-collab-culture-sec {
+      padding: 80px 0 0;
+    }
+  
+    .careers-cp .play-button {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .careers-cp .cp-collab-culture h2 {
+      font-size: 45px;
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .collab-subtitle {
+      margin-bottom: 40px;
+    }
+  
+    .careers-cp .collab-video-description p {
+      font-size: 15px;
+      line-height: 25px;
+      min-height: 190px;
+    }
+  
+    .careers-cp .collab-play-icon {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .careers-cp .collab-video-grid {
+      gap: 35px;
+    }
+  
+    .careers-cp .collab-video-description {
+      padding: 22px;
+    }
+  
+    .careers-cp .cp-gallery-header h2 {
+      font-size: 45px;
+      margin-bottom: 45px;
+    }
+  
+    .careers-cp .cp-culture-play-btn {
+      width: 80px;
+      height: 80px;
+      background-size: 80px;
+    }
+  
+    .page-middle.careers-cp .blog-hero.services-banner-section .banner-inner-caption.services {
+      padding: 150px 20px 110px !important;
+    }
+    .careers-cp .collab-video-thumbnail {
+      width: 480px;
+      height: 410px;
+    }
+    /* updated modal */
+    .careers-cp .cp-gallery-modal-content {
+      width: 1500px;
+      height: 760px;
+    }
+    .careers-cp .cp-gallery-sidebar {
+      width: 380px;
+    }
+    .careers-cp .cp-gallery-sidebar-header h2 {
+      font-size: 22px;
+    }
+    .careers-cp .cp-gallery-thumbnails {
+      gap: 14px;
+      padding: 20px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 52px;
+      height: 52px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 50px;
+      height: 50px;
+    }
+    /* =============== Culture page css End ============ */
+
+  
+}
+
+@media(max-width: 1580px) {
+    .ai-banner {height:auto;}
+}
+
+
+/*  Services Page New Css  */
+@media(max-width: 1440px) {
+    .container.usp {
+        max-width: 1360px;
+    }
+    .magento-services-section .section_title.services h2{
+      font-size: 38px;
+      line-height: 48px;
+    }
+    .magento-services-section .magento-service-tagline {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .magento-services-section .services-grid {
+        column-gap: 50px !important;
+        row-gap: 50px;
+    }
+    .magento-services-section .service-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .magento-services-section .service-icon {
+        padding-bottom: 30px;
+    }
+    .magento-services-section .section-header .btn-section.custom-btn-center.services{
+        top: 64px!important;
+    }
+    .magento-services-section {
+        padding: 50px 0 0;
+    }
+    .magento-services-section .section-header{
+        margin-bottom: 70px
+    }
+    .ecommerce-migration-services .magento-services-section {
+      padding: 50px 0;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        column-gap: 50px !important;
+        row-gap: 50px;
+    }
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .magento-services-section .service-icon,
+    .ecommerce-migration-services .magento-services-section .service-icon {
+        padding-bottom: 30px;
+    }
+    .services-faq .faq-section > .container h3 {
+               font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 10px;
+    }
+    .services-faq .faq-section .faq-tagline-magento{
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label {
+        padding: 0;
+        font-size: 16px;
+        line-height: 76px;
+    }
+    .services-faq .faq-section .accordion-data p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label button {
+      width: 15px;
+      height: 17px;
+    }
+    .services-faq.faq-section {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .services-faq .faq-section .accordion-list .accordion-data {
+        font-size: 16px;
+        line-height: 24px; 
+    }
+    .services-faq .faq-section{
+        padding: 50px;
+    }
+    .section_contact.small_form {
+        padding: 80px 0;
+    }
+    /* odoo service page css for space before 'Our Process' section start */
+    .services-design-one .enterprise-performance-workflow + .promotion-section {
+      margin-bottom: 50px;
+    }
+    .oddo-custom .services-faq.faq-section {
+      margin-bottom: 50px;
+    }
+    /* odoo service page css for space before 'Our Process' section End */
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .section_block{
+        padding: 0;
+   }
+   .contact-us-new .contact-new-one section.section_block.certification_section{
+        padding: 50px 0 30px;
+   }
+   .contact-us-new .contact-address-direction {
+        padding: 50px 0;
+   }
+   .contact-us-new .locations-grid {
+        gap: 25px;
+        margin-top: 15px;
+   }
+   .contact-us-new .location-content {
+        padding: 30px 35px 50px;
+   }
+   .contact-us-new .location-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+        min-height: 55px;
+   }
+   .contact-us-new .location-address {
+        font-size: 16px;
+        margin-bottom: 52px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 50px;
+   }
+   .contact-us-new .contact-item {
+        margin-bottom: 10px;
+   }
+   .contact-us-new .contact-link {
+        font-size: 18px;
+   }
+   .contact-us-new .contact-phone {
+        margin-right: 15px;
+   }
+   .contact-us-new .contact-message {
+        margin-right: 15px;
+   }
+
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 130px 0 50px;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 0;
+    }
+    .contact-us-new .contact-new-one .lead-banner .banner-bg .left-detail {
+        max-width: 700px;
+    }
+    .contact-us-new .contact-new-one .lead-banner .banner-bg .contact-right-form {
+        max-width: 450px;
+    }
+    .contact-us-new .contact-new-one .lead-banner .contact-form {
+        max-width: 100%;
+    }
+    .contact-us-new .contact-new-one p.contact-hurry {
+        font-size: 18px;
+    }
+    .contact-us-new .contact-new-one a.contact-hurry.call {
+        font-size: 18px;
+    }
+    .contact-us-new .lead-banner .left-detail .stats .static-col i{
+        font-size: 35px;
+        line-height: 30px;
+      }
+      .contact-us-new .lead-banner .left-detail .stats span {
+        font-size: 16px;
+        line-height: 25px;
+      }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .banner-inner-caption .h1-style {
+       font-size: 48px;
+  }
+   .save-plant-tree .banner-inner-caption .caption{
+       margin: 18px auto 25px;
+  }
+   .save-plant-tree .google_ads_section {
+       padding: 50px 0;
+  }
+   .google_ads_section .google-ads-content{
+       gap: 30px;
+  }
+  .save-plant-tree .section_block.transformative_section{
+       padding: 0 0 50px;
+  }
+   .save-plant-tree h3.plant-support-title {
+       font-size: 40px;
+  }
+   .save-plant-tree .section-better-planet h2 {
+       font-size: 40px;
+  }
+   .save-plant-tree .section-better-planet {
+       margin-bottom: 25px;
+  }
+   .save-plant-tree section.better-planet {
+       padding-bottom: 50px;
+  }
+   .save-plant-tree .transformative_section .head_info{
+       padding-bottom: 35px;
+  }
+   .save-plant-tree .measure-box-card {
+       padding: 100px 0;
+  }
+   .save-plant-tree .measure-box-card .measure-heading {
+       font-size: 60px;
+       margin-bottom: 20px;
+  }
+   .save-plant-tree .measure-box-card p {
+       font-size: 20px;
+  }
+   .save-plant-tree .scroll-section {
+       padding: 100px 0;
+  }
+   .save-plant-tree .info-card {
+       padding: 71px 41px;
+       max-width: 600px;
+  }
+   .save-plant-tree .info-card .label {
+       font-size: 27px;
+       margin-bottom: 10px;
+  }
+   .save-plant-tree .info-card .number {
+       font-size: 35px;
+  }
+   .save-plant-tree .info-card h2{
+       font-size: 35px;
+       margin: 0 0 15px 
+  }
+  .save-plant-tree .measure-card-one{
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: inherit;
+  
+  }
+  .save-plant-tree .scroll-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-attachment: scroll;
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  /* ==========  Save The Planet Css End  ==========  */
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case_study_wrap a.work-thumb { height: auto; }
+    .case-study-banner .hero-banner { height: 50vh; }
+    .case-study-banner .hero-video-wrapper { min-height: 50vh; }
+    .case-study-banner .banner-inner-caption .h1-style { font-size: 50px; }
+    .case-study-banner .banner-inner-caption .caption { font-size: 22px; margin-top: 10px; }
+    .case_study_wrap .work-list-col .work-list-cont .p_2 { font-size: 60px; }
+    .case_study_wrap .work-list-col .work-list-cont .p_1 { font-size: 20px;}
+    .case_study_wrap .work-list-col .hideonhover h3 {font-size: 22px;}
+    .case_study_wrap .work-list-col .hideonhover p {font-size: 16px;line-height: 22px;}
+    .case_study_wrap .work-list-col .hideonhover .p_3 .count-case-detail {font-size: 26px;}
+    .case_study_wrap .selectlabel, 
+    .case_study_wrap .selectlabel-second, 
+    .case_study_wrap .selectlabel-third {font-size: 20px;padding-top: 16px;padding-bottom: 16px;}
+    .case_study_wrap .work-list-col .work-list-cont .project_data {padding: 0 25px;}
+    .case_study_wrap .work-list-col .work-list-cont .p_1 {font-size: 22px;}
+    /*   New Case Study List Css Start Added By AJ End   */
+
+    /* Case Study Detail Page Css Start */
+    .cb-station-page .goals-title {
+        font-size: 40px;
+      }
+      .cb-station-page .about p{
+        font-size: 20px;
+      }
+      /* cb station page by tirthak*/
+      /*.cb-station-page .hero {
+        height: 80vh;
+      }*/
+      .cb-station-page .hero-content h1 {
+        font-size: 50px;
+      }
+      
+       .cb-station-page .stat-box p{
+        font-size: 16px;
+       }
+       .cb-station-page .stats{
+        padding: 25px 0;
+       }
+       .cb-station-page .stats-grid {
+        top: -85px;
+       }
+       .cb-station-page .about.content h2 {
+        font-size: 40px;
+      }
+      .cb-station-page .about p{
+        font-size: 18px;
+      }
+      .cb-station-page .goals-title {
+        font-size: 40px;
+      }
+      
+      .cb-station-page .goals-subtitle {
+        font-size: 18px;
+      }
+      .cb-station-page .solution-heading h2{
+        font-size: 40px;
+      }
+      .cb-station-page .timeline-impact-section .section-title {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 50px;
+      }
+      .cb-station-page .step p{
+        font-size: 20px;
+        line-height: 1.4;
+      }
+      .cb-station-page .tech-title {
+        font-size: 40px;
+        line-height: 65px;
+      }
+      .cb-station-page .hero-content p{
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      .cb-station-page .usp{
+        margin-bottom: 50px;
+      }
+      /*.cb-station-page .stat-box {
+        padding-left: 50px;
+      }*/
+      .cb-station-page .stat-box h3 {
+        font-size: 26px;
+      }
+      .cb-station-page .hero {
+        height: 670px;
+      }
+      .cb-station-page .stat-box p{
+        font-size: 16px;
+       }
+
+    .cb-station-page .stat-box {
+      padding: 15px 0 15px 40px;
+    }
+    /* Case Study Detail Page Css End */
+
+    /* Testimonial Redesign Css Start */
+    .testimonial-style-new .testimonial-section-consultation .headline{
+          line-height: 50px;
+          font-size: 38px; 
+      }  
+      .testimonial-style-new .testimonial-section-banner .banner-inner-caption.services .caption.service-subtitle {
+          line-height: 28px;
+          margin-bottom: 30px;
+      }  
+      .testimonial-style-new .promotion-banner{
+          margin: 50px 0;
+        }
+        .testimonial-style-new .testimonials-design-section{
+          padding: 50px 0 0;
+      }
+      .testimonial-style-new .testimonials-design-section.video-card{
+          padding: 50px 0;
+        }
+        .testimonial-style-new .section_block.certification_section{
+          padding: 50px 0;
+        }
+        /* .testimonial-style-new .video-wrapper video {
+          position: absolute;
+          top: 100px;
+          left: 70px;
+          width: 80%;
+          height: 80%;
+      }
+        .testimonial-style-new .close-modal {
+          top: 60px;
+          font-size: 30px;
+          right: 85px;
+          }  */
+          .testimonial-style-new .video-modal-content{
+            width: 55%;
+            top: 7%;
+        }
+          
+         /* discovery testimonial */
+         .testimonial-style-new .content-col h2 {
+          font-size: 38px;
+          margin-bottom: 20px;
+         }
+         .testimonial-style-new .content-col p {
+          margin-bottom: 38px;
+          }
+          .testimonial-style-new .testimonial-stat-number {
+              font-size: 45px;
+              margin-bottom: 17px;
+          }
+          .testimonial-style-new .count-stat-item p {
+              margin-bottom: 30px;
+          }
+         .testimonial-style-new .testimonial-image-col{
+          text-align: right;
+         }
+         .testimonial-style-new .testimonial-image-col img{
+          max-width: 80%;
+          display: inline-block;
+         }
+         .testimonial-style-new .testimonial-section-discover {
+          padding: 100px 0;
+          }
+            /* client logo */
+          .testimonial-style-new .logo-box{
+              min-height: 120px;
+          }
+          .testimonial-style-new .bottom-logo-box{
+              height: 130px;
+          }
+          .testimonial-style-new .clientlogo-text{
+            font-size: 28px;
+          }
+          .testimonial-style-new .client-play-icon{
+            width: 50px;
+            height: 50px;
+            right: 45px;
+          }
+          .testimonial-style-new .client-play-icon:after{
+            border-top: 15px solid transparent;
+            border-left: 20px solid #333;
+            border-bottom: 13px solid transparent;
+            margin-left: 7px;
+          }
+          .testimonial-style-new .play-icon{
+            bottom: -20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+          }
+          .testimonial-style-new .certification_section .items img{
+            max-width: 160px;
+          }
+          .testimonial-style-new .trusted_section .items {
+            gap: 25px;
+        }
+        .testimonial-style-new .testimonials-design-section {
+          padding: 50px 0 0;
+      }
+      .testimonial-style-new .testimonials-design-section.video-card {
+        padding: 50px 0;
+     }
+     /* Testimonial Redesign Css End */
+
+     /* ====  AI VOCIE CSS  ==== */
+    .ai-banner {height:auto;}
+    .ai-banner .ai-banner-left {max-width:1280px; padding:130px 40px 60px;}
+    .ai-banner .badge {font-size:15px;}
+    .ai-banner .ai-banner-left h1 {font-size:50px; line-height:52px; margin-bottom:30px;}
+    .ai-banner .ai-banner-left p {font-size:18px; margin-bottom:30px;line-height: 30px;}
+    .ai-banner .stats {gap:50px; margin-top:40px;}
+    .ai-banner .stat span {font-size:16px;line-height: 24px}
+    .ai-banner .stat strong {font-size:22px;}
+    .ai-voice-cms .ai-feature {padding:50px 30px;}
+    .ai-voice-cms .ai-stat-box h3 {font-size:55px;}
+    .ai-voice-cms .ai-stat-box {padding:30px 20px;}
+    .ai-voice-cms .ai-features {grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:25px;}
+    .ai-voice-cms .ai-header h2 {font-size:36px;}
+    .ai-voice-cms .ai-header p {max-width:860px; font-size:15px;line-height: 26px;}
+    .ai-voice-cms .winning-section {padding:80px 65px;}
+    .ai-voice-cms .winning-section .left-content h2 {font-size:40px;}
+    .ai-voice-cms .winning-section .metrics {gap:25px;}
+    .ai-voice-cms .winning-section .metric span {font-size:36px;}
+    .ai-voice-cms .winning-section .metric div {font-size:18px;}
+    .ai-voice-cms .winning-section .card {padding:30px 35px;}
+    .ai-voice-page .amazing-work-place .cp-carousel-item {width: calc((100% - 60px) / 3);}
+    .ai-voice-page .amazing-work-place .item-image img { width: 442px; height: 300px; }
+    .case_s .tab {padding:35px 30px;}
+    .case_s .tab .title {margin-top:30px;}
+    .case_s .tab-content {padding:30px 30px;}
+    .case_s .tab-content h2 {font-size:30px; line-height:26px;}
+    .case_s .tab-content .label-wrap.first {margin-top:18px;}
+    .case_s .label-wrap .label {font-size:18px; line-height:24px;}
+    .case_s .label-wrap {margin-bottom:15px;}
+    .case_s .metrics {grid-column-gap:25px; grid-row-gap:20px; margin-top:20px;}
+    .case_s .metric {padding:25px 30px;}
+    .case_s .quote-section {margin-top:25px; padding:25px 28px;}
+    .case_s .sector-wrap .emp-count {font-size:14px;}
+    .ai-voice-cms .integration-features-section .features-list-column {padding:0 55px 0 0px;}
+    .price-calculator .left-panel {padding-right: 30px; }
+    .price-calculator .right-panel {padding: 50px 0;}
+    .price-calculator .savings-calculator h2 {font-size: 34px;padding-bottom: 15px;}
+    .price-calculator .input-block .top-value label {font-size: 20px;}
+    .price-calculator .input-block .top-value .calls {font-size: 18px;}
+    .price-calculator .results-panel strong {font-size: 36px;line-height: 40px;}
+    .price-calculator .results-panel {font-size: 18px;line-height: normal;}
+    .price-calculator .annual-savings #annualSavings {font-size: 55px;}
+    .price-calculator .annual-savings .subtext {font-size: 16px;}
+    .price-calculator .cost-box h3 {font-size: 22px;}
+    .price-calculator .cost-box p {font-size: 18px;}
+    .existing-tools-logo { width: 220px; height: 100px; }
+    .compliance-item { min-width: 300px; height: 150px; }
+    .ai-voice-cms .live-ai-demo-audio-player{width: 100%;}
+    .careers-cp h2.amz-cp {font-size: 40px; margin-bottom: 42px; }
+    .ai-voice-cms .amazing-work-place .item-image img {width: 437px; height: 300px; }
+    .ai-voice-cms .amazing-work-place .item-content {padding: 30px 32px; }
+
+      .ai-chatgpt .impl-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; }
+      .ai-chatgpt .impl-card {padding: 35px;}
+      .ai-chatgpt .impl-section h2.impl-title {font-size: 32px;}
+      .ai-chatgpt .impl-section p.sub-title {margin-bottom: 30px;font-size: 16px;}
+      .ai-chatgpt .impl-card h3 {font-size: 22px;line-height: 30px;}
+      .ai-chatgpt .impl-card p {font-size: 16px;line-height: 26px;margin-bottom: 20px;}
+      .ai-chatgpt .impl-badge {font-size: 12px;}
+      .ai-chatgpt .see-action-container {gap: 60px;}
+      .ai-chatgpt .see-action-title {font-size: 32px; line-height: 51px; margin-bottom: 15px;}
+      .ai-chatgpt .see-action-desc {font-size: 16px; line-height: 1.6; }
+      .ai-chatgpt .see-action-features {padding: 0 0 0 30px; margin: 40px 0; }
+      .analytics-section .stats-grid {gap: 30px;margin-bottom: 50px;}
+      .analytics-section .stat-box {padding: 30px 20px;}
+      .analytics-section .stat-box h3 {font-size: 55px;line-height: 54px;}
+      .analytics-section .stat-box p {font-size: 20px;line-height: 30px;}
+      .analytics-section .stat-box p span {font-size: 17px;}
+      .analytics-section .dashboard-heading {font-size: 32px;line-height: 40px;}
+      .analytics-section .dashboard-subtitle {font-size: 16px;line-height: 26px;}
+      .analytics-section .dashboard-content {margin: 40px 0px;gap: 50px;}
+      .analytics-section .dashboard-left {flex: 0 0 520px;}
+      .analytics-section .dashboard-left li {padding: 22px 25px;  font-size: 18px;line-height: 20px;}
+      .analytics-section .dashboard-left ul {margin-bottom: 40px;}
+      .analytics-section .card {padding: 55px 35px;}
+      .analytics-section .card-icon {margin-bottom: 25px;}
+      .analytics-section .card h4 {font-size: 22px;line-height: 30px;}
+      .analytics-section .card p {font-size: 18px; line-height: 30px;margin-bottom: 25px;}
+      .analytics-section .card ul {padding-left: 25px;}
+      .analytics-section .cards-section {grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));}
+
+    /* =============== Culture page css start ============ */
+    .careers-cp .testimonial-meta {
+      font-size: 16px;
+      margin-bottom: 15px;
+      min-height: 225px;
+    }
+  
+    .page-middle.careers-cp .blog-hero.services-banner-section .banner-inner-caption.services {
+      padding: 140px 20px 100px !important;
+    }
+  
+    .careers-cp .collab-video-description p {
+      min-height: 200px;
+    }
+  
+    .careers-cp .cp-culture-play-btn {
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+    }
+  
+    .careers-cp .play-button {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .careers-cp .collab-play-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .careers-cp .cp-gallery-header h2 {
+      font-size: 40px;
+      margin-bottom: 35px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption .h1-style.service-title {
+      font-size: 50px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption.services .caption.service-subtitle {
+      margin: 0 0 35px;
+    }
+  
+    .careers-cp .cp-culture-video-wrapper {
+      max-width: 1000px;
+      height: 500px;
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 25%;
+    }
+  
+    .careers-cp .cp-culture-container {
+      transform: translateY(-40%);
+  
+    }
+  
+    .careers-cp .hero-banner.blog-hero {
+      height: auto;
+    }
+  
+    .careers-cp .blog-hero .hero-video-wrapper {
+      min-height: auto
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet h2 {
+      font-size: 40px;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet {
+      margin-bottom: 20px;
+    }
+  
+    .save-plant-tree .careers-cp .planet-scroll-row {
+      gap: 20px;
+    }
+  
+    .save-plant-tree .careers-cp section.better-planet {
+      padding-bottom: 50px;
+    }
+  
+    .careers-cp h2.our-team-values-heading {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 15px;
+    }
+  
+    .save-plant-tree .careers-cp .better-planet-subtext {
+      max-width: 1000px;
+      font-size: 16px;
+    }
+  
+    .careers-cp .our-team-values-features-grid {
+      gap: 30px;
+      margin-top: 35px;
+    }
+  
+    .careers-cp .our-team-values-feature-card {
+      padding: 45px 28px;
+    }
+  
+    .careers-cp .our-team-values-icon {
+      margin-bottom: 30px;
+    }
+  
+    .careers-cp .our-team-values-section {
+      padding-bottom: 50px;
+    }
+  
+    .careers-cp .cp-office-infra h2.office-infra {
+      font-size: 40px;
+      line-height: 45px;
+      margin-bottom: 18px;
+    }
+  
+    .careers-cp .cp-office-infra .description {
+      margin-bottom: 35px;
+      font-size: 16px;
+    }
+  
+    .careers-cp .cp-office-infra {
+      padding: 0 0 50px;
+    }
+  
+    .careers-cp .cp-amazing-no {
+      padding: 50px 0;
+    }
+  
+    .amazing-work-place {
+      padding: 50px 0;
+    }
+  
+    .careers-cp .cp-amazing-no h2 {
+      font-size: 40px;
+    }
+  
+    .careers-cp h2.amz-cp {
+      font-size: 40px;
+      margin-bottom: 42px;
+    }
+  
+    .amazing-work-place .item-image img {
+      width: 437px;
+      height: 300px;
+    }
+  
+    .amazing-work-place .item-content {
+      padding: 20px;
+    }
+    .amazing-work-place .item-title {
+        font-size: 20px;
+    }
+    .amazing-work-place .item-features li {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    .careers-cp .cp-gallery {
+      padding: 50px 0 30px;
+    }
+  
+    .careers-cp .cp-gallery-header h1 {
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .cp-gallery-tab {
+      padding: 8px 10px;
+    }
+  
+    .careers-cp .cp-gallery-gallery {
+      gap: 25px;
+    }
+  
+    h2.employee-testimonial {
+      font-size: 40px;
+    }
+  
+    p.employee-testimonial-desc {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .careers-cp .tab {
+      font-size: 18px;
+      line-height: 1;
+    }
+  
+    .careers-cp .our-team-values-tagline {
+      font-size: 16px;
+    }
+  
+    .cp-collab-culture-sec {
+      padding: 50px 0 0;
+    }
+  
+    .careers-cp .cp-collab-culture h2 {
+      font-size: 40px;
+      margin-bottom: 22px;
+    }
+  
+    .careers-cp .collab-subtitle {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .careers-cp .collab-video-grid {
+      gap: 30px;
+    }
+  
+    .amazing-work-place .cp-carousel-item {
+      width: calc((100% - 28px) / 3);
+      min-width: unset;
+    }
+  
+    .amazing-work-place .cp-carousel-track {
+      gap: 20px;
+    }
+  
+    .careers-cp .video-modal-close {
+      top: -30px;
+      right: -24px;
+      font-size: 18px;
+    }
+  
+    .careers-cp .video-modal-content {
+      width: 55%;
+      top: 7%
+    }
+  
+    .careers-cp .close-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 27px;
+    }
+  
+    .careers-cp .nav-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 2.1rem;
+    }
+    .careers-cp .collab-video-thumbnail {
+      width: 450px;
+      height: 390px;
+    }
+
+    /* Updated modal */
+    .careers-cp .cp-gallery-sidebar-header h2 {
+      font-size: 20px;
+    }
+    .careers-cp .cp-gallery-modal-content {
+      width: 1360px;
+      height: 720px;
+    }
+    .careers-cp .cp-gallery-sidebar {
+      width: 360px;
+    }
+    .careers-cp .cp-gallery-thumbnails {
+      gap: 12px;
+      padding: 18px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 50px;
+      height: 50px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 48px;
+      height: 48px;
+    }
+    .careers-cp .cp-amazing-no .number-item .label {
+        font-size: 16px;
+    }
+    .careers-cp .cp-amazing-no .number-item .number {
+        font-size: 60px;
+        margin-bottom: 25px;
+        line-height: 0.50;
+    }
+    .careers-cp .slider-container {
+        width: 100vw;
+        height: 70vh;
+    }
+    /* ========= Culture page css end ============== */
+    .ready_section .section_inner .btn-section {
+        top: -50px;
+    }
+}
+
+@media(max-width:1400px) {
+    .footer-tellus{ font-size: 48px; padding: 40px 0;}
+    .ft-address li a,.footeraddess-items li,.footer-subscription .wpcf7-text{ font-size: 100%;}
+   
+    .industry_section .items{ font-size: 22px; }
+    .blog_list .item { font-size: 18px;} 
+    .testimonials_section .increase .increase_item{ font-size: 20px;}
+    .testimonials_section .increase .increase_item h3{ font-size: 44px; }  
+    .section_specialize .item-left ul{ font-size: 22px;}
+    .ready_section .head_info{ font-size: 36px;}
+    
+    .wehelp_section .items { gap: 30px;}
+    .wehelp_section .items .item .item_img{ padding:30px 40px 10px;}
+    .wehelp_section .items .item .item_content { padding: 20px 30px; }
+    .sticky_share_btn{ right: 20px; bottom: 20px;}
+    /*  Added by Ajay  */
+    .milestone_section .milestone_items li .milestone_item {align-items: center;}
+    .milestone_section .milestone_items li .milestone_item .right-item {padding-top: 0px;padding-bottom: 0px}
+    .milestone_section .milestone_items li .milestone_item .right-item:before {top: 20px}
+    .testimonials_section .increase .increase_item h4 {font-size: 85%;}
+
+}
+/* ====  AI VOCIE CSS  ==== */
+@media (max-width: 1366px) {
+.case_s .before-wrap .before-text {font-size:15px; line-height:26px;}
+.case_s .before-wrap .reduction-text {font-size:16px; line-height:30px;}
+.case_s .before-wrap .rate-text {font-size:16px; line-height:30px;}
+.case_s .after-wrap .after-text {font-size:15px; line-height:26px;}
+.case_s .tab {padding:25px 25px;}
+.case_s .tab .title {margin-top:25px;}
+.ai-voice-cms .integration-features-section .features-list-column .section-title {font-size:40px; margin-bottom:18px;}
+.ai-voice-cms .integration-features-section .feature-card p {font-size:18px; line-height:28px;}
+.ai-voice-cms .integration-features-section .feature-card {padding:18px 20px;}
+.ai-voice-cms .integration-features-section .features-list-column {padding:0 50px 0 0px;}
+}
+@media (max-width: 1350px) {
+.case_s .metric {padding:20px;}
+.case_s .tab .title {margin-top:30px;}
+.case_s .quote-section {margin-top:25px; padding:20px 20px;}
+}
+
+
+@media (max-width: 1280px) {
+    /* cb station page by tirthak*/
+    /* .cb-station-page .hero {
+        height: 120vh;
+    } */
+   /* end cb station page by tirthak*/
+   .badges-item {
+    padding: 15px;
+    min-height: 280px;
+   }
+   .badges-infor span {
+        font-size: 13px;
+    }
+   .badges-infor small {
+    font-size: 13px;
+   }
+   .badges-infor {
+    margin-top: 20px;
+   }
+}
+
+
+@media(max-width:1200px) {
+  
+    h3{ font-size: 36px;}
+    /*.btn{ padding: 14px 60px 14px 30px; font-size: 16px;}
+    .btn:hover{ padding: 14px 30px 14px 60px;}
+    .btn:before{ left: 20px;}
+    .btn:after{ right: 20px;}*/
+    .section_block{padding: 40px 0; }
+    .section_title{ padding-bottom:10px;}
+    .section_title h2{ font-size:40px;}
+    .section_title h1{ font-size:46px;}
+    .head_info{padding-bottom:40px; }
+    .head_top{  max-width: 100%;}
+    .border_radius{padding: 40px;} 
+   .footer .footer-subscription .wpcf7-submit{ width: 40px; height: 40px;}
+   .footer .footer-subscription .wpcf7-text{ padding-right: 50px;}
+    .section_specialize .item-left, .section_specialize .item-right{ width: 48%;}
+    .ready_section .head_info{ font-size: 30px;}
+    .ready_section .item{ gap: 60px}
+    .ready_section .item:hover { padding-top: 60px; padding-bottom: 60px; gap: 40px;  }
+    .ready_section .items{gap: 30px;}
+    
+    
+    .growing_section .items .growing-right img{ max-width:60px; right:-10px; top: -10px;}
+    .growing_section .items ul{ gap: 20px;}
+    .industry_section .items{ font-size: 20px; gap: 20px;}
+    .industry_section .items{ font-size: 20px;}
+    .blog_list .slick-list{ margin: 0 -15px;} 
+    .blog_list .item { padding:0 15px; font-size: 16px;}
+    .blog_list .item .border_radius{margin-bottom: 20px; }
+    .footeraddess-items li .item-info{    font-size: 13px;}
+
+    .section_commitment .items{ gap:40px; 	grid-template-columns: repeat(3, 1fr);}
+    .commitment_note{ padding-bottom: 0;}
+    .commitment_note p{ font-size: 20px; }
+
+    .share_block h5{ padding: 30px 30px;}
+    .share_block .social-links li img{ max-width: 24px;}
+    
+    .expand_platform .section_title{ width: 100%;}
+    .expand_platform .expand_left{ width: 70%;}
+    .expand_platform .expand_right{ width: 70%; padding-top: 60px;}
+
+
+    .transformative_section .head_info{ font-size: 30px; padding-bottom: 80px;}
+    .transformative_section .item h4{ font-size: 24px;}
+    .transformative_section .item .item_content{padding-right: 10px; }
+
+    /*  Added by Ajay  */
+    .milestone_section .milestone_items li .milestone_item .right-item {padding-right: 30px;padding-left: 50px}
+    .milestone_section .milestone_items li .milestone_item .right-item h4 {font-size: 40px}
+
+    /*  Remove Hover Effect On Menu  */
+    .btn{ padding: 14px 30px 14px 30px !important; font-size: 16px;}
+    .btn:hover{ padding: 14px 30px 14px 30px !important;}
+    .btn:before{ left: 20px; opacity: 0 !important;}
+    .btn:after{ right: 20px; opacity: 0 !important;}
+    .wpcf7-form input.wpcf7-submit:hover,
+    .wpcf7-form input.wpcf7-submit {background-image: none !important;}
+    .footer .footer-subscription .wpcf7-form input.btn {padding: 0px !important;}
+    .wpcf7-form input.wpcf7-submit {padding: 14px 30px 14px 30px !important}
+    .footer .footer-subscription .wpcf7-form input.btn {background: url(../images/btn-arrow-white.svg) no-repeat center #000 !important;}
+    .industry_section .items span {font-size: 16px; }
+    .small_form .form-wrapper {padding: 0;}
+
+    /*   Services Page New Css   */
+    .magento-services-section .section-header .btn-section.custom-btn-center.services{
+        top: -7px !important;
+        display: inline-block;
+    }
+    .magento-services-section .services-grid {
+        column-gap: 31px !important;
+        row-gap: 35px;
+    }
+    .magento-services-section .service-title {
+        font-size: 18px;
+        line-height: 31px;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        column-gap: 31px !important;
+        row-gap: 35px;
+    }
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: 18px;
+        line-height: 31px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label {
+        padding: 0;
+    }
+    .section_block.section_contact.small_form {
+        padding: 50px 0;
+    }
+
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .section_block{
+        padding: 0;
+   }
+   .contact-us-new .contact-address-direction {
+        padding: 40px 0;
+   }
+   .contact-us-new .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+   }
+   .contact-us-new .location-content {
+        padding: 25px 30px 45px 
+   }
+   .contact-us-new .location-title {
+        font-size: 26px;
+        margin-bottom: 0;
+        min-height: 40px;
+   }
+   .contact-us-new .location-address {
+        font-size: 15px;
+        margin-bottom: 25px;
+        min-height: 55px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 45px;
+   }
+   .contact-us-new .contact-link {
+        font-size: 17px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form{
+        max-width: 100%;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg .contact-right-form {
+        max-width: 510px 
+   }
+   .contact-us-new .contact-new-one p.contact-hurry{
+        font-size: 18px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 20px;
+   }
+   .contact-us-new .contact-new-one .form-col{
+        margin: 0 10px 0px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg .left-detail {
+        max-width: 600px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 140px 0 75px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 20px;
+   }
+   .contact-us-new .form-col {
+        /*width: calc(50% - 20px);*/
+        margin: 0 10px 0px;
+   }
+   .contact-us-new .contact-new-one span.wpcf7-list-item-label {
+        font-size: 16px;
+   }
+   .contact-us-new .contact-new-one p.contact-hurry {
+        font-size: 20px;
+   }
+   .contact-us-new .contact-new-one a.contact-hurry.call{
+        font-size: 20px;
+   }
+   .contact-us-new .contact-new-one .form-col {
+    margin-bottom: 20px;
+   }
+   .contact-us-new .lead-banner .left-detail .stats{
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .contact-us-new .lead-banner .stat:nth-child(1) {
+      width: 170px;
+    }
+    .contact-us-new .lead-banner .stat:nth-child(2) {
+      width: 170px;
+    }
+    .contact-us-new .lead-banner .stat:nth-child(3) {
+      width: 170px;
+    }
+    .contact-us-new .lead-banner .left-detail .stats .static-col i{
+      font-size: 35px;
+      margin-top: 20px;
+    }
+    .contact-us-new .lead-banner .left-detail .stats span {
+      font-size: 16px;
+      line-height: 25px;
+    }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .measure-card-one{
+      height: auto; 
+      background-attachment: inherit;
+      background-repeat: no-repeat;
+      background-position: inherit;
+
+    }
+    .save-plant-tree .scroll-section {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-attachment: scroll;
+      will-change: transform;
+      transform: translateZ(0);
+    }
+    /* ==========  Save The Planet Css End  ==========  */
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case_study_wrap .work-header {max-width: 100%;}
+    .case_study_wrap .work-filter {margin-bottom: 50px;}
+    .case_study_wrap .work-list-col {width: calc(33.333% - 14px); }
+    .case_study_wrap .work-list-col .hideonhover h3 {font-size: 20px; }
+    .case_study_wrap .work-list-inner {row-gap: 20px; column-gap: 20px; }
+    .case_study_wrap a.work-thumb {height: auto }
+    .case_study_wrap .work-list-col .hideonhover p {font-size: 15px; }
+    .case_study_wrap .work-list-col .hideonhover .p_3 .count-case-detail {font-size: 24px; }
+    /* change vedika start */
+    .selectbox li, .selectbox-second li, .selectbox-third li {
+      font-size: 15px;
+      line-height: 18px;
+      padding: 10px 10px;
+  }
+  .case_study_wrap .selectbox-group .selectlabel.has-value, .case_study_wrap .selectbox-group-second .selectlabel-second.has-value, .case_study_wrap .selectbox-group-third .selectlabel-third.has-value {
+    font-size: 16px;
+    line-height: 22px;
+}
+.bar-work-one, .bar-work-three, .bar-work-two {
+  padding: 20px 10px 20px 15px;
+}
+.case_study_wrap .selectbox-group ul, .case_study_wrap .selectbox-group-second ul, .case_study_wrap .selectbox-group-third ul {
+  padding: 0 15px 0 0;
+}
+.selectbox li.active, .selectbox-second li.active, .selectbox-third li.active {
+  font-size: 15px;
+  line-height: 22px;
+}
+.selectbox li, .selectbox-second li, .selectbox-third li {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10px 10px;
+}
+.case_study_wrap .selectbox-group .selectlabel.has-value, .case_study_wrap .selectbox-group-second .selectlabel-second.has-value, .case_study_wrap .selectbox-group-third .selectlabel-third.has-value {
+  font-size: 16px;
+  line-height: 22px;
+}
+    .case_study_wrap .work-header .filter-option, 
+    .case_study_wrap .work-header #custom_filters {column-gap: 20px;}
+     /* change vedika End */
+    .case_study_wrap .selectlabel, 
+    .case_study_wrap .selectlabel-second, 
+    .case_study_wrap .selectlabel-third {font-size: 18px;}
+    /*   New Case Study List Css Start Added By AJ End   */
+
+    /* Case Study Detail Page Css Start */
+    .goals-section .container {
+        padding: 0 0 0 15px;
+      }
+        .container.usp {
+          max-width: 1133px;
+      }
+      /* cb station page by tirthak*/
+      .cb-station-page .goals-cards {
+        display: flex;
+        overflow-x: inherit;
+        scroll-snap-type: inherit;
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        padding-bottom: 10px;
+      }
+
+      .cb-station-page .goal-card {
+        flex: 0 0 auto;
+        width: 350px;
+        margin-right: 10px;
+      }
+
+      .cb-station-page .goals-cards::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .cb-station-page .goals-cards::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+      }
+
+      .cb-station-page .goals-cards::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .cb-station-page .arrow-time{
+        left: 15px;
+      }
+      /* Case Study Detail Page Css End */
+
+      /* Testimonial Redesign Css Start */
+      .testimonial-style-new .testimonial-section-consultation .headline {
+          font-size: 36px;
+          line-height: 40px;
+      }
+      .testimonial-style-new .testimonial-section-banner .banner-inner-caption.services .caption.service-subtitle {
+          line-height: 25px;
+      } 
+      .testimonial-style-new .testimonial-section-banner .banner-inner-caption .h1-style.service-title{
+          margin-bottom: 20px;
+        }
+      .testimonial-style-new .testimonial-trust-section .section_title h2 {
+          font-size: 35px;
+      }
+      .testimonial-style-new .testimonial-trust-section .head_info {
+          font-size: 16px;
+          line-height: 25px;
+      }
+      .testimonial-style-new .testimonial-trust-section.trusted_section .items {
+          padding: 40px 0 0; 
+      }
+      .testimonial-style-new .trusted_section .items{
+          gap: 25px;
+      }
+      .testimonial-style-new .testimonials-grid{
+          column-gap: 30px;
+          row-gap: 40px;
+      }
+      /* Testimonial Discovery */
+      .testimonial-style-new .content-col h2 {
+          font-size: 30px;
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .content-col p {
+          font-size: 16px;
+          margin-bottom: 25px;
+      }    
+      .testimonial-style-new .testimonial-stat-number {
+          font-size: 35px;
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .count-stat-item p{
+          font-size: 15px;
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .testimonial-section-discover {
+          padding: 80px 0;
+      }
+      .testimonial-style-new .testimonial-image-col img {
+          max-width: 65%;
+      }    
+      .testimonial-style-new .testimonial-discovery p br {
+          display: none;
+      }
+      /* client logo */
+      .testimonial-style-new .logo-box{
+          min-height: 90px;
+      }
+      .testimonial-style-new .bottom-logo-box{
+          height: 100px;
+      }
+      .testimonial-style-new .certification_section .items img{
+        max-width: 140px;
+      }
+      .certification_section .items .item{
+        padding: 12px 20px;
+      }
+      .testimonial-style-new .trusted_section .items {
+        gap: 22px;
+    }
+    .testimonial-style-new .video-modal-content{
+      width: 80%;
+    }
+    /* Testimonial Redesign Css End */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-page .amazing-work-place {padding: 50px 0; }
+    .ai-voice-page .amazing-work-place .cp-carousel-item {width: calc((100% - 70px) / 3); }
+    .ai-voice-page .amazing-work-place .item-image img { width: 400px; height: 280px; }
+    .price-calculator .results-panel strong {font-size: 28px;line-height: 30px;}
+    .price-calculator .results-panel {font-size: 16px;}
+    .price-calculator .savings-calculator h2 {font-size: 30px; padding-bottom: 10px; }
+    .price-calculator .left-panel {padding-right: 10px; }
+    .price-calculator .annual-savings #annualSavings {font-size: 45px; }
+    .price-calculator .annual-savings {max-width: 360px;}
+    .price-calculator .cost-box {padding: 20px;}
+    .price-calculator .benefits {margin-top: 30px;}
+    .price-calculator .benefits h3 {font-size: 30px;}
+    .price-calculator .usp-inner strong {font-size: 18px;}
+    .price-calculator .usp-inner {line-height: normal;}
+    .price-calculator .results-panel {padding: 20px;}
+    .existing-tools-logo { width: 200px; height: 90px; }
+    .logo-slider-item.existing-tools-logo-item { margin-right: 12px; }
+    .compliance-item { min-width: 270px; height: 140px; }
+    .compliance-slider-track { gap: 14px; }
+      .ai-voice-cms section.our-team-values-section.section_block {padding: 40px 0;}
+      .ai-voice-cms .live-ai-demo-grid{grid-template-columns: repeat(3, 1fr); gap: 15px; }
+      .ai-voice-cms .live-ai-demo-card {padding: 25px 25px 30px; }
+      .ai-voice-cms .live-ai-demo-play-btn{margin: 10px 15px 10px 10px; }
+      .ai-voice-cms .live-ai-demo-audio-player {width: 95%; }
+      .ai-voice-cms .live-ai-demo-category{padding: 12px; }
+      .ai-voice-cms .live-ai-demo-waveform{gap: 5px }
+    .careers-cp h2.amz-cp {font-size: 35px; margin-bottom: 35px; }
+    .ai-voice-cms .amazing-work-place .item-image img {width: 400px; height: 280px; }
+    .ai-voice-cms .amazing-work-place .item-content {padding: 25px; }
+    .ai-voice-cms .amazing-work-place .item-title {font-size: 20px; margin-bottom: 10px; }
+    .ai-voice-cms .amazing-work-place .item-features li{font-size: 16px; padding: 8px 0 0px 12px; }
+
+    /*  Home Page Changes New Css  */
+    .ready_section .section_title h2 {font-size: 42px;}
+    .ready_section .section_title h2 i {font-size: 32px;}
+
+    /* =============== Culture page css start ============ */
+  
+    .page-middle.careers-cp .blog-hero.services-banner-section .banner-inner-caption.services {
+      padding: 130px 20px 90px !important;
+    }
+  
+    .careers-cp .video-modal-close {
+      top: -30px;
+      right: -30px;
+    }
+  
+    .careers-cp .cp-gallery-gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .careers-cp .hero-banner.blog-hero {
+      height: 70vh;
+    }
+  
+    .careers-cp .blog-hero .hero-video-wrapper {
+      min-height: 70vh;
+    }
+  
+    .amazing-work-place .cp-carousel-item {
+      width: calc((100% - 45px) / 3);
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 35%;
+    }
+  
+    .careers-cp .cp-culture-container {
+      transform: translateY(-30%);
+    }
+  
+    .careers-cp .cp-culture-video-wrapper {
+      max-width: 750px;
+      height: 420px;
+    }
+  
+    .careers-cp .cp-culture-play-btn {
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption.services .leftbanner.service-left {
+      max-width: 700px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption .h1-style.service-title {
+      font-size: 35px !important;
+      margin-bottom: 18px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption.services .caption.service-subtitle {
+      margin: 0 0 25px;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption.services .caption.service-subtitle {
+      line-height: 25px;
+      margin: 0 0 40px;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet {
+      margin-bottom: 0;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet h2 {
+      font-size: 35px;
+      max-width: 30%;
+    }
+  
+    .careers-cp h2.our-team-values-heading {
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 12px;
+    }
+  
+    .careers-cp .our-team-values-tagline {
+      max-width: 780px;
+    }
+  
+    .careers-cp .our-team-values-feature-card {
+      padding: 40px 22px;
+    }
+  
+    .careers-cp .our-team-values-icon {
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .our-team-values-title {
+      font-size: 18px;
+    }
+  
+    .careers-cp .our-team-values-desc {
+      font-size: 16px;
+    }
+  
+    .careers-cp .our-team-values-features-grid {
+      gap: 21px;
+      margin-top: 30px;
+    }
+  
+    .careers-cp .cp-office-infra h2.office-infra {
+      font-size: 35px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+  
+    .careers-cp .cp-office-infra .description {
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      gap: 20px;
+    }
+  
+    .careers-cp .cp-amazing-no h2 {
+      font-size: 35px;
+      margin-bottom: 42px;
+    }
+  
+    .careers-cp .cp-amazing-no .numbers-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  
+    .careers-cp .cp-amazing-no .number-item .number {
+      font-size: 55px;
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item .label {
+      font-size: 14px;
+    }
+  
+    .careers-cp h2.amz-cp {
+      font-size: 35px;
+      margin-bottom: 35px;
+    }
+  
+    .amazing-work-place .item-image img {
+      width: 400px;
+      height: 280px;
+    }
+  
+    .amazing-work-place .item-content {
+      padding: 25px;
+    }
+  
+    .amazing-work-place .item-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .amazing-work-place .item-features li {
+      font-size: 16px;
+      padding: 8px 0 0px 12px;
+    }
+  
+    .careers-cp .cp-gallery-header h2 {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+  
+    .careers-cp .cp-gallery-tabs {
+      gap: 13px;
+      margin-bottom: 28px;
+    }
+  
+    .careers-cp .cp-gallery-tab {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  
+    .careers-cp .cp-gallery-gallery {
+      gap: 20px;
+    }
+  
+    .careers-cp .cp-gallery-gallery-item-title {
+      font-size: 16px;
+      padding: 0 0 20px 25px;
+    }
+  
+    h2.employee-testimonial {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .tabs {
+      gap: 24px;
+      margin-top: 0px;
+    }
+  
+    .careers-cp .cp-collab-culture h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .collab-subtitle {
+      margin-bottom: 25px;
+      max-width: 600px;
+    }
+  
+    .careers-cp .collab-video-grid {
+      gap: 25px;
+    }
+  
+    .careers-cp .collab-video-description p {
+      min-height: 220px;
+    }
+
+    .careers-cp .collab-video-description {
+      padding: 18px;
+    }
+
+    span.author-designation{
+      font-size: 14px;
+    }
+  
+    .careers-cp .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  
+    .careers-cp .testimonial-meta {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      min-height: 190px;
+    }
+  
+    .careers-cp .testimonial-text {
+      font-size: 15px;
+    }
+  
+    .careers-cp .video-title {
+      bottom: 36px;
+      left: 11px;
+      font-size: 16px;
+    }
+  
+    .careers-cp .testimonial-content {
+      padding: 20px;
+      margin-top: 5px;
+    }
+  
+    .careers-cp .testimonial-meta {
+      font-size: 15px;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+  
+    .careers-cp .cp-gallery {
+      padding: 50px 0;
+    }
+  
+    .careers-cp .video-modal-content {
+      width: 80%;
+    }
+  
+    .careers-cp .video-container {
+      min-height: 280px;
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 30%;
+    }
+    .careers-cp .collab-video-thumbnail {
+      width: 420px;
+      height: 360px;
+    }
+  
+    /* Updated Modal */
+    .careers-cp .cp-gallery-sidebar-header h2 {
+      font-size: 18px;
+    }
+    .careers-cp .cp-gallery-modal-content {
+      width: 1150px;
+      height: 680px;
+    }
+    .careers-cp .cp-gallery-sidebar {
+      width: 330px;
+    }
+    .careers-cp .cp-gallery-thumbnails {
+      gap: 12px;
+      padding: 16px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 48px;
+      height: 48px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 45px;
+      height: 45px;
+    }
+    /* ========= Culture page css end ============== */
+
+}
+@media(min-width:768px) and (max-width:1200px) { 
+    .reach_section .items{ gap: 25px;}
+    .reach_section .item{ height: 350px; width: calc(25% - 16px); }  
+    .reach_section .item.current{width: calc(50% - 20px); }
+    .reach_section .item .item_content{ max-width: 100%;}
+    .section_specialize .items {align-items: flex-start;}
+    .section_block.section_specialize {padding-top: 0;}
+    .section_specialize h3 {font-size: 40px;}
+    .section_block.industry_section {padding-top: 0;}
+    .section_block.trusted_section .btn-section {padding-top: 0px;}
+    .blog_list_head .btn-section{padding-top: 0px;}
+    .section_inner .btn-section{padding-top: 0px;}
+}
+@media(max-width: 1199px) {
+    .small_form .wpcf7 {max-width: 100%;}
+
+    /*   Services Page New Css   */
+    .magento-services-section .section_title.services {
+        margin-bottom: 15px;
+    }
+    .section-header .btn-section.custom-btn-center.services{
+        position: static;
+    }
+    .magento-services-section .section_title.services h2 {
+        font-size: 46px;
+        line-height: 64px;
+    }
+    .magento-services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+    .magento-services-section .section-header {
+        margin-bottom: 40px;
+    }
+    .magento-services-section .service-icon {
+        padding-bottom: 25px;
+    }
+    .magento-services-section .service-title {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px !important;
+        row-gap: 40px;
+    }
+
+    .magento-services-section .service-icon,
+    .ecommerce-migration-services .magento-services-section .service-icon {
+        padding-bottom: 25px;
+    }
+
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: ;font-size: 19px;
+        line-height: 30px;
+    }
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case-study-banner .hero-banner .hero-video-wrapper {min-height: 40vh;}
+    .case_study_wrap .work-list-inner {margin: 0;}
+    .small_form .wpcf7 {max-width: 100%;}
+    .case_study_wrap .work-list-col {width: calc(50% - 14px);}
+    .case_study_wrap .work-list-inner {row-gap: 15px;column-gap: 20px;}
+    .case_study_wrap .work-list-col .hideonhover {padding: 15px;}
+    .case_study_wrap .work-list-col .hideonhover h3 {font-size: 20px;}
+    .case_study_wrap .work-list-col .hideonhover p {font-size: 15px; line-height: 20px;}
+    .case_study_wrap .work-list-col .hideonhover .p_3 .count-case-detail {font-size: 24px;}
+    /* change vedika start */
+    .case_study_wrap .selectbox-group ul, .case_study_wrap .selectbox-group-second ul, .case_study_wrap .selectbox-group-third ul { padding: 0 22px 0 0;}
+    /* change vedika End */
+    /*   New Case Study List Css Start Added By AJ End   */
+
+    /* .cb-station-page .hero {
+        height: 50vh;
+    }
+    .cb-station-page .hero {
+        height: 50vh;
+    } */
+}
+
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+    h3{ font-size: 30px;}
+    /*.btn{ padding: 14px 60px 14px 30px; font-size: 16px;}
+    .btn:hover{ padding: 14px 30px 14px 60px;}
+    .btn:before{ left: 20px;}
+    .btn:after{ right: 20px;} */
+    .section_block{padding: 100px 0; } 
+    .section_title{ padding-bottom:10px;}
+    .section_title h2{ font-size:40px;}
+    .section_title h1{ font-size:46px;}
+    .head_info{ font-size: 18px; padding-bottom:40px; }
+    .border_radius{padding: 40px;} 
+
+    .section_specialize h3{ font-size: 36px;}
+    .section_specialize .item-left ul{ font-size:18px;padding:0 0 20px;}
+    .section_specialize .item-left p {font-size: 18px;margin: 0;}
+    .section_specialize .item-right .item{ font-size: 14px;}
+    .section_specialize .item-right{ padding-top: 40px;}
+    .section_specialize .item-right .item strong{ font-size: 40px;}
+    .section_specialize .item-left ul li:before{ top: 12px;}
+    .growing_section .items .growing-left .head_info{ font-size: 20px;}
+    .growing_section .items li{ font-size: 16px;}
+    .growing_section .items .growing-right img{ max-width: 80px;}
+
+    .reach_section .item{ height: 440px;}
+    .reach_section .item_content p{ font-size: 18px; line-height: normal;}
+    .reach_section h3{ font-size: 24px;}
+
+    .testimonials_section .item_content{ font-size: 24px; padding: 30px 0;}
+    .testimonials_section .increase{ margin-top: 30px;}
+    .testimonials_section .increase .increase_item h3{ font-size: 40px;}
+    .ready_section .section_title{ max-width: 56%;}
+    .footer-tellus{ padding-bottom: 20px;}
+    .quick-links li{ line-height: normal; font-size: 14px;}
+    .copyright-block{ margin-top: 0;}
+    .industry_section .items{ font-size: 20px;}
+    .ready_section .items{gap: 30px;} 
+    .ready_section .item{ font-size: 16px;}
+    .ready_section .item:hover { padding-top: 60px; padding-bottom: 60px; gap: 40px;  } 
+    .ready_section .item img{ max-width: 40px; gap: 60px}
+    .ready_section .item h3{ font-size: 20px;}
+    .blog_list_head .head_info{ padding-bottom: 20px;}
+    .blog_list .item{ font-size: 18px; line-height: normal;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+  /* caste study */
+  .container.usp {
+    max-width: 1335px;
+    width: 97%;
+  }
+  .cb-station-page .about {
+  margin-top: 120px;
+  padding-bottom: 30px;
+  }
+  .cb-station-page .goals-title {
+  font-size: 40px;
+  }
+  .cb-station-page .about.content h2{
+  margin-bottom: 10px;
+  }
+  .cb-station-page .goals-section{
+  padding: 50px 0;
+  margin-bottom: 50px;
+  }
+  .cb-station-page .solution-heading h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  }
+  .cb-station-page .timeline-impact-section .section-title{
+  font-size: 40px;
+  margin-bottom: 30px;
+  }
+  .cb-station-page .timeline-impact-section{
+  padding: 50px 0;
+  }
+  .cb-station-page .tech-title {
+  font-size: 40px;
+  line-height: 45px;
+  }
+  .goals-section .slick-track {
+  display: flex;
+  }
+  .goals-section .goal-card.slick-slide {
+  height: auto;
+  margin-bottom: 0;
+  }
+  .contact-us-new .contact-new-one .checkmark-row a {
+    font-size: 13px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-new-one .left-detail {
+        max-width: 440px;
+   }
+    .contact-new-one .lead-banner .contact-form {
+        padding: 20px;
+   }
+    .form-col {
+        width: calc(50% - 20px);
+        margin: 0 10px 0px;
+   }
+    .contact-new-one span.wpcf7-list-item-label {
+        font-size: 16px;
+   }
+   .contact-us-new .lead-banner .left-detail .stats span {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .contact-us-new .lead-banner .left-detail .stats .static-col i {
+      font-size: 30px;
+      margin-top: 15px;
+      }
+      .contact-us-new .contact-new-one .lead-banner .left-detail h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      .contact-us-new .lead-banner .left-detail .stats {
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .contact-us-new .lead-banner .stat:nth-child(1) {
+        width: 150px;
+      }
+      .contact-us-new .lead-banner .stat:nth-child(2) {
+        width: 150px;
+      }
+      .contact-us-new .lead-banner .stat:nth-child(3) {
+        width: 150px;
+      }
+    .contact-us-new .contact-new-one .lead-banner .banner-bg .left-detail {
+        max-width: 440px;
+    }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .banner-inner-caption .h1-style {
+       font-size: 42px;
+  }
+   .save-plant-tree .heroBanner .banner-inner-caption .caption {
+       font-size: 16px;
+  }
+   .save-plant-tree .banner-inner-caption .caption {
+       margin: 0px auto 20px;
+  }
+   .save-plant-tree img.save-plant-logo {
+       margin-bottom: 30px;
+  }
+   .save-plant-tree img.save-plant-logo {
+       margin-bottom: 30px;
+       height: auto;
+       width: 50%;
+  }
+   .save-plant-tree .google_ads_section .ads-item p {
+       max-width: 85%;
+  }
+   .save-plant-tree .google_ads_section .google-ads-content{
+       gap: 15px;
+  }
+   .save-plant-tree .google_ads_section .ads-item p{
+       font-size: 14px;
+  }
+   .save-plant-tree h3.plant-cp-title {
+       font-size: 25px;
+  }
+   .save-plant-tree .transformative_section .head_info {
+       padding-bottom: 25px;
+  }
+   .save-plant-tree .transformative_section .item_inner {
+       padding: 45px 25px;
+  }
+   .save-plant-tree h3.plant-support-title {
+       font-size: 35px;
+       margin-bottom: 10px;
+  }
+   .save-plant-tree .google_ads_section.support .ads-item {
+       margin-bottom: 20px;
+  }
+   .save-plant-tree .support-list li{
+       font-size: 12px;
+       margin-bottom: 2px;
+  }
+   .save-plant-tree .section-better-planet h2 {
+       font-size: 35px;
+       max-width: 60%;
+  }
+   .save-plant-tree .section-better-planet {
+       margin-bottom: 15px;
+  }
+   .save-plant-tree .planet-scroll-container {
+       margin-top: 25px;
+  }
+   .save-plant-tree .planet-scroll-row {
+       gap: 15px;
+  }
+   .save-plant-tree .transformative_section .head_info {
+       font-size: 16px;
+  }
+   .save-plant-tree .measure-box-card {
+       padding: 80px 0;
+  }
+   .save-plant-tree .measure-box-card .measure-heading {
+       font-size: 50px;
+       margin-bottom: 15px;
+  }
+   .save-plant-tree .measure-box-card p {
+       font-size: 18px;
+       margin: 0 0 10px;
+  }
+   .save-plant-tree .scroll-section {
+       padding: 80px 0;
+  }
+   .save-plant-tree .info-card {
+       padding: 55px 35px;
+       max-width: 550px;
+  }
+  /* .save-plant-tree .info-card br {
+       display: block;
+  }
+   */
+   .save-plant-tree .info-card .number {
+       font-size: 35px;
+  }
+   .save-plant-tree .info-card h2{
+       font-size: 35px;
+  }
+   .save-plant-tree .info-card p {
+       font-size: 16px;
+  }
+   .save-plant-tree .info-card .label {
+       font-size: 25px;
+  }
+  /* ==========  Save The Planet Css End  ==========  */
+
+  .contact-us-new .contact-new-one .checkmark-row a {
+    font-size: 13px;
+  }
+  /* cb station page by tirthak*/
+  .timeline-impact-section .container {
+    padding: 0px 0 0 15px;
+  }
+  .cb-station-page .hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+  }
+  .cb-station-page .hero {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    position: inherit;
+  }
+  .cb-station-page .hero-img{
+    position: unset;
+  }
+  .cb-station-page .hero-img .desktop-img {
+    display: none;
+  }
+  .cb-station-page .hero-img .mobile-img {
+      display: block;
+  }
+  .cb-station-page .hero-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cb-station-page .hero-content h3 br{
+    display: none;
+  }
+  .enterprise-page-main .cb-station-page .hero-content{
+  max-width: 100%;
+    width: 100%;
+}
+  .cb-station-page .hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px
+  }
+  .cb-station-page .hero-content p{
+   font-size: 16px;
+   margin-bottom: 15px;
+   }
+  .cb-station-page .about.content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .cb-station-page .about p{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .cb-station-page .goals-title {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .cb-station-page .goals-subtitle {
+    font-size: 17px;
+  }
+  .cb-station-page .stats-grid{
+    position: relative;
+    top: 0;
+  }
+  .cb-station-page .container.usp{
+    padding: 0;
+  }
+  .cb-station-page .stats{
+    border-radius: 0px;
+  }
+  .cb-station-page .stats-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cb-station-page .stat-box {
+    padding: 18px;
+  }
+  .cb-station-page .stat-box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .cb-station-page .stat-box::after {
+    content: none;
+  }
+
+  .cb-station-page .stat-box:not(:last-child) {
+    border-bottom: none;
+  }
+  .cb-station-page .stat-box:not(:last-child)::after{
+    content: none;
+  }
+  .cb-station-page .about{
+    margin-top: 30px;
+  }
+  .cb-station-page .goals-section{
+    padding: 30px 0px;
+    margin-bottom: 30px;
+  }
+  .cb-station-page .solution-heading h2 {
+    font-size: 35px;
+    line-height: normal;
+  }
+  .cb-station-page .solution-grid{
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+  .cb-station-page .solution-text h3 {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .cb-station-page .timeline-impact-section .section-title{
+    font-size: 35px;
+    line-height: normal;
+  }
+  .cb-station-page .timeline-impact-section{
+    padding: 30px 0px;
+  }
+  .cb-station-page .solution-section .solution-grid{
+    margin-bottom: 50px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .cb-station-page .solution-section .solution-grid.no-border{
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  .cb-station-page .reverse-layout {
+    flex-direction: column;
+  }
+
+  .cb-station-page .reverse-layout .solution-text,
+  .cb-station-page .reverse-layout .solution-image {
+    text-align: left;
+  }
+  .cb-station-page .step p{
+    font-size: 16px;
+  }
+  .cb-station-page .circle {
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+
+  .cb-station-page .impact-box {
+    flex: 1 1 calc(50% - 35px);
+  }
+  .impact-box:nth-child(odd) {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .cb-station-page .impact-box:nth-child(even) {
+    border-left: none;
+    padding-left: 35px;
+  }
+  .cb-station-page .impact-box h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .cb-station-page .tech-title {
+    font-size: 35px;
+    line-height: normal;
+  }
+  .cb-station-page .tech-stack{
+    padding: 30px 0;
+  }
+  .cb-station-page .timeline-main{
+    padding-bottom: 30px;
+  margin-bottom: 30px;
+  }
+  .cb-station-page .tech-flex {
+    flex-wrap: wrap;
+    border: none;
+  }
+  .cb-station-page .tech-item{
+    flex: 0 0 33%;
+    margin-bottom: 15px;
+  }
+  .cb-station-page .tech-item:nth-child(3n){
+    border-right: none;
+  }
+  .cb-station-page .goal-card {
+    width: 300px;
+  }
+  .cb-station-page .overlay {
+    padding: 100px 20px 40px 20px;
+  }
+  .goals-section .slick-track {
+    display: flex;
+  }
+  .goals-section .goal-card.slick-slide {
+    height: auto;
+    margin-bottom: 0;
+  } 
+  .magento-services-section .section_title.services h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .magento-services-section {
+    padding: 60px 0 0;
+    
+  }
+  .cb-station-page .about {
+  padding-bottom: 30px;
+  }
+  .cb-station-page .goals-cards{
+  overflow-x: inherit;
+  scroll-snap-type: inherit;
+  }
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-cms .ai-banner {background-color: #000;}
+    .ai-voice-cms .ai-banner .hero-video-wrapper img {display: none;}
+    .ai-banner {flex-direction:column-reverse; text-align:center; padding:110px 20px 30px;}
+    .ai-banner .ai-banner-left, .ai-banner .ai-banner-right {max-width:100%; text-align:center; padding:0;}
+    .ai-banner .ai-banner-left h1 {font-size:34px; line-height:1.5;}
+    .ai-banner .stats {justify-content:start; gap:30px;}
+    .ai-banner .stat strong {font-size:22px; line-height:1;}
+    .ai-banner .stat span {font-size:15px;}
+    .case_s .tabs-container {flex-direction:column; gap:2rem;}
+    .case_s .tabs {flex-direction:row; flex-wrap:wrap; gap:1rem;flex: inherit;}
+    .case_s .tab {flex: inherit; width: 100%;}
+    .case_s br{display: block;}
+    .case_s .tab-content{flex: inherit;width: 100%;}
+    .ai-voice-cms .integration-features-section .features-list-column {padding:0; width:100%;}
+    .ai-voice-cms .integration-features-section .integration-content {flex-direction:column; row-gap:20px;}
+    .ai-voice-cms .integration-features-section .diagram-column {width:100%;}
+    .price-calculator .left-section h3 { font-size: 38px; }
+    .price-calculator .savings-calculator h2 { font-size: 30px; }
+    .price-calculator .input-block .top-value label { font-size: 18px; }
+    .price-calculator .input-block .top-value .calls { padding: 10px; font-size: 16px; min-width: 140px; }
+    .price-calculator .results-panel { font-size: 16px; padding: 30px; }
+    .price-calculator .results-panel strong { font-size: 25px; line-height: 30px; }
+    .price-calculator .cost-box { padding: 20px; border-radius: 12px;}
+      .price-calculator .cost-box h3 { font-size: 18px; }
+      .price-calculator .cost-box p { font-size: 15px; }
+      .price-calculator .cost-box h4 { font-size: 15px; }
+      .price-calculator #savings { font-size: 16px; }
+      .price-calculator .annual-savings { font-size: 15px; }
+      .price-calculator .annual-savings #annualSavings { font-size: 35px; }
+      .price-calculator .annual-savings .subtext { font-size: 14px; }
+      .price-calculator .benefits h3 { font-size: 25px; }
+      .price-calculator .usp-inner { width: 100%; padding: 10px 0px; }
+      .price-calculator .usp { flex-flow: column; margin: 0; }
+      .savings-calculator {flex-wrap: wrap;}
+      .price-calculator .left-panel,
+      .price-calculator .right-panel {max-width: 100%;}
+      .price-calculator .annual-savings {max-width: 100%;padding: 20px 10px;border-radius: 12px;margin-top: 15px;}
+    .ai-voice-cms .live-ai-demo-waveform {gap: 6px;}
+    .ai-voice-cms .live-ai-demo-grid {gap: 20px; grid-template-columns: repeat(2, 1fr);}
+    .ai-voice-cms .live-ai-demo-card {padding: 30px 30px 35px;}
+    .ai-voice-cms .live-ai-demo-title {font-size: 20px;}
+    .ai-voice-cms .live-ai-demo-waveform {height: 28px;}
+    .ai-voice-cms .live-ai-demo-audio-player{width: 80%;}
+
+    /* =============== Culture page css start ============ */
+  .page-middle.careers-cp .blog-hero.services-banner-section .banner-inner-caption.services {
+		padding: 110px 20px 90px !important;
+	}
+
+	section.cp-culture-section {
+		padding-bottom: 35%;
+	}
+
+	.careers-cp .video-title {
+		bottom: 30px;
+		left: 30px;
+	}
+
+	.careers-cp .testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.careers-cp .testimonial-text {
+		font-size: 18px;
+	}
+
+	.careers-cp .video-container {
+		min-height: 350px;
+	}
+
+	.careers-cp .testimonial-meta {
+		font-size: 15px;
+		margin-bottom: 22px;
+		line-height: 1.6;
+		min-height: 150px;
+	}
+
+	.careers-cp .testimonial-content {
+		padding: 20px;
+		margin-top: 5px;
+	}
+
+	.cp-collab-culture br {
+		display: block;
+	}
+
+	.careers-cp .collab-video-description p {
+		height: 100%;
+		min-height: 215px;
+    font-size: 14px;
+    line-height: 22px;
+	}
+
+  .careers-cp .slider-container {
+    width: 80vw;
+    height: 60vh;
+  }
+
+	.careers-cp .author-name br {
+		display: block;
+		line-height: 1.4;
+	}
+  .careers-cp .collab-video-thumbnail {
+    width: 400px;
+    height: 340px;
+  }
+
+  .collab-video-description br {
+    display: block;
+  }
+  span.author-designation{
+    font-size: 12px;
+  }
+
+  /* updated Modal */
+  .careers-cp .cp-gallery-modal-content {
+    flex-direction: column;
+    height: auto;
+    max-height: 90vh;
+  }
+  .careers-cp .cp-gallery-main-content {
+    flex-direction: column;
+  }
+
+  .careers-cp .cp-gallery-sidebar-header h2 {
+    font-size: 16px;
+  }
+  /* Sidebar only shows title and right content */
+  .careers-cp .cp-gallery-sidebar {
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+  }
+  .careers-cp .cp-gallery-sidebar-header {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    background: none;
+  }
+  .careers-cp .cp-gallery-thumbnails {
+    display: none; 
+  }
+
+  .careers-cp .cp-gallery-viewer {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+  .careers-cp .cp-gallery-nav-btn {
+    width: 45px;
+    height: 45px;
+  }
+  .careers-cp .cp-gallery-prev-btn {
+    left: 20px;
+  }
+  .careers-cp .cp-gallery-next-btn {
+    right: 20px;
+  }
+  .careers-cp .cp-gallery-close svg {
+    width: 42px;
+    height: 42px;
+  }
+  .careers-cp .cp-gallery-close{
+    top: 50px;
+  }
+  /* ========= Culture page css end ============== */
+}
+
+
+@media(max-width:990px) {
+ 
+    h3{ font-size: 30px;}
+    .section_block{padding: 40px 0; } 
+    .section_block.section_specialize {padding-top: 0px; } 
+    .section_specialize h3 {font-size:30px;}
+    .section_title h2{ font-size:30px;}
+    .section_title h1{ font-size:36px;}
+    .head_info p {margin: 0px;font-size: 18px; line-height: 26px;}
+    .head_info{ font-size: 18px; padding-bottom:30px; }
+    .border_radius{border-radius: 12px; padding: 30px;}
+    .footer-tellus{ font-size:40px; padding:30px 0;}
+    .section_specialize .item-left ul{ font-size: 20px;padding: 20px 0px;}
+    .section_specialize .item-left p {font-size: 18px;margin: 0;}
+    .section_specialize .item-left, .section_specialize .item-right{ width: 100%;}
+    .section_specialize .item-right{ padding-top: 40px;}
+    .section_specialize .item-right .item strong{ font-size: 40px;}
+    .section_specialize .item-left ul li:before{ top: 12px;}
+    .we_specialize_top{ max-width: 100%;}
+    .ready_section .section_title{  padding-bottom: 0px; max-width: 100%;} 
+    .ready_section .head_info {padding: 15px 0px;}
+    .ready_section .items{ gap: 15px;padding-top: 20px;}
+    .growing_section .items .growing-left .head_info {font-size: 18px;padding-bottom: 20px;}
+    .ready_section .item{ gap: 50px; font-size: 20px;}
+    .ready_section .item h3{ font-size: 20px;} 
+    .ready_section .item:hover { padding-top: 50px; padding-bottom: 50px; gap: 30px;  }
+    .growing_section .items{ gap: 40px;}
+    .growing_section .items .growing-right,.growing_section .items .growing-left{  width: 100%;}
+    /*.trusted_section .items{grid-template-columns: repeat(4, 1fr); gap: 30px;}*/
+    .trusted_section .items{grid-template-columns: auto; gap:20px;}
+    .industry_section .items{ font-size: 18px;}
+
+    .blog_list .items{ margin-bottom: 100px;}
+    .blog_list_head{ position: relative; } 
+    .blog_list_head .head_info{ max-width: 100%;}
+    .testimonials_section .items_outer{ padding: 0 0 0 100px;}
+    .testimonials_section  .slick-arrow{ position: absolute; right: 0; left: auto;bottom: auto; font-size: 18px; color: #fff; opacity: 1; margin: 0; top: 0; width: auto; padding: 0; display: block;  height: auto; visibility: visible;  }
+    .testimonials_section  .slick-prev{ right: 60px; padding-right: 20px;}
+    .testimonials_section  .slick-arrow i{ margin: 0; position: absolute; right: 0; color: #fff; display: block; top: 0;}
+    .testimonials_section .items_outer:before{width: 50px; height: 36px; }
+    .testimonials_section .item_content{ font-size: 24px;}
+    .testimonials_section .increase{ margin-top: 30px;}
+    .testimonials_section .increase .increase_item h3{ font-size: 40px;}
+
+    .footeraddess-items{ flex-flow: column; grid-area: 20px; padding: 10px 0;}
+    .footeraddess-items li{ padding: 10px 0;}
+    .footeraddess-items li .item-info{transform: translate(120%, 0); top: 0;padding: 20px 0; height: 100%; }
+    .footeraddess-items li:hover .item-info, .footeraddess-items li.current .item-info{ transform: translate(0, 0%); top: 0;}
+    .footeraddess-items li .inner_info{ flex-flow: column;align-items: start; height: 100%;}
+
+    .section_commitment .items{ gap:30px;  }
+
+    .grow_block .clients_info,.grow_block .increase-section{ width:48%;}
+    .grow_block .clients_info{ padding-left: 0;}
+    .section_contactoffice .contact-office-col{ padding:0 0 40px 0;}
+    .section_contactoffice .contact-office-icon{ max-width:40%; }
+    .section_contactoffice .office-address{ max-width: 40%;}
+    .section_contactoffice .office-address address{ font-size: 20px;}
+    .section_contactoffice .office-address address p{ font-size: 100%; line-height: normal;}
+    .section_contactoffice .office-address address .locations{ font-size: 24px; padding-bottom: 10px;} 
+    .blog-detail-content .footer-subscription .wpcf7-form-control-wrap{ width: 65%;}
+    .blog-detail-content .footer-subscription h3{ font-size: 30px;}
+    .blog-detail-content .footer-subscription .wpcf7-text,
+    .blog-detail-content .footer-subscription p{ font-size: 20px;}
+    .sticky_share_btn{ max-width: 60px; bottom: 0;}
+    .blog-detail-page .head_top{ padding-right:60px;}
+    .sticky_share_btn .share-toggle{ height: 60px;}
+    .sticky_share_btn .addtoany_list a img,
+    .sticky_share_btn .share-toggle  img{  max-width: 20px;}
+    .sticky_share_btn .addtoany_list a{ padding: 10px;}
+
+    .share_block h5{ font-size: 20px;}
+    .share_block .social-links li img{ max-width: 24px;}
+
+    .expand_platform .expand_left{ width: 100%;}
+    .expand_platform .expand_right{ width: 100%; padding-top: 60px;}
+
+    .wehelp_section .items { gap:30px; grid-template-columns: repeat(2,1fr); padding:20px 0;}
+    .transformative_section .item .item_inner{ padding: 30px;}
+    .wehelp_section .items .item .item_content{ padding: 30px;}
+    .transformative_section .head_info{ max-width: 100%; font-size: 26px;}
+    .transformative_section .item .item_content{ padding-right: 0; font-size: 18px;}
+    .transformative_section .item h4{ font-size: 20px;}
+
+    .section_commitment .items .item {padding: 30px;}
+    /*  Added By Ajay  */
+    .milestone_section .milestone_items li .milestone_item .right-item h4 {margin-bottom: 50px;font-size: 30px;}
+    .milestone_section .milestone_items li .milestone_item .right-item p {line-height: 26px}
+
+    .trusted_section .items img {max-width: 80%; max-height: 80px;}
+
+
+    /*   Services Page New    */
+    .magento-services-section .section_title.services h2 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    .magento-services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .magento-services-section .section-header {
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .magento-services-section .section-header .btn-section {
+        position: static;
+        margin-top: 20px;
+    }
+    .magento-services-section .magento-services-section {
+        padding: 30px 0;
+    }
+    .magento-services-section .service-icon {
+        padding-bottom: 20px;
+    }
+    .magento-services-section .service-icon img {
+        max-width: 50px;
+    }
+    .magento-services-section .section-header .btn-section {
+        width: auto;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .magento-services-section .service-icon,
+    .ecommerce-migration-services .magento-services-section .service-icon {
+        padding-bottom: 20px;
+    }
+    .magento-services-section .service-icon img {
+        max-width: 50px;
+    }
+    .ecommerce-migration-services .magento-services-section .service-icon img {
+        height: 50px;
+        max-width: 100%;
+    }
+    .services-main .hero-banner.blog-hero {
+        height: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        /* padding: 80px 20px; */
+        position: relative !important;
+        width: 100% !important;
+        min-height: auto !important;
+        background-color: #000 !important;
+        text-align: center !important;
+        flex-direction: column !important;
+    }
+    .services-main .blog-hero .hero-video-wrapper {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+    }
+    .services-main .hero-video-wrapper img {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        z-index: 1 !important;
+    }
+    .page-middle .blog-hero .banner-inner-caption.services {
+        position: relative !important;
+        z-index: 2 !important;
+        max-width: 1200px !important;
+        width: 100% !important;
+        padding: 90px 20px 40px !important;
+        transform: inherit !important;
+    }
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .locations-grid {
+        gap: inherit;
+   }
+   .contact-us-new .location-card {
+        margin-right: 25px;
+   }
+   .contact-us-new .location-card:last-child {
+        margin-right: 0;
+   }
+   .contact-us-new .location-content {
+        padding: 20px 15px 40px;
+   }
+   .contact-us-new .location-title {
+        font-size: 24px;
+        margin-bottom: 6px;
+   }
+   .contact-us-new .location-address {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 40px;
+   }
+   .contact-us-new .contact-item {
+        margin-bottom: 8px;
+   }
+   .contact-us-new .contact-link {
+        font-size: 16px;
+        line-height: 1.6;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 100px 15px 75px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 15px;
+        margin-top: 30px;
+   }
+   .contact-us-new .lead-banner .contact-form {
+        max-width: 100%;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg .left-detail {
+        max-width: 100%;
+   }
+   .contact-us-new .contact-new-one .lead-banner .left-detail h1{
+        font-size: 35px;
+        line-height: 40px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form h3{
+        margin-bottom: 20px;
+        font-size: 23px;
+   }
+   .contact-us-new .contact-new-one .left-detail {
+        margin-top: 0;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg .contact-right-form {
+        max-width: 100%;
+   }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+    .save-plant-tree .google_ads_section .ads-item p {
+        max-width: 100%;
+    }
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case_study_wrap .work-list-inner {display: inline-block; margin: 0 -5px;}
+    .case_study_wrap .work-list-col {float: left; padding: 0; margin: 0 5px 5px;}
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .project_data { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .project_bottom { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; position: absolute; bottom: 0; padding: 15px 10px; opacity: 0; }
+    .case_study_wrap .work-list-col .work-list-cont .view-more-work {right: 10px;}
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .project_bottom h3 { position: unset; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .project_bottom a {line-height: 1; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .p_2 { font-size: 60px; font-weight: 900; line-height: 55px; margin-bottom: 10px; width: 100%; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .p_1 { font-size: 20px;}
+    .case_study_wrap .selectbox-group .selectlabel, 
+    .case_study_wrap .selectbox-group-second .selectlabel-second,
+    .case_study_wrap .selectbox-group-third .selectlabel-third {font-size: 18px;}
+    .case_study_wrap .work-header {max-width: 100%;}
+    /* change vedika start */ 
+    .case_study_wrap .work-header .filter-option, .case_study_wrap .work-header #custom_filters{
+      gap: 20px;
+      flex-wrap: wrap;
+        }
+        .clear-btn {
+          padding: 12px 23px 10px;
+      }
+      .case_study_wrap .filter-option .custom-select{
+        position: relative;
+      }
+      .case_study_wrap .selectbox-group, .case_study_wrap .selectbox-group-second, .case_study_wrap .selectbox-group-third{
+        z-index: 2;
+        position: static;
+      }
+      .bar-work-one, .bar-work-two, .bar-work-three{
+        position: static;
+      }
+      .selectbox li, .selectbox-second li, .selectbox-third li {
+        padding: 10px 18px;
+      }
+      .case_study_wrap .selectbox-group ul, .case_study_wrap .selectbox-group-second ul, .case_study_wrap .selectbox-group-third ul{
+        padding: 0 20px 0 0;
+      }
+      .bar-work-one, .bar-work-two, .bar-work-three {
+        padding: 20px 10px 20px 15px;
+    }
+    /* change vedika End */
+
+    /*   New Case Study List Css Start Added By AJ End   */
+
+    /*    Testimonial Redesign Css Start    */
+    .testimonial-section-consultation .headline{
+          line-height: 38px;
+          font-size: 32px; 
+      }  
+      main.testimonial-style-new .hero-video-wrapper img {
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+          z-index: 1 !important;
+      } 
+      .testimonial-style-new .section_title h2{
+          font-size: 35px;
+      }
+      .testimonial-style-new .testimonials-grid {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .testimonials-grid{
+          column-gap: 30px;
+          row-gap: 30px;
+      }
+      /* discover testimonial */
+      .testimonial-style-new .content-col h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+      }
+      .testimonial-style-new .content-col p {
+          font-size: 16px;
+          margin-bottom: 18px;
+      }
+      .testimonial-style-new .testimonial-stat-number {
+          font-size: 30px;
+          margin-bottom: 12px;
+      }
+      .testimonial-style-new .count-stat-item p {
+          font-size: 12px;
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .testimonial-section-discover {
+          padding: 50px 0;
+      }
+      .testimonial-style-new .testimonial-image-col img {
+          max-width: 50%;
+      }
+      .testimonial-style-new .count-stats-container{
+          gap: 4px;
+          margin-bottom: 30px;
+      }
+      /* clisnt logo */
+      .testimonial-style-new .client-container {
+          padding: 0 15px;
+      }
+      .clients-section {
+          flex-wrap: wrap;
+      }
+      .testimonial-style-new .left-logos {
+          flex: inherit;
+          gap: 13px;
+          order: 2;
+          width: 100%;
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .testimonial-center {
+          flex: inherit;
+          padding: 0;
+          order: 1;
+          width: 100%;
+          margin-bottom: 15px;
+      }
+  
+      .testimonial-style-new .right-logos {
+          flex: inherit;
+          gap: 13px;
+          order: 3;
+          width: 100%;
+      }
+      .testimonial-style-new .bottom-logos {
+          gap: 13px;
+      }
+      .testimonial-style-new .bottom-logo-box {
+          height: 100px;
+      }
+      .testimonial-style-new .clientlogo-text{
+        font-size: 25px;
+      }
+      .testimonial-style-new .left-logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .testimonial-style-new .right-logos{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+      }
+      .testimonial-style-new .bottom-logos{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+    
+      }
+      .testimonial-style-new .certification_section .items img{
+        max-width: 120px;
+      }
+      .trusted_section .items img {
+        max-width: 80%;
+        max-height: 80px;
+    }
+    .testimonial-style-new .video-modal-content{
+      width: 40%;
+     top: 30px;
+     border: 8px solid #444;
+    }
+    .testimonial-style-new .close-modal{
+    top: -20px;
+    right: -18px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    }
+    .testimonial-style-new .close-modal {
+      top: -20px;
+      right: -20px;
+      font-size: 16px;
+      padding: 1px 8px;
+    }
+    /*    Testimonial Redesign Css End    */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-page .ai-features-section .feature-card {flex: 0 0 calc(33.33% - 23px); }
+    .ai-voice-page .ai-industry-section .feature-card {flex: 0 0 calc(50% - 20px); }
+    .ai-voice-page .amazing-work-place {padding: 40px 0; }
+    .existing-tools-logo { width: 180px; height: 85px; }
+    .logo-slider-item.existing-tools-logo-item { margin-right: 10px; border-radius: 12px;}
+    .compliance-item { min-width: 230px; height: 120px; }
+    .compliance-slider-track { gap: 12px; }
+    .ai-voice-cms .live-ai-demo-grid {grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .ai-voice-cms .live-ai-demo-card {padding: 25px 25px 30px; }
+    .ai-voice-cms .live-ai-demo-category {font-size: 14px; padding: 12px 15px; }
+    .ai-voice-cms .live-ai-demo-title {font-size: 18px; margin-bottom: 18px; }
+    .ai-voice-cms .live-ai-demo-description {font-size: 15px; line-height: 24px; margin-bottom: 25px; min-height: 45px; }
+    .ai-voice-cms .live-ai-demo-waveform {height: 26px; }
+
+  .ai-chatgpt .ai-agent-section.section_block {margin-top: 30px;}
+  .ai-chatgpt .ai-banner.sec .hero-video-wrapper {background-color: #000;}
+  .ai-chatgpt .ai-banner.sec .hero-video-wrapper img {display: none; }
+
+    /* Home Page Changes New Css */
+    .ready_section .section_title h2 {font-size: 32px; }
+    .ready_section .section_title h2 i {font-size: 30px; }
+
+    /* =============== Culture page css start ============ */
+    .careers-cp .hero-banner.blog-hero {
+      height: 95vh;
+    }
+  
+    .careers-cp .blog-hero .hero-video-wrapper {
+      min-height: 95vh;
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 45%;
+    }
+  
+    .careers-cp .cp-culture-container {
+      transform: translateY(-16%);
+    }
+  
+    .careers-cp a.btn.custom-btn-center.work-place-cp {
+      display: none;
+    }
+  
+    .careers-cp .video-modal-content {
+      width: 40%;
+      top: 30px;
+      border: 8px solid #444;
+    }
+  
+    .careers-cp .video-container {
+      min-height: 360px;
+      background-size: cover;
+    }
+  
+    .careers-cp .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .careers-cp .testimonial-content {
+      padding: 12px;
+      margin-top: 18px;
+    }
+  
+    .careers-cp .video-title {
+      bottom: 50px;
+      left: 15px;
+    }
+  
+    .careers-cp .collab-close {
+      top: -20px;
+      right: -20px;
+      font-size: 16px;
+      padding: 1px 8px;
+    }
+
+    .careers-cp .collab-video-thumbnail {
+      width: 380px;
+      height: 320px;
+    }
+  
+    /* Updated modal */
+    .careers-cp .cp-gallery-sidebar {
+      max-height: 55px;
+      padding: 6px 10px;
+    }
+    .careers-cp .cp-gallery-sidebar-header {
+      font-size: 16px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 42px;
+      height: 42px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 38px;
+      height: 38px;
+    }
+    .careers-cp .cp-gallery-sidebar-header h2 {
+      font-size: 15px;
+    }
+    /* ========= Culture page css end ============== */
+}
+@media(min-width:990px) {
+    .testimonials_section  .slick-arrow{ position: absolute; font-size: 18px; color: #fff;width: 80px; margin: 0;height: 48px;padding: 0;opacity: 1;rotate:-90deg;right: -100px;}
+    .testimonials_section .slick-prev{  left: auto; top: 200px;  } 
+    .testimonials_section .slick-next{top: 125px; }
+    .testimonials_section  .slick-arrow i{ margin: 0; position: absolute; right: 0; color: #fff; display: block; top: 0;}
+}
+
+
+/*   Services Page New    */
+@media (max-width: 768px) {
+    .magento-services-section .service-title br {
+      display: inline !important;
+    }
+    .magento-services-section .services-grid {
+      grid-template-columns: repeat(3, 1fr); 
+      row-gap: 40px;
+      column-gap: 20px; 
+    }
+    .magento-services-section .magento-services-section {
+      padding: 25px 0;
+    }
+    .magento-services-section .section-header {
+      margin-bottom: 25px;
+    }
+    .magento-services-section .service-title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .magento-services-section .service-icon {
+      padding-bottom: 15px;
+    }
+    .magento-services-section .service-icon img {
+      max-width: 40px;
+    }
+    .magento-services-section .service-title br,
+    .ecommerce-migration-services .magento-services-section .service-title br {
+        display: inline !important;
+    }
+
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .magento-services-section .service-icon,
+    .ecommerce-migration-services .magento-services-section .service-icon {
+        padding-bottom: 15px;
+    }
+    .magento-services-section .service-icon img {
+        max-width: 50px;
+    }
+    .services-faq .faq-section {
+        padding: 30px 0;
+    }
+    .services-faq .faq-section > .container h3 {
+        /* font-size: 32px; */
+        margin-bottom: 20px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label {
+        padding: 0;
+        line-height: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px
+    }
+    .services-faq .faq-section .accordion-list .acc-label{
+      font-size: 16px;
+    }
+    .services-faq .faq-section {
+        padding: 80px 21px 85px 25px;
+    }
+    .services-faq.faq-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .location-card {
+        margin-right: 10px;
+   }
+   .contact-us-new .location-card:last-child {
+        margin-left: 10px;
+        margin-right: 0;
+   }
+   .contact-us-new .location-address{
+        min-height: 68px;
+        margin-bottom: 30px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 100px 15px 75px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 20px;
+        margin-top: 30px;
+        max-width: 100%;
+   }
+   .contact-us-new .contact-new-one .left-detail {
+        max-width: 100%;
+   }
+   .contact-us-new .contact-new-one .lead-banner .left-detail h1{
+        font-size: 35px;
+        line-height: 40px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form h3{
+        margin-bottom: 20px;
+        font-size: 23px;
+   }
+   .contact-us-new .contact-new-one .left-detail {
+        margin-top: 0;
+   }
+   .contact-us-new .contact-new-one .contact-right-form {
+        max-width: 100%;
+   }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .banner-inner-caption .h1-style {
+       font-size: 39px;
+  }
+   .save-plant-tree img.save-plant-logo {
+       margin-bottom: 25px;
+       width: 30%;
+  }
+   .save-plant-tree .transformative_section .item_inner {
+       padding: 30px;
+  }
+   .save-plant-tree .transformative_section .item h4 {
+       margin: 15px 0;
+  }
+   .save-plant-tree h3.plant-support-title {
+       font-size: 30px;
+  }
+  /* gallery */
+   .save-plant-tree .section-better-planet h2 {
+       max-width: 100%;
+      /* margin-bottom: 20px;
+       */
+  }
+   .save-plant-tree .section-better-planet {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 15px;
+       margin-bottom: 30px;
+  }
+  /* .save-plant-tree .better-planet-subtext {
+       max-width: 100%;
+       font-size: 15px;
+       margin-top: 0;
+  }
+   */
+   .save-plant-tree .planet-card {
+       min-width: 250px;
+       max-width: 250px;
+  }
+   .save-plant-tree .measure-box-card {
+       padding: 60px 0;
+  }
+   .save-plant-tree .measure-box-card .measure-heading {
+       font-size: 45px;
+       margin-bottom: 12px;
+  }
+   .save-plant-tree .scroll-section {
+       padding: 60px 0;
+  }
+   .save-plant-tree .info-card {
+       padding: 45px 25px;
+       max-width: 450px;
+  }
+  /* ==========  Save The Planet Css End  ==========  */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-cms .integration-header {flex-direction:column; align-items:flex-start;}
+    .ai-voice-cms .integration-header h2 {font-size:28px;}
+    .ai-voice-cms .integration-subtext {font-size:14px;}
+    .ai-voice-cms .integration-header .demo-button {align-self:flex-end;}
+    .ai-voice-cms .integration-grid {padding:0 20px 60px;}
+    .ai-voice-page .amazing-work-place .cp-carousel-item {width: calc((100% - 45px) / 2); border-radius: 12px;}
+    .ai-voice-page .amazing-work-place .item-title {font-size: 20px;}
+    .ai-voice-page .amazing-work-place .item-content {padding: 20px;}
+    .ai-voice-page .amazing-work-place .item-features li {font-size: 16px;padding: 4px 0 4px 25px;}
+    .ai-voice-page .amazing-work-place .item-features li::before {top: 12px;}
+    .case_s .tabs-container {flex-direction:column;}
+    .case_s .tabs {flex-direction:column;}
+    .case_s .tab {width:100%; border-radius: 12px;}
+    .case_s .metrics {grid-template-columns:1fr;}
+    .case_s .tab .desc {font-size: 16px;}
+    .case_s .tab .employees {font-size:0.75rem;}
+    .case_s .tab .title{margin-top: 20px;font-size: 22px;line-height: 28px;}
+    .case_s .tab-content{padding: 25px 20px;border-radius: 12px;}
+    .case_s .metrics{display: flex;flex-direction: column;row-gap: 15px;}
+    .case_s .metric{padding: 15px;border-radius: 12px;}
+    .case_s .before-wrap .rate-text{font-size: 14px;}
+    .case_s .before-wrap .before-text{font-size: 14px;}
+    .case_s .before-wrap .reduction-text{font-size: 14px;}
+    .case_s .after-wrap .after-text{font-size: 14px;}
+    .case_s .quote-section {border-radius: 12px;}
+    .existing-tools-logo { width: 160px; height: 80px; }
+    .logo-slider-item.existing-tools-logo-item { margin-right: 10px; }
+    .existing-tools-slider-wrapper {margin: 10px 0px}
+    .compliance-item { min-width: 180px; height: 90px; padding: 15px}
+    .compliance-slider-track { gap: 10px; }
+    .ai-voice-cms .live-ai-demo-waveform {gap: 4px; }
+    .ai-voice-cms .live-ai-demo-card {padding: 25px 20px 30px; }
+    .ai-voice-cms .live-ai-demo-audio-player {width: 90%; }
+    .ai-voice-cms .live-ai-demo-waveform {height: 24px; }
+    .careers-cp.ai-voice-cms h2.our-team-values-heading{max-width: 460px; }
+    .ai-voice-cms .amazing-work-place .cp-carousel-item {width: calc((100% - 25px) / 2); min-width: unset; flex: 0 0 auto;}
+    .ai-voice-cms .amazing-work-place .cp-carousel-track {gap: 15px;}
+
+    /* =============== Culture page css start ============ */
+    .careers-cp h2.our-team-values-heading {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 10px;
+    }
+  
+    .careers-cp .our-team-values-feature-card {
+      min-width: 350px;
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      gap: 15px;
+    }
+  
+    .careers-cp .cp-amazing-no .number-item .number {
+      font-size: 45px;
+    }
+  
+    .careers-cp .cp-gallery-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .careers-cp .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .careers-cp .tabs {
+      margin-bottom: 20px;
+    }
+  
+    .careers-cp .collab-video-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .careers-cp .video-container {
+      min-height: 400px;
+    }
+  
+    .save-plant-tree .careers-cp .section-better-planet {
+      align-items: flex-start;
+    }
+  
+    .careers-cp .hero-banner.blog-hero {
+      height: 80vh;
+    }
+  
+    .careers-cp .blog-hero .hero-video-wrapper {
+      min-height: 80vh;
+    }
+  
+    .careers-cp .cp-culture-video-wrapper {
+      max-width: 650px;
+      height: 370px;
+    }
+  
+    .careers-cp .cp-culture-container {
+      transform: translateY(-48%);
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 33%;
+    }
+  
+    .careers-cp .cp-gallery-tab {
+      font-size: 15px;
+    }
+  
+    p.employee-testimonial-desc {
+      margin-bottom: 0;
+    }
+  
+    .amazing-work-place .cp-carousel-item {
+      width: calc((100% - 25px) / 2);
+      min-width: unset;
+      flex: 0 0 auto;
+  
+    }
+  
+    .amazing-work-place .cp-carousel-track {
+      gap: 15px;
+    }
+  
+    .careers-cp .testimonial-content {
+      padding: 20px;
+      margin-top: 5px;
+    }
+  
+    .careers-cp .video-title {
+      bottom: 30px;
+      left: 30px;
+    }
+  
+    .careers-cp .collab-video-description p {
+      min-height: 180px;
+    }
+  
+    .careers-cp .collab-video-thumbnail {
+      width: 100%;
+      height: 300px;
+    }
+   
+    /* Updated modal */
+    .careers-cp .cp-gallery-sidebar {
+      max-height: 50px;
+    }
+    .careers-cp .cp-gallery-sidebar-header {
+      font-size: 15px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 40px;
+      height: 40px;
+    }
+    .careers-cp .cp-gallery-prev-btn {
+      left: 15px;
+    }
+    .careers-cp .cp-gallery-next-btn {
+      right: 15px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 36px;
+      height: 36px;
+    }
+    /* ========= Culture page css end ============== */
+}
+
+@media(max-width:767px) {
+    .cursorball{ display: none!important;}
+    h3{ font-size: 26px;}
+
+    .section_inner .btn-section{ position: static; width: 100%; text-align: right;display: flex;justify-content: end; padding-top: 60px;}
+    .blog_list_head .btn-section{ right: 0; bottom: 60px; width: 100%; top: auto; padding: 0 20px; display: flex; justify-content: end;}
+    .container {padding: 0 20px;}
+    .page-header-wrapper .header-right {gap: 10px;}
+    .blog_list .item .item-content {line-height: normal;}
+    .quick-links li {line-height: normal;}
+    .section_block{padding: 60px 0; } 
+    .section_title h2{ font-size: 24px;  text-align: left;}
+    .section_title h1{ font-size:36px;}
+    .ready_section .section_title h2 i {padding-top: 10px;font-size: 22px;}
+    .head_info{ font-size: 18px;  text-align: left;}
+    .section_title h2 br,
+    .head_info br{ display: none;}
+    .footer-block.border_radius{border-radius: 12px; padding: 20px;}
+    .brand-logo a {display: none;}
+    .brand-logo a.mobile-logo {display: block;} 
+    .section_inner .btn-section{ justify-content: center; text-align: center;}
+    .section_inner .btn-section{ padding-top: 20px;}
+    .section_inner .btn-section {line-height: normal;}
+    .btn{ line-height: 24px;padding-top: 14px;padding-bottom: 14px;}
+    .btn:hover {padding-top: 14px;padding-bottom: 14px;}
+    .footer{ font-size: 14px;}
+    .footer-container{ flex-flow: column; gap: 0; }
+    .footer-tellus{ font-size: 30px; padding: 20px 0; text-align: left;}
+    .footer-tellus a:after {bottom: 0;}
+    .footer-block h4,
+    .footer-block h3{ margin-bottom: 0px;}
+    .footer-block{ width: 100%; padding-bottom: 0px;}
+    .footer-addesssection{ padding: 20px 0px;}
+    .ft-address li a, .footeraddess-items li, .footer .footer-subscription .wpcf7-text {font-size: 16px;}
+    .copyright-block p{ width: 100%; text-align: center;}
+    .copyright-block{ margin-top: 30px;} 
+    .scrollup{ width: 30px; height: 30px; background-size: 5px auto;} 
+   .footer .footer-subscription h3{ font-size: 18px;}
+   .footer .footer-subscription .wpcf7-text{ border-bottom-width: 1px;} 
+    .page-header-wrapper .btn:before{ left: 10px; background-size: 14px auto; display: none;}
+    .page-header-wrapper .btn:after{ right: 10px;}
+    .footer-block.footer-address > h4,
+    .footer-block.footer-address > h3{ border: none;margin: 0;padding-bottom: 5px;}
+    .footer-block.footer-address ul.ft-address{ display: block;}
+    .footer-links {flex-wrap: nowrap;gap: 20px;margin: 10px 0px;}
+    .footer-block .quick-links h4 {padding-top: 0px;}
+    .footer-block .footer-addesssection h4,
+    .footer-block .footer-addesssection h3 {padding-bottom: 5px;}
+    /* .footeraddess-items{ flex-flow: column;} */
+    /* .footer-block h4 {position: relative; display: flex; font-weight: bold; border-bottom: 1px solid #ccc;padding: 15px 0px;font-size: 14px;} */
+    .footer-block h4,
+    .footer-block h3 {padding: 0px 0px 15px;font-size: 15px;}
+    .footer-block h4 .expand-btn,
+    .footer-block h3 .expand-btn{ display: none; align-self: flex-end; width: 15px; height: 15px; margin: 0;top: 19px;}
+    .footer-block .quick-links{ width:100%;}
+    .footer-block .quick-links:last-child{ padding-top: 0px;}
+    .footeraddess-items li { display: block;}
+    .footeraddess-items li .item-info{ display: none; padding: 10px 0;}
+    .footeraddess-items li .item-info,.footeraddess-items li:hover .item-info, .footeraddess-items li.current .item-info{transform: translate(0,0); top: 0;height: auto; position: static; }
+    .footeraddess-items li .item-info a{ display: none;}
+    .footeraddess-items,.footeraddess-items li .item-info a{ font-size: 18px;}
+
+    /* .footer-block ul{ display: none;} */
+    .section_about{ padding-bottom: 0;}
+    .section_specialize{ padding-top:15px;}
+    .section_specialize h3 {font-size: 24px;margin-bottom: 5px;}
+    .section_specialize .item-left ul{ font-size: 18px;padding: 20px 0px;}
+    .section_specialize .item-left ul li:before{ top: 10px;}
+    .section_specialize .item-left p {font-size: 16px;margin: 0;}
+    .section_specialize .item-right {gap: 0;padding-top: 30px;justify-content: space-between;}
+    .section_specialize .item-right .item{ font-size: 16px;width: 50%;padding: 10px 5px;}
+    .section_specialize .item-right .item strong{ font-size: 30px;}
+    .section_specialize .items .btn-section{ text-align: center; justify-content: center;}
+    .ready_section .section_title{ max-width: 100%; padding-bottom: 0;}
+    .ready_section .head_info{ font-size: 20px;padding: 10px 0px 15px;}
+    .ready_section .items{ grid-template-columns: repeat(2, 1fr); padding:0 0 20px;  } 
+    .ready_section .head_info .btn{ position: absolute; bottom:60px; right: 20px;  } 
+    .ready_section .item h3{ font-size: 16px;}
+    .ready_section .item{ gap:44px; font-size: 18px}
+    .ready_section .item:hover { padding-top:50px; padding-bottom: 50px; gap: 25px;  }
+    .reach_section .items{ gap: 30px; }
+    .reach_section .item,.reach_section .item.current{ width: 100%; gap: 30px; align-items: center;  height: auto; } 
+    .reach_section .items .item i,.reach_section .items .item h3{ position: static; transform: translate(0, 0);}
+    .reach_section .item .item_inner{ flex-flow: column; align-items: flex-start; justify-content: flex-start; text-align: left; gap: 20px; } 
+    .reach_section .items .item i{ max-width: 50px;}
+    .reach_section .item.current i{ max-width: 50px;} 
+    
+    .reach_section .item_content p {line-height: 25px;font-size: 18px;}
+    .reach_section .item_content{ display: block !important;  text-align: left;overflow: visible !important;height: auto !important;margin: 0 !important;padding: 0 !important;}
+    .growing_section .items .growing-left .head_info{ font-size: 16px;padding-bottom: 15px;}
+    .section_about .head_info p {margin: 0px 0px 20px;}
+    .heroBanner .banner-inner-caption p br {display: none;}
+    .head_info p {margin: 0px 0px 20px;font-size: 16px;}
+    .ready_section .item h3 b {line-height: normal;}
+    .growing_section .items li{ font-size: 18px; padding-bottom: 10px;}
+    .growing_section .items .growing-right img{ max-width: 40px; right: 0; top: 0; }
+    .growing_section .items ul{ padding-right: 0;} 
+    .growing_section .items .growing-left .btn-section{ text-align: center;}
+    .trusted_section { padding-bottom: 0;}
+/*    .industry_section { padding-bottom: 0;padding-top: 70px;}*/
+    .industry_section .items{ font-size: 18px; }
+    .blog_list .items{ margin-bottom: 0;}
+    .blog_list{ padding-bottom: 40px;padding-top: 30px;}
+    .blog_list .slick-list{ margin: 0 -10px;} 
+    .blog_list .item {font-size: 16px;  padding:0 10px; }
+    .blog_list .item strong{ font-weight: 400;} 
+    .blog_list .blog_list_head .btn-section{ display: none; text-align: center;}
+    .blog_list .btn-section{ display: flex; text-align: center; justify-content: center;margin-top: 30px;}
+    .blog_list .items:before{ display: none;}
+    
+    .testimonials_section .items_outer{ padding:0; margin: 0px 0 0;}
+    .testimonials_section .items .item_top{ padding-left: 50px; padding-bottom: 0px; display: block;}
+    .testimonials_section .items_outer:before{width: 30px; height: 20px; top: 20px; }
+    .testimonials_section .items{ margin-bottom: 20px;}
+    .testimonials_section .item_content{ padding: 30px 0;font-size: 16px; margin-bottom: 0px; }
+    .testimonials_section .increase{ margin-top: 0; margin-bottom: 20px;}
+    .testimonials_section .increase .increase_item{ padding: 20px 15px 10px; font-size: 16px;}
+    .testimonials_section .increase .increase_item h3{ font-size: 36px;}
+    .testimonials_section .item_user img{ width: 50px; height: 50px;}
+    .testimonials_section .item_user strong{ font-size: 20px;}
+    .testimonials_section .item_content span{ -webkit-line-clamp:4;  }
+    .testimonials_section .slick-arrow{ font-size: 16px; right: -10px; top: auto; bottom: -20px;}
+    .testimonials_section .slick-arrow i{ margin-left:5px;} 
+    .testimonials_section .slick-arrow.slick-prev{ right: 50%;} 
+    .testimonials_section .slick-arrow.slick-next{ right: calc(50% - 46px); }
+    .testimonials_section .viewmore{font-size: 14px;}
+    .testimonials_section .item_name{ width: 75%;} 
+    .testimonials_section .slick-arrow:after {content: none !important;}
+    .reach_section h3 {font-size: 22px;}
+    .trusted_section .items {padding: 0px 0 0px;}
+    .section_commitment .items{ gap:20px; 	}
+    .commitment_note p{ font-size: 16px;} 
+    .section_commitment .items .item{ padding: 15px;}
+    .section_commitment .items .item h3{ font-size: 16px;}
+    .section_commitment .items .item i {margin-bottom: 5px}
+    
+    .grow_block .section_ourprocess .list{    grid-template-columns: repeat(2,1fr);}
+    .grow_block .clients_info,.grow_block .increase-section{ width:100%;}
+    .grow_block .clients_info h5{ font-size: 16px;}
+    .page-template-request-a-quote-template .head_top{ padding-bottom:20px;}
+    .blog-detail-content .footer-subscription h3{ font-size: 26px;}
+    .blog-detail-content .footer-subscription .wpcf7-form-control-wrap{ width: 100%;}
+    .blog-detail-content .footer-subscription .btn{ margin:30px auto  0 0;}
+    .blog-detail-content .footer-subscription .wpcf7-text,
+    .blog-detail-content .footer-subscription p{ font-size: 18px;}
+    .share_block h5{ font-size: 16px;}
+    .share_block .social-links li img{ max-width: 16px;}
+    .section_contactoffice .contact-office-col{ gap: 4%;}
+    .section_contactoffice .office-address,.section_contactoffice .contact-office-icon{ max-width: 48%;}
+    .section_contactoffice .office-address address{ max-width: 100%;}
+    .section_contactoffice .office-address address .locations:before{ height: 14px; width: 24px; background-size: 100%; top: 10px;}
+    .section_contactoffice .callus:before {width: 14px; top: 5px;}
+
+    .transformative_section .head_info{font-size: 20px; padding-bottom: 60px;}
+
+    .sticky_share_btn{ max-width: 40px;}
+    .blog-detail-page .head_top{ padding-right:40px;}
+    .sticky_share_btn .share-toggle{ height: 40px; width: 100%;}
+    .sticky_share_btn .addtoany_list a{ padding: 5px;}
+    .sticky_share_btn .addtoany_list a img, .sticky_share_btn .share-toggle img{ max-width: 16px;}
+    .form-wrapper .form-btn-row .wpcf7-submit, .blog-detail-content .footer-subscription .wpcf7-submit{ background-position:90% center; padding: 13px 60px 13px 30px;     font-size: 16px; line-height: normal;}
+    .form-wrapper .form-btn-row .wpcf7-submit:hover, .blog-detail-content .footer-subscription .wpcf7-submit:hover{ background-position:10% center; padding: 14px 30px  14px 60px;}
+    /*  Added By Ajay  */
+    .milestone_section .milestone_items li .milestone_item .right-item {padding-right: 20px;padding-left: 20px;}
+    .milestone_section .milestone_items li .milestone_item .right-item h4 {font-size: 24px; margin-bottom: 30px; line-height: 1}
+    .milestone_section .milestone_items li .milestone_item .right-item p {line-height: 24px;font-size: 16px}
+    .trusted_section .items img{height: auto;}
+    .btn:before {left: 14px;}
+
+    /*  Remove Hover Effect On Menu  */
+    .btn{ padding: 10px 30px 10px 30px !important;}
+    .btn:hover{ padding: 10px 30px 10px 30px !important;}
+    .footer .footer-subscription .wpcf7-form input.btn {padding: 0px !important;}
+    .wpcf7-form input.wpcf7-submit {padding: 12px 30px 12px 30px !important}
+    .border_radius {border-radius: 12px; padding: 20px;}
+    .small_form .wpcf7-form .form-row { margin: 0 0px 0; }
+    .small_form .wpcf7-form .form-col { width: 100%; margin: 0 0px 10px; }
+    .small_form .wpcf7-form .form-row:nth-child(3) .form-col:last-child .select-dd p {margin-bottom: 20px;}
+    .small_form .wpcf7-form input.wpcf7-submit {padding-top: 8px; padding-bottom: 8px;}
+    /*.small_form .wpcf7-form .form-row .form-col input, 
+    .small_form .wpcf7-form .form-row .form-col select {font-size: 16px;}*/
+    .small_form .wpcf7-form .form-row .form-col .select-dd:after {top: 15px; width: 10px; height: 10px; border-top: 2px solid #fff; border-left: 2px solid #fff;}
+    .small_form .wpcf7-form input.wpcf7-submit {line-height: normal;}
+
+    .trusted_section .items .item {text-align: center; display: flex; align-items: center; justify-content: center; height: 100px;}
+
+    /*   Services Page New    */
+    /* odoo service page css for space before 'Our Process' section start */
+    .services-design-one .enterprise-performance-workflow + .promotion-section {
+      margin-bottom: 30px;
+    }
+    .oddo-custom .services-faq.faq-section {
+      margin-bottom: 30px;
+    }
+    /* odoo service page css for space before 'Our Process' section End */
+    .magento-services-section {
+      padding: 30px 0 0;
+    }
+    .magento-services-section .services-grid {
+      padding-bottom: 30px;
+    }
+    .cb-station-page .container.usp{
+      padding: 0;
+    }
+    .cb-station-page .hero-img img{
+      display: none;
+    }
+    a.btn.btn-secondary.services-development {
+      font-size: 14px;
+      line-height: normal;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .magento-services-section .service-title,
+    .ecommerce-migration-services .magento-services-section .service-title {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .services-faq .faq-section > .container h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 40px;
+    }
+    .services-faq .faq-section .faq-tagline-magento {
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label button {
+        width: 12px;
+        height: 12px;
+    }
+    .services-faq .faq-section {
+        padding: 25px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+    .services-faq .faq-section .accordion-data p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    section.promotion-section + .services_faqs .services-faq.faq-section {
+        margin-top: 60px;
+    }
+    .services-faq.faq-section{
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    .services-design-two .services-faq.faq-section {
+        margin: 0 0 40px 0;
+    }
+    .ecommerce-migration-services .magento-services-section {
+      padding: 40px 0;
+    }
+    .container.services_faqs .faq-section {
+      padding: 60px 20px;
+    }
+    .container.services_faqs .faq-section section.faq-section {
+      padding: 0;
+    }
+    .services-faq .faq-section .accordion-list .acc-label button {
+        margin-top: 12px;
+    }
+
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .section_block{
+        padding: 0;
+   }
+    .contact-us-new .section_title h2 {
+        font-size: 30px;
+   }
+   .contact-us-new .contact-address-direction {
+        padding: 30px 0;
+   }
+   .contact-us-new .contact-new-one section.section_block.certification_section{
+        padding: 30px 0;
+   }
+   .contact-us-new .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+   }
+   .contact-us-new .location-card {
+        border-radius: 12px;
+        margin-bottom: 20px;
+   }
+   .contact-us-new .location-content {
+        padding: 20px 22px 40px;
+   }
+   .contact-us-new .location-title {
+        font-size: 22px;
+        margin-bottom: 5px;
+   }
+   .contact-us-new .location-address {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+   }
+   .contact-us-new .contact-info {
+        margin-bottom: 35px;
+   }
+   .contact-us-new .contact-item {
+        margin-bottom: 6px;
+        flex-wrap: nowrap;
+   }
+   .contact-us-new .contact-item svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        flex-shrink: 0;
+   }
+   .contact-us-new .contact-link {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 500;
+   }
+   .contact-us-new .contact-new-one .form-row {
+        display: flex;
+        margin: 0;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form h3 {
+        margin-bottom: 18px;
+        font-size: 20px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .contact-form {
+        padding: 15px 
+   }
+   .contact-us-new .contact-new-one span.wpcf7-list-item-label{
+        font-size: 14px;
+   }
+   .contact-us-new .contact-new-one .checkmark-row a {
+        font-size: 14px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .left-detail p{
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 24px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .left-detail h1 {
+        font-size: 30px;
+        line-height: 35px;
+   }
+   .contact-us-new .contact-new-one p.contact-hurry {
+        font-size: 14px;
+   }
+   .contact-us-new .contact-new-one .lead-banner .banner-bg {
+        padding: 90px 15px 50px;
+   }
+   .contact-us-new .contact-new-one .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .contact-us-new .contact-new-one .wpcf7-form-control.wpcf7-text, .contact-us-new .contact-new-one .wpcf7-form-control.wpcf7-textarea, .contact-us-new .contact-new-one select{
+        font-size: 14px;
+   }
+   .contact-us-new .contact-new-one .checkmark-row a{
+        font-size: 14px;
+   }
+   .contact-us-new .contact-new-one .form-col {
+        width: 100%;
+   }
+   .contact-us-new .contact-new-one p.contact-hurry {
+        font-size: 18px;
+   }
+   .contact-us-new .contact-new-one a.contact-hurry.call{
+        font-size: 18px;
+   }
+   .contact-us-new .contact-new-one .left-detail-point li {
+        font-size: 14px;
+        max-width: 100%;
+   }
+   .contact-us-new .lead-banner .left-detail .stats{
+      flex-wrap: nowrap;
+    }
+    .contact-us-new .lead-banner .left-detail .stats .static-col {
+      margin-bottom: 10px;
+    }
+    .contact-us-new .lead-banner .btn {
+      display: inline-block;
+    }
+    .contact-us-new .lead-banner .left-detail .stats .static-col i {
+      font-size: 25px;
+      margin-top: 7px;
+    }
+    .contact-us-new .lead-banner .left-detail .stats span {
+      line-height: 22px;
+      line-height: 20px;
+      display: inline-block;
+    }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .banner-inner-caption .h1-style {
+       font-size: 30px;
+       line-height: 1.34 !important;
+  }
+   .save-plant-tree .google_ads_section {
+       padding: 30px 0;
+  }
+   .save-plant-tree img.save-plant-logo{
+       width: 50%;
+  }
+   .save-plant-tree .transformative_section .head_info {
+       font-size: 14px;
+  }
+  /* gallery */
+   .save-plant-tree .section-better-planet h2 {
+       font-size: 30px;
+  }
+   .save-plant-tree section.better-planet {
+       padding-bottom: 30px;
+  }
+   .save-plant-tree .section-better-planet {
+       margin-bottom: 24px;
+  }
+   .save-plant-tree .better-planet-subtext {
+       font-size: 14px;
+       line-height: 1.5;
+  }
+   .save-plant-tree .planet-scroll-container {
+       margin-top: 24px;
+  }
+   .save-plant-tree .planet-card {
+       min-width: 240px;
+  }
+   .save-plant-tree .google_ads_section .google-ads-content {
+       gap: 35px;
+  }
+   .save-plant-tree .measure-box-card .measure-heading {
+       font-size: 28px;
+       margin-bottom: 10px;
+  }
+   .save-plant-tree .measure-box-card p {
+       font-size: 15px;
+  }
+   .save-plant-tree .info-card {
+       padding: 35px 20px;
+       max-width: 339px;
+  }
+   .save-plant-tree .info-card p {
+       font-size: 15px;
+  }
+   .save-plant-tree .info-card h2 {
+       font-size: 28px;
+       margin: 0 0 10px;
+  }
+   .save-plant-tree .info-card .number {
+       font-size: 28px;
+  }
+  .save-plant-tree .measure-card-one{
+    height: 300px;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: inherit;
+
+  }
+  .save-plant-tree .scroll-section {
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 430px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 430px;
+    background-attachment: scroll;
+    will-change: transform;
+    transform: translateZ(0);
+    }
+    .save-plant-tree .google_ads_section .ads-item p {
+      max-width: 100%;
+    }
+    /* ==========  Save The Planet Css End  ==========  */
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case-study-banner .hero-banner { height: 230px; }
+    .case-study-banner .hero-banner .hero-video-wrapper { min-height: 230px; height: 230px; }
+    .case-study-banner .banner-inner-caption .h1-style { font-size: 32px; line-height: 1; }
+    .case-study-banner .banner-inner-caption .caption { font-size: 18px; margin: 10px 0 0 0; line-height: 23px; text-align: center; }
+    .case_study_wrap .work-list-col {width: calc(50% - 20px); margin-bottom: 15px;margin-right: 10px;margin-left: 10px;}
+    .case_study_wrap .work-list-col .work-list-cont { height: 98%; width: 100%; background: rgba(29, 29, 29, 0.5); border-radius: 5px; transition: all 0.5s ease-in-out; }
+    .case_study_wrap .work-list-col .work-list-cont h3 { position: absolute; bottom: 16px; }
+    .case_study_wrap .work-list-col .work-list-cont .view-more-work { display: block; font-size: 16px;}
+    .case_study_wrap .work-list-col .work-list-cont .p_3 { display: none; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .p_2,
+    .case_study_wrap .section_workpage .work-list-col:hover .work-list-cont .p_2 { font-size: 80px; font-weight: 700; line-height: 72px; margin-bottom: 5px; }
+    .case_study_wrap .section_workpage .work-list-col .work-list-cont .p_1,
+    .case_study_wrap .section_workpage .work-list-col:hover .work-list-cont .p_1 { color: #FFFFFF; font-size: 22px; line-height: 24px; font-weight: 400; }
+    .case_study_wrap .work-list-col .work-list-cont .project_data { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .small_form .wpcf7-form .form-row { margin: 0 0px 0; }
+    .small_form .wpcf7-form .form-col { width: 100%; margin: 0 0px 0px; }
+    .case_study_wrap .selectbox-group .selectlabel, 
+    .case_study_wrap .selectbox-group-second .selectlabel-second,
+    .case_study_wrap .selectbox-group-third .selectlabel-third {font-size: 16px;}
+    .case_study_wrap .work-header .filter-option,
+    /* change vedika start */
+    .case_study_wrap .work-header #custom_filters { gap: 15px; /*flex-wrap: wrap; */}
+    /* change vedika End */
+    .small_form .wpcf7-form .form-row:nth-child(3) .form-col:last-child .select-dd p {margin-bottom: 20px;}
+    .case_study_wrap .filter-option .custom-select {padding: 0;max-width: 100%}
+    .case_study_wrap .filter-option .custom-select .selectbox-group .selectlabel, 
+    .case_study_wrap .filter-option .custom-select .selectbox-group-second .selectlabel-second, 
+    .case_study_wrap .filter-option .custom-select .selectbox-group-third .selectlabel-third {padding-right: 25px;}
+    .case_study_wrap .filter-option .custom-select .selectlabel:after, 
+    .case_study_wrap .filter-option .custom-select .selectlabel-second:after, 
+    .case_study_wrap .filter-option .custom-select .selectlabel-third:after {right: 1px}
+    .case_study_wrap .selectlabel, 
+    .case_study_wrap .selectlabel-second, 
+    .case_study_wrap .selectlabel-third {padding-top: 12px; padding-bottom: 12px;}
+    .case_study_wrap .work-filter {margin-bottom: 30px; }
+    .case_study_wrap .section_workpage {padding-top: 30px; padding-bottom: 20px;}
+    /*   New Case Study List Css Start Added By AJ End   */
+
+
+    .cb-station-page .container.usp{
+      padding: 0;
+    }
+    .cb-station-page .hero{
+      flex-direction: column-reverse;
+    }
+    .cb-station-page .hero-img{
+      position: unset;
+    }
+    .cb-station-page .tech-item {
+    min-width: 100px; }
+  
+    .cb-station-page .goal-card{
+      margin-right: 10px;
+      }
+      .goals-section .container {
+      padding: 0 20px;
+      }
+          /* case  study detail */
+          .cb-station-page .hero-content p{
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+          .cb-station-page .hero-img .desktop-img {
+            display: none;
+          }
+          .cb-station-page .hero-img .mobile-img {
+              display: block;
+          }
+      .cb-station-page .hero-content{
+        max-width: 100%;
+        width: 100%;
+      }
+      .cb-station-page .hero-content h1 {
+      font-size: 35px;
+      }
+      .cb-station-page .about.content h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      }
+      .cb-station-page .goals-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      }
+      .cb-station-page .solution-heading h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      }
+      .cb-station-page .timeline-impact-section .section-title {
+      font-size: 30px; 
+      margin-bottom: 10px;
+      }  
+      .cb-station-page .timeline-impact-section .section-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      }
+      .cb-station-page .tech-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+      }
+      .imeline-impact-section .container {
+      padding: 0 0 0 20px;
+      }
+        .cb-station-page .stat-box {
+            padding: 10px;
+        }
+        .cb-station-page .stat-box h3 {
+            font-size: 22px;
+        }
+        .cb-station-page .stat-box p {
+            font-size: 16px;
+        }
+        /*   Temp Css   */
+          .case_study_wrap .work-list-col:hover .work-list-cont {
+            opacity: 0;
+          }
+          .case_study_wrap .work-list-col:hover .work-list-cont+.hideonhover {
+            opacity: 9;
+          }
+
+    /*  Testimonial Redesign Css Start  */
+    .testimonial-section-consultation .headline{
+          line-height: 32px;
+          font-size: 25px;
+      } 
+      .trusted_section .items img {
+        max-width: 100%;
+        max-height: 100px;
+    } 
+      .testimonial-section-consultation .consult .btn {
+          font-size: 13px;
+      }
+      main.testimonial-style-new .blog-hero .hero-video-wrapper {
+          height: 51vh;
+      }
+      main.testimonial-style-new .hero-banner.blog-hero {
+          height: auto;
+      }
+      .testimonial-section-banner .banner-inner-caption.services .caption.service-subtitle {
+          line-height: 25px;
+      }
+      .testimonial-section-banner .banner-inner-caption .h1-style.service-title{
+          margin-bottom: 15px;
+        }
+      .testimonial-trust-section .section_title h2 {
+          font-size: 30px;
+      }
+      .testimonial-style-new .testimonial-trust-section .head_info {
+          line-height: 26px;
+      }
+      .testimonial-style-new .promotion-banner{
+          margin: 60px 0;
+        }
+        .testimonial-style-new .testimonials-design-section{
+          padding: 30px 0 0;
+      }
+      .testimonial-style-new .testimonials-design-section.video-card{
+          padding: 30px 0;
+        }
+      .testimonial-trust-section.trusted_section .items {
+          padding: 30px 0 0;
+      }
+      .testimonial-style-new .section_block.certification_section{
+          padding: 30px 0;
+        }
+        .testimonial-style-new .testimonial-trust-section .section_title h2{
+          font-size: 30px;
+      }
+      .testimonial-style-new .trusted_section .items{
+          gap: 20px;
+        }
+      
+      .testimonial-content img {
+          margin-bottom: 10px;
+      }
+      .testimonial-style-new .testimonial-content {
+          padding: 15px 20px;
+      }
+      .testimonial-style-new .testimonial-text {
+          font-size: 15px;
+      }    
+      .testimonial-style-new .testimonial-content{
+          min-height: 300px;
+      }
+      .testimonial-style-new .client-info {
+          left: 20px;
+      }
+      .testimonial-style-new .testimonials-grid{
+          column-gap: 20px;
+          row-gap: 30px;
+      }
+      .testimonial-style-new .testimonial-content h3{
+          font-size: 18px;
+      }
+      .testimonial-style-new .client-info p{
+          font-size: 15px;
+      }
+      /* video cards */
+      .testimonial-style-new .play-icon {
+          width: 50px;
+          height: 50px;
+          bottom: 15px;
+          right: 15px;
+        }
+        /* Discovery Testimonial */
+        .testimonial-style-new .count-stat-item{
+          min-width: 100px;
+        }
+        .testimonial-style-new .count-stats-container {
+          gap: 15px;
+      }
+      .testimonial-style-new .content-col p {
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .testimonial-stat-number {
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+      .testimonial-style-new .count-stat-item p {
+          font-size: 12px;
+          margin-bottom: 12px;
+      }
+      .testimonial-style-new .testimonial-section-discover {
+          padding: 30px 0;
+      }
+      .testimonial-style-new .left-logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .right-logos{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .bottom-logos{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+
+      }
+      .testimonial-style-new .clientlogo-text{
+        font-size: 22px;
+      }
+      .testimonial-style-new .client-play-icon {
+        width: 45px;
+        height: 45px;
+        right: 55px;
+    }
+      .testimonial-style-new .client-play-icon:after {
+        border-top: 8px solid transparent;
+        border-left: 17px solid #333;
+        border-bottom: 8px solid transparent;
+        margin-left: 5px;
+      }
+      .testimonial-style-new .certification_section .items img{
+        max-width: 100px;
+      }
+      .testimonial-style-new .section_title h2{
+        font-size: 30px;
+      }
+      .testimonial-style-new .testimonials-design-section {
+        padding: 30px 0 0;
+      }
+      .testimonial-style-new .testimonials-design-section.video-card {
+        padding: 30px 0;
+    }
+    /*  Testimonial Redesign Css End  */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-cms .ai-header {flex-direction:column; align-items:flex-start; gap:20px;margin-bottom: 30px;}
+    .ai-voice-cms .ai-header h2 {font-size:26px;line-height: normal;}
+    .ai-voice-cms .ai-header p {line-height: 1.6;}
+    .ai-voice-cms .ai-stat-box {border-radius: 12px;}
+    .ai-voice-cms .ai-stat-box h3 {font-size: 40px; line-height: 46px;}
+    .ai-voice-cms .ai-stat-box p {font-size: 16px;line-height: 26px;}
+    .ai-voice-cms .ai-stats {padding: 10px 0 40px; margin: 0px 0 10px}
+    .ai-voice-cms .ai-feature {padding: 30px 25px;border-radius: 12px;}
+    .ai-voice-cms .ai-feature .icon {margin-bottom: 20px;}
+    .ai-voice-cms .ai-feature h4 {font-size: 20px;}
+    .ai-voice-cms .ai-feature strong {font-size: 18px;}
+    .ai-voice-cms .ai-feature p {font-size: 16px;line-height: 24px;}
+    .ai-voice-cms .promotion-banner {padding-left: 15px;padding-right: 15px;}
+    .ai-voice-cms .winning-section .winning-section {flex-direction:column; text-align:center; padding:60px 20px;}
+    .ai-voice-cms .winning-section .metrics {justify-content:start;margin-bottom: 25px;}
+    .ai-voice-cms .winning-section .card {text-align:left;border-radius: 12px;}
+    .ai-voice-cms .winning-section {padding:25px;border-radius: 12px;}
+    .ai-voice-cms .winning-section .left-content h2 {font-size:26px; line-height:36px;margin-bottom: 25px;}
+    .ai-voice-cms .winning-section .metric div {font-size:15px;}
+    .ai-voice-cms .winning-section .metric span {font-size:30px;}
+    .ai-voice-cms .winning-section .card {padding:20px;gap: 30px;}
+    .ai-voice-cms .winning-section .card .card-content {gap:15px;margin-bottom: 15px;}
+    .ai-voice-cms .winning-section .card-content h4 {font-size:20px;}
+    .ai-voice-cms .winning-section .card p {font-size:16px; line-height:26px;}
+    .ai-voice-page .ai-features-section .section-title {font-size: 26px; line-height: normal; }
+    .ai-voice-page .feature-card {padding:20px;}
+    .ai-voice-page .feature-card .badge {top:15px; right:15px;}
+    .ai-voice-page .ai-features-section .feature-card {flex: 0 0 calc(51% - 23px); border-radius: 12px;padding: 20px 20px;}
+    .ai-voice-page .ai-features-section .tab {padding: 10px 9px; font-size: 13px; }
+    .ai-voice-page .ai-industry-section .feature-card {flex: 0 0 calc(100% - 0px);border-radius: 12px;}
+    .ai-voice-cms .integration-features-section .integration-content {flex-direction:column; gap:20px;}
+    .ai-voice-cms .integration-features-section .section-title {font-size:24px; margin-bottom:20px;}
+    .ai-voice-cms .integration-features-section .feature-card p {font-size:16px;line-height: 22px;}
+    .ai-voice-cms .integration-features-section .feature-card {gap:12px; padding:15px 15px; border-radius:12px;}
+    .ai-voice-cms .integration-features-section .icon-circle img {width:20px;}
+    .ai-voice-cms .integration-features-section .features-list-column .section-title {font-size:26px; line-height:30px;}
+    .savings-calculator { flex-wrap: wrap; }
+    .price-calculator .results-panel { padding: 10px; font-size: 15px;}
+    .price-calculator .left-panel { max-width: 100%; padding-right: 0; }
+    .price-calculator .right-panel { max-width: 100%; padding: 15px; border-radius: 12px;}
+    .price-calculator .section-title { margin-bottom: 20px; flex-flow: column; text-align: center; }
+    .price-calculator .left-section { width: 100%; }
+    .price-calculator .right-section { width: 100%; text-align: center; }
+    .price-calculator .left-section h3 { font-size: 22px; line-height: 35px; }
+    .price-calculator .left-section span { font-size: 14px; line-height: 20px; } 
+    .compliance-item { min-width: 180px; height: 90px; border-radius: 12px;}
+    .compliance-slider-track { gap: 10px; }
+    .ai-voice-cms section.our-team-values-section.section_block {padding: 60px 0;}
+    .price-calculator .input-block .top-value {margin-bottom: 10px;}
+
+    .ai-banner .stat-icon {margin-bottom: 10px; max-width: 30px;}
+    .ai-banner .stat strong {font-size: 22px;}
+    .ai-banner .stat span {font-size: 14px; line-height: normal; margin-top: 5px;}
+    .ai-banner .stat span br {display: block;}
+    .ai-voice-cms section.promotion-section+.services_faqs .services-faq.faq-section {margin: 0;}
+
+      .ai-chatgpt .industry-tag {font-size: 15px;line-height: 15px;padding: 15px; padding: 12px;}
+      .ai-chatgpt .ai-feature ul li {font-size: 16px;line-height: 16px;}
+      .ai-chatgpt .impl-grid {grid-template-columns: inherit;}
+      .ai-chatgpt .impl-card {padding: 25px;width: 100%;}
+      .ai-chatgpt .impl-section h2.impl-title {font-size: 24px; line-height: normal; }
+      .ai-chatgpt .impl-section p.sub-title {margin-bottom: 25px;}
+      .ai-chatgpt .impl-card p {font-size: 15px; line-height: 23px; margin-bottom: 20px;}
+      .ai-chatgpt .see-action-title {font-size: 24px; line-height: 36px; margin-bottom: 15px; }
+      .ai-chatgpt .see-action-desc {font-size: 15px;line-height: 1.5;}
+      .ai-chatgpt .see-action-features {list-style: none; padding: 0 0 0 20px; margin: 25px 0; }
+      .ai-chatgpt .see-action-features li {font-size: 16px; line-height: 26px;}
+      .ai-chatgpt .see-action-container {gap: 40px; }
+      .analytics-section .stat-box {min-width: 250px;}
+      .analytics-section .dashboard-left {flex: 1;}
+      .analytics-section .cards-section {grid-template-columns: inherit;}
+      .analytics-section .dashboard-heading {font-size: 24px; margin-bottom: 15px; line-height: 32px; }
+      .analytics-section .dashboard-subtitle {font-size: 15px;line-height: 24px;}
+      .analytics-section .dashboard-content {margin: 30px 0;}
+      .analytics-section .dashboard-left li {padding: 20px 15px;font-size: 16px;line-height: 18px;}
+      .analytics-section .dashboard-left li::before {margin-right: 15px;}
+      .analytics-section .stat-box h3 {font-size: 45px;line-height: 45px;margin-bottom: 15px;}
+      .analytics-section .stat-box p {font-size: 18px; line-height: 26px;}
+      .analytics-section .stats-grid {gap: 25px; margin-bottom: 35px;}
+
+      .ready_section .section_title h2 {font-size: 26px; }
+      .growing_section .items .growing-right {padding: 20px;}
+
+      /* =============== Culture page css start ============ */
+    .page-middle.careers-cp .blog-hero.services-banner-section .banner-inner-caption.services {
+      padding: 80px 20px 90px !important;
+    }
+  
+    .careers-cp .testimonial-meta {
+      min-height: 0;
+    }
+  
+    .careers-cp .services-banner-section .banner-inner-caption .h1-style.service-title {
+      line-height: 1;
+    }
+
+    /* Updated Modal */
+    .careers-cp .cp-gallery-sidebar {
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: none;
+      padding: 8px;
+    }
+    .careers-cp .cp-gallery-sidebar-header {
+      margin-bottom: 6px;
+    }
+    .careers-cp .cp-gallery-nav-btn {
+      width: 38px;
+      height: 38px;
+    }
+    .careers-cp .cp-gallery-close svg {
+      width: 34px;
+      height: 34px;
+    }
+    .careers-cp .cp-gallery-close{
+      top: 60px;
+    }
+    .careers-cp .cp-gallery-sidebar-header h2 {
+      font-size: 14px;
+    }
+    .careers-cp .modal-content{
+      max-height: unset;
+    }
+    .careers-cp .slider-container {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+    }
+    .careers-cp .slide{
+      margin-bottom: -6px;
+    }
+
+    /* ========= Culture page css end ============== */
+    .cp-fraud-alert {
+        font-size: 13px;
+        line-height: 1.3;
+        padding: 10px;
+        gap: 10px;
+      }
+} 
+@media(min-width:767px) { 
+    .reach_section .item  {transition: all 0.3s ease-in-out; overflow: hidden;}
+    .reach_section .item i{ text-align: center;   transition: all 0.5s ease-in-out; position: absolute;  top: 50%; left: 50%; transform: translate(-50%, -50%);   }
+    .reach_section .item i img{ max-width: 100%; transition: all 0.5s ease-in-out;}
+    .reach_section .item_content{max-width: 70%;  transition: all .7s; height: 0; opacity: 0;width: 100%; visibility: hidden; line-height: 0; text-align: left; }
+    .reach_section .item_content p{ padding: 0;}
+    .reach_section .item.current .item_content{ transition: all .7s; height:100px; opacity: 1;  visibility: visible; line-height: normal; } 
+    .reach_section .item.current i{  top: 0; left: 0; transform: translate(0, 0); max-width: 60px;}  
+   
+}
+
+/*  Added by AJAY  */
+@media(max-width:679px) {
+    .milestone_section .milestone_items li .milestone_item {flex-wrap: wrap}
+    .milestone_section .milestone_items li:nth-child(odd) {border-radius: 40px 0px 0px 0px}
+    .milestone_section .milestone_items li .milestone_item .right-item {padding: 30px 0; width: 100%}
+    .milestone_section .milestone_items li:nth-child(even) {border-radius: 0px 40px 0px 0px}
+    .milestone_section .milestone_items li .milestone_item .right-item:before {top: 40px}
+    .milestone_section .milestone_items li .milestone_item .left-item {width: 100%}
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .locations-grid {
+        grid-template-columns: 1fr;
+        max-width: none;
+   }
+   .contact-us-new .location-card {
+        margin-right: 0;
+   }
+   .contact-us-new .location-content {
+        padding: 18px 12px 35px;
+   }
+   .contact-us-new .location-title {
+        font-size: 20px;
+        margin-bottom: 0;
+   }
+   .contact-us-new .location-address {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        min-height: 0;
+   }
+   .contact-us-new .contact-phone {
+        margin-right: 10px;
+   }
+   .contact-us-new .contact-message {
+        margin-right: 10px;
+   }
+   .contact-us-new .location-card:last-child {
+        margin-left: 0;
+        margin-right: 0;
+   }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case_study_wrap .work-list-inner {margin: 0px;}
+    .case_study_wrap .work-list-col {width: 100%;margin: 0 0px 10px;}
+    /*   New Case Study List Css Start Added By AJ End   */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-page .amazing-work-place .cp-carousel-item{width: calc(100% - 25px); flex: 0 0 auto; min-width: unset; }
+    .ai-voice-page .amazing-work-place .item-image img { width: 100%; height: auto; max-width: 100%; }
+    .existing-tools-logo { padding: 22px; }
+    .careers-cp h2.amz-cp {font-size: 30px; margin-bottom: 32px;}
+    .ai-voice-cms .amazing-work-place .cp-carousel-item {width: calc(100% - 10px); flex: 0 0 auto; min-width: unset; } 
+    .ai-voice-cms .amazing-work-place .item-image img {width: 100%; height: auto; max-width: 100%; }
+    .ai-voice-cms .amazing-work-place {padding: 60px 15px 20px 0; overflow: hidden; }
+    .ai-voice-cms .amazing-work-place .cp-carousel-track {gap: 20px;}
+    .careers-cp.ai-voice-cms .promotion-banner.integrating-service {margin-bottom: 60px;}
+
+    /* =============== Culture page css start ============ */
+  .careers-cp .collab-video-description p {
+    min-height: 210px;
+	}
+  .careers-cp .collab-video-description {
+    padding: 15px;
+}
+
+	.careers-cp .video-modal-content {
+		width: 90%;
+		top: 14px;
+	}
+
+	.careers-cp .collab-close {
+		top: -20px;
+		right: -20px;
+		font-size: 16px;
+		padding: 1px 8px;
+	}
+
+	.careers-cp .our-team-values-tagline {
+		line-height: 25px;
+	}
+
+	.careers-cp .hero-banner.blog-hero {
+		height: 50vh;
+	}
+
+	.careers-cp .blog-hero .hero-video-wrapper {
+		min-height: 50vh;
+	}
+
+	.careers-cp .services-banner-section .banner-inner-caption .h1-style.service-title {
+		font-size: 28px !important;
+		margin-bottom: 18px;
+		line-height: 1.3 !important;
+	}
+
+	.careers-cp .services-banner-section .banner-inner-caption.services .caption.service-subtitle {
+		line-height: 25px;
+		margin: 0 0 30px;
+	}
+
+	.careers-cp .cp-culture-video-wrapper {
+		max-width: 470px;
+		height: 250px;
+	}
+
+	.careers-cp .cp-culture-container {
+		transform: translateY(-30%);
+	}
+
+	section.cp-culture-section {
+		padding-bottom: 35%;
+	}
+
+	.save-plant-tree .careers-cp .section-better-planet h2 {
+		font-size: 30px;
+		max-width: 70%;
+	}
+
+	.save-plant-tree .careers-cp .better-planet-subtext {
+		font-size: 14px;
+	}
+
+	.save-plant-tree .careers-cp .planet-scroll-container {
+		margin-top: 30px;
+	}
+
+	.save-plant-tree .careers-cp section.better-planet {
+		padding-bottom: 30px;
+	}
+
+	.careers-cp .our-team-values-tagline {
+		font-size: 14px;
+	}
+
+	.careers-cp .our-team-values-feature-card {
+		min-width: 330px;
+	}
+
+	.careers-cp .our-team-values-feature-card {
+		padding: 35px 20px;
+	}
+
+	.careers-cp .our-team-values-desc {
+		font-size: 14px;
+	}
+
+	.careers-cp .our-team-values-features-grid {
+		gap: 15px;
+		margin-top: 20px;
+	}
+
+	.careers-cp .our-team-values-section {
+		padding-bottom: 30px;
+	}
+
+	.careers-cp .cp-office-infra h2.office-infra {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 10px;
+	}
+
+	.careers-cp .cp-office-infra .description {
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+	.careers-cp .cp-office-infra .gallery-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.cp-gallery-item img {
+		width: 100%;
+	}
+
+	.careers-cp .cp-office-infra {
+		padding: 0 0 30px;
+	}
+
+	.careers-cp .cp-gallery {
+		padding: 30px 0;
+	}
+
+	.careers-cp .cp-gallery-header h2 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.careers-cp .cp-gallery-gallery-item-title {
+		font-size: 14px;
+		padding: 0 0 10px 10px;
+	}
+
+	.careers-cp .cp-gallery-gallery {
+		gap: 15px;
+	}
+
+	.cp-collab-culture-sec {
+		padding: 30px 0 0;
+	}
+
+	.careers-cp .cp-collab-culture h2 {
+		font-size: 30px;
+		margin-bottom: 15px;
+		line-height: 40px;
+	}
+
+	.careers-cp .collab-subtitle {
+		font-size: 14px;
+		line-height: 25px;
+		margin-bottom: 20px;
+	}
+
+	.careers-cp .collab-video-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.careers-cp .cp-gallery-tabs {
+		overflow-x: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 5px;
+		padding: 10px;
+		margin-bottom: 30px;
+		justify-content: flex-start;
+		scrollbar-width: auto;
+	}
+
+	.careers-cp .cp-gallery-tabs::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	.careers-cp .cp-gallery-tabs::-webkit-scrollbar-thumb {
+		background: #000;
+		border-radius: 3px;
+	}
+
+	.careers-cp .cp-gallery-tabs::-webkit-scrollbar-track {
+		background: #eee;
+	}
+
+	.careers-cp .cp-gallery-tab {
+		flex-shrink: 0;
+		white-space: nowrap;
+		font-size: 14px;
+		line-height: 18px;
+		padding: 6px 10px;
+	}
+
+	.careers-cp .cp-amazing-no h2 {
+		font-size: 30px;
+		margin-bottom: 32px;
+	}
+
+	.careers-cp .cp-amazing-no .number-item .number {
+		font-size: 35px;
+	}
+
+	.careers-cp .cp-amazing-no .number-item .label {
+		font-size: 12px;
+	}
+
+	.careers-cp .cp-amazing-no .numbers-grid {
+		gap: 20px;
+	}
+
+	.careers-cp .cp-amazing-no {
+		padding: 30px 0;
+	}
+
+	.careers-cp h2.amz-cp {
+		font-size: 30px;
+		margin-bottom: 32px;
+	}
+
+	h2.employee-testimonial {
+		font-size: 30px;
+		margin-bottom: 15px;
+		line-height: 36px;
+	}
+
+	p.employee-testimonial-desc {
+		font-size: 12px;
+		line-height: 25px;
+	}
+
+	.careers-cp .testimonials-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.careers-cp .video-container {
+		min-height: 365px;
+		background-size: cover;
+	}
+
+	.careers-cp .cp-gallery-gallery {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.amazing-work-place .cp-carousel-item {
+		width: calc(100% - 10px);
+		flex: 0 0 auto;
+		min-width: unset;
+	}
+
+	.amazing-work-place .item-image img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.amazing-work-place {
+		padding: 30px 15px 20px 0;
+		overflow: hidden;
+	}
+
+	.amazing-work-place .cp-carousel-track {
+		gap: 20px;
+	}
+
+	.careers-cp .cp-culture-play-btn {
+		width: 50px;
+		height: 50px;
+		background-size: 50px;
+	}
+
+	.careers-cp a.btn.btn-secondary.magento-choose {
+		margin-bottom: 10px;
+	}
+
+	.careers-cp .cp-collab-culture {
+		flex-wrap: wrap;
+	}
+
+	.careers-cp .culture-explore {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+  /* Updated Modal */
+  .careers-cp .cp-gallery-viewer {
+    min-height: 210px;
+  }
+  .careers-cp .cp-gallery-close {
+    top: 50px;
+  }
+  .careers-cp .cp-gallery-nav-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .careers-cp .cp-gallery-prev-btn {
+    left: 10px;
+  }
+  .careers-cp .cp-gallery-next-btn {
+    right: 10px;
+  }
+  .careers-cp .cp-gallery-close svg {
+    width: 28px;
+    height: 28px;
+  }
+  .careers-cp .cp-gallery-nav-btn svg {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* ========= Culture page css end ============== */
+
+}
+
+
+@media (max-width: 640px) {
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .form-row.checkmark-row .wpcf7-not-valid-tip{
+      position: absolute;
+      bottom: -60px;
+    }
+    .checkmark-row .form-col.full-width p {
+      padding-bottom: 30px;
+    }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+
+   /*   Testimonial Redesign css Start   */
+   .testimonial-style-new .testimonials-grid {
+          grid-template-columns: 1fr;
+      }
+      /* discovery testimonial */
+      
+      .testimonial-style-new .content-col {
+          width: 100%;
+      }
+      .testimonial-style-new .testimonial-section-discover {
+          padding: 30px 0 0;
+      }
+      .testimonial-style-new .content-col h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+      .testimonial-style-new .content-col p {
+          margin-bottom: 15px;
+      }
+      .testimonial-style-new .testimonial-stat-number {
+          font-size: 25px;
+          margin-bottom: 10px;
+      }
+      .testimonial-style-new .count-stat-item p {
+          font-size: 13px;
+          margin-bottom: 12px;
+      }
+      .testimonial-style-new .testimonial-image-col{
+          position: unset;
+      }
+      .testimonial-style-new .testimonial-image-col img {
+          margin-right: -20px;
+          max-width: 100%;
+          padding-top: 30px;
+      }
+      .testimonial-style-new .left-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .right-logos {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .bottom-logos {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .testimonial-style-new .video-modal-content{
+        width: 90%;
+        top: 14px;
+      } 
+      /*   Testimonial Redesign css End   */
+      /* ====  AI VOCIE CSS  ==== */
+    .compliance-item { min-width: 150px; height: 80px; }
+    .compliance-slider-track { gap: 8px; }
+      .careers-cp.ai-voice-cms h2.our-team-values-heading{font-size: 29px; }
+      .ai-voice-cms button.btn.btn-secondary.magento-choose {display: none; }
+      .ai-voice-cms .live-ai-demo-grid {grid-template-columns: 1fr; gap: 20px; }
+      .ai-voice-cms .live-ai-demo-grid {gap: 15px; }
+      .ai-voice-cms .live-ai-demo-card {padding: 20px 18px 25px; }
+      .ai-voice-cms .live-ai-demo-category {font-size: 13px; padding: 10px 12px; margin-bottom: 12px; }
+      .ai-voice-cms .live-ai-demo-title {font-size: 18px; margin-bottom: 15px; }
+      .ai-voice-cms .live-ai-demo-description {font-size: 14px; line-height: 22px; margin-bottom: 20px; min-height: 40px; }
+      .ai-voice-cms .live-ai-demo-play-btn {width: 35px; height: 35px; margin: 10px 15px 10px 10px; }
+      .ai-voice-cms .live-ai-demo-play-icon {border-left: 8px solid white; border-top: 5px solid transparent; border-bottom: 5px solid transparent; margin-left: 1px; }
+      .ai-voice-cms .live-ai-demo-pause-icon {width: 8px; height: 10px; }
+      .ai-voice-cms .live-ai-demo-pause-icon::before,
+      .ai-voice-cms .live-ai-demo-pause-icon::after {width: 2px; height: 10px; }
+      .ai-voice-cms .live-ai-demo-waveform {height: 22px; }
+}
+
+
+
+/*   New Case Study List Css Start Added By AJ Start   */
+@media(max-width:767px) {
+  .case_study_wrap .filter-option .custom-select {
+    position: relative;
+  }
+  .case_study_wrap .selectbox-group,
+  .case_study_wrap .selectbox-group-second,
+  .case_study_wrap .selectbox-group-third {position: static;}
+}
+/*   New Case Study List Css Start Added By AJ End   */
+
+/* ====  AI VOCIE CSS  ==== */
+@media screen and (max-width: 575px) {
+  .price-calculator .savings-calculator h2 { font-size: 22px; line-height: 30px; padding-bottom: 20px; }
+  .price-calculator .results-panel strong { font-size: 20px; }
+  .price-calculator .benefits h3 { font-size: 22px; }
+  .price-calculator .usp-inner strong { font-size: 16px; }
+  .price-calculator .benefits { margin-top: 30px; }
+  .price-calculator .input-block .top-value label { font-size: 14px; }
+  .price-calculator .input-block .top-value .calls { font-size: 14px; min-width: 100px; }
+  .price-calculator .input-block { margin-bottom: 20px; }
+  .price-calculator .annual-savings #annualSavings { font-size: 35px;}
+  .price-calculator .results-panel svg { width: 30px; height: 30px;} 
+}
+
+
+@media(max-width:540px) {   
+    .section_title h1{ font-size: 30px;}
+   .ready_section .items{grid-template-columns: repeat(1, 1fr);  }
+   .trusted_section .items{grid-template-columns: auto; }
+   .trusted_section .items img{ max-width: 80%; display: block; margin: 0 auto;height: auto;}
+   .trusted_section .items .item {text-align: center; display: flex; align-items: center; justify-content: center; height: 65px;}
+   .industry_section .items{}
+   .industry_section .items img{ max-width: 50px;} 
+   .blog_list .slick-list{ margin: 0;} 
+   .blog_list .item {padding:0 10px; }
+   .section_commitment .items{ grid-template-columns: repeat(2, 1fr);}
+
+   .section_contactoffice .contact-office-icon{ max-width: 100%; order: 0;}
+   .section_contactoffice .contact-office-col{ gap:30px; font-size: 16px; padding-bottom: 0;}
+   .section_contactoffice .contact-office-col h2{ font-size: 24px;}
+   .section_contactoffice .contact-office-col:first-child{ padding-bottom: 30px;}
+   .section_contactoffice .office-address{ max-width: 100%; padding-top: 0; width: 100%; }
+   .section_contactoffice .office-address address { font-size: 16px;}
+   .section_contactoffice .office-address address .locations{ margin-top: 20px;} 
+   .section_contactoffice .callus{ padding-left: 30px;}
+   .section_contactoffice .office-address address .locations{ padding-right: 40px; font-size: 18px; line-height: 30px; padding-bottom:10px;}
+   .share_block h5{  width: 100%; text-align: center; padding: 20px;}
+   .share_block .addtoany_shortcode{ width: 100%;}
+   .share_block .addtoany_shortcode a{ padding:15px 3px;}
+   .share_block .addtoany_list img{ max-width: 20px;}
+
+   .expand_platform .expand_right .item{ width: 90%; padding: 20px 0;}
+   .expand_platform .expand_right .item:nth-child(even){ padding: 20px 0; margin-left: auto;}
+
+   .wehelp_section .items { gap:30px; grid-template-columns: repeat(1,1fr); padding: 0; }
+   .wehelp_section .items .item .item_content{ padding: 30px;}
+   .wehelp_section .items .item .item_img{ padding: 30px 20px 10px;}
+   .wehelp_section .items .item .item_content h3{ font-size: 22px;} 
+
+    /*  Added By Ajay */
+    .milestone_section .milestone_items li .milestone_item .right-item h4 {font-size: 28px;}
+
+/*    .quick-links li a {padding: 5px 5px 5px 0px;}*/
+    .section_about .head_info p {font-size: 16px; line-height: 24px;}
+    .section_specialize .item-left ul li {font-size: 75%;}
+    .section_specialize .item-left .btn-section {padding-top: 20px; }
+    .ready_section .item {gap: 30px; font-size: 18px;}
+    .growing_section .items li {font-size: 16px;}
+    .head_info {font-size: 16px; text-align: left;}
+    .reach_section h3 {font-size: 20px;}
+    .reach_section .item_content p {line-height: 22px; font-size: 16px;}
+    .footer p, .footer a, .footer p, .footer li {font-size: 95%;}
+    .footer a, .footer li, .footer p {font-size: 95%;}
+
+    /*   Services Page New Css    */
+    .magento-services-section .section-header .btn-section.custom-btn-center.services{
+        margin-right: 0;
+    }
+    .magento-services-section .service-title br {
+      display: inline !important;
+    }
+  
+    .magento-services-section .services-grid {
+      grid-template-columns: repeat(2, 1fr); 
+      row-gap: 20px;
+      column-gap: 20px !important; 
+    }
+    .magento-services-section .magento-services-section {
+      padding: 25px 0;
+    }
+    .magento-services-section .section-header {
+      margin-bottom: 25px;
+    }
+    .magento-services-section .service-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .magento-services-section .service-icon {
+      padding-bottom: 12px;
+    }
+    .magento-services-section .service-icon img {
+      max-width: 40px;
+    }
+    .magento-services-section .service-title br,
+    .ecommerce-migration-services .magento-services-section .service-title br {
+        display: inline !important;
+    }
+    .magento-services-section .services-grid,
+    .ecommerce-migration-services .magento-services-section .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: ;row-gap: 20px;
+        column-gap: 20px !important;
+    }
+    .magento-services-section .service-icon,
+    .ecommerce-migration-services .magento-services-section .service-icon {
+        padding-bottom: 12px;
+    }
+    .magento-services-section .service-icon img {
+        max-width: 50px;
+    }
+    .ecommerce-migration-services .magento-services-section .service-icon img {
+        max-width: 160px;
+    }
+    .section_contact h2, .form-block h2 {font-size: 30px; }
+
+
+    /* =========== Contact Us Page New Design Css Start  ===========  */
+    .contact-us-new .contact-new-one .lead-banner .contact-form {
+        max-width: 100%;
+   }
+   /* =========== Contact Us Page New Design Css End  ===========  */
+   /* ==========  Save The Planet Css Start  ==========  */
+   .save-plant-tree .info-card{
+       max-width: 100%;
+    }
+    /* ==========  Save The Planet Css End  ==========  */
+
+    /*   New Case Study List Css Start Added By AJ Start   */
+    .case-study-banner .hero-banner .hero-video-wrapper {background: url(../images/case_study_banner_mobile.png) no-repeat;background-size: cover;}
+    .case_study_wrap .work-list-col .hideonhover h3 {font-size: 18px;}
+    .case_study_wrap .work-list-col .hideonhover p {font-size: 13px;}
+    .case_study_wrap .work-list-col .arrow-icon svg {width: 25px;}
+    .case_study_wrap .work-list-col .hideonhover .p_3 .count-case-detail {font-size: 22px;}
+    /*   New Case Study List Css Start Added By AJ End   */
+    /* ====  AI VOCIE CSS  ==== */
+    .ai-voice-page .amazing-work-place .cp-carousel-item {width: 94%; }
+    .ai-voice-page .amazing-work-place .item-image img { width: 460px; height: 280px; }
+    .case_s .tab-title-wrap{flex-direction: column;row-gap: 20px;align-items: flex-start;}
+    .case_s .tab .title{font-size: 20px;}
+    .case_s .tab .desc{font-size: 15px;line-height: 22px;}
+    .case_s .tab-content h2{font-size: 26px;line-height: 26px;}
+    .case_s .tag{font-size: 14px;}
+    .case_s .quote-section p {font-size: 16px;line-height: 24px;}
+    .case_s .after-wrap .after-text {font-size: 13px; }
+    .ai-voice-cms .amazing-work-place .cp-carousel-item {width: 100%; min-width: unset; flex: 0 0 100%; }
+    .ai-voice-cms .amazing-work-place {padding: 60px 15px 60px 0; overflow: hidden; }
+    .ai-voice-cms .amazing-work-place .cp-carousel-track {gap: 8px; }
+    .ai-voice-cms .amazing-work-place .item-image img {width: 460px; height: 280px; }
+
+    /* =============== Culture page css start ============ */
+    .careers-cp .cp-culture-container {
+      transform: translateY(-20%);
+    }
+
+    .careers-cp .collab-video-description p {
+      min-height: 190px;
+    }
+  
+    section.cp-culture-section {
+      padding-bottom: 42%;
+    }
+  
+    .careers-cp .cp-culture-video-wrapper {
+      max-width: 350px;
+      height: 190px;
+    }
+  
+    .careers-cp .video-modal-close {
+      top: -26px;
+      right: -19px;
+    }
+  
+    .careers-cp .cp-office-infra .gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  
+    .amazing-work-place .cp-carousel-item {
+      width: 100%;
+      min-width: unset;
+      flex: 0 0 100%;
+    }
+  
+    .amazing-work-place {
+      padding: 30px 15px 20px 0;
+      overflow: hidden;
+    }
+  
+    .amazing-work-place .cp-carousel-track {
+      gap: 8px;
+    }
+  
+    .amazing-work-place .item-image img {
+      width: 460px;
+      height: 280px;
+    }
+    /* ========= Culture page css end ============== */
+
+
+} 
+
+@media screen and (max-width: 480px) {
+    /*   New Case Study List Css Start Added By AJ Start   */
+  .case_study_wrap a.work-thumb {height: auto; }
+  .case_study_wrap .selectbox-group ul li, 
+  .case_study_wrap .selectbox-group-second ul li, 
+  .case_study_wrap .selectbox-group-third ul li {padding: 10px 15px; font-size: 15px; }
+    /*   New Case Study List Css Start Added By AJ End   */
+    /* cb station page by tirthak*/
+  .cb-station-page .impact-box {
+    flex: 1 1 100%;
+    border-left: none;
+    padding-left: 0;
+  }
+  .cb-station-page .impact-box:nth-child(even){
+    padding-left: 0px;
+  }
+  /*   Testimonial Redesign Css Start   */
+  .testimonial-style-new .testimonial-overlay {
+      padding: 0 10px 20px 10px;
+  }
+  .testimonial-style-new .client-play-icon {
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    top: 145px;
+  }
+  /*   Testimonial Redesign Css End   */
+  /* ====  AI VOCIE CSS  ==== */
+    .ai-banner .ai-banner-left h1 {font-size:28px;}
+    .ai-banner .ai-banner-left p {font-size:15px;line-height: 22px;}
+    .ai-banner .stats {justify-content:space-between; gap:10px;}
+    .ai-banner .stat span {font-size:13px;}
+    .ai-voice-page .ai-features-section .feature-card {flex: 0 0 calc(100% - 0px); }
+    .ai-voice-page .ai-features-section .tab {padding: 13px 20px; font-size: 14px; width: auto; }
+    .ai-voice-page .ai-features-section .tab-wrap-scroller {margin: 0; overflow-x: auto;}
+    .ai-voice-page .ai-features-section .tabs {gap: 15px; display: flex; width: max-content; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 15px;}
+    .ai-voice-page .ai-features-section .tab-wrap-scroller::-webkit-scrollbar {height: 4px; background-color: #f1f1f1; border-radius: 16px; cursor: pointer; transition: all 0.5s ease-in-out; }
+    .ai-voice-page .ai-features-section .tab-wrap-scroller::-webkit-scrollbar-thumb {height: 4px; background-color: #000; border-radius: 16px;}
+    .ai-voice-page .feature-card .badge {font-size: 11px; padding: 10px 10px; }
+    .ai-voice-page .feature-card .tags .badge {font-size: 11px;padding: 6px 13px;}
+    .ai-banner {padding: 110px 15px 30px;}
+
+    .analytics-section .card {padding: 30px 20px; }
+    .analytics-section .card-icon {margin-bottom: 20px;}
+    .analytics-section .card h4 {font-size: 20px; line-height: 26px;}
+    .analytics-section .card p {font-size: 16px; line-height: 26px; margin-bottom: 20px; }
+    .analytics-section .card ul {padding-left: 0;}
+    .analytics-section .card ul li {font-size: 16px;line-height: 34px;}
+
+}
+
+
+
+/*   Services Page New Css    */
+@media (max-width: 425px){
+    .magento-services-section .service-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .magento-services-section .section-header .btn-section.custom-btn-center.services{
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    a.btn.btn-secondary.services-development {
+        font-size: 14px;
+    }
+    .ecommerce-migration-services .magento-services-section .service-icon img {
+        max-width: 115px;
+    }
+    .services-faq .faq-section .accordion-list .acc-label button {
+        margin-top: 12px;
+    }
+    .services-faq .faq-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 320px){
+    .magento-services-section .section-header .btn-section.custom-btn-center.services {
+        margin-right: 49px; 
+    }
+}

@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*List of services*/
+
+.service_business{ overflow: visible;}
+.service_business .head_info{ padding-bottom: 0;}
+.service_business .section_row{display: flex;     flex-wrap: wrap;    gap:4%;    align-items: start;    justify-content: space-between;}
+.service_business .section_title { }
+/*.service_business .section_title h2 { font-size: 72px;}*/
+.service_business .service_left{ width: 40%; position: sticky; top: 100px; transition: all 0.1s ease-in-out; }
+.service_business .service_right p {font-size: 16px;line-height: 1.5;}
+
+.service_business strong{ font-weight: 500;}
+.service_business .service_right{ width: 48%; }
+.service_business .service_right .list{ display: flex; flex-wrap: wrap;}
+.service_business .service_right .item:first-child{ padding-top: 0;}
+.service_business .service_right .item{ max-width: 55%; align-self: self-start; padding:150px 0 0;}
+.service_business .service_right .item:nth-child(even){ margin-left: auto;}
+.service_business .service_right a{ text-decoration: underline; font-weight: 600;}
+.service_business .service_right a:hover{ text-decoration: none;}
+.service_business .service_right h3{ font-size: 24px;}
+.service_business .service_right img{ display: block; margin-bottom: 20px;}
+
+@media(max-width: 1600px) {
+    .service_business .section_title h2{ font-size: 56px;}
+
+}
+
+@media(max-width: 1200px) {
+    .service_business .section_title h2 { font-size: 40px;}
+
+ 
+    .service_business .service_right .item{ max-width: 70%;}
+
+}
+@media(max-width: 990px) {
+    .service_business .section_title h2 { font-size: 30px;}
+    .service_business .service_left{  position: static; padding-bottom: 40px;}
+    .service_business .service_left,
+    .service_business .service_right{ width: 100%;}
+    .service_business .section_row{ gap: 40px;}
+    .service_business .service_right { padding-left: 40px}
+}
+
+@media(max-width: 767px) { 
+    .service_business .service_right img{ max-width: 40px;}
+    .service_business .service_right { padding-left: 20px}
+    .service_business .service_right .item{ max-width: 90%; padding-top: 40px;}
+}
+
+/*List of services ends*/

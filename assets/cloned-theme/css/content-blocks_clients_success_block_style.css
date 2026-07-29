@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/ 
+
+
+.clients_success .clients_banner{ width: 100%;}
+.clients_success .clients_banner {overflow: hidden; padding: 0;}
+.clients_success .clients_banner a{ display: block;}
+.clients_success .clients_banner img {width: 100%; display: block; height: auto; }
+.clients_success .head_info{ padding-bottom: 20px;}
+.clients_row{ width: 100%; display: flex; flex-wrap: wrap; padding-top: 30px; font-size: 20px; justify-content: space-between;}
+.clients_row h4{ color:#AAAAAA; font-size: 100%; margin: 0; padding: 0 0 0px; display: block; font-family: 'Inter',sans-serif;} 
+.clients_info{ width: 25%;}
+.clients_info h3{ color: #fff; font-size: 26px; padding-bottom:15px; margin-bottom: 0;}
+.clients_info h3:last-child{ padding-bottom: 0;}
+.increase-section{width: 70%; }
+.clients_success .increase{  display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; width: 100%; padding-top: 10px;}
+.clients_success .increase .increase_item{ width: 33.33%; font-size: 20px; display: flex; flex-flow: column; padding: 0 40px; border-right:1px solid #222; line-height: normal; } 
+.clients_success .increase .increase_item:last-child{ border-right:none;}
+.clients_success .increase .increase_item h3{ font-size: 60px; color: #fff; font-weight: 500; margin: 0; padding: 0; } 
+.clients_success .increase .increase_item h3 i{ font-style: normal;}
+.clients_success  h4.title{  margin: 0; padding: 0 0 0 40px;} 
+.clients_success .increase h4{ font-weight: 400;}
+
+.services_provided{ padding-top:30px;  font-size: 20px;}
+.services_provided h4{ color:#AAAAAA; font-size: 100%; margin: 0; padding: 0 0 10px; display: block;font-family: 'Inter',sans-serif;} 
+.services_provided ul{ display: flex; gap:20px; padding-left: 0; font-size: 30px; }
+.services_provided ul li{ color: #fff; font-size: 90%; padding-left: 30px; position: relative; line-height: normal; }
+.services_provided ul li:first-child{ padding-left: 0;}
+.services_provided ul li:first-child:before{ display: none;}
+.services_provided ul li:before{ content: ''; width: 8px; height: 8px; background: #fff; display: block; position: absolute; left: 0; top: 50%; 
+    transform: translateY(-50%); border-radius: 50%; margin-top: 4px;} 
+.clients_info  h5{ color: #fff; font-size: 32px; line-height: 44px;}
+
+ 
+@media(max-width:1600px) {   
+.clients_row{ font-size: 22px;}
+.clients_success .increase .increase_item h3{ font-size: 50px;}
+.clients_success .increase .increase_item{ font-size: 22px;}
+/*.clients_info h3{ font-size: 40px;}*/
+
+.services_provided h4{font-size: 22px;} 
+.services_provided ul{ font-size: 24px;}
+.clients_info  h5{  line-height: normal; font-size: 24px;}
+}
+
+@media(max-width:1400px) { 
+.clients_success .increase .increase_item{ font-size: 18px;} 
+.clients_success .increase .increase_item h3{ font-size: 45px; }  
+.clients_info h3{ font-size: 30px;}
+.clients_row{ padding-top: 30px;}
+} 
+@media(min-width: 1200px) and (-webkit-device-pixel-ratio: 1.50){
+.clients_row{ font-size: 20px;}
+.clients_success .increase{ margin-top: 30px;}
+.clients_success .increase .increase_item h3{ font-size: 38px;}
+.clients_info h3{ font-size: 30px; padding-bottom: 20px;} 
+.services_provided{ padding-top:30px;}
+.services_provided h4{font-size: 20px;} 
+.services_provided ul{ font-size: 22px;}
+.services_provided ul li:before{ margin-top: 0;} 
+.clients_info  h5{  line-height: normal; font-size: 22px;}
+}
+@media(max-width:990px) {
+.clients_info{ width: 100%; padding-left: 40px; padding-bottom: 40px;}
+.increase-section{ width: 100%;}
+.clients_success .increase .increase_item h3{ font-size: 40px;}
+.clients_info h3{ font-size: 26px; }
+
+.services_provided { padding-left:40px; padding-top: 20px;}
+.services_provided h4{font-size:16px;} 
+.services_provided ul{ font-size: 18px;}
+}
+@media(max-width:767px) {
+.clients_row{ font-size: 16px; padding-top: 20px;}
+.clients_success .increase{ align-items: start;}
+.clients_success h4.title,
+.clients_info{ padding-left: 15px }
+.clients_info h3 { padding-bottom: 20px; font-size: 22px;}
+.clients_success .increase{ margin: 0; padding: 0;}
+.clients_success .increase .increase_item{ padding: 10px; font-size: 16px;}
+.clients_success .increase .increase_item h3{ font-size: 34px;}
+
+.services_provided { padding-left:15px; padding-top: 15px;}
+.services_provided h4{font-size:14px;} 
+.services_provided ul{ font-size: 16px; display: block;}
+.services_provided ul li{ display: inline-block; margin-right: 15px; padding-left: 20px;}
+.services_provided ul li::before{ width: 5px; height: 5px; margin-top: 0;}
+.clients_info  h5{  line-height: normal; font-size: 24px;}{ font-size:18px;}
+.clients_info {padding-bottom: 10px}
+} 

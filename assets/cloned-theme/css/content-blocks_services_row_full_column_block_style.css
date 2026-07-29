@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 May, 2022, 3:12:44 PM
+    Author     : Dell
+*/
+/*Services row full content*/
+.services-fullcontent {
+  display: inline-block;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.services-fullcontent h2 {
+  font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.services-fullcontent.service-content-space {
+  margin-top: 0;
+}
+.services-fullcontent .btn{ margin-top: 20px; display: inline-block;}
+
+@media(max-width:1199px) {
+  .services-fullcontent {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .services-fullcontent h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+@media(max-width:1023px) {
+  .services-fullcontent h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+  .services-fullcontent h2 {
+    font-size: 25px;
+  }
+}
+/*Services row full content ends*/
