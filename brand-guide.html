@@ -1,0 +1,660 @@
+import os
+
+file_path = '/Users/cp/Ronak/CP/CP Website/Old/smart-epsilon-redesign/brand-guide.html'
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Epsilon — Brand & Style Guide</title>
+    <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
+    <style>
+        :root {
+            --se-purple-primary: #6862a7;
+            --se-purple-hover: #565095;
+            --se-purple-light: #f7f6fd;
+            --se-purple-border: rgba(104, 98, 167, 0.15);
+            --se-navy-dark: #090714;
+            --se-navy-card: #1e223b;
+            --se-ink: #111111;
+            --se-ink-soft: rgba(0, 0, 0, 0.65);
+            --se-bg-soft: #f7f7fa;
+            --se-accent-blue: #8fb0ff;
+            --se-border: rgba(0, 0, 0, 0.08);
+            --font-family: 'JUST Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--se-ink);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Sticky Navigation Bar */
+        .brand-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--se-border);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-nav__logo img {
+            height: 36px;
+        }
+
+        .brand-nav__badge {
+            background: rgba(104, 98, 167, 0.1);
+            color: var(--se-purple-primary);
+            font-size: 12px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 99px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .brand-nav__tabs {
+            display: flex;
+            gap: 8px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .brand-nav__tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--se-ink-soft);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .brand-nav__tab:hover, .brand-nav__tab.active {
+            color: var(--se-purple-primary);
+            background: var(--se-purple-light);
+        }
+
+        /* Main Container */
+        .guide-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem 2rem;
+        }
+
+        .guide-header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .guide-header h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--se-ink);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .guide-header p {
+            font-size: 1.125rem;
+            color: var(--se-ink-soft);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Section Layout */
+        .guide-section {
+            margin-bottom: 5rem;
+            scroll-margin-top: 100px;
+        }
+
+        .section-header {
+            border-bottom: 2px solid var(--se-bg-soft);
+            padding-bottom: 1rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+
+        .section-header h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--se-ink);
+            margin: 0;
+        }
+
+        .section-header span {
+            font-size: 0.875rem;
+            color: var(--se-ink-soft);
+            font-weight: 500;
+        }
+
+        /* Color Grid */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .color-card {
+            border-radius: 16px;
+            border: 1px solid var(--se-border);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background: #ffffff;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+            position: relative;
+        }
+
+        .color-info {
+            padding: 20px;
+        }
+
+        .color-title {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--se-ink);
+            margin-bottom: 4px;
+        }
+
+        .color-use {
+            font-size: 13px;
+            color: var(--se-ink-soft);
+            margin-bottom: 12px;
+        }
+
+        .color-code-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--se-bg-soft);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--se-purple-primary);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+
+        .copy-btn:hover {
+            background: rgba(104, 98, 167, 0.15);
+        }
+
+        /* Typography Showcase */
+        .type-sample {
+            padding: 24px;
+            background: var(--se-bg-soft);
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--se-border);
+        }
+
+        .type-label {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--se-purple-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .type-specimen {
+            color: var(--se-ink);
+            margin-bottom: 8px;
+        }
+
+        .type-meta {
+            font-size: 13px;
+            color: var(--se-ink-soft);
+            font-family: monospace;
+        }
+
+        /* Weight Cards */
+        .weight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .weight-card {
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid var(--se-border);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* Logo Preview Cards */
+        .logo-preview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .logo-preview-card {
+            padding: 48px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--se-border);
+        }
+
+        /* UI Component Demos */
+        .component-demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .component-card {
+            padding: 32px;
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid var(--se-border);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+
+        .component-card h3 {
+            font-size: 18px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--se-ink);
+        }
+
+        .toast-msg {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--se-navy-dark);
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY HEADER NAV -->
+    <nav class="brand-nav">
+        <a href="index.html" class="brand-nav__logo">
+            <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo">
+        </a>
+        <div class="brand-nav__badge">Brand Guidelines</div>
+        <ul class="brand-nav__tabs">
+            <li><a href="#logo" class="brand-nav__tab active">Logo</a></li>
+            <li><a href="#colors" class="brand-nav__tab">Brand Colors</a></li>
+            <li><a href="#typography" class="brand-nav__tab">Typography</a></li>
+            <li><a href="#components" class="brand-nav__tab">UI Components</a></li>
+        </ul>
+    </nav>
+
+    <div class="guide-container">
+        <!-- HEADER -->
+        <header class="guide-header">
+            <p class="eyebrow" style="color: var(--se-purple-primary); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">Smart Epsilon Design System</p>
+            <h1>Brand Identity & Style Guide</h1>
+            <p>The definitive guide to Smart Epsilon’s visual language, brand colors, typography scales, and UI component standards.</p>
+        </header>
+
+        <!-- 1. BRAND LOGO SECTION -->
+        <section id="logo" class="guide-section">
+            <div class="section-header">
+                <h2>1. Brand Logo</h2>
+                <span>Vector SVG Assets</span>
+            </div>
+            <div class="logo-preview-grid">
+                <div class="logo-preview-card" style="background: #ffffff;">
+                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo Light Surface" style="height: 48px;">
+                </div>
+                <div class="logo-preview-card" style="background: #090714;">
+                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo Dark Surface" style="height: 48px; filter: brightness(0) invert(1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. BRAND COLORS SECTION -->
+        <section id="colors" class="guide-section">
+            <div class="section-header">
+                <h2>2. Brand Colors</h2>
+                <span>Core Palette & Hex Codes</span>
+            </div>
+
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px;">Primary & Brand Colors</h3>
+            <div class="color-grid">
+                <!-- Color 1 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #6862a7;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Smart Epsilon Purple</div>
+                        <div class="color-use">Primary brand accent, primary CTA buttons & active highlights</div>
+                        <div class="color-code-box">
+                            <span>#6862a7</span>
+                            <button class="copy-btn" onclick="copyColor('#6862a7')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 2 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #1e223b;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Deep Slate Navy</div>
+                        <div class="color-use">Dark containers, cards, and secondary hero highlights</div>
+                        <div class="color-code-box">
+                            <span>#1e223b</span>
+                            <button class="copy-btn" onclick="copyColor('#1e223b')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 3 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #090714;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Midnight Black</div>
+                        <div class="color-use">Dark hero background, footers & high-contrast stages</div>
+                        <div class="color-code-box">
+                            <span>#090714</span>
+                            <button class="copy-btn" onclick="copyColor('#090714')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 4 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #8b7fd4;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Soft Violet Light</div>
+                        <div class="color-use">Dark mode secondary accents, gradients & subtle icons</div>
+                        <div class="color-code-box">
+                            <span>#8b7fd4</span>
+                            <button class="copy-btn" onclick="copyColor('#8b7fd4')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin: 40px 0 20px 0;">Surfaces & Backgrounds</h3>
+            <div class="color-grid">
+                <!-- Color 5 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #f7f6fd; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Purple Tint Surface</div>
+                        <div class="color-use">Quote boxes, subtle callout backgrounds</div>
+                        <div class="color-code-box">
+                            <span>#f7f6fd</span>
+                            <button class="copy-btn" onclick="copyColor('#f7f6fd')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 6 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #f7f7fa; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Soft Neutral Stage</div>
+                        <div class="color-use">Alternating section backgrounds (bg-soft)</div>
+                        <div class="color-code-box">
+                            <span>#f7f7fa</span>
+                            <button class="copy-btn" onclick="copyColor('#f7f7fa')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 7 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #ffffff; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Pure White</div>
+                        <div class="color-use">Card backgrounds, clean surface stages</div>
+                        <div class="color-code-box">
+                            <span>#ffffff</span>
+                            <button class="copy-btn" onclick="copyColor('#ffffff')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin: 40px 0 20px 0;">Typography & Ink Colors</h3>
+            <div class="color-grid">
+                <!-- Color 8 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #111111;"></div>
+                    <div class="color-info">
+                        <div class="color-title">Ink Dark</div>
+                        <div class="color-use">Primary headlines, card titles & bold text</div>
+                        <div class="color-code-box">
+                            <span>#111111</span>
+                            <button class="copy-btn" onclick="copyColor('#111111')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 9 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: rgba(0, 0, 0, 0.65);"></div>
+                    <div class="color-info">
+                        <div class="color-title">Ink Soft / Muted</div>
+                        <div class="color-use">Body paragraphs, descriptions & subtitles</div>
+                        <div class="color-code-box">
+                            <span>rgba(0,0,0,0.65)</span>
+                            <button class="copy-btn" onclick="copyColor('rgba(0,0,0,0.65)')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TYPOGRAPHY SECTION -->
+        <section id="typography" class="guide-section">
+            <div class="section-header">
+                <h2>3. Typography</h2>
+                <span>JUST Sans Font Family & Type Scale</span>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">H1 Page Title</div>
+                <div class="type-specimen" style="font-size: 2.75rem; font-weight: 800; line-height: 1.15;">Turning Disconnected Data into Commercial Intelligence</div>
+                <div class="type-meta">JUST Sans ExtraBold · 44px (2.75rem) · Line Height 1.15</div>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">H2 Section Title</div>
+                <div class="type-specimen" style="font-size: 2.25rem; font-weight: 800; line-height: 1.2;">The Visibility Gap Past the Factory Gate</div>
+                <div class="type-meta">JUST Sans Bold · 36px (2.25rem) · Line Height 1.2</div>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">H3 Card / Feature Title</div>
+                <div class="type-specimen" style="font-size: 1.25rem; font-weight: 800; line-height: 1.3;">Supply Chain Visibility</div>
+                <div class="type-meta">JUST Sans Bold · 20px (1.25rem) · Line Height 1.3</div>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">Body Text</div>
+                <div class="type-specimen" style="font-size: 1rem; color: var(--se-ink-soft); line-height: 1.6;">Operating across 100+ countries, this agrochemical manufacturer had already built a world-class production and distribution network.</div>
+                <div class="type-meta">JUST Sans Regular / Medium · 16px (1rem) · Line Height 1.6</div>
+            </div>
+
+            <div class="type-sample">
+                <div class="type-label">Eyebrow Badge</div>
+                <div class="type-specimen" style="font-size: 12px; font-weight: 800; letter-spacing: 0.1em; color: var(--se-purple-primary); text-transform: uppercase;">AT A GLANCE</div>
+                <div class="type-meta">JUST Sans ExtraBold · 12px · Letter Spacing 0.1em</div>
+            </div>
+
+            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 40px;">Font Weights</h3>
+            <div class="weight-grid">
+                <div class="weight-card">
+                    <div style="font-weight: 400; font-size: 24px;">Aa</div>
+                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Regular 400</div>
+                </div>
+                <div class="weight-card">
+                    <div style="font-weight: 500; font-size: 24px;">Aa</div>
+                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Medium 500</div>
+                </div>
+                <div class="weight-card">
+                    <div style="font-weight: 600; font-size: 24px;">Aa</div>
+                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">SemiBold 600</div>
+                </div>
+                <div class="weight-card">
+                    <div style="font-weight: 700; font-size: 24px;">Aa</div>
+                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Bold 700</div>
+                </div>
+                <div class="weight-card">
+                    <div style="font-weight: 800; font-size: 24px;">Aa</div>
+                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">ExtraBold 800</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. UI COMPONENTS SECTION -->
+        <section id="components" class="guide-section">
+            <div class="section-header">
+                <h2>4. UI Components</h2>
+                <span>Buttons, Cards & Badges</span>
+            </div>
+
+            <div class="component-demo-grid">
+                <!-- Buttons Card -->
+                <div class="component-card">
+                    <h3>Buttons & CTAs</h3>
+                    <div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+                        <button class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
+                            Primary Button
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <button class="btn btn-primary btn-sm" style="display: inline-flex; align-items: center; gap: 6px;">
+                            Small Button
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <button style="background: var(--se-navy-dark); color: #ffffff; padding: 12px 24px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer;">
+                            Dark Secondary Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cards & Containers -->
+                <div class="component-card">
+                    <h3>Cards & Callouts</h3>
+                    <div style="background: #ffffff; border-radius: 12px; border: 1px solid var(--se-border); padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); margin-bottom: 16px;">
+                        <div style="font-weight: 800; font-size: 16px; margin-bottom: 4px;">Light Card Container</div>
+                        <div style="font-size: 13px; color: var(--se-ink-soft);">Clean white box with soft border and subtle drop shadow.</div>
+                    </div>
+                    <div style="background: #f7f6fd; border-left: 4px solid var(--se-purple-primary); padding: 16px 20px; border-radius: 0 10px 10px 0;">
+                        <div style="font-size: 14px; font-weight: 600; font-style: italic; color: var(--se-ink);">“Purple callout box for leadership quotes and key insights.”</div>
+                    </div>
+                </div>
+
+                <!-- Badges & Chips -->
+                <div class="component-card">
+                    <h3>Badges & Chips</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+                        <span style="background: rgba(104, 98, 167, 0.1); color: var(--se-purple-primary); font-weight: 800; font-size: 11px; padding: 4px 12px; border-radius: 99px; letter-spacing: 0.05em; text-transform: uppercase;">
+                            FEATURE TAG
+                        </span>
+                        <span style="background: #fff1f0; color: #e53e3e; font-weight: 800; font-size: 12px; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
+                            ✕
+                        </span>
+                        <span style="background: #e6f4ea; color: #137333; font-weight: 800; font-size: 12px; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
+                            ✓
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="toast-msg">Color code copied to clipboard!</div>
+
+    <script>
+        function copyColor(hex) {
+            navigator.clipboard.writeText(hex);
+            const toast = document.getElementById('toast');
+            toast.innerText = `Copied ${hex} to clipboard!`;
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 2500);
+        }
+
+        // Active tab highlight on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.guide-section');
+            const navLinks = document.querySelectorAll('.brand-nav__tab');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+"""
+
+with open(file_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Created brand-guide.html successfully.")
