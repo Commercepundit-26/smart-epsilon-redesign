@@ -74,7 +74,42 @@
     background-size: cover;
     background-position: center;
 }
-</style></head>
+</style>
+<style>
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+}
+.comparison-table thead th {
+  padding: 20px 28px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+  background: #ffffff;
+  color: #111111;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.comparison-table tbody tr td {
+  padding: 20px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: #ffffff;
+  color: rgba(0,0,0,0.7);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.comparison-table tbody tr td:first-child {
+  font-weight: 700;
+  color: #111111;
+  background: #f7f7fa;
+}
+.comparison-table tbody tr:hover td { background: rgba(104,98,167,0.03); }
+.comparison-table tbody tr:last-child td { border-bottom: none; }
+</style>
+</head>
 <body>
 <svg aria-hidden="true" style="display:none">
 <defs>
@@ -462,21 +497,21 @@
 <p class="eyebrow" style="color: #6862a7; margin-bottom: 0.75rem;">The Results</p>
 <h2 class="section-title">Verified Impact at Global Scale</h2>
 </div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: stretch;">
 <!-- Column 1 -->
 <div class="results-col-left" style="display: flex; flex-direction: column;">
-<div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+<div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column;">
 <div style="height: 280px; width: 100%; overflow: hidden;">
 <img alt="Global Impact" src="assets/images/optimized/case_ag_hero.jpg" style="width: 100%; height: 100%; object-fit: cover;"/>
 </div>
-<div style="padding: 48px;">
+<div style="padding: 48px; flex: 1; display: flex; flex-direction: column; justify-content: center;">
 <div style="font-size: 72px; font-weight: 800; color: #6862a7; line-height: 1; margin-bottom: 16px;">95%</div>
 <div style="font-size: 24px; font-weight: 800; color: #111111; margin-bottom: 16px;">Proactive Scanning Compliance</div>
 <p style="font-size: 16px; color: rgba(0,0,0,0.6); line-height: 1.6; margin: 0;">Every product movement became visible. Every product became traceable to the last mile. Every commercial decision became driven by trusted field data.</p>
 </div></div></div>
 <!-- Column 2 -->
-<div class="results-col-right" style="display: flex; flex-direction: column; gap: 24px;">
-<div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+<div class="results-col-right" style="display: flex; flex-direction: column; gap: 20px; height: 100%;">
+<div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); flex: 1; display: flex; flex-direction: column; justify-content: center;">
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
 <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(104, 98, 167, 0.1); color: #6862a7; display: flex; align-items: center; justify-content: center;">
 <svg class="icon" height="28" width="28"><use href="#icon-route"></use></svg>
@@ -485,7 +520,7 @@
 </div>
 <div style="font-size: 24px; font-weight: 800; color: #111111; margin-bottom: 16px;">Supply Chain Visibility</div>
 <p style="font-size: 16px; color: rgba(0,0,0,0.6); line-height: 1.6; margin: 0;">Complete genealogy from plant to retailer with trusted chain of custody.</p>
-</div><div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+</div><div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); flex: 1; display: flex; flex-direction: column; justify-content: center;">
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
 <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(104, 98, 167, 0.1); color: #6862a7; display: flex; align-items: center; justify-content: center;">
 <svg class="icon" height="28" width="28"><use href="#icon-trend"></use></svg>
@@ -494,7 +529,7 @@
 </div>
 <div style="font-size: 24px; font-weight: 800; color: #111111; margin-bottom: 16px;">Commercial Excellence</div>
 <p style="font-size: 16px; color: rgba(0,0,0,0.6); line-height: 1.6; margin: 0;">Planning and demand forecasting built on verified sell-out data.</p>
-</div><div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+</div><div class="int-card" data-tilt="" data-tilt-glare="" data-tilt-max="2" data-tilt-max-glare="0.05" data-tilt-speed="400" style="background: #ffffff; border-radius: 20px; border: 1px solid rgba(0,0,0,0.06); padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); flex: 1; display: flex; flex-direction: column; justify-content: center;">
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
 <div style="width: 56px; height: 56px; border-radius: 12px; background: rgba(104, 98, 167, 0.1); color: #6862a7; display: flex; align-items: center; justify-content: center;">
 <svg class="icon" height="28" width="28"><use href="#icon-gift"></use></svg>
