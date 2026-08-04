@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Epsilon — Brand & Style Guide</title>
+    <title>Smart Epsilon — Official Brand & Design Tokens</title>
     <link rel="stylesheet" href="assets/index-C_I5fQ9O.css">
     <style>
         :root {
-            --se-purple-primary: #6862a7;
-            --se-purple-hover: #565095;
-            --se-purple-light: #f7f6fd;
-            --se-purple-border: rgba(104, 98, 167, 0.15);
-            --se-navy-dark: #090714;
-            --se-navy-card: #1e223b;
+            /* Exact CSS variables from index-C_I5fQ9O.css */
+            --se-navy: #0f0f25;
+            --se-purple: #6b62ac;
+            --se-purple-deep: #2b2868;
+            --se-purple-light: #dad0ec;
+            --se-purple-accent-dark: #8b7fd4;
             --se-ink: #111111;
-            --se-ink-soft: rgba(0, 0, 0, 0.65);
-            --se-bg-soft: #f7f7fa;
-            --se-accent-blue: #8fb0ff;
-            --se-border: rgba(0, 0, 0, 0.08);
-            --font-family: 'JUST Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --se-muted: #737373;
+            --se-surface: #ffffff;
+            --se-surface-soft: #f7f7fa;
+            --se-surface-tint: #f3f1f8;
+            --se-success: #22c55e;
+            --se-danger: #ef4444;
+            --se-teal: #0d9488;
+            --se-amber: #f59e0b;
+            --font-display: "Google Sans Flex", system-ui, sans-serif;
+            --font-body: "JUST Sans", "Google Sans Flex", system-ui, sans-serif;
+            --font-mono: ui-monospace, "SF Mono", monospace;
         }
 
         body {
-            font-family: var(--font-family);
+            font-family: var(--font-body);
             color: var(--se-ink);
-            background-color: #ffffff;
+            background-color: var(--se-surface);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: var(--lh-normal);
         }
 
-        /* Sticky Navigation Bar */
         .brand-nav {
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: var(--z-nav);
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--se-border);
+            border-bottom: 1px solid var(--se-line);
             padding: 1rem 2rem;
             display: flex;
             align-items: center;
@@ -55,17 +60,6 @@
             height: 36px;
         }
 
-        .brand-nav__badge {
-            background: rgba(104, 98, 167, 0.1);
-            color: var(--se-purple-primary);
-            font-size: 12px;
-            font-weight: 800;
-            padding: 4px 10px;
-            border-radius: 99px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
         .brand-nav__tabs {
             display: flex;
             gap: 8px;
@@ -76,370 +70,333 @@
 
         .brand-nav__tab {
             padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 14px;
+            border-radius: var(--radius-sm);
+            font-size: var(--fs-sm);
             font-weight: 600;
-            color: var(--se-ink-soft);
+            color: var(--se-muted);
             text-decoration: none;
-            transition: all 0.2s ease;
+            transition: all var(--dur-fast) var(--ease-out);
             cursor: pointer;
         }
 
         .brand-nav__tab:hover, .brand-nav__tab.active {
-            color: var(--se-purple-primary);
-            background: var(--se-purple-light);
+            color: var(--se-purple);
+            background: var(--se-surface-tint);
         }
 
-        /* Main Container */
         .guide-container {
-            max-width: 1200px;
+            max-width: var(--content-max);
             margin: 0 auto;
-            padding: 3rem 2rem 6rem 2rem;
+            padding: var(--space-7) var(--space-5) var(--space-9) var(--space-5);
         }
 
         .guide-header {
-            margin-bottom: 4rem;
+            margin-bottom: var(--space-8);
             text-align: center;
         }
 
         .guide-header h1 {
-            font-size: 2.75rem;
+            font-family: var(--font-display);
+            font-size: var(--fs-2xl);
             font-weight: 800;
             color: var(--se-ink);
-            margin-bottom: 0.5rem;
+            margin-bottom: var(--space-2);
             letter-spacing: -0.02em;
         }
 
         .guide-header p {
-            font-size: 1.125rem;
-            color: var(--se-ink-soft);
-            max-width: 650px;
+            font-size: var(--fs-md);
+            color: var(--se-muted);
+            max-width: var(--content-narrow);
             margin: 0 auto;
         }
 
-        /* Section Layout */
         .guide-section {
-            margin-bottom: 5rem;
+            margin-bottom: var(--space-9);
             scroll-margin-top: 100px;
         }
 
         .section-header {
-            border-bottom: 2px solid var(--se-bg-soft);
-            padding-bottom: 1rem;
-            margin-bottom: 2.5rem;
+            border-bottom: 2px solid var(--se-surface-soft);
+            padding-bottom: var(--space-3);
+            margin-bottom: var(--space-6);
             display: flex;
             align-items: baseline;
             justify-content: space-between;
         }
 
         .section-header h2 {
-            font-size: 1.75rem;
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
             font-weight: 800;
             color: var(--se-ink);
             margin: 0;
         }
 
         .section-header span {
-            font-size: 0.875rem;
-            color: var(--se-ink-soft);
-            font-weight: 500;
+            font-size: var(--fs-sm);
+            color: var(--se-muted);
+            font-family: var(--font-mono);
         }
 
-        /* Color Grid */
         .color-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 24px;
+            gap: var(--space-5);
         }
 
         .color-card {
-            border-radius: 16px;
-            border: 1px solid var(--se-border);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--se-line);
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            background: #ffffff;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+            background: var(--se-surface);
         }
 
         .color-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-md);
         }
 
         .color-swatch {
             height: 120px;
             width: 100%;
-            position: relative;
         }
 
         .color-info {
-            padding: 20px;
+            padding: var(--space-4);
         }
 
         .color-title {
             font-weight: 700;
-            font-size: 16px;
+            font-size: var(--fs-base);
             color: var(--se-ink);
             margin-bottom: 4px;
         }
 
-        .color-use {
-            font-size: 13px;
-            color: var(--se-ink-soft);
-            margin-bottom: 12px;
+        .color-var {
+            font-family: var(--font-mono);
+            font-size: var(--fs-xs);
+            color: var(--se-purple);
+            margin-bottom: 8px;
         }
 
         .color-code-box {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: var(--se-bg-soft);
+            background: var(--se-surface-soft);
             padding: 8px 12px;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 13px;
-            color: #333333;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-mono);
+            font-size: var(--fs-xs);
+            color: var(--se-ink);
         }
 
         .copy-btn {
             background: none;
             border: none;
             cursor: pointer;
-            color: var(--se-purple-primary);
-            font-size: 12px;
+            color: var(--se-purple);
+            font-size: var(--fs-xs);
             font-weight: 700;
             padding: 2px 6px;
-            border-radius: 4px;
-            transition: background 0.2s ease;
+            border-radius: var(--radius-sm);
+            transition: background var(--dur-fast) var(--ease-out);
         }
 
         .copy-btn:hover {
-            background: rgba(104, 98, 167, 0.15);
+            background: var(--se-purple-light);
         }
 
-        /* Typography Showcase */
         .type-sample {
-            padding: 24px;
-            background: var(--se-bg-soft);
-            border-radius: 16px;
-            margin-bottom: 24px;
-            border: 1px solid var(--se-border);
+            padding: var(--space-5);
+            background: var(--se-surface-soft);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+            border: 1px solid var(--se-line);
         }
 
         .type-label {
-            font-size: 12px;
+            font-size: var(--fs-xs);
             font-weight: 800;
-            color: var(--se-purple-primary);
+            color: var(--se-purple);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 8px;
+            margin-bottom: var(--space-2);
         }
 
         .type-specimen {
             color: var(--se-ink);
-            margin-bottom: 8px;
+            margin-bottom: var(--space-2);
         }
 
         .type-meta {
-            font-size: 13px;
-            color: var(--se-ink-soft);
-            font-family: monospace;
+            font-size: var(--fs-xs);
+            color: var(--se-muted);
+            font-family: var(--font-mono);
         }
 
-        /* Weight Cards */
-        .weight-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
+        .token-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: var(--space-5);
         }
 
-        .weight-card {
-            padding: 20px;
-            background: #ffffff;
-            border: 1px solid var(--se-border);
-            border-radius: 12px;
-            text-align: center;
+        .token-table th, .token-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--se-line);
+            font-size: var(--fs-sm);
         }
 
-        /* Logo Preview Cards */
-        .logo-preview-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-        }
-
-        .logo-preview-card {
-            padding: 48px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--se-border);
-        }
-
-        /* UI Component Demos */
-        .component-demo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-        }
-
-        .component-card {
-            padding: 32px;
-            background: #ffffff;
-            border-radius: 16px;
-            border: 1px solid var(--se-border);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-        }
-
-        .component-card h3 {
-            font-size: 18px;
-            font-weight: 800;
-            margin-top: 0;
-            margin-bottom: 20px;
+        .token-table th {
+            background: var(--se-surface-soft);
+            font-weight: 700;
             color: var(--se-ink);
+        }
+
+        .token-name {
+            font-family: var(--font-mono);
+            color: var(--se-purple);
+            font-weight: 600;
         }
 
         .toast-msg {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
-            background: var(--se-navy-dark);
+            bottom: var(--space-6);
+            right: var(--space-6);
+            background: var(--se-navy);
             color: #ffffff;
             padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 14px;
+            border-radius: var(--radius-sm);
+            font-size: var(--fs-sm);
             font-weight: 600;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: var(--shadow-lg);
             display: none;
-            z-index: 1000;
+            z-index: var(--z-overlay);
         }
     </style>
 </head>
 <body>
 
-    <!-- STICKY HEADER NAV -->
+    <!-- NAV -->
     <nav class="brand-nav">
         <a href="index.html" class="brand-nav__logo">
             <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo">
         </a>
-        
         <ul class="brand-nav__tabs">
             <li><a href="#logo" class="brand-nav__tab active">Logo</a></li>
             <li><a href="#colors" class="brand-nav__tab">Brand Colors</a></li>
             <li><a href="#typography" class="brand-nav__tab">Typography</a></li>
-            <li><a href="#components" class="brand-nav__tab">UI Components</a></li>
+            <li><a href="#tokens" class="brand-nav__tab">System Tokens</a></li>
         </ul>
     </nav>
 
     <div class="guide-container">
         <!-- HEADER -->
         <header class="guide-header">
-            <p class="eyebrow" style="color: var(--se-purple-primary); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">Smart Epsilon Design System</p>
-            <h1>Brand Identity & Style Guide</h1>
-            <p>The definitive guide to Smart Epsilon’s visual language, brand colors, typography scales, and UI component standards.</p>
+            <p style="color: var(--se-purple); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; font-size: var(--fs-xs);">Smart Epsilon Codebase Tokens</p>
+            <h1>Brand & Style Guide</h1>
+            <p>Official design system variables extracted directly from the Smart Epsilon codebase CSS.</p>
         </header>
 
-        <!-- 1. BRAND LOGO SECTION -->
+        <!-- 1. LOGO -->
         <section id="logo" class="guide-section">
             <div class="section-header">
                 <h2>1. Brand Logo</h2>
-                <span>Vector SVG Assets</span>
+                <span>Vector Assets</span>
             </div>
-            <div class="logo-preview-grid">
-                <div class="logo-preview-card" style="background: #ffffff;">
-                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo Light Surface" style="height: 48px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div style="padding: 48px; border-radius: var(--radius-md); border: 1px solid var(--se-line); background: var(--se-surface); display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Light" style="height: 44px;">
                 </div>
-                <div class="logo-preview-card" style="background: #090714;">
-                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo Dark Surface" style="height: 48px; filter: brightness(0) invert(1);">
+                <div style="padding: 48px; border-radius: var(--radius-md); border: 1px solid var(--se-line); background: var(--se-navy); display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Dark" style="height: 44px; filter: brightness(0) invert(1);">
                 </div>
             </div>
         </section>
 
-        <!-- 2. BRAND COLORS SECTION -->
+        <!-- 2. BRAND COLORS -->
         <section id="colors" class="guide-section">
             <div class="section-header">
                 <h2>2. Brand Colors</h2>
-                <span>Core Palette & Hex Codes</span>
+                <span>CSS Variables & Hex Codes</span>
             </div>
 
-            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px;">Primary & Brand Colors</h3>
             <div class="color-grid">
                 <!-- Color 1 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #6862a7;"></div>
+                    <div class="color-swatch" style="background: var(--se-purple);"></div>
                     <div class="color-info">
                         <div class="color-title">Smart Epsilon Purple</div>
-                        <div class="color-use">Primary brand accent, primary CTA buttons & active highlights</div>
+                        <div class="color-var">--se-purple</div>
                         <div class="color-code-box">
-                            <span>#6862a7</span>
-                            <button class="copy-btn" onclick="copyColor('#6862a7')">Copy</button>
+                            <span>#6b62ac</span>
+                            <button class="copy-btn" onclick="copyColor('#6b62ac')">Copy</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Color 2 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #1e223b;"></div>
+                    <div class="color-swatch" style="background: var(--se-purple-deep);"></div>
                     <div class="color-info">
-                        <div class="color-title">Deep Slate Navy</div>
-                        <div class="color-use">Dark containers, cards, and secondary hero highlights</div>
+                        <div class="color-title">Deep Purple</div>
+                        <div class="color-var">--se-purple-deep</div>
                         <div class="color-code-box">
-                            <span>#1e223b</span>
-                            <button class="copy-btn" onclick="copyColor('#1e223b')">Copy</button>
+                            <span>#2b2868</span>
+                            <button class="copy-btn" onclick="copyColor('#2b2868')">Copy</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Color 3 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #090714;"></div>
+                    <div class="color-swatch" style="background: var(--se-navy);"></div>
                     <div class="color-info">
-                        <div class="color-title">Midnight Black</div>
-                        <div class="color-use">Dark hero background, footers & high-contrast stages</div>
+                        <div class="color-title">Navy Dark</div>
+                        <div class="color-var">--se-navy</div>
                         <div class="color-code-box">
-                            <span>#090714</span>
-                            <button class="copy-btn" onclick="copyColor('#090714')">Copy</button>
+                            <span>#0f0f25</span>
+                            <button class="copy-btn" onclick="copyColor('#0f0f25')">Copy</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Color 4 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #8b7fd4;"></div>
+                    <div class="color-swatch" style="background: var(--se-purple-accent-dark);"></div>
                     <div class="color-info">
-                        <div class="color-title">Soft Violet Light</div>
-                        <div class="color-use">Dark mode secondary accents, gradients & subtle icons</div>
+                        <div class="color-title">Soft Violet (Dark Mode)</div>
+                        <div class="color-var">--se-purple (dark)</div>
                         <div class="color-code-box">
                             <span>#8b7fd4</span>
                             <button class="copy-btn" onclick="copyColor('#8b7fd4')">Copy</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin: 40px 0 20px 0;">Surfaces & Backgrounds</h3>
-            <div class="color-grid">
                 <!-- Color 5 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #f7f6fd; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-swatch" style="background: var(--se-purple-light); border-bottom: 1px solid var(--se-line);"></div>
                     <div class="color-info">
-                        <div class="color-title">Purple Tint Surface</div>
-                        <div class="color-use">Quote boxes, subtle callout backgrounds</div>
+                        <div class="color-title">Purple Light</div>
+                        <div class="color-var">--se-purple-light</div>
                         <div class="color-code-box">
-                            <span>#f7f6fd</span>
-                            <button class="copy-btn" onclick="copyColor('#f7f6fd')">Copy</button>
+                            <span>#dad0ec</span>
+                            <button class="copy-btn" onclick="copyColor('#dad0ec')">Copy</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Color 6 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #f7f7fa; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-swatch" style="background: var(--se-surface-soft); border-bottom: 1px solid var(--se-line);"></div>
                     <div class="color-info">
-                        <div class="color-title">Soft Neutral Stage</div>
-                        <div class="color-use">Alternating section backgrounds (bg-soft)</div>
+                        <div class="color-title">Surface Soft</div>
+                        <div class="color-var">--se-surface-soft</div>
                         <div class="color-code-box">
                             <span>#f7f7fa</span>
                             <button class="copy-btn" onclick="copyColor('#f7f7fa')">Copy</button>
@@ -449,26 +406,23 @@
 
                 <!-- Color 7 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #ffffff; border-bottom: 1px solid #e0e0e0;"></div>
+                    <div class="color-swatch" style="background: var(--se-surface-tint); border-bottom: 1px solid var(--se-line);"></div>
                     <div class="color-info">
-                        <div class="color-title">Pure White</div>
-                        <div class="color-use">Card backgrounds, clean surface stages</div>
+                        <div class="color-title">Surface Tint</div>
+                        <div class="color-var">--se-surface-tint</div>
                         <div class="color-code-box">
-                            <span>#ffffff</span>
-                            <button class="copy-btn" onclick="copyColor('#ffffff')">Copy</button>
+                            <span>#f3f1f8</span>
+                            <button class="copy-btn" onclick="copyColor('#f3f3f8')">Copy</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin: 40px 0 20px 0;">Typography & Ink Colors</h3>
-            <div class="color-grid">
                 <!-- Color 8 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: #111111;"></div>
+                    <div class="color-swatch" style="background: var(--se-ink);"></div>
                     <div class="color-info">
                         <div class="color-title">Ink Dark</div>
-                        <div class="color-use">Primary headlines, card titles & bold text</div>
+                        <div class="color-var">--se-ink</div>
                         <div class="color-code-box">
                             <span>#111111</span>
                             <button class="copy-btn" onclick="copyColor('#111111')">Copy</button>
@@ -478,133 +432,133 @@
 
                 <!-- Color 9 -->
                 <div class="color-card">
-                    <div class="color-swatch" style="background: rgba(0, 0, 0, 0.65);"></div>
+                    <div class="color-swatch" style="background: var(--se-muted);"></div>
                     <div class="color-info">
-                        <div class="color-title">Ink Soft / Muted</div>
-                        <div class="color-use">Body paragraphs, descriptions & subtitles</div>
+                        <div class="color-title">Muted Ink</div>
+                        <div class="color-var">--se-muted</div>
                         <div class="color-code-box">
-                            <span>rgba(0,0,0,0.65)</span>
-                            <button class="copy-btn" onclick="copyColor('rgba(0,0,0,0.65)')">Copy</button>
+                            <span>#737373</span>
+                            <button class="copy-btn" onclick="copyColor('#737373')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 10 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--se-success);"></div>
+                    <div class="color-info">
+                        <div class="color-title">Success Green</div>
+                        <div class="color-var">--se-success</div>
+                        <div class="color-code-box">
+                            <span>#22c55e</span>
+                            <button class="copy-btn" onclick="copyColor('#22c55e')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 11 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--se-danger);"></div>
+                    <div class="color-info">
+                        <div class="color-title">Danger Red</div>
+                        <div class="color-var">--se-danger</div>
+                        <div class="color-code-box">
+                            <span>#ef4444</span>
+                            <button class="copy-btn" onclick="copyColor('#ef4444')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color 12 -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--se-teal);"></div>
+                    <div class="color-info">
+                        <div class="color-title">Teal Accent</div>
+                        <div class="color-var">--se-teal</div>
+                        <div class="color-code-box">
+                            <span>#0d9488</span>
+                            <button class="copy-btn" onclick="copyColor('#0d9488')">Copy</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. TYPOGRAPHY SECTION -->
+        <!-- 3. TYPOGRAPHY -->
         <section id="typography" class="guide-section">
             <div class="section-header">
                 <h2>3. Typography</h2>
-                <span>JUST Sans Font Family & Type Scale</span>
+                <span>Project Font Families & Scales</span>
             </div>
 
             <div class="type-sample">
-                <div class="type-label">H1 Page Title</div>
-                <div class="type-specimen" style="font-size: 2.75rem; font-weight: 800; line-height: 1.15;">Turning Disconnected Data into Commercial Intelligence</div>
-                <div class="type-meta">JUST Sans ExtraBold · 44px (2.75rem) · Line Height 1.15</div>
+                <div class="type-label">Display Font</div>
+                <div class="type-specimen" style="font-family: var(--font-display); font-size: var(--fs-2xl); font-weight: 800; line-height: var(--lh-tight);">
+                    Google Sans Flex / JUST Sans
+                </div>
+                <div class="type-meta">--font-display: "Google Sans Flex", system-ui, sans-serif</div>
             </div>
 
             <div class="type-sample">
-                <div class="type-label">H2 Section Title</div>
-                <div class="type-specimen" style="font-size: 2.25rem; font-weight: 800; line-height: 1.2;">The Visibility Gap Past the Factory Gate</div>
-                <div class="type-meta">JUST Sans Bold · 36px (2.25rem) · Line Height 1.2</div>
+                <div class="type-label">Body Font</div>
+                <div class="type-specimen" style="font-family: var(--font-body); font-size: var(--fs-md); line-height: var(--lh-normal); color: var(--se-muted);">
+                    JUST Sans / Google Sans Flex for all body copy and descriptions.
+                </div>
+                <div class="type-meta">--font-body: "JUST Sans", "Google Sans Flex", system-ui, sans-serif</div>
             </div>
 
             <div class="type-sample">
-                <div class="type-label">H3 Card / Feature Title</div>
-                <div class="type-specimen" style="font-size: 1.25rem; font-weight: 800; line-height: 1.3;">Supply Chain Visibility</div>
-                <div class="type-meta">JUST Sans Bold · 20px (1.25rem) · Line Height 1.3</div>
-            </div>
-
-            <div class="type-sample">
-                <div class="type-label">Body Text</div>
-                <div class="type-specimen" style="font-size: 1rem; color: var(--se-ink-soft); line-height: 1.6;">Operating across 100+ countries, this agrochemical manufacturer had already built a world-class production and distribution network.</div>
-                <div class="type-meta">JUST Sans Regular / Medium · 16px (1rem) · Line Height 1.6</div>
-            </div>
-
-            <div class="type-sample">
-                <div class="type-label">Eyebrow Badge</div>
-                <div class="type-specimen" style="font-size: 12px; font-weight: 800; letter-spacing: 0.1em; color: var(--se-purple-primary); text-transform: uppercase;">AT A GLANCE</div>
-                <div class="type-meta">JUST Sans ExtraBold · 12px · Letter Spacing 0.1em</div>
-            </div>
-
-            <h3 style="font-size: 16px; font-weight: 800; color: var(--se-ink-soft); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 40px;">Font Weights</h3>
-            <div class="weight-grid">
-                <div class="weight-card">
-                    <div style="font-weight: 400; font-size: 24px;">Aa</div>
-                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Regular 400</div>
+                <div class="type-label">Monospace Font</div>
+                <div class="type-specimen" style="font-family: var(--font-mono); font-size: var(--fs-base); color: var(--se-purple);">
+                    ui-monospace, "SF Mono", monospace
                 </div>
-                <div class="weight-card">
-                    <div style="font-weight: 500; font-size: 24px;">Aa</div>
-                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Medium 500</div>
-                </div>
-                <div class="weight-card">
-                    <div style="font-weight: 600; font-size: 24px;">Aa</div>
-                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">SemiBold 600</div>
-                </div>
-                <div class="weight-card">
-                    <div style="font-weight: 700; font-size: 24px;">Aa</div>
-                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">Bold 700</div>
-                </div>
-                <div class="weight-card">
-                    <div style="font-weight: 800; font-size: 24px;">Aa</div>
-                    <div style="font-size: 13px; font-weight: 600; margin-top: 8px;">ExtraBold 800</div>
-                </div>
+                <div class="type-meta">--font-mono: ui-monospace, "SF Mono", monospace</div>
             </div>
         </section>
 
-        <!-- 4. UI COMPONENTS SECTION -->
-        <section id="components" class="guide-section">
+        <!-- 4. SYSTEM TOKENS -->
+        <section id="tokens" class="guide-section">
             <div class="section-header">
-                <h2>4. UI Components</h2>
-                <span>Buttons, Cards & Badges</span>
+                <h2>4. System Tokens</h2>
+                <span>Spacing & Border Radiuses</span>
             </div>
 
-            <div class="component-demo-grid">
-                <!-- Buttons Card -->
-                <div class="component-card">
-                    <h3>Buttons & CTAs</h3>
-                    <div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
-                        <button class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">
-                            Primary Button
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </button>
-                        <button class="btn btn-primary btn-sm" style="display: inline-flex; align-items: center; gap: 6px;">
-                            Small Button
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </button>
-
-                    </div>
-                </div>
-
-                <!-- Cards & Containers -->
-                <div class="component-card">
-                    <h3>Cards & Callouts</h3>
-                    <div style="background: #ffffff; border-radius: 12px; border: 1px solid var(--se-border); padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); margin-bottom: 16px;">
-                        <div style="font-weight: 800; font-size: 16px; margin-bottom: 4px;">Light Card Container</div>
-                        <div style="font-size: 13px; color: var(--se-ink-soft);">Clean white box with soft border and subtle drop shadow.</div>
-                    </div>
-                    <div style="background: #f7f6fd; border-left: 4px solid var(--se-purple-primary); padding: 16px 20px; border-radius: 0 10px 10px 0;">
-                        <div style="font-size: 14px; font-weight: 600; font-style: italic; color: var(--se-ink);">“Purple callout box for leadership quotes and key insights.”</div>
-                    </div>
-                </div>
-
-                <!-- Badges & Chips -->
-                <div class="component-card">
-                    <h3>Badges & Chips</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
-                        <span style="background: rgba(104, 98, 167, 0.1); color: var(--se-purple-primary); font-weight: 800; font-size: 11px; padding: 4px 12px; border-radius: 99px; letter-spacing: 0.05em; text-transform: uppercase;">
-                            FEATURE TAG
-                        </span>
-                        <span style="background: #fff1f0; color: #e53e3e; font-weight: 800; font-size: 12px; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
-                            ✕
-                        </span>
-                        <span style="background: #e6f4ea; color: #137333; font-weight: 800; font-size: 12px; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
-                            ✓
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <table class="token-table">
+                <thead>
+                    <tr>
+                        <th>Token Name</th>
+                        <th>CSS Variable</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="token-name">--radius-sm</td>
+                        <td>Border Radius Small</td>
+                        <td>8px</td>
+                    </tr>
+                    <tr>
+                        <td class="token-name">--radius-md</td>
+                        <td>Border Radius Medium</td>
+                        <td>14px</td>
+                    </tr>
+                    <tr>
+                        <td class="token-name">--radius-lg</td>
+                        <td>Border Radius Large</td>
+                        <td>22px</td>
+                    </tr>
+                    <tr>
+                        <td class="token-name">--radius-xl</td>
+                        <td>Border Radius Extra Large</td>
+                        <td>28px</td>
+                    </tr>
+                    <tr>
+                        <td class="token-name">--radius-pill</td>
+                        <td>Border Radius Pill</td>
+                        <td>999px</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
     </div>
@@ -623,7 +577,6 @@
             }, 2500);
         }
 
-        // Active tab highlight on scroll
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('.guide-section');
             const navLinks = document.querySelectorAll('.brand-nav__tab');
