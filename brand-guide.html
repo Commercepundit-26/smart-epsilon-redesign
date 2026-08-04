@@ -1,8 +1,4 @@
-import os
-
-file_path = '/Users/cp/Ronak/CP/CP Website/Old/smart-epsilon-redesign/brand-guide.html'
-
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -328,7 +324,7 @@ html_content = """<!DOCTYPE html>
         <a href="index.html" class="brand-nav__logo">
             <img src="assets/logo-D0kBFmz2.svg" alt="Smart Epsilon Logo">
         </a>
-        <div class="brand-nav__badge">Brand Guidelines</div>
+        
         <ul class="brand-nav__tabs">
             <li><a href="#logo" class="brand-nav__tab active">Logo</a></li>
             <li><a href="#colors" class="brand-nav__tab">Brand Colors</a></li>
@@ -577,9 +573,7 @@ html_content = """<!DOCTYPE html>
                             Small Button
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </button>
-                        <button style="background: var(--se-navy-dark); color: #ffffff; padding: 12px 24px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer;">
-                            Dark Secondary Button
-                        </button>
+
                     </div>
                 </div>
 
@@ -652,9 +646,3 @@ html_content = """<!DOCTYPE html>
     </script>
 </body>
 </html>
-"""
-
-with open(file_path, 'w', encoding='utf-8') as f:
-    f.write(html_content)
-
-print("Created brand-guide.html successfully.")
